@@ -1,0 +1,1432 @@
+[
+ {
+  "name": "Sweep Tosho",
+  "rarity": "SSR",
+  "type": "Wit",
+  "date": "Oct 20 - Nov 1",
+  "universal": false,
+  "effects": "Friendship 30% · Mood 30% · Race 5% · Fans 10% · Specialty 35 · Hint Lv3 / 50% · Wit recovery 5",
+  "start": "Start: Bond 15",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30128_thumb.webp",
+  "stats": 1,
+  "skills": 4,
+  "longevity": "Under 0.5 scenario",
+  "unique": "Specialty +40 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Razor-Sharp Steps</em> – Acc +0.40 · 1.2s<br /><small>End · Early late-race</small>",
+   "End Closer Straightaways ○"
+  ],
+  "verdictKey": "importance-consider",
+  "rank": 3,
+  "verdict": [
+   "Strong End Wit, outclassed by Ramonu.",
+   "No TE, low SPE."
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Grand Live",
+  "scenarioDate": "since Jul 22, 2026",
+  "color": "green",
+  "iso": "2026-10-20"
+ },
+ {
+  "name": "Special Week",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "date": "Oct 20 - Nov 1",
+  "universal": true,
+  "effects": "Friendship 20% · Training eff. 10% · Race 5% · Fans 10% · Specialty 35 · Hint Lv3 / 50%",
+  "start": "Start: Bond 20",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30127_thumb.webp",
+  "stats": 2,
+  "skills": 3,
+  "longevity": "DOA",
+  "unique": "Mood +60 on friendship training",
+  "keyskills": [
+   "<em class=\"gold\">No Stopping Me!</em> – Acc +0.40 · 3s<br /><small>Behind a rival · Last spurt</small>",
+   "Nimble Navigator"
+  ],
+  "verdictKey": "8184",
+  "rank": 1,
+  "verdict": [
+   "No.",
+   "Okay TE, dead Specialty, bad bonuses."
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Grand Live",
+  "scenarioDate": "since Jul 22, 2026",
+  "color": "red",
+  "iso": "2026-10-20"
+ },
+ {
+  "name": "Marvelous Sunday",
+  "rarity": "SSR",
+  "type": "Speed",
+  "date": "Est. Nov 12 - 26",
+  "universal": true,
+  "effects": "Friendship 25% · Mood 30% · Race 5% · Fans 10% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 20",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30131_thumb.webp",
+  "stats": 3,
+  "skills": 0,
+  "longevity": "DOA",
+  "unique": "Training eff. +15 at max bond",
+  "keyskills": [
+   "<em class=\"gold\">Indomitable</em> – Rec +5.5%<br /><small>Mid-race · After passing</small>",
+   "Long Straightaways ○"
+  ],
+  "verdictKey": "8184",
+  "rank": 1,
+  "verdict": [
+   "Okayish bonuses but terrible recovery."
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Grand Live",
+  "scenarioDate": "since Jul 22, 2026",
+  "color": "blue",
+  "iso": "2026-11-12"
+ },
+ {
+  "name": "Mejiro Ramonu",
+  "rarity": "SSR",
+  "type": "Wit",
+  "date": "Est. Nov 26 - Dec 20",
+  "universal": true,
+  "effects": "Friendship 35% · Race 5% · Fans 10% · Specialty 50 · Hint Lv4 / 60% · Wit recovery 5",
+  "start": "Start: Bond 20",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30134_thumb.webp",
+  "stats": 5,
+  "skills": 5,
+  "longevity": "Long",
+  "unique": "Training eff. +4 per Speed skill (max +20)",
+  "keyskills": [
+   "<em class=\"gold\">Superb Gait</em> – TS +0.35 · 2.4s<br /><small>Mile / Medium · Mid-race</small>",
+   "Mile Straightaways ○ · Mile Corners ○ · Medium Straightaways ○ · Medium Corners ○"
+  ],
+  "verdictKey": "importance-must",
+  "rank": 5,
+  "verdict": [
+   "Best Wit card for ~2 years.",
+   "20% TE, Hint lv4.",
+   "Don’t think.",
+   "Pull."
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Grand Masters",
+  "scenarioDate": "Est. Nov 26, 2026",
+  "color": "green",
+  "iso": "2026-11-26"
+ },
+ {
+  "name": "Mejiro McQueen",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "date": "Est. Dec 23 - Jan 4",
+  "universal": true,
+  "effects": "Friendship 35% · Race 5% · Fans 15% · Specialty 80 · Hint Lv1 / 20%",
+  "start": "Start: Bond 20",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30139_thumb.webp",
+  "stats": 5,
+  "skills": 4,
+  "longevity": "4 scenarios",
+  "unique": "Sta bonus +3 at max bond",
+  "keyskills": [
+   "<em class=\"gold\">Light-Footed as a Hare</em> – Rec +5.5% · TS +0.25 · 2.4s<br /><small>Long · Mid-race</small>",
+   "Long Straightaways ○ · Long Corners ○"
+  ],
+  "verdictKey": "importance-good",
+  "rank": 4,
+  "verdict": [
+   "Excellent Stamina card, few hints.",
+   "Thought limited to Long races. We don’t have a lot of Long races so she’s a borrow target.",
+   "Only pull if no Super creek at good LB. Otherwise, wait for Air Shakur."
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+3"
+   ],
+   [
+    "Guts",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Grand Masters",
+  "scenarioDate": "Est. Nov 26, 2026",
+  "color": "red",
+  "iso": "2026-12-23"
+ },
+ {
+  "name": "Ancestors & Guides",
+  "rarity": "SSR",
+  "type": "Group",
+  "date": "Est. Dec 18 - 27",
+  "universal": true,
+  "effects": "Friendship 20% · Training eff. 10% · Wit recovery 2 · Event recovery 30% · Event eff. 20%",
+  "start": "Start: Bond 20 · Pow +35",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30137_thumb.webp",
+  "stats": 5,
+  "skills": 4,
+  "longevity": "7/8 scenario",
+  "unique": "Friendship +10, Mood +15 & SP +1 at max bond",
+  "keyskills": [
+   "<em class=\"gold\">Divine Speed</em> – CS +0.35 · Rec +1.5% · 3s<br /><small>After 50%</small>",
+   "Sprint Corners ○ · Long Straightaways ○ · Mile Corners ○ · Medium Corners ○ · Uma Stan"
+  ],
+  "verdictKey": "importance-consider",
+  "rank": 3,
+  "verdict": [
+   "Solo on its banner, releases later, only last 1 scenario.",
+   "Can pull but better to borrow it for the scenario duration, better cards exists."
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Grand Masters",
+  "scenarioDate": "Est. Nov 26, 2026",
+  "color": "purple",
+  "iso": "2026-12-18"
+ },
+ {
+  "name": "Nice Nature",
+  "rarity": "SSR",
+  "type": "Power",
+  "date": "Est. Dec 23 - Jan 4",
+  "universal": true,
+  "effects": "Friendship 30% · Mood 30% · Race 5% · Fans 15% · Specialty 50 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30 · Pow +20",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30138_thumb.webp",
+  "stats": 3,
+  "skills": 3,
+  "longevity": "DOA",
+  "unique": "Pow bonus +3 at max bond",
+  "keyskills": [
+   "<em class=\"gold\">Perfect Spot!</em> – TS +0.35 · 3s<br /><small>Behind a rival</small>",
+   "Uma Stan · Nimble Navigator"
+  ],
+  "verdictKey": "8184",
+  "rank": 1,
+  "verdict": [
+   "Power, for Target speed."
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+3"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Grand Masters",
+  "scenarioDate": "Est. Nov 26, 2026",
+  "color": "orange",
+  "iso": "2026-12-23"
+ },
+ {
+  "name": "Jungle Pocket",
+  "rarity": "SSR",
+  "type": "Speed",
+  "date": "Est. Jan 29 - Feb 8",
+  "universal": false,
+  "effects": "Friendship 30% · Training eff. 10% · Race 10% · Fans 20% · Specialty 65 · Hint Lv2 / 40%",
+  "start": "Start: Bond 30 · Pow +35",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30147_thumb.webp",
+  "stats": 5,
+  "skills": 4,
+  "longevity": "≥ 3 scenarios",
+  "unique": "Spd +3 at max bond",
+  "keyskills": [
+   "<em class=\"gold\">Rising Pulse</em> – CS +0.35 · 3s<br /><small>Medium / Long · Early late-race · Pos 30-80%</small>",
+   "Medium Straightaways ○ · Medium Corners ○"
+  ],
+  "verdictKey": "importance-good",
+  "rank": 4,
+  "verdict": [
+   "Current Speed during Late race is fantastic. Limited to Medium and Long.",
+   "Replaces Kitasan Black, will play with El Condor Pasa.",
+   "11 months Longevity until Still in Love. Can skip but strong.",
+   "Recommended if you want Duramente (the uma)"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+3"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Grand Masters",
+  "scenarioDate": "Est. Nov 26, 2026",
+  "color": "blue",
+  "iso": "2027-01-29"
+ },
+ {
+  "name": "Wonder Acute",
+  "rarity": "SSR",
+  "type": "Power",
+  "date": "Est. Mar 15 - 25",
+  "universal": true,
+  "effects": "Friendship 25% · Mood 40% · Training eff. 5% · Race 5% · Fans 15% · Specialty 50 · Hint Lv4 / 60%",
+  "start": "Start: Bond 25",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30156_thumb.webp",
+  "stats": 3,
+  "skills": 2,
+  "longevity": "DOA",
+  "unique": "Pow +2 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Dancer in the Dirt</em> – TS +0.35 · 3s<br /><small>Dirt · Behind a rival</small>"
+  ],
+  "verdictKey": "importance-niche",
+  "rank": 2,
+  "verdict": [
+   "Dirt-focused hints. Niche.",
+   "It has good event skills, +1SP but low TE, low specialty and PWR card."
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Grand Masters",
+  "scenarioDate": "Est. Nov 26, 2026",
+  "color": "orange",
+  "iso": "2027-03-15"
+ },
+ {
+  "name": "Manhattan Cafe",
+  "rarity": "SSR",
+  "type": "Wit",
+  "date": "Est. Mar 21 - Apr 4",
+  "universal": false,
+  "effects": "Friendship 25% · Mood 40% · Training eff. 15% · Race 10% · Fans 20% · Specialty 50 · Hint Lv1 / 20% · Wit recovery 5",
+  "start": "Start: Bond 30",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30157_thumb.webp",
+  "stats": 3,
+  "skills": 2,
+  "longevity": "TBD",
+  "unique": "Wit +2 & SP +1 at max bond",
+  "keyskills": [
+   "<em class=\"gold\">Claw Forward</em> – Acc +0.40 · Rec -2.0% · 1.5s<br /><small>Long · Late · Last spurt · Back 60%</small>",
+   "<em class=\"gold\">Cooldown</em> – Rec +5.5%<br /><small>Long · Mid-race</small>",
+   "Long Straightaways ○ · Late Surger Corners ○"
+  ],
+  "verdictKey": "importance-consider",
+  "rank": 3,
+  "verdict": [
+   "Long Late/End Wit. Great for Long CMs.",
+   "Better for late, great candidate when playing Late/End.",
+   "Recovery on wit card sounds good.",
+   "Recommended if you play Late&End."
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Grand Masters",
+  "scenarioDate": "Est. Nov 26, 2026",
+  "color": "green",
+  "iso": "2027-03-21"
+ },
+ {
+  "name": "El Condor Pasa",
+  "rarity": "SSR",
+  "type": "Speed",
+  "date": "Est. Apr 6 - 24",
+  "universal": true,
+  "effects": "Friendship 20% · Mood 40% · Training eff. 10% · Race 5% · Fans 10% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30 · Pow +25",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30161_thumb.webp",
+  "stats": 5,
+  "skills": 5,
+  "longevity": "4 scenarios?<br />OR 2.5 scenarios for Mono SPD Deck",
+  "unique": "All stats +1 & SP +1 at max bond",
+  "keyskills": [
+   "<em class=\"gold\">Check</em> – Acc +0.40 · 0.9s<br /><small>Pace / Late · Late-race+ · 600+ m left · Corner · Final corner · Top 70%</small>",
+   "<em class=\"gold\">Professor of Curvature</em> – TS +0.35 · 2.4s<br /><small>Corner</small>",
+   "Medium Corners ○ · Pace Chaser Corners ○"
+  ],
+  "verdictKey": "importance-must",
+  "rank": 5,
+  "verdict": [
+   "Huge stats stick, Scenario card, Curvature, +2 SP bonus.",
+   "She’s great for <b>all</b> runners.",
+   "K’Sante of Umamusume Cards."
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "blue",
+  "iso": "2027-04-06"
+ },
+ {
+  "name": "Mei Satake",
+  "rarity": "SSR",
+  "type": "Pal",
+  "date": "Est. Apr 6 - 24",
+  "universal": true,
+  "effects": "Mood 20% · Training eff. 5% · Event recovery 80% · Event eff. 20% · Fail protection 20% · Energy cost -25%",
+  "start": "Start: Bond 30 · Pow +30",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30160_thumb.webp",
+  "stats": 3,
+  "skills": 2,
+  "longevity": "1 scenario",
+  "unique": "Pal card · 2 facilities at once (bond 60)",
+  "keyskills": [
+   "<em class=\"gold\">Never Give Up</em> – TS +0.25 · 4s"
+  ],
+  "verdictKey": "importance-must",
+  "rank": 5,
+  "verdict": [
+   "Project L'Arc friend card. Scenario banner: must pull."
+  ],
+  "bonus": [
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "yellow",
+  "iso": "2027-04-06"
+ },
+ {
+  "name": "Nakayama Festa",
+  "rarity": "SSR",
+  "type": "Wit",
+  "date": "Est. Apr 13 - 24",
+  "universal": true,
+  "effects": "Friendship 25% · Mood 60% · Specialty 80 · Wit recovery 5",
+  "start": "Start: Bond 20 · Wit +25",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30163_thumb.webp",
+  "stats": 2,
+  "skills": 2,
+  "longevity": "DOA",
+  "unique": "Training eff. +10 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Right-Handed Demon</em> – Spd +60 · Pow +60<br /><small>Right-handed</small>"
+  ],
+  "verdictKey": "importance-niche",
+  "rank": 2,
+  "verdict": [
+   "Green skill merchant",
+   "Ramonu wit exist, borrow."
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "green",
+  "iso": "2027-04-13"
+ },
+ {
+  "name": "Hishi Amazon",
+  "rarity": "SSR",
+  "type": "Power",
+  "date": "Est. Apr 28 - May 8",
+  "universal": false,
+  "effects": "Friendship 25% · Mood 50% · Training eff. 10% · Race 5% · Fans 15% · Specialty 35 · Hint Lv4 / 60%",
+  "start": "Start: Bond 30",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30164_thumb.webp",
+  "stats": 4,
+  "skills": 4,
+  "longevity": "≥ 2.5 scenarios",
+  "unique": "SP +2 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Moonlight Slash</em> – TS +0.35 · 3s<br /><small>End · Corner</small>",
+   "<em class=\"gold\">Encroaching Shadow</em> – Acc +0.40 · 0.9s<br /><small>End · Last spurt · Straight</small>",
+   "Nimble Navigator · End Closer Straightaways ○ · End Closer Corners ○"
+  ],
+  "verdictKey": "8161",
+  "rank": null,
+  "verdict": [
+   "Encroashing Shadow source but power.",
+   "Narita Taishin wit arrives in 6 months, every Endcloser already has Encroashing Shadow.",
+   "2SP bonus, juicy tho.",
+   "Strong but hard to recommend."
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "orange",
+  "iso": "2027-04-28"
+ },
+ {
+  "name": "Tanino Gimlet",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "date": "Est. Apr 28 - May 8",
+  "universal": false,
+  "effects": "Friendship 20% · Mood 50% · Training eff. 15% · Race 10% · Fans 15% · Specialty 35 · Hint Lv2 / 40%",
+  "start": "Start: Bond 25",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30165_thumb.webp",
+  "stats": 0,
+  "skills": 0,
+  "longevity": "DOA",
+  "unique": "Guts +2 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Elated</em> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Back 50%</small>",
+   "Nimble Navigator · Medium Straightaways ○ · End Closer Straightaways ○"
+  ],
+  "verdictKey": "8184",
+  "rank": 1,
+  "verdict": [
+   "If you need Stamina card, get Sounds of Earth.",
+   "Otherwise stay on Super Creek."
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "red",
+  "iso": "2027-04-28"
+ },
+ {
+  "name": "Gold Ship",
+  "rarity": "SSR",
+  "type": "Speed",
+  "date": "Est. May 8 - 18",
+  "universal": false,
+  "effects": "Friendship 35% · Training eff. 5% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35 · Spd +25",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30168_thumb.webp",
+  "stats": 3,
+  "skills": 3,
+  "longevity": "DOA?",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Superstan</em> – TS +0.35 · 3s",
+   "End Closer Straightaways ○ · End Closer Corners ○ · Uma Stan"
+  ],
+  "verdictKey": "importance-good",
+  "rank": 4,
+  "verdict": [
+   "Strong Speed, End hints + Superstan.",
+   "BUT",
+   "Low TE",
+   "No Power bonus. Consider only if you lack Endcloser cards.",
+   "Jungle Pocket or Duramente are better stats stick. Uma stan is enough since both Super Stan and Uma Stan last 3 seconds."
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+3"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "blue",
+  "iso": "2027-05-08"
+ },
+ {
+  "name": "Tsurumaru Tsuyoshi",
+  "rarity": "SSR",
+  "type": "Power",
+  "date": "Est. May 8 - 18",
+  "universal": true,
+  "effects": "Friendship 20% · Mood 30% · Specialty 50 · Hint Lv2 / 40%",
+  "start": "Start: Bond 30 · Pow +25",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30169_thumb.webp",
+  "stats": 2,
+  "skills": 2,
+  "longevity": "Outclassed",
+  "unique": "Training eff. 5% to 20% scaling with energy (max at 100+)",
+  "keyskills": [
+   "<em class=\"gold\">Flash Forward</em> – TS +0.35 · 3s<br /><small>Medium · Straight</small>",
+   "Medium Straightaways ○"
+  ],
+  "verdictKey": "81e5",
+  "rank": null,
+  "verdict": [
+   "Good TE, but power and just okay skill.",
+   "If you want a power card, you just missed Hishi Amazon was there."
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "orange",
+  "iso": "2027-05-08"
+ },
+ {
+  "name": "King Halo",
+  "rarity": "SSR",
+  "type": "Guts",
+  "date": "Est. May 8 - 18",
+  "universal": false,
+  "effects": "Friendship 20% · Training eff. 10% · Race 5% · Fans 10% · Specialty 50 · Hint Lv3 / 50%",
+  "start": "Start: Bond 25 · Pow +30",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30170_thumb.webp",
+  "stats": 3,
+  "skills": 2,
+  "longevity": "DOA",
+  "unique": "Spd +1 per Speed skill (max +3)",
+  "keyskills": [
+   "<em class=\"gold\">Vying for the Throne</em> – TS +0.35 · debuffs rivals · 1.8s<br /><small>Late · Final corner · Back 60%</small>",
+   "<em class=\"gold\">Unyielding Tenacity</em> – TS +0.35 · 2.4s<br /><small>Sprint · Late mid-race · Back 60%</small>",
+   "Sprint Straightaways ○"
+  ],
+  "verdictKey": "8184",
+  "rank": 1,
+  "verdict": [
+   "The interesting skill is late surger only.",
+   "Orfevre guts is close."
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+3"
+   ],
+   [
+    "Guts",
+    "+2"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "pink",
+  "iso": "2027-05-08"
+ },
+ {
+  "name": "Sounds of Earth",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "date": "Est. May 22 - Jun 2",
+  "universal": true,
+  "effects": "Friendship 30% · Mood 40% · Training eff. 5% · Race 10% · Fans 20% · Specialty 65 · Hint Lv1 / 20%",
+  "start": "Start: Bond 30",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30173_thumb.webp",
+  "stats": 2,
+  "skills": 4,
+  "longevity": "2.5 scenarios",
+  "unique": "Training eff. +10 with 4+ card types",
+  "keyskills": [
+   "<em class=\"gold\">Beeline Burst</em> – TS +0.35 · 3s<br /><small>Straight</small>",
+   "<em class=\"gold\">Breath of Fresh Air</em> – Rec +5.5%<br /><small>Mid-race · Straight</small>",
+   "Nimble Navigator"
+  ],
+  "verdictKey": "importance-consider",
+  "rank": 3,
+  "verdict": [
+   "Flexible Stamina, Beeline Burst.",
+   "Don’t pull if you have Super Creek MLB. Air Shakur arrives in 6 Months.",
+   "Only consider for new players with no Stamina cards."
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "red",
+  "iso": "2027-05-22"
+ },
+ {
+  "name": "Mejiro Dober",
+  "rarity": "SSR",
+  "type": "Speed",
+  "date": "Est. Jun 8 - 18",
+  "universal": false,
+  "effects": "Friendship 30% · Mood 40% · Training eff. 5% · Race 5% · Fans 15% · Specialty 65 · Hint Lv3 / 40%",
+  "start": "Start: Bond 25 · Spd +25",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30174_thumb.webp",
+  "stats": 2,
+  "skills": 2,
+  "longevity": "Outclassed",
+  "unique": "Pow +2 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Full of Vigor</em> – TS +0.35 · 1.8s<br /><small>Mile · Final corner · Back 50%</small>",
+   "Mile Corners ○"
+  ],
+  "verdictKey": "8184",
+  "rank": 1,
+  "verdict": [
+   "Full of Vigor is good but doesn’t justify a pull.",
+   "2 Power is good on a speed card but sounds like an event card.",
+   "No SP bonus."
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+2"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "blue",
+  "iso": "2027-06-08"
+ },
+ {
+  "name": "Mejiro Ramonu",
+  "rarity": "SSR",
+  "type": "Power",
+  "date": "Est. Jun 8 - 18",
+  "universal": true,
+  "effects": "Friendship 20% · Mood 30% · Training eff. 10% · Specialty 50 · Hint Lv4 / 60%",
+  "start": "Start: Bond 20 · Sta +35",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30175_thumb.webp",
+  "stats": 3,
+  "skills": 3,
+  "longevity": "TBD",
+  "unique": "Pow +1 per Accel skill (max +3)",
+  "keyskills": [
+   "<em class=\"gold\">Chilling Wind</em> – Spd +60 · Pow +60",
+   "Medium Straightaways ○ · Medium Corners ○"
+  ],
+  "verdictKey": "importance-good",
+  "rank": 4,
+  "verdict": [
+   "Strong, near U.A.F rainbow cards, green skills are fantastic stat sticks.",
+   "2SP bonus",
+   "Incompatible with Ramonu wit"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+3"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "orange",
+  "iso": "2027-06-08"
+ },
+ {
+  "name": "Duramente",
+  "rarity": "SSR",
+  "type": "Speed",
+  "date": "Est. Jun 22 - Jul 2",
+  "universal": false,
+  "effects": "Friendship 25% · Mood 20% · Training eff. 15% · Race 5% · Fans 10% · Specialty 120 · Hint Lv2 / 40%",
+  "start": "Start: Bond 35",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30178_thumb.webp",
+  "stats": 4,
+  "skills": 2,
+  "longevity": "2 scenarios",
+  "unique": "Friendship +10 & Mood +15 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Never Give Up</em> – TS +0.25 · 4s",
+   "Medium Straightaways ○ · End Closer Straightaways ○"
+  ],
+  "verdictKey": "8161",
+  "rank": null,
+  "verdict": [
+   "Specialty 120 Speed, 15% TE. Very good.",
+   "BUTT",
+   "No need to pull if you already have a side card with El Condor Pasa. El Condor Pasa might remain godtier for UAF.",
+   "No SP bonus is nono",
+   "6 months before Still in Love",
+   "Can’t use Duramente with it."
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "blue",
+  "iso": "2027-06-22"
+ },
+ {
+  "name": "Satono Diamond",
+  "rarity": "SSR",
+  "type": "Wit",
+  "date": "Est. Jun 22 - Jul 2",
+  "universal": false,
+  "effects": "Friendship 20% · Mood 40% · Training eff. 10% · Race 5% · Fans 10% · Specialty 50 · Hint Lv3 / 50% · Wit recovery 5",
+  "start": "Start: Bond 30 · Spd +20",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30179_thumb.webp",
+  "stats": 3,
+  "skills": 3,
+  "longevity": "≥ 2 scenarios",
+  "unique": "Friendship +10% & SP +1 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Keep Going!</em> – TS +0.45 · Rec -2.0% · 2.4s<br /><small>Late · Mid-race</small>",
+   "<em class=\"gold\">Burning Soul</em> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Medium · Mid-race · Pos 30-80% · Blocked</small>",
+   "Late Surger Corners ○"
+  ],
+  "verdictKey": "81e5",
+  "rank": null,
+  "verdict": [
+   "Low specialty, burning Soul sounds like a good skill but depends on how “blocked” is defined.",
+   "Near U.A.F when Ramonu wit exist.",
+   "Only consider for Late."
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "green",
+  "iso": "2027-06-22"
+ },
+ {
+  "name": "Hokko Tarumae",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "date": "Est. Jul 8 - 18",
+  "universal": true,
+  "effects": "Friendship 20% · Mood 50% · Training eff. 5% · Specialty 35 · Hint Lv3 / 50%",
+  "start": "Start: Bond 25 · Sta +30 · Guts +35",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30182_thumb.webp",
+  "stats": 1,
+  "skills": 2,
+  "longevity": "Outclassed",
+  "unique": "Training eff. +15 on friendship training",
+  "keyskills": [
+   "<em class=\"gold\">Call & Response</em> – TS +0.25 · 2.4s<br /><small>Dirt · Mid-race</small>",
+   "Head-On"
+  ],
+  "verdictKey": "importance-niche",
+  "rank": 2,
+  "verdict": [
+   "Dirt Stamina. Low TE, low specialty. Is it an event card?"
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "red",
+  "iso": "2027-07-08"
+ },
+ {
+  "name": "Sakura Bakushin O",
+  "rarity": "SSR",
+  "type": "Speed",
+  "date": "Est. Jul 22 - Aug 1",
+  "universal": true,
+  "effects": "Friendship 25% · Mood 40% · Training eff. 10% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30 · Pow +30",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30184_thumb.webp",
+  "stats": 4,
+  "skills": 3,
+  "longevity": "DOA",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Rocket Start</em> – Acc +0.40 · 1.5s<br /><small>Sprint</small>",
+   "<em class=\"gold\">Lightning Slash</em> – TS +0.35 · 3s<br /><small>Sprint · Corner</small>",
+   "Sprint Corners ○"
+  ],
+  "verdictKey": "81e5",
+  "rank": null,
+  "verdict": [
+   "Good skills, no skill point bonus.",
+   "Unsure if acceleration at start helps for End closer, Uma stan might do a better work.",
+   "Jungle Pocket is a better stat stick.",
+   "Duramente is a better card.",
+   "Even MLB, hard to put it in a deck."
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+3"
+   ],
+   [
+    "Power",
+    "+1"
+   ]
+  ],
+  "scenario": "Project L'Arc",
+  "scenarioDate": "Est. Apr 6, 2027",
+  "color": "blue",
+  "iso": "2027-07-22"
+ },
+ {
+  "name": "Orfevre",
+  "rarity": "SSR",
+  "type": "Guts",
+  "date": "Est. Aug 8 - 18",
+  "universal": true,
+  "effects": "Friendship 30% · Training eff. 10% · Race 10% · Fans 20% · Specialty 80 · Hint Lv2 / 40%",
+  "start": "Start: Bond 35",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30187_thumb.webp",
+  "stats": 5,
+  "skills": 4,
+  "longevity": "≥ 2 scenarios",
+  "unique": "Stat bonus per matching card type in deck (max +2 per stat, bond 80)",
+  "keyskills": [
+   "<em class=\"gold\">Divine Speed</em> – CS +0.35 · Rec +1.5% · 3s<br /><small>After 50%</small>",
+   "Nimble Navigator"
+  ],
+  "verdictKey": "importance-must",
+  "rank": 5,
+  "verdict": [
+   "Where do I fucking start",
+   "Scenario card, Auto pull.",
+   "Golden skill sounds great, might see use after Scenario?",
+   "U.A.F = Rainbow deck. She will be glued to guts slot.",
+   "Her Unique adds 1 stats per different card type."
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "scenario": "UAF Ready GO!",
+  "scenarioDate": "Est. Aug 8, 2027",
+  "color": "pink",
+  "iso": "2027-08-08"
+ },
+ {
+  "name": "Ryoka Tsurugi",
+  "rarity": "SSR",
+  "type": "Pal",
+  "date": "Est. Aug 8 - 18",
+  "universal": true,
+  "effects": "Mood 50% · Training eff. 10% · Race 10% · Fans 20% · Event recovery 60% · Event eff. 25% · Fail protection 30% · Energy cost -10%",
+  "start": "Start: Bond 25",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30188_thumb.webp",
+  "stats": 5,
+  "skills": 1,
+  "longevity": "1 scenario",
+  "unique": "Pal card · supports appear more (bond 60)",
+  "keyskills": [
+   "<em class=\"gold\">Battle for Initiative</em> – TS +0.35 · 1.8s<br /><small>Late early-race</small>"
+  ],
+  "verdictKey": "importance-must",
+  "rank": 5,
+  "verdict": [
+   "UAF friend card. Scenario banner: must pull."
+  ],
+  "bonus": [],
+  "scenario": "UAF Ready GO!",
+  "scenarioDate": "Est. Aug 8, 2027",
+  "color": "yellow",
+  "iso": "2027-08-08"
+ },
+ {
+  "name": "K.S.Miracle",
+  "rarity": "SSR",
+  "type": "Power",
+  "date": "Est. Aug 22 - Sep 1",
+  "universal": true,
+  "effects": "Friendship 25% · Mood 30% · Training eff. 15% · Race 10% · Fans 15% · Specialty 65 · Hint Lv2 / 40%",
+  "start": "Start: Bond 30",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30195_thumb.webp",
+  "stats": 3,
+  "skills": 1,
+  "longevity": "Outclassed",
+  "unique": "Pow +1 & SP +1 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Turbo Sprint</em> – Acc +0.40 · 3s<br /><small>Sprint · Late-race</small>",
+   "Sprint Straightaways ○"
+  ],
+  "verdictKey": "importance-niche",
+  "rank": 2,
+  "verdict": [
+   "Sprint Power. Better cards exist for 0.4 Accel. (Hishi Amazon)"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "UAF Ready GO!",
+  "scenarioDate": "Est. Aug 8, 2027",
+  "color": "orange",
+  "iso": "2027-08-22"
+ },
+ {
+  "name": "Neo Universe",
+  "rarity": "SSR",
+  "type": "Wit",
+  "date": "Est. Sep 8 - 18",
+  "universal": false,
+  "effects": "Friendship 25% · Mood 50% · Training eff. 10% · Race 5% · Fans 10% · Specialty 50 · Hint Lv3 / 50% · Wit recovery 5",
+  "start": "Start: Bond 30",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30198_thumb.webp",
+  "stats": 4,
+  "skills": 3,
+  "longevity": "≥ 1 scenario",
+  "unique": "Wit +2 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">From the Brink</em> – Acc +0.40 · 1.8s<br /><small>Medium · Early late-race · Back 60%</small>",
+   "Medium Corners ○ · Uma Stan"
+  ],
+  "verdictKey": "8184",
+  "rank": 1,
+  "verdict": [
+   "Ramonu exists, Taishin soon"
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "scenario": "UAF Ready GO!",
+  "scenarioDate": "Est. Aug 8, 2027",
+  "color": "green",
+  "iso": "2027-09-08"
+ },
+ {
+  "name": "Hishi Miracle",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "date": "Est. Sep 22 - Oct 2",
+  "universal": false,
+  "effects": "Friendship 20% · Mood 40% · Race 5% · Fans 15% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30199_thumb.webp",
+  "stats": 2,
+  "skills": 1,
+  "longevity": "Outclassed",
+  "unique": "Friendship +20% at max bond",
+  "keyskills": [
+   "<em class=\"gold\">Sure Shot</em> – TS +0.35 · 2.4s<br /><small>Long · Late mid-race · Back 50%</small>"
+  ],
+  "verdictKey": "8184",
+  "rank": 1,
+  "verdict": [
+   "Stamina with no recovery?"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "UAF Ready GO!",
+  "scenarioDate": "Est. Aug 8, 2027",
+  "color": "red",
+  "iso": "2027-09-22"
+ },
+ {
+  "name": "Narita Taishin",
+  "rarity": "SSR",
+  "type": "Wit",
+  "date": "Est. Sep 22 - Oct 2",
+  "universal": false,
+  "effects": "Friendship 35% · Mood 20% · Training eff. 15% · Race 10% · Fans 15% · Specialty 65 · Hint Lv3 / 50% · Wit recovery 5",
+  "start": "Start: Bond 25 · Spd +30",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30201_thumb.webp",
+  "stats": 4,
+  "skills": 5,
+  "longevity": "4 scenarios",
+  "unique": "Wit +2 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Soaring Stride</em> – TS +0.35 · 2.4s<br /><small>End · Late mid-race · Back 60%</small>",
+   "<em class=\"gold\">Encroaching Shadow</em> – Acc +0.40 · 0.9s<br /><small>End · Last spurt · Straight</small>",
+   "End Closer Straightaways ○"
+  ],
+  "verdictKey": "8168",
+  "rank": null,
+  "verdict": [
+   "Encroashing Shadow. At this point most endcloser either have it but Soaring stride is very good.",
+   "1SP Bonus + 15% TE, good SPE.",
+   "Works insanely well where Final Corner and Final straight overlaps with Reign"
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "UAF Ready GO!",
+  "scenarioDate": "Est. Aug 8, 2027",
+  "color": "green",
+  "iso": "2027-09-22"
+ },
+ {
+  "name": "Vodka",
+  "rarity": "SSR",
+  "type": "Guts",
+  "date": "Est. Sep 22 - Oct 2",
+  "universal": false,
+  "effects": "Friendship 30% · Mood 40% · Race 5% · Fans 15% · Specialty 65 · Hint Lv2 / 30%",
+  "start": "Start: Bond 25",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30202_thumb.webp",
+  "stats": 3,
+  "skills": 4,
+  "longevity": "≥ 1 scenario",
+  "unique": "Spd +1 & Pow +1 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Lightning Surge</em> – Acc +0.40 · 2s<br /><small>Sprint / Mile · Late-race+ · Back 50% · Overtaking</small>",
+   "Nimble Navigator"
+  ],
+  "verdictKey": "importance-niche",
+  "rank": 2,
+  "verdict": [
+   "Sprint/Mile Guts. We’re still in UAF, Lightning Surge can come from Daichi Ruby. Competing with Orfevre Spot.",
+   "No SP bonus but no TE.",
+   "Depends on how guts is at this time. Also right before the fatfuck Scenario."
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "Guts",
+    "+2"
+   ]
+  ],
+  "scenario": "UAF Ready GO!",
+  "scenarioDate": "Est. Aug 8, 2027",
+  "color": "pink",
+  "iso": "2027-09-22"
+ },
+ {
+  "name": "Nishino Flower",
+  "rarity": "SSR",
+  "type": "Power",
+  "date": "Est. Oct 22 - Nov 1",
+  "universal": true,
+  "effects": "Friendship 35% · Training eff. 10% · Race 10% · Fans 20% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35 · Sta +20",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30208_thumb.webp",
+  "stats": 5,
+  "skills": 4,
+  "longevity": "1 scenario",
+  "unique": "Training eff. +1% per 30 total bond (max +20%)",
+  "keyskills": [
+   "<em class=\"gold\">Fluttering Heart</em> – CS +0.35 · 2.4s<br /><small>Sprint / Mile · Early late-race</small>",
+   "<em class=\"gold\">Frontal Attack</em> – TS +0.35 · 2.4s<br /><small>Mid-race · Top 50%</small>"
+  ],
+  "verdictKey": "importance-must",
+  "rank": 5,
+  "verdict": [
+   "Great Food Festival banner. Must pull.",
+   "TE Merchant?",
+   "Depends what the cards gives as Link scenario.",
+   "You get more tomatoes, cabbage and carrots or smh"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ]
+  ],
+  "scenario": "Great Food Festival",
+  "scenarioDate": "Est. Oct 22, 2027",
+  "color": "orange",
+  "iso": "2027-10-22"
+ },
+ {
+  "name": "Yayoi Akikawa",
+  "rarity": "SSR",
+  "type": "Pal",
+  "date": "Est. Oct 22 - Nov 1",
+  "universal": true,
+  "effects": "Mood 20% · Training eff. 10% · Race 5% · Fans 10% · Event recovery 80% · Event eff. 25% · Fail protection 20% · Energy cost -15%",
+  "start": "Start: Bond 25",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30207_thumb.webp",
+  "stats": 5,
+  "skills": 4,
+  "longevity": "1 scenario",
+  "unique": "Pal card · +1 bond for all supports in training",
+  "keyskills": [
+   "<em class=\"gold\">Superstan</em> – TS +0.35 · 3s"
+  ],
+  "verdictKey": "8168",
+  "rank": null,
+  "verdict": [
+   "Great Food Festival friend card. Must pull."
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Great Food Festival",
+  "scenarioDate": "Est. Oct 22, 2027",
+  "color": "yellow",
+  "iso": "2027-10-22"
+ },
+ {
+  "name": "Still in Love",
+  "rarity": "SSR",
+  "type": "Speed",
+  "date": "Est. Dec 8 - 18",
+  "universal": false,
+  "effects": "Friendship 25% · Mood 40% · Training eff. 15% · Race 5% · Fans 10% · Specialty 100 · Hint Lv4 / 60%",
+  "start": "Start: Bond 40 · SP +60",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30215_thumb.webp",
+  "stats": 5,
+  "skills": 5,
+  "longevity": "Open-ended",
+  "unique": "Spd +1 & SP +1 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Pure Instincts</em> – CS +0.35 · 2.4s<br /><small>Late / End · Last 200 m</small>",
+   "<em class=\"gold\">Sharp-Witted Composure</em> – TS +0.25 · Rec +3.5% · 4s<br /><small>Medium · Mid-race</small>",
+   "Nimble Navigator · Medium Corners ○"
+  ],
+  "verdictKey": "8168",
+  "rank": null,
+  "verdict": [
+   "Strong Speed, 15% TE, 100 SPE, Hint Lv4, Late/End golds.",
+   "2 SP, Speed bonus, power bonus.",
+   "Very good hints.",
+   "Should powercreep Jungle Pocket or play alongside it. 3 Speed deck is rare.",
+   "Wouldn’t be surprised if other roles pulls it."
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "scenario": "Great Food Festival",
+  "scenarioDate": "Est. Oct 22, 2027",
+  "color": "blue",
+  "iso": "2027-12-08"
+ },
+ {
+  "name": "Espoir City",
+  "rarity": "SSR",
+  "type": "Power",
+  "date": "Est. Dec 22 - Jan 1",
+  "universal": true,
+  "effects": "Friendship 35% · Mood 50% · Training eff. 10% · Race 5% · Fans 10% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 25 · Sta +20 · Pow +30",
+  "img": "https://uma.guide/img/card/composite/tex_support_card_30222_thumb.webp",
+  "stats": 2,
+  "skills": 2,
+  "longevity": "Open-ended",
+  "unique": "Sta +1 & SP +1 at bond 80",
+  "keyskills": [
+   "<em class=\"gold\">Strong Steps</em> – Spd +80<br /><small>Dirt</small>",
+   "<em class=\"gold\">Embracing Virtue and Vice</em> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Dirt · Mid-race</small>"
+  ],
+  "verdictKey": "importance-niche",
+  "rank": 2,
+  "verdict": [
+   "Dirt Power. Niche. Good green but borrow"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "scenario": "Great Food Festival",
+  "scenarioDate": "Est. Oct 22, 2027",
+  "color": "orange",
+  "iso": "2027-12-22"
+ }
+]
