@@ -2,14 +2,15 @@
  {
   "name": "Grand Live",
   "slug": "grand-live",
+  "gt": 3,
   "start": "2026-07-22",
   "color": "#e05d8f",
-  "live": true,
   "imgSource": "https://gametora.com/images/umamusume/articles/grand_live/header.png"
  },
  {
   "name": "Grand Masters",
   "slug": "grand-masters",
+  "gt": 5,
   "start": "2026-11-26",
   "color": "#a387f0",
   "imgSource": "https://media.gametora.com/umamusume/article/grand_masters/grand_masters_title_illust.png"
@@ -17,6 +18,7 @@
  {
   "name": "Project L'Arc",
   "slug": "project-larc",
+  "gt": 6,
   "start": "2027-04-06",
   "color": "#5aa0ec",
   "imgSource": "https://media.gametora.com/umamusume/article/project_larc/project_larc.png"
@@ -24,6 +26,7 @@
  {
   "name": "UAF Ready GO!",
   "slug": "uaf",
+  "gt": 7,
   "start": "2027-08-08",
   "color": "#55c486",
   "imgSource": "https://media.gametora.com/umamusume/article/uaf/uaf_splash.png"
@@ -31,6 +34,7 @@
  {
   "name": "Great Food Festival",
   "slug": "great-food-festival",
+  "gt": 8,
   "start": "2027-10-22",
   "color": "#ec9a45",
   "imgSource": "https://umamusu.wiki/w/thumb.php?f=Food_Fes_Art.png&width=600"

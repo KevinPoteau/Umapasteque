@@ -30,7 +30,8 @@ def targets():
             if item.get("id") and item.get("imgSource"):
                 yield ROOT / "assets" / folder / f"{item['id']}.webp", item["imgSource"]
     for sc in json.loads((ROOT / "data" / "scenarios.json").read_text(encoding="utf-8")):
-        yield ROOT / "assets" / "scenarios" / f"{sc['slug']}{ext_of(sc['imgSource'])}", sc["imgSource"]
+        if sc.get("imgSource"):
+            yield ROOT / "assets" / "scenarios" / f"{sc['slug']}{ext_of(sc['imgSource'])}", sc["imgSource"]
     for role in ("front", "pace", "late", "end"):
         yield ROOT / "assets" / "icons" / "roles" / f"{role}.webp", f"https://uma.guide/img/banner-reviews/badges/playstyle-{role}.webp"
     yield (ROOT / "assets" / "icons" / "sp.png",

@@ -13,6 +13,8 @@ What it does:
     less than 3 weeks apart (our Uma ids and outfit names are not the game's),
   - fills effects, start, unique, stat bonus and key skills from GameTora
     (scripts/gametora_text.py), in the same wording as the hand-written entries,
+  - adds the scenarios they will run in to data/scenarios.json when missing
+    (GameTora's predicted global start date),
   - appends them with "todo": true and no running style ("roles": {}), so they
     show up in the admin page's "To rate" list and nowhere on the site until a
     running style is added there,
@@ -30,6 +32,7 @@ import argparse
 import colorsys
 import datetime as dt
 import json
+import re
 import sys
 import urllib.request
 from pathlib import Path
@@ -41,7 +44,7 @@ HORIZON_DAYS = 430          # how far ahead to import (about 14 months)
 SAME_WINDOW = 21            # days: same name this close in time = the same entry
 BASE = "https://gametora.com/data"
 UA = {"User-Agent": "Umapasteque importer (weekly; github.com/KevinPoteau/Umapasteque)"}
-FILES = ["support-cards", "character-cards", "characters", "skills", "en/foresight/predicted_releases"]
+FILES = ["support-cards", "character-cards", "characters", "skills", "scenarios", "en/foresight/predicted_releases"]
 
 TYPES = {"speed": "Speed", "stamina": "Stamina", "power": "Power", "guts": "Guts",
          "intelligence": "Wit", "friend": "Pal", "group": "Group"}
@@ -77,6 +80,41 @@ def iso_to_date(s):
 def label(date, estimated):
     text = f"{date:%b} {date.day}"
     return f"Est. {text}" if estimated else text
+
+
+def scenario_image(url_name, offline):
+    """The picture GameTora shows for a scenario (its page's og:image), or "" if not found."""
+    if offline or not url_name:
+        return ""
+    try:
+        req = urllib.request.Request(f"https://gametora.com/umamusume/scenarios/{url_name}", headers=UA)
+        with urllib.request.urlopen(req, timeout=30) as r:
+            html = r.read().decode("utf-8", "replace")
+        m = re.search(r'<meta[^>]+property="og:image"[^>]+content="([^"]+)"', html) \
+            or re.search(r'<meta[^>]+content="([^"]+)"[^>]+property="og:image"', html)
+        return m.group(1).replace("&amp;", "&") if m else ""
+    except Exception:
+        return ""
+
+
+def add_scenarios(src, scenarios, hi, offline):
+    """Append scenarios GameTora expects on the global server before `hi` and missing from ours."""
+    known = {s.get("gt") for s in scenarios} | {s["slug"] for s in scenarios}
+    predicted = src["en/foresight/predicted_releases"].get("scenarios", {})
+    added = []
+    for g in sorted(src["scenarios"], key=lambda g: g.get("order", 0)):
+        if g["id"] in known or g.get("url_name") in known:
+            continue
+        p = predicted.get(str(g["id"]))
+        if not p or not p.get("release_date") or iso_to_date(p["release_date"]) > hi:
+            continue
+        added.append({
+            "name": g.get("name_en") or g.get("name_en_old") or g.get("url_name"),
+            "slug": g.get("url_name") or f"scenario-{g['id']}", "gt": g["id"], "start": p["release_date"],
+            "color": "#" + (g.get("bg_color") or "888888").lower(),
+            "imgSource": scenario_image(g.get("url_name"), offline),
+        })
+    return added
 
 
 def scenario_for(iso, scenarios):
@@ -193,7 +231,12 @@ def main():
     gt_support = {c["support_id"]: c for c in src["support-cards"]}
     gt_uma = {u["card_id"]: u for u in src["character-cards"]}
 
-    scenarios = json.loads((ROOT / "data" / "scenarios.json").read_text(encoding="utf-8"))
+    sc_path = ROOT / "data" / "scenarios.json"
+    scenarios = json.loads(sc_path.read_text(encoding="utf-8"))
+    new_scenarios = add_scenarios(src, scenarios, hi, bool(args.from_dir))
+    if new_scenarios:
+        scenarios += new_scenarios
+        sc_path.write_text(json.dumps(scenarios, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     ignored_path = ROOT / "data" / "ignored.json"
     ignored = json.loads(ignored_path.read_text(encoding="utf-8")) if ignored_path.exists() else {}
     summary, drift = [], []
@@ -272,6 +315,9 @@ def main():
             "Open the admin page → *To rate*, add the running styles each one is good for and rate it; "
             "to stop tracking one, use *Don't track* there.", ""]
     text += summary or ["(nothing new)"]
+    if new_scenarios:
+        text += ["", "**New scenarios** (start = GameTora's estimate; check the name, colour and picture in data/scenarios.json):",
+                 *[f"- **{x['name']}** · est. {x['start']}" + ("" if x["imgSource"] else " · no picture found") for x in new_scenarios]]
     if drift:
         text += ["", "**Confirmed global dates that differ from ours** (not changed, check by hand):", *drift]
     (ROOT / "import-summary.md").write_text("\n".join(text) + "\n", encoding="utf-8")
@@ -279,7 +325,7 @@ def main():
     if filled:
         text_lines = f"\nFilled in effects / unique / key skills of {filled} entr{'y' if filled == 1 else 'ies'} imported earlier."
         (ROOT / "import-summary.md").write_text((ROOT / "import-summary.md").read_text(encoding="utf-8") + text_lines + "\n", encoding="utf-8")
-    print(f"\nnew={n_support + n_uma + filled}")
+    print(f"\nnew={n_support + n_uma + filled + len(new_scenarios)}")
     return 0
 
 

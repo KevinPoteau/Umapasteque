@@ -114,7 +114,7 @@ async function renderList() {
     .filter(it => view.scope === "changed" ? isChanged(kind, it.id) || isDropped(kind, it.id)
       : !isDropped(kind, it.id) && (view.scope === "all" || isTodo(it)))
     .filter(it => !q || `${it.name} ${it.outfit ?? ""} ${it.type ?? ""}`.toLowerCase().includes(q))
-    .sort((a, b) => b.iso.localeCompare(a.iso));
+    .sort((a, b) => a.iso.localeCompare(b.iso) || a.name.localeCompare(b.name));   // soonest first
 
   $("#a-count").textContent = `${rows.length} / ${pool.length}`;
   list.innerHTML = rows.length ? rows.map(it => rowHTML(kind, it)).join("") : `<p class="empty">${
