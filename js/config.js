@@ -20,7 +20,28 @@ export const ROLES = [
   { id: "end",   label: "End Closer",   icon: roleIcon("end") },
 ];
 export const roleById = id => ROLES.find(r => r.id === id);
-export const dataPath = (kind, role) => `data/${kind}/${role}.json`;
+export const dataPath = kind => `data/${kind}.json`;
+
+// ---------- Data: one entry per card / Uma, rated per running style ----------
+//
+// An entry only appears on the running styles listed in its "roles" object,
+// e.g. { "pace": {…}, "late": {…} } → shown on Pace Chaser and Late Surger only.
+// Each role holds that style's rating; its fields override the shared ones.
+export const ROLE_FIELDS = {
+  support: ["rank", "verdict", "stats", "skills", "longevity", "bonus"],
+  uma:     ["rank", "verdict"],
+};
+
+/** The entry as seen on one running style's page, or null if it is not rated there. */
+export function forRole(item, role) {
+  const r = item.roles?.[role];
+  if (!r) return null;
+  const { roles, ...base } = item;
+  return { ...base, ...r };
+}
+
+/** Every entry of this running style's page. */
+export const entriesFor = (items, role) => items.map(it => forRole(it, role)).filter(Boolean);
 
 // ---------- Filters ----------
 
@@ -39,16 +60,7 @@ export const VERDICTS = {
   1: { label: "Very bad",           color: "--v1", icon: "assets/icons/verdicts/very-bad.webp" },
 };
 
-// Entries whose Notion verdict used a custom emoji keep its id in "verdictKey".
-// Map those ids to a rank here (5 … 1); unmapped ones show as "Unrated".
-export const CUSTOM_VERDICTS = {
-  "8168": 5,   // Highly recommended — e.g. Narita Taishin Wit, Still in Love SPD
-  "8161": 4,   // Recommended        — e.g. Hishi Amazon PWR, Duramente SPD, Satono Diamond Wit (Late)
-  "81e5": 2,   // Bad                — e.g. Vivlos Guts
-  "81fc": 3,   // Sidegrade          — e.g. Daitaku Helios (Uma), Vivlos SPD, Zenno Rob Roy (Uma)
-};
-
-export const rankOf = item => item.rank ?? CUSTOM_VERDICTS[item.verdictKey] ?? null;
+export const rankOf = item => item?.rank ?? null;
 
 // ---------- Images ----------
 

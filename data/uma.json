@@ -1,0 +1,4656 @@
+[
+ {
+  "id": 106710,
+  "name": "Satono Diamond",
+  "outfit": "New Year",
+  "style": "late",
+  "color": "green",
+  "date": "Oct 20 - Nov 1",
+  "iso": "2026-10-20",
+  "scenario": "Grand Live",
+  "runner": 4,
+  "inherit": 3,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Rain Cloud Bolt</b> – TS +0.35 · Rec +3.5% · 5s<br /><small>At 40-50% · Pos 40-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · Rec +0.5% · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Claw Forward</span></b> – Acc +0.40 · Rec -2.0% · 1.5s<br /><small>Long · Late · Last spurt · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Realm of No-Self</span></b><br />Acc +0.40 · Rec -0.5% · 1.5s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Stamina Siphon</span></b> – Rec +3.5% · debuffs rivals<br /><small>Long · Mid-race · Pos 5+</small>",
+    "sub": [
+     "<b><span class=\"evo\">Dawn Always Comes!</span></b><br />Rivals Rec -1.0% · Rec +3.5% · TS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "Late Surger Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+15%"
+   ],
+   [
+    "Stamina",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1067_106710.webp",
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Claw Forward, Stamina siphon. Good skills. Locked to Long."
+    ]
+   }
+  }
+ },
+ {
+  "id": 106810,
+  "name": "Kitasan Black",
+  "outfit": "New Year",
+  "style": "front",
+  "color": "red",
+  "date": "Oct 20 - Nov 1",
+  "iso": "2026-10-20",
+  "scenario": "Grand Live",
+  "runner": 4,
+  "inherit": 4,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Bring on the Banquet!</b> – CS +0.35 · Acc +0.10 · 4s<br /><small>Late-race+ · 600+ m left · Corner · Pos 1-3</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.15 · Acc +0.05 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Escape Artist</span></b> – TS +0.35 · 3s<br /><small>Front · Mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Leap Towards The Future!</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front</small>",
+    "sub": [
+     "<b><span class=\"evo\">Preamble of Victory!</span></b><br />Acc +0.50 · 1.2s"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Front A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1068_106810.webp",
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Very good growth, stupid unique and accel on top of it."
+    ]
+   }
+  }
+ },
+ {
+  "id": 109901,
+  "name": "Hokko Tarumae",
+  "outfit": "Starry Lightship",
+  "style": "pace",
+  "color": "red",
+  "date": "Oct 24 - Nov 6",
+  "iso": "2026-10-24",
+  "scenario": "Grand Live",
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>Shine On, Tomakomai! ☆</b> – Acc +0.40 · 4s<br /><small>Dirt · Last spurt · Pos 30-40%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – Acc +0.07 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Calm and Collected</span></b> – Rec +5.5%<br /><small>Pace · Late early-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Feast of Tomakomai</span></b><br />Rec +5.5% · TS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Trending in the Charts!</span></b> – TS +0.35 · 2.4s<br /><small>Dirt · Mid-race · Blocked</small>",
+    "sub": [
+     "<b><span class=\"evo\">Tourism Ambassador's Prestige</span></b><br />TS +0.45 · 2.4s",
+     "<b><span class=\"evo\">Give Your All, Star of Tomakomai!</span></b><br />TS +0.35 · 2.4s<br />Then Acc +0.20 · 0.9s <small>(Last spurt)</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Dirt A",
+   "Mile A",
+   "Med A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1099_109901.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Dirt pace, oshi pick."
+    ]
+   }
+  }
+ },
+ {
+  "id": 106501,
+  "name": "Daitaku Helios",
+  "outfit": "Fun☆Fun☆Party Night",
+  "style": "pace",
+  "color": "yellow",
+  "date": "Est. Nov 6 - 16",
+  "iso": "2026-11-06",
+  "scenario": "Grand Live",
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>Hands in the Air Like Ya Don't Care!</b> – TS +0.25 · 6s<br /><small>Sprint / Mile · Late mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Changing Gears</span></b> – TS +0.35 · 2.4s<br /><small>Mile · Mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Hella Vibes Up!</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Reckless Charge</span></b> – TS +0.35 · 2.4s<br /><small>Mile · Late mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Just Do It!</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "Mile Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint B",
+   "Mile A",
+   "Front A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+15%"
+   ],
+   [
+    "Power",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1065_106501.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good growth, good skills but difficult to recommend."
+    ]
+   }
+  }
+ },
+ {
+  "id": 102713,
+  "name": "Mejiro Ryan",
+  "outfit": "Valentine",
+  "style": "pace",
+  "color": "orange",
+  "date": "Est. Nov 12 - 26",
+  "iso": "2026-11-12",
+  "scenario": "Grand Live",
+  "runner": 2,
+  "inherit": 3,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>A Warm Cup for You</b> – TS +0.35 · Acc +0.10 · 4s<br /><small>Medium · Mid-race · After 60% · Downhill · Pos 2+ · Near the lead</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · Acc +0.05 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Determined Descent</span></b> – Acc +0.30 · 3s<br /><small>Pace · Downhill</small>",
+    "sub": [
+     "<b><span class=\"evo\">Granting Dream-fulfilling Determination</span></b><br />Acc +0.40 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Master of Declines</span></b> – TS +0.35 · 2.4s<br /><small>Downhill</small>",
+    "sub": [
+     "<b><span class=\"evo\">Serving Victory Supreme</span></b><br />TS +0.45 · 2.4s",
+     "<b><span class=\"evo\">Behold My Courageous Advance</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "Medium Corners ○ · Pace Chaser Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+20%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1027_102713.webp",
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Downhill merchant."
+    ]
+   }
+  }
+ },
+ {
+  "id": 103113,
+  "name": "Ines Fujin",
+  "outfit": "Valentine",
+  "style": "front",
+  "color": "pink",
+  "date": "Est. Nov 12 - 26",
+  "iso": "2026-11-12",
+  "scenario": "Grand Live",
+  "runner": 2,
+  "inherit": 2,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Fresh☆Parlor</b> – TS +0.25 · Rec +3.5% · 6s<br /><small>Early mid-race · Top 30%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · Rec +0.5% · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Concentration</span></b> – Faster start<br /><small>Race start</small>",
+    "sub": [
+     "<b><span class=\"evo\">Perfect Order!</span></b><br />Faster start · Bonus effect"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Crescent Gale</span></b> – TS +0.35 · 3s<br /><small>Front · Corner</small>",
+    "sub": [
+     "<b><span class=\"evo\">Brilliant Serving</span></b><br />TS +0.35 · Acc +0.20 · 3s"
+    ]
+   },
+   {
+    "html": "Front Runner Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Front A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+14%"
+   ],
+   [
+    "Guts",
+    "+8%"
+   ],
+   [
+    "Wit",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1031_103113.webp",
+  "roles": {
+   "front": {
+    "rank": 2,
+    "verdict": [
+     "Early-race unique. Niche."
+    ]
+   }
+  }
+ },
+ {
+  "id": 104301,
+  "name": "Shinko Windy",
+  "outfit": "Wicked Punk",
+  "style": "pace",
+  "color": "purple",
+  "date": "Est. Nov 22 - Dec 3",
+  "iso": "2026-11-22",
+  "scenario": "Grand Live",
+  "runner": 2,
+  "inherit": 2,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Ding Dong, Boo!</b> – TS +0.25 · Acc +0.40 · 5s<br /><small>Dirt · After a duel</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · Acc +0.20 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Full Speed!</span></b> – TS +0.35 · 3s<br /><small>Dirt · Last spurt · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Full Speed Ahead, Nanoda!</span></b><br />TS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Maestro of the Mud</span></b> – Spd +60 · Pow +60<br /><small>Heavy / Bad · Dirt</small>",
+    "sub": [
+     "<b><span class=\"evo\">Masterful Prankster</span></b><br />Spd +80 · Pow +80",
+     "<b><span class=\"evo\">Mud Demon Lord</span></b><br />Spd +40 · Pow +40 · Bonus effect (Soft/Heavy) / Spd +40 · Pow +40 (Firm/Good)<br /><small>Dirt</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Dirt A",
+   "Mile A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1043_104301.webp",
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Dirt backup, RNG trigger.",
+     "Good growth."
+    ]
+   }
+  }
+ },
+ {
+  "id": 105701,
+  "name": "Mr. C.B.",
+  "outfit": "Clear Bliss",
+  "style": "end",
+  "color": "purple",
+  "date": "Est. Nov 26 - Dec 20",
+  "iso": "2026-11-26",
+  "scenario": "Grand Masters",
+  "runner": 5,
+  "inherit": 1,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>Lyrical Journey</b> – TS +0.25 · 6s<br /><small>Medium / Long · Late mid-race · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Beautiful Form</span></b> – CS +0.35 · 3s<br /><small>Medium / Long · Corner · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Soaring Steps</span></b><br />CS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Encroaching Shadow</span></b> – Acc +0.40 · 0.9s<br /><small>End · Last spurt · Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">Dancing Flourish</span></b><br /><small>Remove Straight condition for Medium</small>"
+    ]
+   },
+   {
+    "html": "Uma Stan"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile B",
+   "Med A",
+   "Long A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1057_105701.webp",
+  "roles": {
+   "end": {
+    "rank": 5,
+    "verdict": [
+     "Encroaching Shadow, Fantastic evolve, Fantastic signature and Current Speed skill, good growth.",
+     "Goldship but much better."
+    ]
+   }
+  }
+ },
+ {
+  "id": 106601,
+  "name": "Twin Turbo",
+  "outfit": "Turbo Engine! Full Throttle!",
+  "style": "front",
+  "color": "blue",
+  "date": "Est. Nov 26 - Dec 20",
+  "iso": "2026-11-26",
+  "scenario": "Grand Masters",
+  "runner": 1,
+  "inherit": 1,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Turbo BLAST!</b> – TS +0.15 · 13s<br /><small>At 34-36% · Pos 1 · Clear lead</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.04 · 10.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Givin' It 1000%</span></b> – TS +0.45 · Rec -4.0% · 2.7s<br /><small>Front · Early mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Ten Million Percent Output!!</span></b><br />TS +0.55 · Rec -4.0% · 2.7s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front</small>",
+    "sub": [
+     "<b><span class=\"evo\">Keep Up with Turbo!</span></b><br />Acc +0.50 · 1.2s"
+    ]
+   },
+   {
+    "html": "Front Runner Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Front A",
+   "1★"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+30%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1066_106601.webp",
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Runaway bunny."
+    ]
+   }
+  }
+ },
+ {
+  "id": 108501,
+  "name": "Daiichi Ruby",
+  "outfit": "Opulent Gem",
+  "style": "late",
+  "color": "red",
+  "date": "Est. Dec 10 - 20",
+  "iso": "2026-12-10",
+  "scenario": "Grand Masters",
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Ever Supreme</b> – CS +0.25 · debuffs rivals · 5s<br /><small>At 66-68% · Pos 60-90% · Not rushed</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.05 · Rivals CS -0.03 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Vying for the Throne</span></b> – TS +0.35 · debuffs rivals · 1.8s<br /><small>Late · Final corner · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Be Majestic</span></b><br />TS +0.45 · Rivals CS -0.15 · 1.8s",
+     "<b><span class=\"evo\">My Clan's Code of Honor</span></b><br />CS +0.55 · 1.8s (Not rushed) / CS +0.45 · 1.8s<br /><small>Sprint · Final corner · Back 60%</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Lightning Surge</span></b> – Acc +0.40 · 2s<br /><small>Sprint / Mile · Late-race+ · Back 50% · Overtaking</small>",
+    "sub": [
+     "<b><span class=\"evo\">Pursuing Greater Brilliance</span></b><br />Acc +0.40 · Rivals CS -0.15 · 2s"
+    ]
+   },
+   {
+    "html": "Late Surger Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Mile A",
+   "Late A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+20%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1085_108501.webp",
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Rare strong Late/End for Sprint/Mile.",
+     "Debuff others current speed while being a good runner.",
+     "Good power growth."
+    ]
+   },
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "Rare strong Late/End for Sprint/Mile.",
+     "Debuff others current speed while being a good runner.",
+     "Good power growth."
+    ]
+   }
+  }
+ },
+ {
+  "id": 108301,
+  "name": "Symboli Kris S",
+  "outfit": "Onyx Soldier",
+  "style": "late",
+  "color": "brown",
+  "date": "Est. Dec 18 - 27",
+  "iso": "2026-12-18",
+  "scenario": "Grand Masters",
+  "runner": 4,
+  "inherit": 2,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Mission: Triumph</b> – TS +0.35 · 6s<br /><small>After 40% · Straight · Downhill · Pos 40-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Claw Forward</span></b> – Acc +0.40 · Rec -2.0% · 1.5s<br /><small>Long · Late · Last spurt · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Ironclad</span></b><br />Acc +0.40 · Rec +1.5% · 1.5s (Nakayama) / Acc +0.40 · Rec -2.0% · 1.5s<br /><small>Long · Last spurt · Back 60% · Late</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Sure Shot</span></b> – TS +0.35 · 2.4s<br /><small>Long · Late mid-race · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Revolutionary Presence</span></b><br />TS +0.35 · Rec +1.5% · 2.4s<br /><small>Medium / Long · Late mid-race · Back 50%</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+15%"
+   ],
+   [
+    "Power",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1083_108301.webp",
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Nakayama Terrorist",
+     "Great evolved skills for Nakayama and good on its own."
+    ]
+   }
+  }
+ },
+ {
+  "id": 106920,
+  "name": "Sakura Chiyono O",
+  "outfit": "Ballroom",
+  "style": "pace",
+  "color": "pink",
+  "date": "Est. Dec 23 - Jan 4",
+  "iso": "2026-12-23",
+  "scenario": "Grand Masters",
+  "runner": 3,
+  "inherit": 5,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Watch! Me! BLOOM!</b> – Acc +0.40 · 5s<br /><small>650 m left · Pos 30-40%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – Acc +0.20 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Beeline Burst</span></b> – TS +0.35 · 3s<br /><small>Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">Trail of Blooming Sakura</span></b><br />TS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Burning Soul</span></b> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Medium · Mid-race · Pos 30-80% · Blocked</small>",
+    "sub": [
+     "<b><span class=\"evo\">I Don't Want to Lose!</span></b><br />TS +0.35 · Rec +5.5% · 2.4s"
+    ]
+   },
+   {
+    "html": "Pace Chaser Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+8%"
+   ],
+   [
+    "Power",
+    "+14%"
+   ],
+   [
+    "Wit",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1069_106920.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good accel, hard to proc, Mejiro Dober pace.",
+     "Very Good growth."
+    ]
+   }
+  }
+ },
+ {
+  "id": 107120,
+  "name": "Mejiro Ardan",
+  "outfit": "Ballroom",
+  "style": "pace",
+  "color": "green",
+  "date": "Est. Dec 23 - Jan 4",
+  "iso": "2026-12-23",
+  "scenario": "Grand Masters",
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Danser le Présent</b> – TS +0.35 · CS +0.15 · Rec -3.0% · 5s<br /><small>Late-race+ · Final straight · Pos 20-40% · Chased closely</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · CS +0.04 · Rec -3.0% · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Indomitable</span></b> – Rec +5.5%<br /><small>Mid-race · After passing</small>",
+    "sub": [
+     "<b><span class=\"evo\">Beautiful Phosphorescence</span></b><br />Rec +5.5% · TS +0.15 · 3s<br /><small>Pace · Late mid-race</small>",
+     "<b><span class=\"evo\">Mystic Flame</span></b><br />Rec +3.5% · TS +0.25 · 3s<br /><small>Pace · Early mid-race</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Flash Forward</span></b> – TS +0.35 · 3s<br /><small>Medium · Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">Ephemeral Afterglow</span></b><br />TS +0.55 · Rec -2.0% · 3s<br /><small>Pace · Medium · Final straight · Late-race+</small>"
+    ]
+   },
+   {
+    "html": "Head-On · Medium Straightaways ○ · Pace Chaser Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+8%"
+   ],
+   [
+    "Stamina",
+    "+8%"
+   ],
+   [
+    "Wit",
+    "+14%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1071_107120.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Strong Medium Pace, conditional unique.",
+     "Stamina meme?"
+    ]
+   }
+  }
+ },
+ {
+  "id": 107601,
+  "name": "Sakura Laurel",
+  "outfit": "Saisir le rêve",
+  "style": "late",
+  "color": "red",
+  "date": "Est. Jan 2 - 11",
+  "iso": "2027-01-02",
+  "scenario": "Grand Masters",
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>World in Bloom</b> – TS +0.25 · Rec +7.5% · 6s<br /><small>Long · At 50-51% · Pos 30-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · Rec +3.5% · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Keep Going!</span></b> – TS +0.45 · Rec -2.0% · 2.4s<br /><small>Late · Mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Advancing Sakura Front!</span></b><br />TS +0.45 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">In One Fell Swoop</span></b> – CS +0.35 · 3s<br /><small>Long · Late · Early late-race · Last spurt</small>",
+    "sub": [
+     "<b><span class=\"evo\">Let's Bloom in the Moment!</span></b><br />CS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "Late Surger Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+20%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1076_107601.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Long Late with TS + recovery unique. Solid, not essential."
+    ]
+   }
+  }
+ },
+ {
+  "id": 110501,
+  "name": "Neo Universe",
+  "outfit": "Universe-Naut",
+  "style": "late",
+  "color": "green",
+  "date": "Est. Jan 8 - 17",
+  "iso": "2027-01-08",
+  "scenario": "Grand Masters",
+  "runner": 5,
+  "inherit": 3,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Ad Astra</b> – TS +0.45 · 5s<br /><small>Medium · At 50-55% · Pos 40-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Come What May</span></b> – TS +0.35 · 3s<br /><small>Medium · Late-race+ · Final straight · Pos 20-60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Beyond the Milky Way With You</span></b><br />TS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Luminescence</span></b> – CS +0.35 · 2.4s<br /><small>Medium</small>",
+    "sub": [
+     "<b><span class=\"evo\">Crossing the Sea of Stars</span></b><br />CS +0.35 · 4s"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+30%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1105_110501.webp",
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Medium terrorist."
+    ]
+   },
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Medium terrorist."
+    ]
+   }
+  }
+ },
+ {
+  "id": 104150,
+  "name": "Sakura Bakushin O",
+  "outfit": "Red Hot☆Leader",
+  "style": "front",
+  "color": "blue",
+  "date": "Est. Jan 14 - 26",
+  "iso": "2027-01-14",
+  "scenario": "Grand Masters",
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Cherry☆Scramble</b> – Acc +0.10 · 1s<br /><small>400 m left · Pos 1-3</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – Acc +0.05 · 0.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">In High Spirits</span></b> – TS +0.35 · 2.4s<br /><small>Sprint · Late mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Red-hot Rush! Bakushin Road!</span></b><br />TS +0.45 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Shocking Flash</span></b> – TS +0.35 · 3s<br /><small>Sprint · Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">Bakushin! Bakushin! Bakushiiin!</span></b><br />CS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "Sprint Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Front A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+14%"
+   ],
+   [
+    "Power",
+    "+8%"
+   ],
+   [
+    "Wit",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1041_104150.webp",
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Good growth but wtf is that Unique"
+    ]
+   }
+  }
+ },
+ {
+  "id": 106250,
+  "name": "Matikanetannhauser",
+  "outfit": "Blue Turbulence",
+  "style": "late",
+  "color": "orange",
+  "date": "Est. Jan 14 - 26",
+  "iso": "2027-01-14",
+  "scenario": "Grand Masters",
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Tumbly Power Drive!</b> – TS +0.25 · Acc +0.10 · 2s<br /><small>Medium · After 50% · Corner · Pos 40-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · Acc +0.05 · 1.2s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Lie in Wait</span></b> – Rec +5.5%<br /><small>Late · Late early-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Positive Smile</span></b><br />Rec +7.5%<br /><small>Late · Early mid-race</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">From the Brink</span></b> – Acc +0.40 · 1.8s<br /><small>Medium · Early late-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Big Comeback</span></b><br />Acc +0.40 · 4s",
+     "<b><span class=\"evo\">Oopsy-Doopsy</span></b><br />Acc +0.40 · 1.8s<br />Then TS +0.15 · 3s <small>(≤300 m left)</small>"
+    ]
+   },
+   {
+    "html": "Medium Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+20%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1062_106250.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Mambo",
+     "Good growth, okay skills."
+    ]
+   }
+  }
+ },
+ {
+  "id": 110601,
+  "name": "Hishi Miracle",
+  "outfit": "Miracle Maker",
+  "style": "late",
+  "color": "red",
+  "date": "Est. Jan 23 - Feb 1",
+  "iso": "2027-01-23",
+  "scenario": "Grand Masters",
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Bang! Miracle Shot ☆</b> – TS +0.45 · 6s<br /><small>Long · Pos 40-70%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Relax</span></b> – Rec +5.5%<br /><small>Late · Mid-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Keep Calm, Don't Overthink</span></b><br />Rec +7.5%",
+     "<b><span class=\"evo\">I'll Do What I Can~!</span></b><br />Rec +1.5% · TS +0.35 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">A Journey in a Step</span></b> – TS +0.25 · 4s<br /><small>Late · Mid-race · Pos 40-90%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Collecting Little Joys</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "Late Surger Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+7%"
+   ],
+   [
+    "Stamina",
+    "+8%"
+   ],
+   [
+    "Power",
+    "+7%"
+   ],
+   [
+    "Guts",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1106_110601.webp",
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Recovery that can whiff, growth all over the place."
+    ]
+   }
+  }
+ },
+ {
+  "id": 108401,
+  "name": "Tanino Gimlet",
+  "outfit": "Mantle of Keravnos",
+  "style": "end",
+  "color": "orange",
+  "date": "Est. Jan 29 - Feb 8",
+  "iso": "2027-01-29",
+  "scenario": "Grand Masters",
+  "runner": 3,
+  "inherit": 4,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Sublimated Thunder</b> – CS +0.35~0.55 · 5s<br /><small>Medium+ · Final straight</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.15 · 3s<br /><small>Final straight</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Sturm und Drang</span></b> – TS +0.35 · 3s<br /><small>End · Early last spurt · Last spurt</small>",
+    "sub": [
+     "<b><span class=\"evo\">Storm-Calling God of Destruction</span></b><br />TS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Part the Clouds</span></b> – Spd +60 · Pow +60<br /><small>Mile / Medium</small>",
+    "sub": [
+     "<b><span class=\"evo\">Imbibe in Ecstasy, World!</span></b><br />Spd +80 · Pow +80"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Late A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+30%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1084_108401.webp",
+  "roles": {
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Medium End, huge CS on the final straight. Works well on Mile too, good golden green but requires Acceleration skills. (Amazing with Narita Taishin Wit)"
+    ]
+   }
+  }
+ },
+ {
+  "id": 101226,
+  "name": "Hishi Amazon",
+  "outfit": "Wedding",
+  "style": "end",
+  "color": "blue",
+  "date": "Est. Feb 5 - 16",
+  "iso": "2027-02-05",
+  "scenario": "Grand Masters",
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>First Bite of the Feast!</b> – TS +0.35 · Acc +0.10 · 4s<br /><small>Mid-race · After 60% · Downhill · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · Acc +0.05 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Daring Strike</span></b> – TS +0.25 · 4s<br /><small>End · Mid-race · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Passionate Engagement!</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Razor-Sharp Steps</span></b> – Acc +0.40 · 1.2s<br /><small>End · Early late-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Fiery Cake-Cutting!</span></b><br />Acc +0.40 · 4s<br /><small>End · Medium · Early late-race</small>",
+     "<b><span class=\"evo\">Strike of an Oath</span></b><br />Acc +0.40 · CS +0.25 · 1.2s<br /><small>Medium · End · Early late-race</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1012_101226.webp",
+  "roles": {
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Very good golden skills but unique requires downhill.",
+     "Razor-Sharp evolved sounds great."
+    ]
+   }
+  }
+ },
+ {
+  "id": 105126,
+  "name": "Nishino Flower",
+  "outfit": "Wedding",
+  "style": "pace",
+  "color": "green",
+  "date": "Est. Feb 5 - 16",
+  "iso": "2027-02-05",
+  "scenario": "Grand Masters",
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Flowering Dreams</b> – TS +0.35 · CS +0.15 · 5s<br /><small>200 m left · Pos 2+ · Top 70%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · CS +0.04 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Crescent Gust</span></b> – TS +0.35 · 3s<br /><small>Mile · Corner</small>",
+    "sub": [
+     "<b><span class=\"evo\">Flower Girl's Blessing</span></b><br />TS +0.30 (+0.15) · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Master of Declines</span></b> – TS +0.35 · 2.4s<br /><small>Downhill</small>",
+    "sub": [
+     "<b><span class=\"evo\">Veil-Swaying Spring Storm</span></b><br />TS +0.35 · Acc +0.20 · 2.4s<br /><small>Sprint / Mile · Downhill</small>",
+     "<b><span class=\"evo\">Blooming in Sickness and in Health</span></b><br />TS +0.30 (+0.15) · 2.4s<br /><small>Mile · Downhill</small>"
+    ]
+   },
+   {
+    "html": "Mile Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Mile A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+20%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1051_105126.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Sprint/Mile Pace closer.",
+     "Weird evolved. OG seems better."
+    ]
+   }
+  }
+ },
+ {
+  "id": 101023,
+  "name": "Taiki Shuttle",
+  "outfit": "Bubblegum☆Memories",
+  "style": "pace",
+  "color": "orange",
+  "date": "Est. Feb 13 - 23",
+  "iso": "2027-02-13",
+  "scenario": "Grand Masters",
+  "runner": 5,
+  "inherit": 2,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Joyful Voyage!</b> – TS +0.35 · CS +0.15 · 5s<br /><small>200 m left · Pos 2+ · Top 40% · Near the lead</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · CS +0.04 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Mile Maven</span></b> – TS +0.35 · 3s<br /><small>Mile · Late early-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Adventure Leader</span></b><br />TS +0.45 · 3s<br /><small>Mile · Late early-race · After 5s · Top 50%</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Neck and Neck</span></b> – Acc +0.40 · 1.8s<br /><small>Pace · Early late-race · Top 50%</small>"
+   },
+   {
+    "html": "Head-On · Mile Corners ○ · Pace Chaser Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Mile A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+30%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1010_101023.webp",
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Rerun of a very strong runner. Strong unique, strong skills.",
+     "Neck and Neck has a garbage evolve."
+    ]
+   }
+  }
+ },
+ {
+  "id": 105501,
+  "name": "Marvelous Sunday",
+  "outfit": "★Super∞Marvel∞Tastic☆",
+  "style": "late",
+  "color": "orange",
+  "date": "Est. Feb 20 - Mar 2",
+  "iso": "2027-02-20",
+  "scenario": "Grand Masters",
+  "runner": 2,
+  "inherit": 2,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Magical☆Marvelous★World</b> – TS +0.40 · 5s<br /><small>At 40-50% · Pos 50-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.20 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Elated</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Exciting☆Marvelous Zone</span></b><br />TS +0.45 · 2.4s",
+     "<b><span class=\"evo\">Marvelous Momentum☆</span></b><br />TS +0.35 · 4s<br /><small>Late · Mid-race · Back 50%</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">No Stopping Me!</span></b> – Acc +0.40 · 3s<br /><small>Behind a rival · Last spurt</small>",
+    "sub": [
+     "<b><span class=\"evo\">Marvelous World Plan☆</span></b><br />Acc +0.40 · Lane change + · CS +0.15 · 3s (600+ m left) / Acc +0.40 · Lane change + · 3s<br /><small>HP ≥1% · Close behind rival · Last spurt</small>"
+    ]
+   },
+   {
+    "html": "Nimble Navigator"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+15%"
+   ],
+   [
+    "Wit",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1055_105501.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "NSM in kit. Good growth, nothing exceptional."
+    ]
+   }
+  }
+ },
+ {
+  "id": 104823,
+  "name": "Tosen Jordan",
+  "outfit": "Summer Trip",
+  "style": "late",
+  "color": "orange",
+  "date": "Est. Feb 27 - Mar 10",
+  "iso": "2027-02-27",
+  "scenario": "Grand Masters",
+  "runner": 2,
+  "inherit": 2,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Us Girlies Keep Winnin'! ♪</b> – TS +0.30 · 6s<br /><small>At 40-50% · Pos 40-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.10 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">From the Brink</span></b> – Acc +0.40 · 1.8s<br /><small>Medium · Early late-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Taking Every Chance!</span></b><br />Acc +0.40 · TS +0.25 · 1.8s (Tokyo) / Acc +0.40 · 1.8s<br /><small>Medium · Final corner · Back 60%</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Dauntless</span></b> – TS +0.35 · Acc +0.10 · 2.4s<br /><small>Late · After 50% · Pos 30-80%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Can't Top Me!</span></b><br />TS +0.35 · Acc +0.20 · 2.4s (Medium · Tokyo) / TS +0.35 · 2.4s<br /><small>Final corner · Top 80% · Back 70% · Late</small>",
+     "<b><span class=\"evo\">Simply the Best!</span></b><br />CS +0.55 · 2.4s (Tokyo) / CS +0.45 · 2.4s<br /><small>Medium · Top 80% · Back 70% · Early late-race · Late</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+8%"
+   ],
+   [
+    "Stamina",
+    "+8%"
+   ],
+   [
+    "Power",
+    "+14%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1048_104823.webp",
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Oshi pull, nothing fantastic."
+    ]
+   }
+  }
+ },
+ {
+  "id": 105323,
+  "name": "Bamboo Memory",
+  "outfit": "Summer Trip",
+  "style": "late",
+  "color": "blue",
+  "date": "Est. Feb 27 - Mar 10",
+  "iso": "2027-02-27",
+  "scenario": "Grand Masters",
+  "runner": 4,
+  "inherit": 3,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Scorching Summer Tech!</b> – TS +0.45 · 5s<br /><small>Sprint · 200 m left · Pos 20-50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">On Your Left!</span></b> – Acc +0.40 · 1.8s<br /><small>Late · Early late-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Hot-blooded Riding!</span></b><br />Acc +0.40 · 1.8s<br />Then TS +0.15 · 3s <small>(200 m left)</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Turbo Sprint</span></b> – Acc +0.40 · 3s<br /><small>Sprint · Late-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Special Move! Explosive Sprint!</span></b><br />Acc +0.40 · 3s<br />Then TS +0.15 · 3s <small>(200 m left)</small>"
+    ]
+   },
+   {
+    "html": "Sprint Corners ○ · Nimble Navigator"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Mile A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+14%"
+   ],
+   [
+    "Power",
+    "+8%"
+   ],
+   [
+    "Guts",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1053_105323.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Lots of accels.",
+     "Jesus that’s a lot of accels",
+     "Very good growth, sprint focused."
+    ]
+   }
+  }
+ },
+ {
+  "id": 110401,
+  "name": "Katsuragi Ace",
+  "outfit": "Dragon Rising",
+  "style": "front",
+  "color": "blue",
+  "date": "Est. Mar 7 - 18",
+  "iso": "2027-03-07",
+  "scenario": "Grand Masters",
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Sunrise Banner—Katsuragi Ace!</b> – TS +0.25 · Rec +3.5% · 6s<br /><small>Medium · Corner · Pos 1</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · Rec +0.5% · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front</small>",
+    "sub": [
+     "<b><span class=\"evo\">Beat You to It!</span></b><br />Acc +0.50 · 1.2s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Can't Even Catch My Shadow</span></b> – TS +0.45 · 2.4s<br /><small>Front · Final straight · Pos 1 · Chased closely</small>",
+    "sub": [
+     "<b><span class=\"evo\">Solitary Getaway</span></b><br />TS +0.55 · 2.4s (Medium · Tokyo) / TS +0.45 · 2.4s<br /><small>Final straight · Pos 1 · Front</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Front A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1104_110401.webp",
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Recovery, accel, good growth.",
+     "Sounds good?"
+    ]
+   }
+  }
+ },
+ {
+  "id": 107001,
+  "name": "Sirius Symboli",
+  "outfit": "Féroce",
+  "style": "pace",
+  "color": "green",
+  "date": "Est. Mar 15 - 25",
+  "iso": "2027-03-15",
+  "scenario": "Grand Masters",
+  "runner": 4,
+  "inherit": 5,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Seirios</b> – Acc +0.50 · 4s<br /><small>800 m left · Pos 30-60%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – Acc +0.30 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Come What May</span></b> – TS +0.35 · 3s<br /><small>Medium · Late-race+ · Final straight · Pos 20-60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Unwavering Aster</span></b><br />TS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Killer Tunes</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Brightest Star's Arabesque</span></b><br />TS +0.45 · 2.4s",
+     "<b><span class=\"evo\">Reminiscent Träumerei</span></b><br />TS +0.15 · Rec +5.5% · 2.4s<br /><small>Medium · Early mid-race · Top 50%</small>"
+    ]
+   },
+   {
+    "html": "Nimble Navigator · Medium Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+20%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1070_107001.webp",
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Huge accel unique for Medium Pace.",
+     "Has access to Nimble. Okay growth.",
+     "Unique might be fenneky with popularity."
+    ]
+   }
+  }
+ },
+ {
+  "id": 100230,
+  "name": "Silence Suzuka",
+  "outfit": "Emerald Tidings",
+  "style": "front",
+  "color": "blue",
+  "date": "Est. Mar 21 - Apr 4",
+  "iso": "2027-03-21",
+  "scenario": "Grand Masters",
+  "runner": 4,
+  "inherit": 4,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Ahead of the Horizon</b> – CS +0.45 · 5s<br /><small>At 66-68% · Corner · Pos 1</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.25 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Escape Artist</span></b> – TS +0.35 · 3s<br /><small>Front · Mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Lapis Lazuli Escape</span></b><br />TS +0.45 · 3s",
+     "<b><span class=\"evo\">Crossing the Ocean</span></b><br />TS +0.45 · 4s<br /><small>Front · Late mid-race · Pos 1 · 2200 m</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Before Anyone!</span></b> – Acc +0.40 · 1.5s<br /><small>Medium</small>",
+    "sub": [
+     "<b><span class=\"evo\">Sky-Striding Ráfaga</span></b><br />Acc +0.50 · 1.5s"
+    ]
+   },
+   {
+    "html": "Front Runner Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Front A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+15%"
+   ],
+   [
+    "Stamina",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1002_100230.webp",
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Before anyone seems strong, and she has grounwork. Powerful unique. Okay growth."
+    ]
+   }
+  }
+ },
+ {
+  "id": 103230,
+  "name": "Agnes Tachyon",
+  "outfit": "Lunatic Lab",
+  "style": "pace",
+  "color": "green",
+  "date": "Est. Mar 21 - Apr 4",
+  "iso": "2027-03-21",
+  "scenario": "Grand Masters",
+  "runner": 4,
+  "inherit": 2,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Summer Halation</b> – TS +0.45 · Acc +0.05 · 4s<br /><small>After 50% · Corner · Pos 20-50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · Acc +0.03 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Singularity</span></b> – Spd +80<br /><small>Medium · Pace</small>",
+    "sub": [
+     "<b><span class=\"evo\">Laplace's Demon</span></b><br />Spd +100 (Wit ≥1200) / Spd +80<br /><small>Spd ≥1200 · Medium · Pace</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Unstoppable</span></b> – TS +0.35 · 2.4s<br /><small>Pace · Mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Dazzling Luxon</span></b><br />TS +0.40 · 2.4s"
+    ]
+   },
+   {
+    "html": "Head-On"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+8%"
+   ],
+   [
+    "Power",
+    "+8%"
+   ],
+   [
+    "Wit",
+    "+14%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1032_103230.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Medium Pace, TS + accel unique.",
+     "Good skills, Head-On.",
+     "Very good growth.",
+     "But Halloween Tachyon arrives."
+    ]
+   }
+  }
+ },
+ {
+  "id": 107701,
+  "name": "Narita Top Road",
+  "outfit": "The Proud Road",
+  "style": "pace",
+  "color": "blue",
+  "date": "Est. Apr 6 - 24",
+  "iso": "2027-04-06",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Road to Glory</b> – TS +0.55 · 5s<br /><small>Long · 400 m left</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 3s<br /><small>400 m left</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Firm Course Menace</span></b> – Pow +60 · Spd +60<br /><small>Firm</small>",
+    "sub": [
+     "<b><span class=\"evo\">Turf Protagonist</span></b><br />Pow +80 · Spd +80 (Firm) / Pow +40 · Spd +40<br /><small>Turf</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Headliner</span></b> – TS +0.35 · 2.4s<br /><small>Long · Late mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">The Right Path</span></b><br />TS +0.35 · 2.4s<br />Then Acc +0.20 · 0.9s <small>(Last spurt)</small>"
+    ]
+   },
+   {
+    "html": "Long Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+20%"
+   ],
+   [
+    "Stamina",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1077_107701.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Long Pace, big TS in the last 400 m.",
+     "Okay growth, evolved sounds good."
+    ]
+   }
+  }
+ },
+ {
+  "id": 100702,
+  "name": "Gold Ship",
+  "outfit": "La mode 564",
+  "style": "end",
+  "color": "red",
+  "date": "Est. Apr 13 - 24",
+  "iso": "2027-04-13",
+  "scenario": "Project L'Arc",
+  "runner": 4,
+  "inherit": 3,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Vive la GOLD</b> – TS +0.45 · 5s<br /><small>Medium / Long · Final corner · Back 50% · Overtaking</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Encroaching Shadow</span></b> – Acc +0.40 · 0.9s<br /><small>End · Last spurt · Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">Flood of \"Je t'aime\"</span></b><br />Acc +0.40 · 0.9s<br />Then TS +0.15 · 3s <small>(Final straight)</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Bad Track Demon</span></b> – Pow +60 · Spd +60<br /><small>Soft / Heavy / Bad</small>",
+    "sub": [
+     "<b><span class=\"evo\">Golden Ship of the Rough Seas</span></b><br />Pow +80 · Spd +80"
+    ]
+   },
+   {
+    "html": "Medium Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+8%"
+   ],
+   [
+    "Stamina",
+    "+14%"
+   ],
+   [
+    "Power",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1007_100702.webp",
+  "roles": {
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "Encroaching shadow, great green.",
+     "Unique has a lot of conditions, sounds great when final corner is right before spurt."
+    ]
+   }
+  }
+ },
+ {
+  "id": 106702,
+  "name": "Satono Diamond",
+  "outfit": "Chevalier Bleu",
+  "style": "late",
+  "color": "red",
+  "date": "Est. Apr 21 - 30",
+  "iso": "2027-04-21",
+  "scenario": "Project L'Arc",
+  "runner": 2,
+  "inherit": 2,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>Ponte de Diamant</b> – TS +0.35 · 5s<br /><small>Medium · Late mid-race · Pos 40-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">From the Brink</span></b> – Acc +0.40 · 1.8s<br /><small>Medium · Early late-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Azure Revolution</span></b><br />Acc +0.40 · 4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Refraction Arc</span></b> – TS +0.35 · 3s<br /><small>Medium · Corner</small>",
+    "sub": [
+     "<b><span class=\"evo\">Danse de L'Epée</span></b><br />TS +0.45 · 4s (Great mood · Longchamp) / TS +0.45 · 3s<br /><small>Corner · Medium</small>"
+    ]
+   },
+   {
+    "html": "Medium Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+8%"
+   ],
+   [
+    "Stamina",
+    "+14%"
+   ],
+   [
+    "Guts",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1067_106702.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Project L'Arc. Medium/Long Late.",
+     "From the brink can whiff, NY alter is better."
+    ]
+   }
+  }
+ },
+ {
+  "id": 103640,
+  "name": "Air Shakur",
+  "outfit": "Belphegor's Prime",
+  "style": "late",
+  "color": "red",
+  "date": "Est. Apr 28 - May 8",
+  "iso": "2027-04-28",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>...found you.</b> – TS +0.45 · 5s<br /><small>Straight / Final corner · Late-race+ · Overtaking</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Stamina Siphon</span></b> – Rec +3.5% · debuffs rivals<br /><small>Long · Mid-race · Pos 5+</small>",
+    "sub": [
+     "<b><span class=\"evo\">Gluttony's Grip</span></b><br />Rivals Rec -1.0% · Rec +5.5%<br /><small>Long · Mid-race</small>",
+     "<b><span class=\"evo\">Noise Cancellation</span></b><br />Rivals Rec -1.0% · CS +0.35 · 3s<br /><small>Long · Mid-race · After passing · Back 50% · Top 80%</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Innate Experience</span></b> – TS +0.35 · 3s<br /><small>Long · Corner · Final corner</small>",
+    "sub": [
+     "<b><span class=\"evo\">Torment</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "Late Surger Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Late A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+14%"
+   ],
+   [
+    "Power",
+    "+8%"
+   ],
+   [
+    "Wit",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1036_103640.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Medium/Long Late, overtake unique.",
+     "Okay runner, specialised in long, there’s better choices."
+    ]
+   },
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Medium/Long Late, overtake unique.",
+     "Okay runner, specialised in long, there’s better choices."
+    ]
+   }
+  }
+ },
+ {
+  "id": 108340,
+  "name": "Symboli Kris S",
+  "outfit": "Jetblack Automaton",
+  "style": "late",
+  "color": "blue",
+  "date": "Est. Apr 28 - May 8",
+  "iso": "2027-04-28",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Immortal Work</b> – TS +0.55 · 5s<br /><small>Medium · Final straight</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3s<br /><small>Final straight</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Burning Soul</span></b> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Medium · Mid-race · Pos 30-80% · Blocked</small>",
+    "sub": [
+     "<b><span class=\"evo\">Burn Down</span></b><br />TS +0.30 (+0.15) · Rec +3.5% · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">On Your Left!</span></b> – Acc +0.40 · 1.8s<br /><small>Late · Early late-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Service: Transit</span></b><br />Acc +0.40 · 4s<br /><small>Medium · Late · Early late-race · Back 60%</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+15%"
+   ],
+   [
+    "Power",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1083_108340.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Native OYL, good skills, good growth, alter for Medium."
+    ]
+   }
+  }
+ },
+ {
+  "id": 109301,
+  "name": "K.S.Miracle",
+  "outfit": "Prism",
+  "style": "pace",
+  "color": "blue",
+  "date": "Est. Apr 28 - May 8",
+  "iso": "2027-04-28",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 4,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>Blue Ray of Happiness</b> – CS +0.35 · 5s<br /><small>Sprint / Mile · Early late-race · Pos 20-50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Speed Star</span></b> – TS +0.35 · 1.8s<br /><small>Pace · Final corner · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">K.Speed</span></b><br />TS +0.35 · CS +0.15 · 1.8s (Sprint) / TS +0.35 · 1.8s<br /><small>Final corner · Top 50% · Pace</small>",
+     "<b><span class=\"evo\">Shooting Star's Trail</span></b><br />TS +0.35 · 4s<br /><small>Mile · Pace · Final corner · Top 50%</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Neck and Neck</span></b> – Acc +0.40 · 1.8s<br /><small>Pace · Early late-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Spark of Life</span></b><br />Acc +0.40 · 1.8s<br />Then TS +0.15 · 3s <small>(200 m left)</small>"
+    ]
+   },
+   {
+    "html": "Head-On · Pace Chaser Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+15%"
+   ],
+   [
+    "Guts",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1093_109301.webp",
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "NaN in kit, good evolve, good unique. Should be very dominant?"
+    ]
+   }
+  }
+ },
+ {
+  "id": 100343,
+  "name": "Tokai Teio",
+  "outfit": "Dream Butterfly of Purple Clouds",
+  "style": "pace",
+  "color": "blue",
+  "date": "Est. May 8 - 18",
+  "iso": "2027-05-08",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>Merrymaking Song and Dance</b> – TS +0.35 · CS +0.15 · 5s<br /><small>Straight / Final corner · Late-race+</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · CS +0.04 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Neck and Neck</span></b> – Acc +0.40 · 1.8s<br /><small>Pace · Early late-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Gifted Grace</span></b><br />Acc +0.50 · 1.8s (Sta ≥1000 · 2400-2500 m) / Acc +0.40 · 1.8s<br /><small>Early late-race · Top 50% · Pace</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Calm and Collected</span></b> – Rec +5.5%<br /><small>Pace · Late early-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Playful Revelry</span></b><br />Rec +3.5% · TS +0.25 · 3s<br /><small>Pace · Top 50% · Late mid-race</small>",
+     "<b><span class=\"evo\">Easy, Peasy, Lemon Squeezy</span></b><br />TS +0.45 · Rec -1.0% · 3s<br /><small>Pace · Early mid-race · Top 50%</small>"
+    ]
+   },
+   {
+    "html": "Head-On · Pace Chaser Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1003_100343.webp",
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Medium/Long Pace, NaN in kit, strong recovery."
+    ]
+   }
+  }
+ },
+ {
+  "id": 103943,
+  "name": "Kawakami Princess",
+  "outfit": "Suikan Beauty",
+  "style": "late",
+  "color": "pink",
+  "date": "Est. May 8 - 18",
+  "iso": "2027-05-08",
+  "scenario": "Project L'Arc",
+  "runner": 2,
+  "inherit": 2,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Invigorating Strength</b> – TS +0.35 · 5s<br /><small>Slope / Downhill</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Top Gear</span></b> – TS +0.45 · 2.4s<br /><small>Late · Final straight · Pos 2+ · Near the lead</small>",
+    "sub": [
+     "<b><span class=\"evo\">Top Princess!</span></b><br />TS +0.55 · 2.4s",
+     "<b><span class=\"evo\">The Bestest Princess</span></b><br />CS +0.55 · 2.4s (Kyoto) / CS +0.35 · 2.4s<br /><small>Medium · Final straight · Late</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Master of Declines</span></b> – TS +0.35 · 2.4s<br /><small>Downhill</small>",
+    "sub": [
+     "<b><span class=\"evo\">Fiery Princess☆Sudden Descent!!</span></b><br />TS +0.35 · Acc +0.20 · 2.4s<br /><small>Mile / Medium · Downhill</small>"
+    ]
+   },
+   {
+    "html": "Medium Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+8%"
+   ],
+   [
+    "Power",
+    "+8%"
+   ],
+   [
+    "Guts",
+    "+14%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1039_103943.webp",
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Slope-dependent unique. Niche."
+    ]
+   }
+  }
+ },
+ {
+  "id": 108601,
+  "name": "Mejiro Ramonu",
+  "outfit": "Onyx Line",
+  "style": "pace",
+  "color": "blue",
+  "date": "Est. May 8 - 18",
+  "iso": "2027-05-08",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Melt in Love's Embrace</b> – TS +0.35 · 5s<br /><small>1000 m left · Pos 20-50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Pure Perfection</span></b> – CS +0.35 · 3s<br /><small>Mile / Medium · Corner · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Pure Love</span></b><br />CS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Superb Gait</span></b> – TS +0.35 · 2.4s<br /><small>Mile / Medium · Mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Enchanting Smile Beyond Reach</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "Nimble Navigator · Head-On"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+15%"
+   ],
+   [
+    "Wit",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1086_108601.webp",
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Good growth, accels in kit, Current Speed in skill.",
+     "Sounds good."
+    ]
+   }
+  }
+ },
+ {
+  "id": 110701,
+  "name": "Tap Dance City",
+  "outfit": "GLITTER!",
+  "style": "front",
+  "color": "blue",
+  "date": "Est. May 22 - Jun 2",
+  "iso": "2027-05-22",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Billions of Stars</b> – TS +0.25 · 5s<br /><small>Late-race+ · Final straight · Pos 1</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Escape Artist</span></b> – TS +0.35 · 3s<br /><small>Front · Mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Breakaway Star</span></b><br />TS +0.45 · 3s<br /><small>Front · Mid-race · Pos 1</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Tail Nine</span></b> – TS +0.35 · 3s",
+    "sub": [
+     "<b><span class=\"evo\">Smooth Sailing!</span></b><br />TS +0.45 · 3s<br /><small>3+ skills used · Pos 1</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Front A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1107_110701.webp",
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Good growth, tail nine, good midgame, can be runaway but sounds weaker than Summer Suzuka."
+    ]
+   }
+  }
+ },
+ {
+  "id": 106446,
+  "name": "Mejiro Palmer",
+  "outfit": "Warm-Hearted Reindeer",
+  "style": "front",
+  "color": "red",
+  "date": "Est. Jun 8 - 18",
+  "iso": "2027-06-08",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Jingle All the Way</b> – TS +0.25 · Acc +0.10 · 7s<br /><small>After 40% · Straight · Pos 1</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · 4.2s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Blast Forward</span></b> – TS +0.35 · 3s<br /><small>Long · Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">North Wind Kick</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Send It! ☆</span></b> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Long · Mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Merry☆Christmas↑Party</span></b><br />TS +0.45 · Rec +5.5% · 2.4s (Great mood) / TS +0.45 · Rec +3.5% · 2.4s<br /><small>Long · After Great Escape · Mid-race · Nakayama</small>"
+    ]
+   },
+   {
+    "html": "Long Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Front A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Stamina",
+    "+20%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1064_106446.webp",
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Meh growth.",
+     "Lots of midgame, just another runaway for long."
+    ]
+   }
+  }
+ },
+ {
+  "id": 107446,
+  "name": "Mejiro Bright",
+  "outfit": "Starry Snow Lolita",
+  "style": "late",
+  "color": "red",
+  "date": "Est. Jun 8 - 18",
+  "iso": "2027-06-08",
+  "scenario": "Project L'Arc",
+  "runner": 2,
+  "inherit": 3,
+  "evolved": 2,
+  "keyskills": [
+   {
+    "html": "<b>Illuminate You</b> – Rec +7.5%<br /><small>Mid-race · Pos 40-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – Rec +3.5%"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">A Journey in a Step</span></b> – TS +0.25 · 4s<br /><small>Late · Mid-race · Pos 40-90%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Heavenly Road of the Holy Night</span></b><br />TS +0.25 · 5s (Sta ≥1200) / TS +0.25 · 4s<br /><small>Mid-race · Late</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Overwhelming Pressure</span></b> – TS +0.35 · Acc +0.10 · 3s<br /><small>Long · Late-race · After passing</small>",
+    "sub": [
+     "<b><span class=\"evo\">Snowflake Pursuit</span></b><br />CS +0.35 · 5s (Sta ≥1200) / CS +0.35 · 4s<br /><small>After passing · Long · Late-race</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Late A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+20%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1074_107446.webp",
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Big recovery unique. Long utility.",
+     "Stamina horse, nothing crazy"
+    ]
+   }
+  }
+ },
+ {
+  "id": 108801,
+  "name": "Satono Crown",
+  "outfit": "Emerald Journey",
+  "style": "late",
+  "color": "orange",
+  "date": "Est. Jun 8 - 18",
+  "iso": "2027-06-08",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Reversal Illusion</b> – TS +0.45 · 5s<br /><small>Medium · Last 400 m</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Fast & Furious</span></b> – TS +0.35 · 2.4s<br /><small>Late · Mid-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Ambitious Card</span></b><br />TS +0.45 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">From the Brink</span></b> – Acc +0.40 · 1.8s<br /><small>Medium · Early late-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Million Card</span></b><br />Acc +0.50 · Rec -2.0% · 1.8s (2200-2400 m) / Acc +0.40 · 1.8s<br /><small>Medium · Early late-race · Back 60%</small>"
+    ]
+   },
+   {
+    "html": "Medium Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+15%"
+   ],
+   [
+    "Guts",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1088_108801.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Medium Late, strong late unique."
+    ]
+   }
+  }
+ },
+ {
+  "id": 106802,
+  "name": "Kitasan Black",
+  "outfit": "Final Bloom",
+  "style": "front",
+  "color": "pink",
+  "date": "Est. Jun 22 - Jul 2",
+  "iso": "2027-06-22",
+  "scenario": "Project L'Arc",
+  "runner": 5,
+  "inherit": 1,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Becoming Everyone's Joy!</b> – TS +0.35 · 3s<br /><small>After passing / Blocked · Early-race-Mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 1.8s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Finishing Touch</span></b> – CS +0.35 · 3s<br /><small>Long · Front · Early late-race · Last spurt</small>",
+    "sub": [
+     "<b><span class=\"evo\">Unleash the Dragon</span></b><br />CS +0.35 · 3s<br />Then CS +0.15 · 3s <small>(Final straight)</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">One Sky, One Goal</span></b> – Acc +0.40 · 0.9s<br /><small>Long · Front · Last spurt · Straight · Pos 1-3</small>",
+    "sub": [
+     "<b><span class=\"evo\">Thousand Mile Cheer!</span></b><br />Acc +0.40 · 0.9s<br />Then CS +0.15 · 3s <small>(Final straight)</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Front A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Guts",
+    "+20%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1068_106802.webp",
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Again Kitasan???",
+     "Skills sounds insane.",
+     "Weak growth."
+    ]
+   }
+  }
+ },
+ {
+  "id": 108901,
+  "name": "Cheval Grand",
+  "outfit": "Grand Itinéraire",
+  "style": "pace",
+  "color": "red",
+  "date": "Est. Jun 22 - Jul 2",
+  "iso": "2027-06-22",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Celeste Oath</b> – TS +0.35 · Rec +3.5% · 5s<br /><small>At 45-55% · Pos 20-50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · Rec +0.5% · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Solid Strike</span></b> – TS +0.25 · Acc +0.30 · 3s<br /><small>Medium · Pace · Late mid-race · Near the lead</small>",
+    "sub": [
+     "<b><span class=\"evo\">Grand Expedition</span></b><br />TS +0.35 · Acc +0.30 · 3s (2400 m) / TS +0.25 · Acc +0.30 · 3s<br /><small>Medium · Top 50% · Late mid-race · Pace</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">In Body and Mind</span></b> – TS +0.35 · 2.4s<br /><small>Early last spurt · Last spurt</small>",
+    "sub": [
+     "<b><span class=\"evo\">Full-Power Pitch</span></b><br />TS +0.45 · 2.4s"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1089_108901.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Medium/Long Pace, sounds like a gamble horse trying to carry over.",
+     "Horrible growth?"
+    ]
+   }
+  }
+ },
+ {
+  "id": 106010,
+  "name": "Nice Nature",
+  "outfit": "New Year",
+  "style": "late",
+  "color": "blue",
+  "date": "Est. Jul 8 - 18",
+  "iso": "2027-07-08",
+  "scenario": "Project L'Arc",
+  "runner": 4,
+  "inherit": 4,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>Springy Festivities</b> – CS +0.45 · 4s<br /><small>Medium · Late-race+ · Final corner · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.25 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Perfect Spot!</span></b> – TS +0.35 · 3s<br /><small>Behind a rival</small>",
+    "sub": [
+     "<b><span class=\"evo\">Tasty, Isn't It?</span></b><br />TS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">On Your Left!</span></b> – Acc +0.40 · 1.8s<br /><small>Late · Early late-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Year-End Cleaning Pro</span></b><br />Acc +0.40 · 4s<br /><small>Medium · Late · Early late-race · Back 60%</small>",
+     "<b><span class=\"evo\">Pump-Up Pro</span></b><br />Acc +0.20 · CS +0.25 · 1.8s<br /><small>Medium · Late · Early late-race · Back 60%</small>"
+    ]
+   },
+   {
+    "html": "Late Surger Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+14%"
+   ],
+   [
+    "Power",
+    "+8%"
+   ],
+   [
+    "Wit",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1060_106010.webp",
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Medium Late, CS on the final corner.",
+     "Good growth, sounds strong?"
+    ]
+   }
+  }
+ },
+ {
+  "id": 109101,
+  "name": "Vivlos",
+  "outfit": "Voyage Étincelant",
+  "style": "late",
+  "color": "blue",
+  "date": "Est. Jul 8 - 18",
+  "iso": "2027-07-08",
+  "scenario": "Project L'Arc",
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Deluxe☆Fountain</b> – TS +0.45 · 5s<br /><small>Last 300 m</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Master of Declines</span></b> – TS +0.35 · 2.4s<br /><small>Downhill</small>",
+    "sub": [
+     "<b><span class=\"evo\">Heavenly Little Sister</span></b><br />TS +0.35 · Acc +0.20 · 2.4s<br /><small>Mile / Medium · Downhill</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Dauntless</span></b> – TS +0.35 · Acc +0.10 · 2.4s<br /><small>Late · After 50% · Pos 30-80%</small>",
+    "sub": [
+     "<b><span class=\"evo\">High Society Mentality!</span></b><br />TS +0.35 · Acc +0.10 · 4s"
+    ]
+   },
+   {
+    "html": "Nimble Navigator"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1091_109101.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Good growth, very weird evolved."
+    ]
+   }
+  }
+ },
+ {
+  "id": 102513,
+  "name": "Manhattan Cafe",
+  "outfit": "Willow-Green Evening",
+  "style": "end",
+  "color": "red",
+  "date": "Est. Jul 22 - Aug 1",
+  "iso": "2027-07-22",
+  "scenario": "Project L'Arc",
+  "runner": 5,
+  "inherit": 3,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Purrfect Hospitality</b> – CS +0.35 · 5s<br /><small>Long · Late-race+ · Final corner</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Encroaching Shadow</span></b> – Acc +0.40 · 0.9s<br /><small>End · Last spurt · Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">Imminent Twilight</span></b><br />Acc +0.40 · 0.9s<br />Then TS +0.15 · 3s <small>(Final straight)</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Clean Sweep</span></b> – CS +0.35 · 3s<br /><small>Long · End · Early late-race · Last spurt</small>",
+    "sub": [
+     "<b><span class=\"evo\">World of Marvels</span></b><br />CS +0.45 · 3s"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Long A",
+   "Late A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+20%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1025_102513.webp",
+  "roles": {
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "Long End, CS on the final corner.",
+     "Sounds great, ES, straight dominant, long dominant"
+    ]
+   }
+  }
+ },
+ {
+  "id": 102913,
+  "name": "Yukino Bijin",
+  "outfit": "Snowy Girl of Tea and Cake",
+  "style": "pace",
+  "color": "pink",
+  "date": "Est. Jul 22 - Aug 1",
+  "iso": "2027-07-22",
+  "scenario": "Project L'Arc",
+  "runner": 2,
+  "inherit": 2,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>Have Your Fill!</b> – TS +0.45 · 4s<br /><small>Mile · At 45-55% · Pos 20-50% · Overtaking</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Unstoppable</span></b> – TS +0.35 · 2.4s<br /><small>Pace · Mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">One More Push!</span></b><br />TS +0.45 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Corner Connoisseur</span></b> – Acc +0.40 · 3s<br /><small>Corner</small>",
+    "sub": [
+     "<b><span class=\"evo\">Snow Fluttering Through the Corner</span></b><br />Acc +0.40 · TS +0.15 · 3s",
+     "<b><span class=\"evo\">Winter's Beauty Under the Waning Moon</span></b><br />Acc +0.40 · 4s (Turf) / Acc +0.40 · 3s<br /><small>Mile · Final corner</small>"
+    ]
+   },
+   {
+    "html": "Mile Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Dirt A",
+   "Mile A",
+   "Med A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+8%"
+   ],
+   [
+    "Power",
+    "+8%"
+   ],
+   [
+    "Guts",
+    "+14%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1029_102913.webp",
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Mile Pace, Turf or Dirt. Flexible.",
+     "Bad skills, saved by evolved but barely."
+    ]
+   }
+  }
+ },
+ {
+  "id": 105401,
+  "name": "Biko Pegasus",
+  "outfit": "Gale Pegasus Type Zero",
+  "style": "late",
+  "color": "blue",
+  "date": "Est. Jul 22 - Aug 1",
+  "iso": "2027-07-22",
+  "scenario": "Project L'Arc",
+  "runner": 1,
+  "inherit": 3,
+  "evolved": 2,
+  "keyskills": [
+   {
+    "html": "<b>Blasting Gale Pegasus Dash!</b> – TS +0.45 · 4s<br /><small>Last 150 m · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Fast & Furious</span></b> – TS +0.35 · 2.4s<br /><small>Late · Mid-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Emergency! Hero on the Scene!</span></b><br />TS +0.45 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Blinding Flash</span></b> – TS +0.35 · Acc +0.10 · 3s<br /><small>Sprint · Late-race · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Special Move: Lightning Kiiick!</span></b><br />TS +0.35 · Acc +0.20 · 3s"
+    ]
+   },
+   {
+    "html": "Late Surger Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1054_105401.webp",
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Sprint Late, weird skills"
+    ]
+   }
+  }
+ },
+ {
+  "id": 106301,
+  "name": "Ikuno Dictus",
+  "outfit": "Mantle of Steel",
+  "style": "pace",
+  "color": "pink",
+  "date": "Est. Aug 8 - 18",
+  "iso": "2027-08-08",
+  "scenario": "UAF Ready GO!",
+  "runner": 1,
+  "inherit": 1,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Forged From a Hundred Trials</b> – TS +0.25 · 6s<br /><small>Last spurt · Not rushed</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Race Planner</span></b> – Rec +5.5%<br /><small>Pace · Mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Thorough Planning</span></b><br />Rec +7.5%<br /><small>Pace / Late · At 50-51%</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Keep Going!</span></b> – TS +0.45 · Rec -2.0% · 2.4s<br /><small>Late · Mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Red-Hot Spark</span></b><br />TS +0.55 · Rec -2.0% · 2.4s<br /><small>Pace / Late · At 50-51%</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+20%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1063_106301.webp",
+  "roles": {
+   "pace": {
+    "rank": 1,
+    "verdict": [
+     "Bad growth I think there’s much better to play."
+    ]
+   }
+  }
+ },
+ {
+  "id": 108001,
+  "name": "Transcend",
+  "outfit": "ZOKU-ZOKU GIZMO",
+  "style": "front",
+  "color": "blue",
+  "date": "Est. Aug 8 - 18",
+  "iso": "2027-08-08",
+  "scenario": "UAF Ready GO!",
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Info: Acquired</b> – CS +0.25 · TS +0.15 · 5s",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.05 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Solid Preparation</span></b> – Acc +0.40 · 3s",
+    "sub": [
+     "<b><span class=\"evo\">Information Broker</span></b><br />Acc +0.50 · 3s (Mile) / Acc +0.40 · 3s (Sprint)"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Pioneer of the Sands</span></b> – TS +0.35 · 3s<br /><small>Dirt · Late early-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Seeking the Unknown</span></b><br />TS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "Mile Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Dirt A",
+   "Mile A",
+   "Med A",
+   "Front A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1080_108001.webp",
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Sprint/Mile Dirt…",
+     "Very good growth, sounds good."
+    ]
+   }
+  }
+ },
+ {
+  "id": 110801,
+  "name": "Duramente",
+  "outfit": "Red in Black",
+  "style": "end",
+  "color": "blue",
+  "date": "Est. Aug 8 - 18",
+  "iso": "2027-08-08",
+  "scenario": "UAF Ready GO!",
+  "runner": 5,
+  "inherit": 2,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Scarlet Ascension of the Rakshasa</b> – TS +0.35 · 5s<br /><small>At 50-51% · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Never Give Up</span></b> – TS +0.25 · 4s",
+    "sub": [
+     "<b><span class=\"evo\">Constant Refinement</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Reign</span></b> – Acc +0.40 · 0.9s<br /><small>Medium · End · Late-race+ · Corner · Final corner · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Blazing Brilliance</span></b><br />Acc +0.40 · 0.9s<br /><small>No Final corner needed at Nakayama</small><br />Then TS +0.15 · 3s <small>(Final straight)</small>"
+    ]
+   },
+   {
+    "html": "End Closer Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Late A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+20%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1108_110801.webp",
+  "roles": {
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "Reign is ES on corner, fantastic.",
+     "Signature and NGU sounds like a good midgame skills with carry over potential.",
+     "Very good growth.",
+     "Can’t pull if planning to pull on her Speed card card"
+    ]
+   }
+  }
+ },
+ {
+  "id": 106520,
+  "name": "Daitaku Helios",
+  "outfit": "Joyful Jamboree!",
+  "style": "front",
+  "color": "orange",
+  "date": "Est. Aug 22 - Sep 1",
+  "iso": "2027-08-22",
+  "scenario": "UAF Ready GO!",
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>It's Mashup Time!</b> – TS +0.45 · Rec -3.0% · 5s<br /><small>Mile · Early-race · Top 50% · Blocked</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · Rec -3.0% · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front</small>",
+    "sub": [
+     "<b><span class=\"evo\">Ahead of the Trend☆</span></b><br />Acc +0.50 · 1.2s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Mile Maven</span></b> – TS +0.35 · 3s<br /><small>Mile · Late early-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Emergence of the Mile☆God</span></b><br />TS +0.45 · 3s"
+    ]
+   },
+   {
+    "html": "Front Runner Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Front A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+8%"
+   ],
+   [
+    "Power",
+    "+14%"
+   ],
+   [
+    "Guts",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1065_106520.webp",
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Mile Front, Good skills, good growth."
+    ]
+   }
+  }
+ },
+ {
+  "id": 108520,
+  "name": "Daiichi Ruby",
+  "outfit": "Flowing Blue",
+  "style": "late",
+  "color": "orange",
+  "date": "Est. Aug 22 - Sep 1",
+  "iso": "2027-08-22",
+  "scenario": "UAF Ready GO!",
+  "runner": 4,
+  "inherit": 3,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Sapphire Flame</b> – TS +0.35 · 6s<br /><small>Mile · At 45-50% · Pos 40-90%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Lightning Surge</span></b> – Acc +0.40 · 2s<br /><small>Sprint / Mile · Late-race+ · Back 50% · Overtaking</small>",
+    "sub": [
+     "<b><span class=\"evo\">Thunderclap</span></b><br />Acc +0.40 · 2s<br /><small>Late · Mile · Early late-race, or Overtaking before 75%</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Ardour</span></b> – TS +0.35 · 2.4s<br /><small>Mile · Late mid-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Until Only Ashes Remain</span></b><br />TS +0.35 · 4s"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Mile A",
+   "Late A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+6%"
+   ],
+   [
+    "Power",
+    "+12%"
+   ],
+   [
+    "Wit",
+    "+12%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1085_108520.webp",
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Very good growth, unique last very long.",
+     "Sprint/Mile terrorist?"
+    ]
+   },
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "Very good growth, unique last very long.",
+     "Sprint/Mile terrorist?"
+    ]
+   }
+  }
+ },
+ {
+  "id": 110901,
+  "name": "Rhein Kraft",
+  "outfit": "Dream Successor",
+  "style": "pace",
+  "color": "orange",
+  "date": "Est. Aug 22 - Sep 1",
+  "iso": "2027-08-22",
+  "scenario": "UAF Ready GO!",
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Connecting Dreams With the Future</b> – TS +0.25 · 6s<br /><small>Sprint / Mile · Before 50% · Corner · Pos 3+ · Top 70%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Reckless Charge</span></b> – TS +0.35 · 2.4s<br /><small>Mile · Late mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Pioneering the Future!</span></b><br />TS +0.45 · 2.4s",
+     "<b><span class=\"evo\">Watch Me Do It!</span></b><br />TS +0.60 · 2.4s (Tokyo) / TS +0.35 · 2.4s<br /><small>Mile · Final corner · Top 50% · Pace</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Neck and Neck</span></b> – Acc +0.40 · 1.8s<br /><small>Pace · Early late-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">There's No Way I'll Lose!</span></b><br />Acc +0.40 · 1.8s<br />Then TS +0.15 · 3s <small>(200 m left)</small>"
+    ]
+   },
+   {
+    "html": "Head-On · Pace Chaser Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Mile A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+15%"
+   ],
+   [
+    "Guts",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1109_110901.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Neck and Neck in kit."
+    ]
+   }
+  }
+ },
+ {
+  "id": 103502,
+  "name": "Winning Ticket",
+  "outfit": "Glorious Coat",
+  "style": "late",
+  "color": "blue",
+  "date": "Est. Sep 8 - 18",
+  "iso": "2027-09-08",
+  "scenario": "UAF Ready GO!",
+  "runner": 2,
+  "inherit": 2,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>GO! Full-send</b> – TS +0.35 · 6s<br /><small>Corner</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Elated</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">All-Out Excitement!!</span></b><br />TS +0.45 · 2.4s (2400 m · Tokyo) / TS +0.35 · 2.4s<br /><small>Medium · Pos ≥4 · Late mid-race</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">A Journey in a Step</span></b> – TS +0.25 · 4s<br /><small>Late · Mid-race · Pos 40-90%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Dreamer's Path</span></b><br />TS +0.35 · 4s"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1035_103502.webp",
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Medium Late, corner unique. Outclassed."
+    ]
+   }
+  }
+ },
+ {
+  "id": 110201,
+  "name": "Sounds of Earth",
+  "outfit": "Ritmo Della Terra",
+  "style": "late",
+  "color": "red",
+  "date": "Est. Sep 8 - 18",
+  "iso": "2027-09-08",
+  "scenario": "UAF Ready GO!",
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>Vivace Volare</b> – Rec +1.5%<br /><small>Behind a rival · Before 50% · Pos 40-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – Rec +0.4%"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Breath of Fresh Air</span></b> – Rec +5.5%<br /><small>Mid-race · Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">Caesura</span></b><br />Rec +5.5% · TS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Vying for the Throne</span></b> – TS +0.35 · debuffs rivals · 1.8s<br /><small>Late · Final corner · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Trionfo</span></b><br />TS +0.45 · Rivals CS -0.15 · 1.8s",
+     "<b><span class=\"evo\">Esplosione</span></b><br />TS +0.35 · Rec -3.0% · 4s<br /><small>Late · Long · Late mid-race</small>"
+    ]
+   },
+   {
+    "html": "Uma Stan"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1102_110201.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Medium/Long Late, recovery unique. Oshi pick."
+    ]
+   }
+  }
+ },
+ {
+  "id": 103202,
+  "name": "Agnes Tachyon",
+  "outfit": "Σ Experiment",
+  "style": "pace",
+  "color": "blue",
+  "date": "Est. Sep 22 - Oct 2",
+  "iso": "2027-09-22",
+  "scenario": "UAF Ready GO!",
+  "runner": 4,
+  "inherit": 4,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Tachyon Potential</b> – CS +0.45 · 4s<br /><small>Medium · Late-race+ · Final corner · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.25 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Gamma Ray Burst</span></b> – TS +0.35 · 2.4s<br /><small>Pace · Late mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">FTL Particle</span></b><br />TS +0.50 · 2.4s (Medium) / TS +0.45 · 2.4s<br /><small>Top 50% · Late mid-race · Pace</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Superstan</span></b> – TS +0.35 · 3s",
+    "sub": [
+     "<b><span class=\"evo\">Subject Observation</span></b><br />TS +0.30 (+0.15) · 3s (2000 m) / TS +0.35 · 3s<br /><small>After 5s · 3+ rivals nearby</small>"
+    ]
+   },
+   {
+    "html": "Uma Stan · Pace Chaser Corners ○ · Nimble Navigator"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+14%"
+   ],
+   [
+    "Power",
+    "+8%"
+   ],
+   [
+    "Wit",
+    "+8%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1032_103202.webp",
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Medium Pace, big Current Speed, lacks accel but good growth."
+    ]
+   }
+  }
+ },
+ {
+  "id": 104550,
+  "name": "Super Creek",
+  "outfit": "Flowery Shadow Amongst the Gentle Rain",
+  "style": "pace",
+  "color": "red",
+  "date": "Est. Sep 22 - Oct 2",
+  "iso": "2027-09-22",
+  "scenario": "UAF Ready GO!",
+  "runner": 4,
+  "inherit": 3,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Ninja Art: Seal of the Smiling Heart</b> – Rec +5.5% · TS +0.25 · 6s<br /><small>Medium / Long · Mid-race · Corner · Pos 20-50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – Rec +1.5% · TS +0.05 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Unstoppable</span></b> – TS +0.35 · 2.4s<br /><small>Pace · Mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Run as the River Flows</span></b><br />TS +0.45 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Beast Mode</span></b> – Acc +0.40 · 1.2s<br /><small>Long · Pace · Late-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Butterfly Transformation Jutsu</span></b><br />Acc +0.40 · 1.2s<br /><small>Triggers right at late-race start</small>"
+    ]
+   },
+   {
+    "html": "Long Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Stamina",
+    "+13%"
+   ],
+   [
+    "Wit",
+    "+7%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1045_104550.webp",
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Medium/Long Pace, recovery, good midgame and Beast Mode in kit. Very good long runner."
+    ]
+   }
+  }
+ },
+ {
+  "id": 107250,
+  "name": "Yaeno Muteki",
+  "outfit": "Black General, Zen",
+  "style": "pace",
+  "color": "orange",
+  "date": "Est. Sep 22 - Oct 2",
+  "iso": "2027-09-22",
+  "scenario": "UAF Ready GO!",
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Decisive Blade of Blazing Fire</b> – TS +0.45 · 5s<br /><small>After 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Check</span></b> – Acc +0.40 · 0.9s<br /><small>Pace / Late · Late-race+ · 600+ m left · Corner · Final corner · Top 70%</small>",
+    "sub": [
+     "<b><span class=\"evo\">General's Swift Strike</span></b><br />Acc +0.40 · 0.9s<br />Then TS +0.15 · 3s <small>(Early last spurt)</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Hot Pursuit</span></b> – TS +0.35 · 2.4s<br /><small>Pace / Late · After 50% · Overtaking</small>",
+    "sub": [
+     "<b><span class=\"evo\">Peerless Pursuit</span></b><br />CS +0.45 · 2.4s (Inner lane) / CS +0.35 · 2.4s<br /><small>After 50% · Overtaking · Pace</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+6%"
+   ],
+   [
+    "Power",
+    "+12%"
+   ],
+   [
+    "Guts",
+    "+12%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1072_107250.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Accel in kit, Evolve sounds great."
+    ]
+   }
+  }
+ },
+ {
+  "id": 104426,
+  "name": "Sweep Tosho",
+  "outfit": "Wedding",
+  "style": "end",
+  "color": "blue",
+  "date": "Est. Oct 8 - 18",
+  "iso": "2027-10-08",
+  "scenario": "UAF Ready GO!",
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Special Materialization</b> – CS +0.35 · Rec -2.0% · 3s<br /><small>Mid-race+ · Downhill · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.15 · Rec -2.0% · 1.8s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Razor-Sharp Steps</span></b> – Acc +0.40 · 1.2s<br /><small>End · Early late-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Sylphid Magia</span></b><br />Acc +0.50 · Rec -2.0% · 1.2s (2200 m) / Acc +0.40 · 1.2s<br /><small>End · Early late-race</small>",
+     "<b><span class=\"evo\">Nox Lumina</span></b><br />Acc +0.30 · Rec -2.0% · CS +0.25 · 1.2s (2000 m) / Acc +0.30 · 1.2s<br /><small>Medium · Early late-race · End</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Undivided Focus</span></b> – TS +0.45 · Rec -2.0% · 2.4s<br /><small>End · Mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Emergency Magic Boost</span></b><br />TS +0.45 · Rec -2.0% · 2.4s<br />Then TS +0.15 · 3s <small>(Late-race+ · Final straight)</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Late A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1044_104426.webp",
+  "roles": {
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Eh",
+     "Early not that great, somehow consumes Stamina for mitigated results."
+    ]
+   }
+  }
+ },
+ {
+  "id": 106126,
+  "name": "King Halo",
+  "outfit": "Wedding",
+  "style": "late",
+  "color": "orange",
+  "date": "Est. Oct 8 - 18",
+  "iso": "2027-10-08",
+  "scenario": "UAF Ready GO!",
+  "runner": 2,
+  "inherit": 2,
+  "evolved": 2,
+  "keyskills": [
+   {
+    "html": "<b>The Winding Road to Ideals</b> – TS +0.35 · 6s<br /><small>Last spurt</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3.6s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Furious Feat</span></b> – Acc +0.40 · 3s<br /><small>Mile · Late-race · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Unobstructable</span></b><br />Acc +0.40 · 3s<br /><small>Sprint / Mile · Late-race</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Unyielding Tenacity</span></b> – TS +0.35 · 2.4s<br /><small>Sprint · Late mid-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Proof of Indomitability</span></b><br />TS +0.45 · 2.4s<br /><small>Sprint / Mile · Late mid-race · Back 60%</small>",
+     "<b><span class=\"evo\">First-Class Presence</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "Sprint Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Mile A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1061_106126.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Sprint/Mile Late, last spurt TS.",
+     "Accel too random?"
+    ]
+   }
+  }
+ },
+ {
+  "id": 108201,
+  "name": "North Flight",
+  "outfit": "Looking Fly!",
+  "style": "pace",
+  "color": "blue",
+  "date": "Est. Oct 8 - 18",
+  "iso": "2027-10-08",
+  "scenario": "UAF Ready GO!",
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Shining Runway</b> – TS +0.35 · 5s<br /><small>Mile · Corner · Final corner · Pos 20-50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">It's On!</span></b> – TS +0.35 · 1.8s<br /><small>Mid-race · After passing</small>",
+    "sub": [
+     "<b><span class=\"evo\">With A Sparkling Heart!</span></b><br />TS +0.40 · 4s (Wit ≥1200) / TS +0.35 · 4s<br /><small>After passing · Mid-race</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">High Voltage</span></b> – Acc +0.40 · 1.8s<br /><small>Mile · Early late-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Enjoy the Flight</span></b><br />Acc +0.40 · 1.8s<br />Then TS +0.15 · 3s <small>(200 m left)</small>"
+    ]
+   },
+   {
+    "html": "Mile Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+20%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1082_108201.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good Accel in kit, strong growth"
+    ]
+   }
+  }
+ },
+ {
+  "id": 109401,
+  "name": "Jungle Pocket",
+  "outfit": "Ruler's Battle Cry",
+  "style": "late",
+  "color": "blue",
+  "date": "Est. Oct 22 - Nov 1",
+  "iso": "2027-10-22",
+  "scenario": "Great Food Festival",
+  "runner": 4,
+  "inherit": 3,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Faith in the Feral</b> – TS +0.45 · 5s<br /><small>Medium · At 50-51% · Pos 40-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.25 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Rampaging Passion</span></b> – TS +0.35 · 2.4s<br /><small>Late · Late mid-race · Back 60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Fangs of Ferocity</span></b><br />TS +0.40 · 4s (Pow ≥1200) / TS +0.35 · 4s<br /><small>Medium · Back 60% · Late mid-race · Late</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Rising Pulse</span></b> – CS +0.35 · 3s<br /><small>Medium / Long · Early late-race · Pos 30-80%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Demon of Tokyo</span></b><br />CS +0.35 · Acc +0.10 · 4s<br /><small>Medium · Early late-race · Tokyo</small>",
+     "<b><span class=\"evo\">Unparalleled Bomber Runner</span></b><br />CS +0.45 · 3s<br /><small>Medium · Early late-race</small>"
+    ]
+   },
+   {
+    "html": "Late Surger Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1094_109401.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Medium Late, good growth, good unique, good skills.",
+     "And was cool in Tachyon’s movie."
+    ]
+   }
+  }
+ },
+ {
+  "id": 111901,
+  "name": "Dream Journey",
+  "outfit": "Dreamland Memento",
+  "style": "end",
+  "color": "red",
+  "date": "Est. Oct 22 - Nov 1",
+  "iso": "2027-10-22",
+  "scenario": "Great Food Festival",
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>«Bon Voyage»</b> – CS +0.25 · 3s<br /><small>At 66-68% · 500+ m left · Back 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.05 · 1.8s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Right-Handed Demon</span></b> – Spd +60 · Pow +60<br /><small>Right-handed</small>",
+    "sub": [
+     "<b><span class=\"evo\">Starboard Till the End</span></b><br />Spd +80 · Pow +80"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Manipulation</span></b> – CS +0.25 · 4s<br /><small>End · Late-race+ · Corner · Overtaking</small>",
+    "sub": [
+     "<b><span class=\"evo\">Trance</span></b><br />CS +0.40 · 4s (Wit ≥1200 · Nakayama) / CS +0.35 · 4s<br /><small>Corner · Overtaking · Late-race+ · End</small>"
+    ]
+   },
+   {
+    "html": "Nimble Navigator"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Late A",
+   "End A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1119_111901.webp",
+  "roles": {
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "Okayish growth but fantastic golden + Nimble nav.",
+     "Lots of current speed.",
+     "If she could have Reign, she’d be unstoppable."
+    ]
+   }
+  }
+ },
+ {
+  "id": 103002,
+  "name": "Rice Shower",
+  "outfit": "Yummy Dreamy Fairy",
+  "style": "pace",
+  "color": "red",
+  "date": "Est. Nov 8 - 18",
+  "iso": "2027-11-08",
+  "scenario": "Great Food Festival",
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Clear Sky Cooking♪</b> – TS +0.55 · 5s<br /><small>Long · Late-race+ · Corner · Final corner · Top 40%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3s<br /><small>Late-race+ · Corner · Final corner · Top 40%</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Ultimate Hill Climber</span></b> – Acc +0.40 · 3s<br /><small>Uphill</small>",
+    "sub": [
+     "<b><span class=\"evo\">Summit Meal</span></b><br />Acc +0.40 · 3s<br /><small>Pace · Uphill (2nd half of race)</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Yodo Invicta</span></b> – Sta +60 · Wit +60 · Spd +60",
+    "sub": [
+     "<b><span class=\"evo\">Blessing of Yodo</span></b><br />Sta +80 · Wit +80 · Spd +80"
+    ]
+   },
+   {
+    "html": "Long Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+20%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1030_103002.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "That’s a lot of conditions.",
+     "Needs a very specific race, terrible growth."
+    ]
+   }
+  }
+ },
+ {
+  "id": 112001,
+  "name": "Calstone Light O",
+  "outfit": "One True Path",
+  "style": "front",
+  "color": "blue",
+  "date": "Est. Nov 8 - 18",
+  "iso": "2027-11-08",
+  "scenario": "Great Food Festival",
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Path of Singular Focus</b> – TS +0.65 · 4s<br /><small>Top 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 2.4s<br /><small>Early-race (3rd furlong) · Top 50%</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Shocking Flash</span></b> – TS +0.35 · 3s<br /><small>Sprint · Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">Flash Dash!</span></b><br />Acc +0.10 · 1.2s<br /><small>Sprint · Front</small><br />Then CS +0.35 · 3s <small>(Straight)</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Gale Flash</span></b> – TS +0.35 · 3s<br /><small>Front · Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">Gale Rush!</span></b><br />Acc +0.10 · 1.2s<br /><small>Sprint · Front</small><br />Then CS +0.35 · 3s <small>(Straight)</small>"
+    ]
+   },
+   {
+    "html": "Sprint Straightaways ○ · Front Runner Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Sprint A",
+   "Front A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+15%"
+   ],
+   [
+    "Power",
+    "+15%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1120_112001.webp",
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Sprint Front, huge TS unique.",
+     "Run run run, sprint, groundwork in kit very good growth limited to sprint with straight sprint run run",
+     "Nya nya nya"
+    ]
+   }
+  }
+ },
+ {
+  "id": 103730,
+  "name": "Eishin Flash",
+  "outfit": "Reines Plätschern",
+  "style": "late",
+  "color": "red",
+  "date": "Est. Nov 22 - Dec 2",
+  "iso": "2027-11-22",
+  "scenario": "Great Food Festival",
+  "runner": 3,
+  "inherit": 4,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Geschenk of the Salty Sea Breeze</b> – CS +0.45 · 5s<br /><small>Medium · Corner · Final corner · Pos 40-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Child of Fuchu</span></b> – Sta +60 · Wit +60 · Spd +60",
+    "sub": [
+     "<b><span class=\"evo\">Ritter von Fuchu</span></b><br />Sta +80 · Wit +80 · Spd +80"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Keep Going!</span></b> – TS +0.45 · Rec -2.0% · 2.4s<br /><small>Late · Mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Flash Torrent</span></b><br />TS +0.45 · Rec +1.5% · 4s (Tokyo) / TS +0.45 · Rec -3.0% · 4s<br /><small>Mid-race · Late</small>"
+    ]
+   },
+   {
+    "html": "Late Surger Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1037_103730.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Medium/Long Late, final corner CS, good skils, Tokyo terrorist.",
+     "Growth is garbage?"
+    ]
+   }
+  }
+ },
+ {
+  "id": 109930,
+  "name": "Hokko Tarumae",
+  "outfit": "Pastel Marine Locodol",
+  "style": "pace",
+  "color": "blue",
+  "date": "Est. Nov 22 - Dec 2",
+  "iso": "2027-11-22",
+  "scenario": "Great Food Festival",
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 5,
+  "keyskills": [
+   {
+    "html": "<b>Popping☆Clams</b> – TS +0.25 · TS +0.15 · 5s<br /><small>Dirt · At 50-51% · Corner</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.09 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Call & Response</span></b> – TS +0.25 · 2.4s<br /><small>Dirt · Mid-race</small>",
+    "sub": [
+     "<b><span class=\"evo\">Hometown Medley</span></b><br />TS +0.45 · 2.4s<br /><small>Dirt · Pace · Mid-race · After any skill</small><br />Then Acc +0.20 · 2.4s <small>(Late-race+ · After any skill)</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Stamp on the Ground</span></b> – Acc +0.40 · 1.8s<br /><small>Pace · Dirt · Early late-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Plunge into the Northern Sea</span></b><br />Acc +0.40 · 1.8s<br /><small>Dirt · Pace · Early late-race</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Dirt A",
+   "Mile A",
+   "Med A",
+   "Pace A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+15%"
+   ],
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+5%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1099_109930.webp",
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Dirt pace, kit seems good but dirt."
+    ]
+   }
+  }
+ },
+ {
+  "id": 104723,
+  "name": "Zenno Rob Roy",
+  "outfit": "Inlaid Stories",
+  "style": "pace",
+  "color": "blue",
+  "date": "Est. Dec 8 - 18",
+  "iso": "2027-12-08",
+  "scenario": "Great Food Festival",
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 4,
+  "keyskills": [
+   {
+    "html": "<b>Close Encounters of the Literary Kind</b> – TS +0.25 · CS +0.25 · 5s<br /><small>Medium · Late-race+ · Final straight · Top 40%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · CS +0.05 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Valiant Flash</span></b> – TS +0.35 · 3s<br /><small>Pace · Straight</small>",
+    "sub": [
+     "<b><span class=\"evo\">Heroic Radiance</span></b><br />TS +0.45 · 3s<br /><small>Straight · Pace</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Fall Frenzy</span></b> – Spd +60 · Pow +60",
+    "sub": [
+     "<b><span class=\"evo\">The Stormforged Hero Advances</span></b><br />Spd +80 · Pow +80<br /><small>Autumn / Winter</small>"
+    ]
+   },
+   {
+    "html": "Pace Chaser Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Long A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1047_104723.webp",
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Very good growth, unique seems good, Fall Frenzy is good."
+    ]
+   }
+  }
+ },
+ {
+  "id": 110523,
+  "name": "Neo Universe",
+  "outfit": "Like \"ZEER\"",
+  "style": "late",
+  "color": "green",
+  "date": "Est. Dec 8 - 18",
+  "iso": "2027-12-08",
+  "scenario": "Great Food Festival",
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Encounter With U</b> – TS +0.55 · 5s<br /><small>Late-race+ · Final straight · Pos 2+</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.15 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Luminescence</span></b> – CS +0.35 · 2.4s<br /><small>Medium</small>",
+    "sub": [
+     "<b><span class=\"evo\">Luminous Spectrum</span></b><br />CS +0.35 (+0.15) · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Connection</span></b> – Spd +60 · debuffs rivals<br /><small>Turf</small>",
+    "sub": [
+     "<b><span class=\"evo\">METI Resonance</span></b><br />Spd +100<br /><small>Turf · Medium · With Sympathy</small>"
+    ]
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Med A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+7%"
+   ],
+   [
+    "Guts",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+13%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1105_110523.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Pace/Late, big TS on the final straight.",
+     "Forces everyone to proc Sympathy? Buffer?",
+     "Luminescence good, but OG probably better."
+    ]
+   }
+  }
+ },
+ {
+  "id": 111601,
+  "name": "Gentildonna",
+  "outfit": "Regina dei Fiori",
+  "style": "pace",
+  "color": "blue",
+  "date": "Est. Dec 8 - 18",
+  "iso": "2027-12-08",
+  "scenario": "Great Food Festival",
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 3,
+  "keyskills": [
+   {
+    "html": "<b>Rose Conquest</b> – TS +0.25 · 5s<br /><small>Before 50% · Corner · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – TS +0.05 · 3s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">No Stopping Me!</span></b> – Acc +0.40 · 3s<br /><small>Behind a rival · Last spurt</small>",
+    "sub": [
+     "<b><span class=\"evo\">Step Aside</span></b><br />Acc +0.40 · Lane change + · 3s<br /><small>Pace · ≥2000 m · Early late-race</small>"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Proof of Strength</span></b> – TS +0.35 · 3s<br /><small>Medium · Pace · Mid-race · Top 50%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Power Am I</span></b><br />TS +0.45 · 3s<br /><small>Mid-race · Pace · Medium</small>",
+     "<b><span class=\"evo\">A Lady's Domain</span></b><br />TS +0.55 · 3s (Pow ≥1200) / TS +0.45 · 3s<br /><small>2400-2500 m · Late mid-race · Pace</small>"
+    ]
+   },
+   {
+    "html": "Nimble Navigator · Pace Chaser Corners ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Long A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Stamina",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1116_111601.webp",
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "NSM in kit with a great evolve.",
+     "Good midgame.",
+     "Strong Growth."
+    ]
+   }
+  }
+ },
+ {
+  "id": 111001,
+  "name": "Cesario",
+  "outfit": "Future Weaver",
+  "style": "late",
+  "color": "blue",
+  "date": "Est. Dec 22 - Jan 1",
+  "iso": "2027-12-22",
+  "scenario": "Great Food Festival",
+  "runner": 3,
+  "inherit": 4,
+  "evolved": 2,
+  "keyskills": [
+   {
+    "html": "<b>Guiding Sea</b> – CS +0.25 · Acc +0.10 · Acc +0.20 · 4s<br /><small>800 m left · Pos 70-80%</small>",
+    "sub": [
+     "<b><span class=\"inh\">Inherited</span></b> – CS +0.05 · Acc +0.12 · 2.4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Come What May</span></b> – TS +0.35 · 3s<br /><small>Medium · Late-race+ · Final straight · Pos 20-60%</small>",
+    "sub": [
+     "<b><span class=\"evo\">Become the Foundation</span></b><br />TS +0.35 · 4s"
+    ]
+   },
+   {
+    "html": "<b><span class=\"gold\">Tension and Release</span></b><br /><small>Medium · Late early-race</small>"
+   },
+   {
+    "html": "Medium Straightaways ○"
+   }
+  ],
+  "aptitudes": [
+   "Turf A",
+   "Mile A",
+   "Med A",
+   "Pace A",
+   "Late A"
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+10%"
+   ],
+   [
+    "Power",
+    "+10%"
+   ],
+   [
+    "Wit",
+    "+10%"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/uma/chara_stand_1110_111001.webp",
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Good growth, sounds great in Medium.",
+     "Inherit +0.05 CS and 0.12 Accel, might be good?"
+    ]
+   }
+  }
+ }
+]
