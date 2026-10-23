@@ -6,7 +6,7 @@
 import { TODAY, scenarioImage } from "./config.js";
 import { $, DAY, ms, fmtDate, img } from "./util.js";
 
-export function createRuler(tl, scenarios) {
+export function createRuler(tl, scenarios, onScenario = () => {}) {
   const reader = $("#reader"), needle = $("#needle");
   let anchors = []; // [{x, t}], t strictly increasing
   let current = null;
@@ -78,8 +78,12 @@ export function createRuler(tl, scenarios) {
       reader.style.setProperty("--sc", s.color);
       $("#rname").textContent = s.name; $("#shotname").textContent = s.name;
       shot.querySelectorAll("img").forEach(i => i.classList.toggle("on", i.dataset.sc === s.slug));
+      onScenario(s.slug);
     }
   }
 
-  return { build, read };
+  /** Forget the current scenario so the next read() re-announces it (after a re-render). */
+  const refresh = () => { current = null; read(); };
+
+  return { build, read, refresh };
 }

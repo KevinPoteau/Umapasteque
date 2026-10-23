@@ -1,7 +1,7 @@
 // Filter bar: search, chips (card type for support cards, distance + surface
-// for Umas), verdict scale, reset.
+// for Umas), verdict scale.
 import { TYPES, DISTANCES, SURFACES, VERDICTS, typeIcon } from "./config.js";
-import { state, reset } from "./state.js";
+import { state } from "./state.js";
 import { $, $$ } from "./util.js";
 
 let onChange = () => {};
@@ -28,7 +28,6 @@ export function initFilters(changed) {
 
   const q = $("#q");
   q.oninput = () => { state.q = q.value; onChange(); };
-  $("#reset").onclick = () => { reset(); q.value = ""; onChange(); };
 }
 
 function chipGroup(sel, values, field, label) {

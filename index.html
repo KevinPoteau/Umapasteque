@@ -15,7 +15,7 @@
 <link rel="stylesheet" href="css/card.css">
 <script type="module" src="js/main.js"></script>
 </head>
-<body>
+<body class="app">
 
 <header class="pad mast">
   <h1>Umapast<span>è</span>que</h1>
@@ -30,10 +30,9 @@
     <div class="types" id="dist" role="group" aria-label="Distance" hidden></div>
     <div class="types" id="surf" role="group" aria-label="Surface" hidden></div>
     <div class="vbar" id="verdict" role="group" aria-label="Minimum verdict"><span class="vlbl" id="vlbl">Any verdict</span></div>
-    <button class="link" id="reset">Reset</button>
-    <span class="sp"></span>
-    <select class="sel" id="jump" aria-label="Jump to"></select>
     <span class="count" id="count"></span>
+    <span class="sp"></span>
+    <nav class="jump" id="jump" aria-label="Jump to a scenario"></nav>
   </div>
 </div>
 
@@ -47,7 +46,6 @@
   <div class="tl" id="tl" tabindex="0" aria-label="Release timeline"></div>
   <button class="nav next" id="next" aria-label="Scroll forward">›</button>
 </div>
-<p class="pad hint">Scroll sideways: mouse wheel, arrow keys, or the ‹ › buttons. The ruler reads the date under the needle.</p>
 
 </body>
 </html>

@@ -29,11 +29,6 @@ export function save() {
   try { localStorage.setItem(key, JSON.stringify(plain)); } catch { /* ignore */ }
 }
 
-export function reset() {
-  state.q = ""; state.vmin = 0;
-  for (const k of SETS) state[k].clear();
-}
-
 const DIST_CODE = { Sprint: "Sprint", Mile: "Mile", Medium: "Med", Long: "Long" };
 const hasAptitude = (uma, word) => uma.aptitudes?.some(a => a.split(" ")[0] === word);
 
