@@ -138,7 +138,22 @@ def check_kind(kind, scenarios):
           + ", ".join(f"{r} {sum(1 for x in data if r in (x.get('roles') or {}))}" for r in ("front", "pace", "late", "end")))
 
 
+def check_ignored():
+    """data/ignored.json: ids the import must skip ("Don't track" on the admin page)."""
+    path = ROOT / "data" / "ignored.json"
+    if not path.exists():
+        return
+    d = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(d, dict) or set(d) - {"support", "uma"}:
+        err(path.name, 'should look like {"support": [ids], "uma": [ids]}')
+        return
+    for k, ids in d.items():
+        if not (isinstance(ids, list) and all(is_id(i) for i in ids)):
+            err(path.name, f"{k} should be a list of ids")
+
+
 scenarios = check_scenarios()
+check_ignored()
 for kind in ("support", "uma"):
     check_kind(kind, scenarios)
 

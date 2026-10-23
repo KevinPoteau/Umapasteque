@@ -38,6 +38,7 @@ const fromB64 = b64 => new TextDecoder().decode(Uint8Array.from(atob(b64.replace
 
 /** Read a JSON file from main; returns { data, sha }. */
 export async function readJSON(path) {
+  path = path.split("?")[0];   // the deploy step adds ?v=… to data URLs
   const f = await gh(`/contents/${path}?ref=${REPO.base}`);
   return { data: JSON.parse(fromB64(f.content)), sha: f.sha };
 }
@@ -60,6 +61,7 @@ export async function publish(files, { title, body }) {
   await gh(`/git/refs`, { method: "POST", body: { ref: `refs/heads/${branch}`, sha: ref.object.sha } });
 
   for (const f of files) {
+    f.path = f.path.split("?")[0];
     // sha of the file as it is on the new branch (= main at branch time)
     let sha;
     try { sha = (await gh(`/contents/${f.path}?ref=${branch}`)).sha; } catch { sha = undefined; }

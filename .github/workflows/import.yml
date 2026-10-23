@@ -1,0 +1,51 @@
+name: Import new cards and Umas
+
+# Every Monday, adds newly announced SSR support cards and Umas (source:
+# GameTora) to data/ with "todo": true and no running style, then opens or
+# updates one pull request. Merge it, then rate them on the admin page.
+on:
+  schedule:
+    - cron: "43 5 * * 1"     # Mondays 05:43 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+      BRANCH: bot/import
+    steps:
+      - uses: actions/checkout@v4
+      - name: Look for new entries
+        id: run
+        run: |
+          python3 scripts/import_new.py | tee import.log
+          echo "new=$(grep -oP '^new=\K\d+' import.log)" >> "$GITHUB_OUTPUT"
+      - name: Check the data
+        if: steps.run.outputs.new != '0'
+        run: python3 scripts/validate_data.py
+      - name: Open or update the pull request
+        if: steps.run.outputs.new != '0'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "$BRANCH"
+          git add data/support.json data/uma.json
+          git commit -qm "Import new cards and Umas to rate"
+          git push -f origin "$BRANCH"
+          open=$(gh api "repos/$GITHUB_REPOSITORY/pulls?head=${GITHUB_REPOSITORY_OWNER}:$BRANCH&state=open" --jq '.[0].number // empty')
+          if [ -n "$open" ]; then
+            gh api -X PATCH "repos/$GITHUB_REPOSITORY/pulls/$open" -F body=@import-summary.md > /dev/null
+            echo "Updated pull request #$open"
+          else
+            gh api "repos/$GITHUB_REPOSITORY/pulls" -f title="New cards and Umas to rate" \
+              -f head="$BRANCH" -f base=main -F body=@import-summary.md --jq .html_url
+          fi
