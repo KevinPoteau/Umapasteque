@@ -8,10 +8,12 @@ Live site: https://kevinpoteau.github.io/Umapasteque/
 
 ```
 index.html              page markup only
+admin.html              admin page: rate entries, publish as a pull request
 css/
   base.css              colour tokens, header, filter bar
   timeline.css          horizontal timeline, date ruler, needle reader
   card.css              support card (v1 Notion callout layout)
+  admin.css             admin page
 js/                     ES modules, no build step
   main.js               entry point: loads data, wires everything
   config.js             roles, card types, verdicts, image paths
@@ -21,6 +23,8 @@ js/                     ES modules, no build step
   ruler.js              date ruler + scenario art under the needle
   card.js               card markup
   util.js               helpers, image fallback (local copy → original URL)
+  admin.js              admin page: entry list, rating form, live preview
+  github.js             GitHub API calls used by the admin page
 data/
   scenarios.json        scenario names, start dates, colours, art source
   support/<role>.json   support cards per running style (front, pace, late, end)
@@ -40,6 +44,15 @@ scripts/notion_export.py one-off: converts the v1 Notion pages into data/
 ```
 
 Images not yet in `assets/` are loaded from their original site, so the page works before and after the sync.
+
+## Rating entries (admin page)
+
+Open `admin.html` on the site (e.g. https://kevinpoteau.github.io/Umapasteque/admin.html).
+
+1. **GitHub token** (once per browser): create a [fine-grained token](https://github.com/settings/personal-access-tokens/new) with *Repository access → Only select repositories → Umapasteque*, permissions *Contents: Read and write* and *Pull requests: Read and write*, and an expiry date. Paste it in the dialog. It stays in that browser only.
+2. Pick Support cards / Umas and a running style. **To rate** lists entries with no verdict or marked `"todo": true`; **Changed** lists what you edited in this session.
+3. Set the verdict, stars, text and dates; the preview shows the card as it will look. Changes are kept in the browser until published.
+4. **Publish** opens one pull request with every change. Merge it and the site redeploys.
 
 ## How to edit
 
