@@ -403,6 +403,8 @@ select {
   border-radius: 0;
   clip-path: none;
   object-fit: contain;
+  width: 22px;
+  height: 22px;
 }
 
 .chip .ico {
