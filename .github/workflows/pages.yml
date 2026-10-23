@@ -23,7 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Validate card data
-        run: python3 -c "import json; d=json.load(open('data/end.json')); print(len(d), 'End cards')"
+        run: |
+          python3 - <<'PY'
+          import json, glob
+          for f in sorted(glob.glob("data/**/*.json", recursive=True)):
+              d = json.load(open(f, encoding="utf-8"))
+              print(f, len(d), "entries")
+          PY
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
