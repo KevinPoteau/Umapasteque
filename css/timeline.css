@@ -165,7 +165,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 40px 0 12px;
+  width: 210px;                /* fixed, so the needle does not move with the scenario name */
+  padding: 0 12px;
 }
 
 .reader .txt b {
