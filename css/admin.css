@@ -397,6 +397,48 @@ legend {
   border-color: #e9999944;
 }
 
+/* Card text: collapsible, open for entries still to rate */
+.texts {
+  display: grid;
+  gap: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 14px;
+}
+
+.texts[open] {
+  padding-bottom: 14px;
+}
+
+.texts summary {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.texts summary small {
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.texts[open] summary {
+  margin-bottom: 10px;
+}
+
+.texts > label + label,
+.texts > .grid2 + label,
+.texts > label + .grid2 {
+  margin-top: 12px;
+}
+
+.texts textarea {
+  font: 12.5px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
 /* Verdict picker: best → worst */
 .vpick {
   display: flex;

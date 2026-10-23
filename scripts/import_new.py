@@ -11,12 +11,15 @@ What it does:
   - skips anything already in data/ and anything listed in data/ignored.json.
     "Already in data/" = same id, or same name (+ type for cards) with a date
     less than 3 weeks apart (our Uma ids and outfit names are not the game's),
+  - fills effects, start, unique, stat bonus and key skills from GameTora
+    (scripts/gametora_text.py), in the same wording as the hand-written entries,
   - appends them with "todo": true and no running style ("roles": {}), so they
     show up in the admin page's "To rate" list and nowhere on the site until a
     running style is added there,
   - writes a summary for the pull request to import-summary.md.
 
-It never changes an existing entry. When GameTora has a confirmed global date
+It never changes a hand-written entry (it only fills the texts of entries it
+imported itself, still "todo" and empty). When GameTora has a confirmed global date
 that differs from ours, it is only listed in the summary.
 
 Usage:
@@ -31,12 +34,14 @@ import sys
 import urllib.request
 from pathlib import Path
 
+import gametora_text as text
+
 ROOT = Path(__file__).resolve().parent.parent
 HORIZON_DAYS = 430          # how far ahead to import (about 14 months)
 SAME_WINDOW = 21            # days: same name this close in time = the same entry
 BASE = "https://gametora.com/data"
 UA = {"User-Agent": "Umapasteque importer (weekly; github.com/KevinPoteau/Umapasteque)"}
-FILES = ["support-cards", "character-cards", "characters", "en/foresight/predicted_releases"]
+FILES = ["support-cards", "character-cards", "characters", "skills", "en/foresight/predicted_releases"]
 
 TYPES = {"speed": "Speed", "stamina": "Stamina", "power": "Power", "guts": "Guts",
          "intelligence": "Wit", "friend": "Pal", "group": "Group"}
@@ -139,10 +144,20 @@ def new_support(c, when, est, scenarios):
         "id": c["support_id"], "name": c["char_name"], "rarity": "SSR", "type": t,
         "color": TYPE_COLOR.get(t, "purple"), "date": label(when, est), "iso": iso,
         "universal": False, "scenario": scenario_for(iso, scenarios),
-        "effects": "", "start": "", "unique": "", "keyskills": [],
+        "effects": "", "start": "", "unique": "", "keyskills": [], "bonus": [],
         "imgSource": f"https://uma.guide/img/card/composite/tex_support_card_{c['support_id']}_thumb.webp",
         "roles": {}, "todo": True,
     }
+
+
+def fill_support(entry, c, skills):
+    """Card texts from GameTora (only for imported entries, never hand-written ones)."""
+    entry.update(effects=text.effects_text(c), start=text.start_text(c), unique=text.unique_text(c),
+                 keyskills=text.support_keyskills(c, skills), bonus=text.bonus_rows(c))
+
+
+def fill_uma(entry, u, skills):
+    entry["keyskills"] = text.uma_keyskills(u, skills)
 
 
 def new_uma(u, when, est, scenarios, chars):
@@ -174,6 +189,9 @@ def main():
     src = load_source(args.from_dir)
     predicted = src["en/foresight/predicted_releases"]
     chars = {c["char_id"]: c for c in src["characters"]}
+    skills = {s["id"]: s for s in src["skills"]}
+    gt_support = {c["support_id"]: c for c in src["support-cards"]}
+    gt_uma = {u["card_id"]: u for u in src["character-cards"]}
 
     scenarios = json.loads((ROOT / "data" / "scenarios.json").read_text(encoding="utf-8"))
     ignored_path = ROOT / "data" / "ignored.json"
@@ -200,11 +218,18 @@ def main():
         if c["support_id"] in skip or not (lo <= when <= hi):
             continue
         entry = new_support(c, when, est, scenarios)
+        fill_support(entry, c, skills)
         if near(entry, ours, lambda e: (e["name"].lower(), e["type"])):
             continue
         added.append(entry)
+    # imported earlier, before card texts were filled in
+    filled = 0
+    for e in ours:
+        if e.get("todo") and not e.get("effects") and not e.get("keyskills") and e["id"] in gt_support:
+            fill_support(e, gt_support[e["id"]], skills)
+            filled += 1
     added.sort(key=lambda e: (e["iso"], e["id"]))
-    if added:
+    if added or filled:
         path.write_text(json.dumps(ours + added, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     summary += [f"- **{e['name']}** SSR {e['type']} · {e['date']} ({e['iso']})" for e in added]
     n_support = len(added)
@@ -223,14 +248,19 @@ def main():
         if when is None or u["card_id"] in known_ids or u["card_id"] in skip or not (lo <= when <= hi):
             continue
         entry = new_uma(u, when, est, scenarios, chars)
+        fill_uma(entry, u, skills)
         if (entry["name"].lower(), entry["outfit"].lower()) in known_names or near(entry, ours, lambda e: e["name"].lower()):
             continue
         if not args.from_dir:
             entry["imgSource"] = first_image([entry["imgSource"],
                 f"https://gametora.com/images/umamusume/characters/chara_stand_{u['char_id']}_{u['card_id']}.png"])
         added.append(entry)
+    for e in ours:
+        if e.get("todo") and not e.get("keyskills") and e["id"] in gt_uma:
+            fill_uma(e, gt_uma[e["id"]], skills)
+            filled += 1
     added.sort(key=lambda e: (e["iso"], e["id"]))
-    if added:
+    if added or filled:
         path.write_text(json.dumps(ours + added, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     summary += [f"- **{e['name']}** ({e['outfit']}) · {e['date']} ({e['iso']})" for e in added]
     n_uma = len(added)
@@ -246,7 +276,10 @@ def main():
         text += ["", "**Confirmed global dates that differ from ours** (not changed, check by hand):", *drift]
     (ROOT / "import-summary.md").write_text("\n".join(text) + "\n", encoding="utf-8")
     print("\n".join(text))
-    print(f"\nnew={n_support + n_uma}")
+    if filled:
+        text_lines = f"\nFilled in effects / unique / key skills of {filled} entr{'y' if filled == 1 else 'ies'} imported earlier."
+        (ROOT / "import-summary.md").write_text((ROOT / "import-summary.md").read_text(encoding="utf-8") + text_lines + "\n", encoding="utf-8")
+    print(f"\nnew={n_support + n_uma + filled}")
     return 0
 
 
