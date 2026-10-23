@@ -38,7 +38,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B "$BRANCH"
-          git add data/support.json data/uma.json
+          git add data/support.json data/uma.json data/scenarios.json
           git commit -qm "Import new cards and Umas to rate"
           git push -f origin "$BRANCH"
           open=$(gh api "repos/$GITHUB_REPOSITORY/pulls?head=${GITHUB_REPOSITORY_OWNER}:$BRANCH&state=open" --jq '.[0].number // empty')

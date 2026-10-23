@@ -64,6 +64,8 @@ Every Monday, *Import new cards and Umas* looks at [GameTora](https://gametora.c
 
 After merging, they appear in the admin page's **To rate** list, but not on the site: an entry only shows once a running style is added to it. **Don't track** removes an entry and records its id in `data/ignored.json`, so the import never adds it again.
 
+When those dates reach a scenario we don't have yet, it is added to `data/scenarios.json` too (GameTora's estimated start, colour, and picture when GameTora has one; check them in the pull request). A scenario shows as *live* once its start date is past.
+
 The import never changes an existing entry; if GameTora has a confirmed global date that differs from ours, the pull request only mentions it.
 
 ## How to edit
@@ -74,7 +76,7 @@ The import never changes an existing entry; if GameTora has a confirmed global d
 | Add or change a card | `data/support.json`: one object per card. `id` is the game's card id (it names the image), `iso` is the release date, `color` the card background (`blue`, `red`, `orange`, `pink`, `green`, `yellow`, `purple`). `roles` lists the running styles the card is shown on, each with its own rating: `{"pace": {"rank": 4, "verdict": ["…"], "stats": 3, "skills": 4, "longevity": "…", "bonus": [["Speed", "+1"]]}}` (`rank`: 5 = Highly recommended … 1 = Very bad). A style missing from `roles` never shows the card. |
 | Add or change an Uma | `data/uma.json`: same idea, with `runner` / `inherit` / `evolved` stars, `aptitudes`, `outfit` and `style` (her own running style); each role holds `rank` and `verdict` |
 | Check my edits by hand | `python3 scripts/validate_data.py` |
-| Change a scenario date or colour | `data/scenarios.json` |
+| Change a scenario date, colour or picture | `data/scenarios.json` (`gt` = GameTora's id, used by the import) |
 | Change a colour or the card width | the `:root` block at the top of `css/base.css` (every token is commented) |
 | Rename a verdict or swap its icon | `VERDICTS` in `js/config.js` + `assets/icons/verdicts/` |
 | Change the card layout | markup in `js/card.js`, styles in `css/card.css` |

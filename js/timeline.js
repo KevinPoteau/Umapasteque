@@ -20,7 +20,7 @@ export function createTimeline(tl, scenarios, ruler) {
         if (!todayDone && c.iso >= TODAY) { cols += '<div class="today" id="today"><b>Today</b></div>'; todayDone = true; }
         cols += `<div class="col" data-iso="${c.iso}"><div class="when${c.iso < TODAY ? " past" : ""}"><i></i><span>${c.date}</span></div>${renderCard(c)}</div>`;
       }
-      const since = s.live ? `live since ${fmtDate(s.start)}` : `est. ${fmtDate(s.start)}`;
+      const since = s.start <= TODAY ? `live since ${fmtDate(s.start)}` : `est. ${fmtDate(s.start)}`;
       html += `<section class="sc" id="sc${i}" style="--sc:${s.color}">
         <div class="sc-head"><h2>${s.name}</h2><small>${since} · ${cs.length} ${noun}${cs.length > 1 ? "s" : ""}</small></div>
         <div class="cards">${cols}</div></section>`;

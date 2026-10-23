@@ -79,6 +79,10 @@ def check_scenarios():
         for f in ("name", "slug", "start", "color", "imgSource"):
             if f not in s:
                 err(where, f"missing {f}")
+        if "gt" in s and not is_id(s["gt"]):
+            err(where, f"gt should be GameTora's scenario id, got {s['gt']!r}")
+        for f in s.keys() - {"name", "slug", "gt", "start", "color", "imgSource"}:
+            err(where, f"unknown field {f!r}")
         if not is_iso(s.get("start")):
             err(where, f"start should be YYYY-MM-DD, got {s.get('start')!r}")
         names.add(s.get("name"))
