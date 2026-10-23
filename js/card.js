@@ -12,9 +12,20 @@ const stars = n =>
 const ratings = rows =>
   `<div class="box rate">${rows.map(([label, value]) => `<div><b>${label}</b>${value}</div>`).join("")}</div>`;
 
+/**
+ * A skill line that starts with its name ("<b>Name</b> – effect<br />conditions"):
+ * the name + effect part is kept on one line (js/timeline.js widens the card if needed).
+ */
+const skillLine = html => {
+  if (!html.startsWith("<b>")) return html;
+  const i = html.indexOf("<br />");
+  const head = i < 0 ? html : html.slice(0, i), rest = i < 0 ? "" : html.slice(i);
+  return `<span class="sk">${head}</span>${rest}`;
+};
+
 /** Key skills: [{html, sub: [html]}] → nested list (inherited / evolved versions under each skill). */
 const skillList = skills => !skills.length ? "" : `<div class="box skills"><h4>Key skills</h4><ul>${
-  skills.map(s => `<li>${s.html}${s.sub ? `<ul>${s.sub.map(x => `<li>${x}</li>`).join("")}</ul>` : ""}</li>`).join("")
+  skills.map(s => `<li>${skillLine(s.html)}${s.sub ? `<ul>${s.sub.map(x => `<li>${skillLine(x)}</li>`).join("")}</ul>` : ""}</li>`).join("")
 }</ul></div>`;
 
 function verdictBox(item) {

@@ -73,17 +73,24 @@ export function createTimeline(tl, scenarios, ruler) {
 
   /**
    * Cards never scroll inside: a card whose text is taller than the screen
-   * allows is made wider instead (its right column flows into more columns),
-   * step by step until everything fits.
+   * allows, or whose skill name + effect does not fit on one line, is made
+   * wider instead (its right column flows into more columns), step by step
+   * until everything fits.
    */
   function fitCards() {
     const STEP = 70, MAX = 3; // grow by 70 px, up to 3× the normal width
-    const tooTall = card => card.scrollHeight > card.clientHeight + 1;
+    // A skill line is too long when it runs past the inner edge of its box
+    const lineTooLong = card => [...card.querySelectorAll(".sk")].some(sk => {
+      const box = sk.closest(".box");
+      const pad = parseFloat(getComputedStyle(box).paddingRight) || 0;
+      return sk.getBoundingClientRect().right > box.getBoundingClientRect().right - pad + 1;
+    });
+    const tooTall = card => card.scrollHeight > card.clientHeight + 1 || lineTooLong(card);
 
     for (const col of tl.querySelectorAll(".col")) {
       const card = col.querySelector(".card");
       col.style.removeProperty("--w");
-      card.classList.remove("flow");
+      card.classList.remove("flow", "wrap");
       const base = col.offsetWidth;
 
       const widen = () => {
@@ -101,6 +108,8 @@ export function createTimeline(tl, scenarios, ruler) {
         col.style.removeProperty("--w");
         widen();
       }
+      // Very small screens: if a skill line still cannot fit, let it wrap rather than be cut off
+      card.classList.toggle("wrap", lineTooLong(card));
     }
   }
 
