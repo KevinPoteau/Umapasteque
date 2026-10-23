@@ -27,8 +27,8 @@ js/                     ES modules, no build step
   github.js             GitHub API calls used by the admin page
 data/
   scenarios.json        scenario names, start dates, colours, art source
-  support/<role>.json   support cards per running style (front, pace, late, end)
-  uma/<role>.json       Umas per running style
+  support.json          support cards, one entry per card, rated per running style
+  uma.json              Umas, same idea
 assets/
   icons/types/          card type icons (SVG)
   icons/verdicts/       verdict arrows
@@ -37,7 +37,7 @@ assets/
   umas/<id>.webp        Uma art (id = outfit id)   │
   scenarios/            scenario art               ┘
 scripts/fetch_assets.py downloads missing images into assets/
-scripts/notion_export.py one-off: converts the v1 Notion pages into data/
+scripts/validate_data.py checks data/ (runs on every pull request and deploy)
 .github/workflows/
   pages.yml             deploys to GitHub Pages on push to main
   fetch-assets.yml      downloads new images when data changes and opens a PR with them
@@ -50,17 +50,18 @@ Images not yet in `assets/` are loaded from their original site, so the page wor
 Open `admin.html` on the site (e.g. https://kevinpoteau.github.io/Umapasteque/admin.html).
 
 1. **GitHub token** (once per browser): create a [fine-grained token](https://github.com/settings/personal-access-tokens/new) with *Repository access → Only select repositories → Umapasteque*, permissions *Contents: Read and write* and *Pull requests: Read and write*, and an expiry date. Paste it in the dialog. It stays in that browser only.
-2. Pick Support cards / Umas and a running style. **To rate** lists entries with no verdict or marked `"todo": true`; **Changed** lists what you edited in this session.
-3. Set the verdict, stars, text and dates; the preview shows the card as it will look. Changes are kept in the browser until published.
-4. **Publish** opens one pull request with every change. Merge it and the site redeploys.
+2. Pick Support cards / Umas, and optionally a running style. **To rate** lists entries with no running style yet, a style without a verdict, or `"todo": true`; **Changed** lists what you edited in this session.
+3. Add the running styles the entry is good for (**+ Pace Chaser**…), then rate each one: verdict, stars, text. Dates are shared. The preview shows the card as it will look. Changes are kept in the browser until published.
+4. **Publish** opens one pull request with every change. The *Check data* run on it must be green; merge it and the site redeploys.
 
 ## How to edit
 
 | I want to… | Edit |
 |---|---|
-| Add or change a card | `data/support/<role>.json`: one object per card. `id` is the game's card id (it names the image), `iso` is the release date, `rank` the verdict (5 = Highly recommended … 1 = Very bad), `color` the card background (`blue`, `red`, `orange`, `pink`, `green`, `yellow`, `purple`). |
-| Add or change an Uma | `data/uma/<role>.json`: same idea, with `runner` / `inherit` / `evolved` stars, `aptitudes`, `outfit` and `style` (her own running style) |
-| Rate an entry still shown "Unrated" | `CUSTOM_VERDICTS` in `js/config.js`: maps the Notion custom emoji id (`verdictKey`) to a rank |
+| Rate, or show an entry on another running style | the admin page (above), or `roles` in the data file |
+| Add or change a card | `data/support.json`: one object per card. `id` is the game's card id (it names the image), `iso` is the release date, `color` the card background (`blue`, `red`, `orange`, `pink`, `green`, `yellow`, `purple`). `roles` lists the running styles the card is shown on, each with its own rating: `{"pace": {"rank": 4, "verdict": ["…"], "stats": 3, "skills": 4, "longevity": "…", "bonus": [["Speed", "+1"]]}}` (`rank`: 5 = Highly recommended … 1 = Very bad). A style missing from `roles` never shows the card. |
+| Add or change an Uma | `data/uma.json`: same idea, with `runner` / `inherit` / `evolved` stars, `aptitudes`, `outfit` and `style` (her own running style); each role holds `rank` and `verdict` |
+| Check my edits by hand | `python3 scripts/validate_data.py` |
 | Change a scenario date or colour | `data/scenarios.json` |
 | Change a colour or the card width | the `:root` block at the top of `css/base.css` (every token is commented) |
 | Rename a verdict or swap its icon | `VERDICTS` in `js/config.js` + `assets/icons/verdicts/` |

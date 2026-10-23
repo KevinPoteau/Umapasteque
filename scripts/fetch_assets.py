@@ -25,14 +25,10 @@ def ext_of(url: str) -> str:
 
 def targets():
     """(destination, url) pairs. Paths must match js/config.js."""
-    for f in sorted((ROOT / "data" / "support").glob("*.json")):
-        for card in json.loads(f.read_text(encoding="utf-8")):
-            if card.get("id") and card.get("imgSource"):
-                yield ROOT / "assets" / "cards" / f"{card['id']}.webp", card["imgSource"]
-    for f in sorted((ROOT / "data" / "uma").glob("*.json")):
-        for uma in json.loads(f.read_text(encoding="utf-8")):
-            if uma.get("id") and uma.get("imgSource"):
-                yield ROOT / "assets" / "umas" / f"{uma['id']}.webp", uma["imgSource"]
+    for kind, folder in (("support", "cards"), ("uma", "umas")):
+        for item in json.loads((ROOT / "data" / f"{kind}.json").read_text(encoding="utf-8")):
+            if item.get("id") and item.get("imgSource"):
+                yield ROOT / "assets" / folder / f"{item['id']}.webp", item["imgSource"]
     for sc in json.loads((ROOT / "data" / "scenarios.json").read_text(encoding="utf-8")):
         yield ROOT / "assets" / "scenarios" / f"{sc['slug']}{ext_of(sc['imgSource'])}", sc["imgSource"]
     for role in ("front", "pace", "late", "end"):

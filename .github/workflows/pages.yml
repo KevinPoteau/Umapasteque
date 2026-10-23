@@ -22,14 +22,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
-      - name: Validate card data
-        run: |
-          python3 - <<'PY'
-          import json, glob
-          for f in sorted(glob.glob("data/**/*.json", recursive=True)):
-              d = json.load(open(f, encoding="utf-8"))
-              print(f, len(d), "entries")
-          PY
+      - name: Check the data
+        run: python3 scripts/validate_data.py
       # Fresh URLs on every deploy, so browsers never mix new and cached files
       - name: Add version to CSS, JS and data URLs
         run: python3 scripts/stamp_version.py "${GITHUB_SHA::8}"

@@ -2,7 +2,7 @@
 //
 // A page is "<kind>/<role>", e.g. #support/end or #uma/front, kept in the URL hash
 // so every page can be bookmarked and shared.
-import { KINDS, ROLES, dataPath } from "./config.js";
+import { KINDS, ROLES, dataPath, entriesFor } from "./config.js";
 import { useStateFor, save, matches } from "./state.js";
 import { initFilters, syncFilters } from "./filters.js";
 import { createRuler } from "./ruler.js";
@@ -16,7 +16,7 @@ const LAST_PAGE_KEY = "uma-last-page";
 let page = null;     // { kind, role }
 let items = [];      // everything on the current page
 let timeline, ruler; // created once scenarios are loaded
-const cache = {};    // data path → parsed JSON
+const cache = {};    // data path → parsed JSON (one file per kind, shared by its four pages)
 
 async function loadJSON(path) {
   if (!cache[path]) {
@@ -61,7 +61,7 @@ async function openPage(next) {
   renderNav();
   useStateFor(page.kind);
   try {
-    items = await loadJSON(dataPath(page.kind, page.role));
+    items = entriesFor(await loadJSON(dataPath(page.kind)), page.role);
   } catch (e) {
     console.error(e);
     $("#tl").innerHTML = '<p class="empty">Could not load this page\'s data.</p>';
