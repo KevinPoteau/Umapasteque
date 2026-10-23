@@ -21,15 +21,15 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - name: Check the data
         run: python3 scripts/validate_data.py
       # Fresh URLs on every deploy, so browsers never mix new and cached files
       - name: Add version to CSS, JS and data URLs
         run: python3 scripts/stamp_version.py "${GITHUB_SHA::8}"
-      - uses: actions/configure-pages@v5
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v6
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: .
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
