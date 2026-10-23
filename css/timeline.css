@@ -1,46 +1,354 @@
-/* Horizontal release timeline: scenario sections, date rail, ruler, needle reader */
-/* timeline */
-.tl-wrap{position:relative}
-.tl{position:relative;display:flex;overflow-x:auto;overscroll-behavior-x:contain;padding-bottom:18px;scrollbar-color:#ffffff30 transparent}
-.tl::-webkit-scrollbar{height:10px}.tl::-webkit-scrollbar-thumb{background:#ffffff30;border-radius:5px}
-.spacer{flex:0 0 var(--gut)}
-.ruler{position:absolute;top:0;left:0;height:var(--rh);border-bottom:1px solid #ffffff40;background:linear-gradient(#232323,#1d1d1d);pointer-events:none}
-.ruler .tk{position:absolute;bottom:0;width:1px;background:#ffffff45;height:7px}
-.ruler .tk.wk{height:12px;background:#ffffff70}
-.ruler .tk.mo{height:22px;background:#ffffffc0}
-.ruler .lb{position:absolute;bottom:24px;font:700 11px var(--body);color:var(--muted);transform:translateX(4px);white-space:nowrap;font-variant-numeric:tabular-nums}
-.ruler .lb.yr{color:var(--fg)}
-.ruler .flag{position:absolute;top:0;bottom:0;border-left:2px solid var(--sc)}
-.ruler .flag span{position:absolute;top:4px;left:5px;font:800 11px var(--display);color:var(--sc);white-space:nowrap}
-.ruler .now{position:absolute;top:0;bottom:-4px;border-left:2px dashed var(--gold)}
-.reader{position:absolute;top:0;left:0;height:var(--rh);display:flex;align-items:stretch;z-index:3;pointer-events:none;padding-left:var(--gut);background:#1b1b1b;border-bottom:1px solid #ffffff40;box-shadow:8px 0 12px -6px #000}
-.reader .shot{width:150px;position:relative;margin-block:5px;border-radius:6px;overflow:hidden;background:var(--inset);box-shadow:0 0 0 2px var(--sc,#555)}
-.reader .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.06);transition:opacity .45s,transform .6s}
-.reader .shot img.on{opacity:1;transform:none}
-.reader .shot b{position:absolute;inset:0;display:grid;place-items:center;font:800 12px var(--display);color:var(--fg);text-align:center;padding:4px;text-shadow:0 1px 3px #000}
-.reader .shot img.on~b{opacity:0}
-.reader .txt{display:flex;flex-direction:column;justify-content:center;padding:0 40px 0 12px}
-.reader .txt b{font:800 15px/1.1 var(--display);color:var(--sc);white-space:nowrap}
-.reader .txt small{font-size:12px;font-variant-numeric:tabular-nums;white-space:nowrap}
-.needle{position:absolute;top:0;height:calc(var(--rh) + 8px);border-left:2px solid var(--fg);z-index:3;pointer-events:none}
-.needle::after{content:"";position:absolute;bottom:-1px;left:-6px;border:5px solid transparent;border-top:7px solid var(--fg)}
-@media (prefers-reduced-motion:reduce){.reader .shot img{transition:none}}
-.sc{flex:0 0 auto;display:grid;grid-template-rows:auto 1fr;gap:6px;border-top:4px solid var(--sc);padding-top:10px;margin-top:calc(var(--rh) + 14px)}
-.sc-head{position:sticky;left:var(--gut);justify-self:start;display:flex;align-items:baseline;gap:10px;padding-right:16px;white-space:nowrap}
-.sc-head h2{margin:0;font:800 22px/1.1 var(--display);color:var(--sc)}
-.sc-head small{font-size:12.5px}
-.cards{display:flex;gap:14px;padding-right:22px;align-items:start}
-.col{flex:0 0 var(--cardw);width:var(--cardw);max-width:var(--cardw);contain:inline-size;display:grid;gap:8px;}
-.when{position:relative;height:30px;display:flex;align-items:center;font-size:12px;font-weight:700;color:var(--muted);font-variant-numeric:tabular-nums}
-.when::before{content:"";position:absolute;left:0;right:-14px;top:50%;border-top:1px solid var(--line)}
-.when i{position:relative;width:11px;height:11px;border-radius:50%;background:var(--sc);box-shadow:0 0 0 3px var(--bg);margin-right:10px}
-.when span{position:relative;background:var(--bg);padding-right:6px}
-.when.past{opacity:.55}
-.today{flex:0 0 auto;align-self:stretch;display:flex;flex-direction:column;align-items:center;padding-top:6px;margin-right:4px}
-.sc-head{visibility:visible}
-.today b{font-size:11px;color:var(--gold);letter-spacing:.06em;text-transform:uppercase}
-.today::after{content:"";flex:1;border-left:2px dashed var(--gold);margin-top:4px}
-.nav{position:absolute;top:45%;width:38px;height:38px;border-radius:50%;border:1px solid var(--line);background:#262626e6;cursor:pointer;font-size:20px;line-height:1;display:grid;place-items:center;z-index:2}
-.nav.prev{left:max(6px,env(safe-area-inset-left,0px))}.nav.next{right:max(6px,env(safe-area-inset-right,0px))}
-.nav:disabled{opacity:0;pointer-events:none}
-@media (hover:none){.nav{display:none}}
+/* =====================================================================
+   Timeline — scenario sections laid out left to right, the date rail
+   above each card, the "Today" marker, the ruler and the needle reader.
+   Built by js/timeline.js and js/ruler.js.
+   ===================================================================== */
+
+.tl-wrap {
+  position: relative;
+}
+
+/* Scroll container: one long row of scenario sections */
+.tl {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  padding-bottom: 18px;
+  scrollbar-color: #ffffff30 transparent;
+}
+
+.tl::-webkit-scrollbar {
+  height: 10px;
+}
+
+.tl::-webkit-scrollbar-thumb {
+  background: #ffffff30;
+  border-radius: 5px;
+}
+
+.spacer {
+  flex: 0 0 var(--gut);
+}
+
+/* Ruler: day / week / month ticks, scenario flags, Today line (absolutely placed by ruler.js) */
+.ruler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--rh);
+  border-bottom: 1px solid #ffffff40;
+  background: linear-gradient(#232323, #1d1d1d);
+  pointer-events: none;
+}
+
+.ruler .tk {
+  position: absolute;
+  bottom: 0;
+  width: 1px;
+  background: #ffffff45;
+  height: 7px;
+}
+
+.ruler .tk.wk {
+  height: 12px;
+  background: #ffffff70;
+}
+
+.ruler .tk.mo {
+  height: 22px;
+  background: #ffffffc0;
+}
+
+.ruler .lb {
+  position: absolute;
+  bottom: 24px;
+  font: 700 11px var(--body);
+  color: var(--muted);
+  transform: translateX(4px);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+
+.ruler .lb.yr {
+  color: var(--fg);
+}
+
+.ruler .flag {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-left: 2px solid var(--sc);
+}
+
+.ruler .flag span {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  font: 800 11px var(--display);
+  color: var(--sc);
+  white-space: nowrap;
+}
+
+.ruler .now {
+  position: absolute;
+  top: 0;
+  bottom: -4px;
+  border-left: 2px dashed var(--gold);
+}
+
+/* Reader: fixed panel on the left of the ruler — scenario art + date under the needle */
+.reader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: var(--rh);
+  display: flex;
+  align-items: stretch;
+  z-index: 3;
+  pointer-events: none;
+  padding-left: var(--gut);
+  background: #1b1b1b;
+  border-bottom: 1px solid #ffffff40;
+  box-shadow: 8px 0 12px -6px #000;
+}
+
+.reader .shot {
+  width: 150px;
+  position: relative;
+  margin-block: 5px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--inset);
+  box-shadow: 0 0 0 2px var(--sc, #555);
+}
+
+.reader .shot img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity .45s, transform .6s;
+}
+
+.reader .shot img.on {
+  opacity: 1;
+  transform: none;
+}
+
+.reader .shot b {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font: 800 12px var(--display);
+  color: var(--fg);
+  text-align: center;
+  padding: 4px;
+  text-shadow: 0 1px 3px #000;
+}
+
+.reader .shot img.on~b {
+  opacity: 0;
+}
+
+.reader .txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 40px 0 12px;
+}
+
+.reader .txt b {
+  font: 800 15px/1.1 var(--display);
+  color: var(--sc);
+  white-space: nowrap;
+}
+
+.reader .txt small {
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Needle: the vertical line the reader measures from */
+.needle {
+  position: absolute;
+  top: 0;
+  height: calc(var(--rh) + 8px);
+  border-left: 2px solid var(--fg);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.needle::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -6px;
+  border: 5px solid transparent;
+  border-top: 7px solid var(--fg);
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .reader .shot img {
+    transition: none;
+  }
+}
+
+/* Scenario section: coloured top border + sticky title */
+.sc {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 6px;
+  border-top: 4px solid var(--sc);
+  padding-top: 10px;
+  margin-top: calc(var(--rh) + 14px);
+}
+
+.sc-head {
+  position: sticky;
+  left: var(--gut);
+  justify-self: start;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding-right: 16px;
+  white-space: nowrap;
+}
+
+.sc-head h2 {
+  margin: 0;
+  font: 800 22px/1.1 var(--display);
+  color: var(--sc);
+}
+
+.sc-head small {
+  font-size: 12.5px;
+}
+
+/* Cards of a section, and the date rail (dot + date) above each one */
+.cards {
+  display: flex;
+  gap: 14px;
+  padding-right: 22px;
+  align-items: start;
+}
+
+.col {
+  flex: 0 0 var(--cardw);
+  width: var(--cardw);
+  max-width: var(--cardw);
+  contain: inline-size;
+  display: grid;
+  gap: 8px;
+}
+
+.when {
+  position: relative;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.when::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: -14px;
+  top: 50%;
+  border-top: 1px solid var(--line);
+}
+
+.when i {
+  position: relative;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--sc);
+  box-shadow: 0 0 0 3px var(--bg);
+  margin-right: 10px;
+}
+
+.when span {
+  position: relative;
+  background: var(--bg);
+  padding-right: 6px;
+}
+
+.when.past {
+  opacity: .55;
+}
+
+/* "Today" marker between the last released card and the next one */
+.today {
+  flex: 0 0 auto;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6px;
+  margin-right: 4px;
+}
+
+.sc-head {
+  visibility: visible;
+}
+
+.today b {
+  font-size: 11px;
+  color: var(--gold);
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.today::after {
+  content: "";
+  flex: 1;
+  border-left: 2px dashed var(--gold);
+  margin-top: 4px;
+}
+
+/* ‹ › buttons (hidden on touch screens) */
+.nav {
+  position: absolute;
+  top: 45%;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: #262626e6;
+  cursor: pointer;
+  font-size: 20px;
+  line-height: 1;
+  display: grid;
+  place-items: center;
+  z-index: 2;
+}
+
+.nav.prev {
+  left: max(6px, env(safe-area-inset-left, 0px));
+}
+
+.nav.next {
+  right: max(6px, env(safe-area-inset-right, 0px));
+}
+
+.nav:disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media (hover:none) {
+  .nav {
+    display: none;
+  }
+}
