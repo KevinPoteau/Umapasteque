@@ -29,6 +29,7 @@ export function createTimeline(tl, scenarios, ruler) {
 
     tl.innerHTML = cards.length ? html + '<div class="spacer"></div>' : `<p class="empty">No ${noun} matches these filters.</p>`;
     $("#jump").innerHTML = jump;
+    fitCards();
     watchSizes();
     navState();
     ruler.build();
@@ -54,12 +55,6 @@ export function createTimeline(tl, scenarios, ruler) {
   // Vertical wheel scrolls the timeline sideways (Firefox reports lines/pages, not pixels)
   $(".tl-wrap").addEventListener("wheel", e => {
     if (Math.abs(e.deltaY) <= Math.abs(e.deltaX) || e.ctrlKey) return;
-    // A card taller than the screen scrolls its own text first
-    const card = e.target.closest(".card");
-    if (card && card.scrollHeight > card.clientHeight) {
-      const atTop = card.scrollTop <= 0, atBottom = card.scrollTop + card.clientHeight >= card.scrollHeight - 1;
-      if ((e.deltaY < 0 && !atTop) || (e.deltaY > 0 && !atBottom)) return;
-    }
     const k = e.deltaMode === 1 ? 40 : e.deltaMode === 2 ? tl.clientWidth : 1;
     tl.scrollLeft += e.deltaY * k;
     e.preventDefault();
@@ -73,7 +68,41 @@ export function createTimeline(tl, scenarios, ruler) {
     if (e.key === "ArrowLeft") { e.preventDefault(); prev.click(); }
   });
   tl.addEventListener("scroll", () => { navState(); ruler.read(); }, { passive: true });
-  addEventListener("resize", () => { navState(); ruler.build(); });
+  addEventListener("resize", () => { fitCards(); navState(); ruler.build(); });
+  document.fonts?.ready.then(() => { fitCards(); ruler.build(); });
+
+  /**
+   * Cards never scroll inside: a card whose text is taller than the screen
+   * allows is made wider instead (its right column flows into more columns),
+   * step by step until everything fits.
+   */
+  function fitCards() {
+    const STEP = 70, MAX = 3; // grow by 70 px, up to 3× the normal width
+    const tooTall = card => card.scrollHeight > card.clientHeight + 1;
+
+    for (const col of tl.querySelectorAll(".col")) {
+      const card = col.querySelector(".card");
+      col.style.removeProperty("--w");
+      card.classList.remove("flow");
+      const base = col.offsetWidth;
+
+      const widen = () => {
+        let w = base;
+        while (tooTall(card) && w < base * MAX) {
+          w += STEP;
+          col.style.setProperty("--w", `${w}px`);
+        }
+      };
+      widen();
+      // Still too tall (small screen): let the image and ratings flow into
+      // the columns too, then widen again from the normal width.
+      if (tooTall(card)) {
+        card.classList.add("flow");
+        col.style.removeProperty("--w");
+        widen();
+      }
+    }
+  }
 
   // Scenario buttons: jump to the start of that scenario (or to Today)
   $("#jump").addEventListener("click", e => {

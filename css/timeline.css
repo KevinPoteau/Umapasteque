@@ -36,10 +36,6 @@
   flex: 0 0 var(--gut);
 }
 
-/* Room after the last card so any scenario can be scrolled up to the needle */
-.spacer:last-child {
-  flex-basis: max(var(--gut), calc(100% - var(--cardw) - 360px));
-}
 
 /* Ruler: day / week / month ticks, scenario flags, Today line (absolutely placed by ruler.js) */
 .ruler {
@@ -252,15 +248,24 @@
 }
 
 .col {
-  flex: 0 0 var(--cardw);
-  width: var(--cardw);
-  max-width: var(--cardw);
+  --w: var(--cardw);           /* widened per card by js/timeline.js when its text is long */
+  flex: 0 0 var(--w);
+  width: var(--w);
+  max-width: var(--w);
   contain: inline-size;
-  display: grid;
-  grid-template-rows: auto minmax(0, auto);
+  display: flex;               /* date rail on top, card below; the card shrinks to the */
+  flex-direction: column;      /* height left so js/timeline.js can tell it is too long  */
   gap: 8px;
   max-height: 100%;
   min-height: 0;
+}
+
+.col > .card {
+  flex: 0 1 auto;
+}
+
+.col > .when {
+  flex: none;
 }
 
 .when {
