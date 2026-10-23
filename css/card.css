@@ -6,12 +6,8 @@
 
 /* Card frame and title */
 .card {
-  overflow-x: hidden;
-  overflow-y: auto;            /* long cards scroll inside themselves */
-  overscroll-behavior: contain;
+  overflow: hidden;             /* never scrolls: js/timeline.js widens cards that would */
   min-height: 0;
-  scrollbar-width: thin;
-  scrollbar-color: #ffffff30 transparent;
   background: var(--tint);
   border-radius: 12px;
   padding: 15px;
@@ -56,17 +52,32 @@
 /* Two columns: image + ratings | unique, skills, verdict */
 .body {
   display: grid;
-  grid-template-columns: minmax(0, 34%) minmax(0, 1fr);
+  grid-template-columns: 128px minmax(0, 1fr);   /* fixed art column: widening a card only gives room to the text */
   gap: 10px;
   min-width: 0;
 }
 
-.left,
-.right {
+.left {
   display: grid;
   gap: 8px;
   align-content: start;
   min-width: 0;
+}
+
+/* Right column flows into extra columns when a long card is widened */
+.right {
+  min-width: 0;
+  column-width: 230px;
+  column-gap: 8px;
+}
+
+.right > .box {
+  break-inside: avoid;
+  margin-bottom: 8px;
+}
+
+.right > .box:last-child {
+  margin-bottom: 0;
 }
 
 /* Card art, with a text placeholder when the image is missing */
@@ -259,3 +270,36 @@
   height: 16px;
 }
 
+/* Very long card on a short screen: every box, image and ratings included,
+   flows through the columns (set by js/timeline.js) */
+.card.flow .body {
+  display: block;
+  column-width: 200px;
+  column-gap: 8px;
+}
+
+.card.flow .left,
+.card.flow .right {
+  display: contents;
+}
+
+.card.flow .body .box,
+.card.flow .art {
+  break-inside: avoid;
+  margin-bottom: 8px;
+}
+
+.card.flow .art {
+  max-width: 128px;
+}
+
+/* The key skills list is the longest box: it may continue in the next
+   column, keeping each skill (with its inherited / evolved lines) whole */
+.right > .box.skills,
+.card.flow .body .box.skills {
+  break-inside: auto;
+}
+
+.box.skills > ul > li {
+  break-inside: avoid;
+}

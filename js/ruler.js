@@ -71,7 +71,10 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
     needle.style.left = nx + "px";
     if (anchors.length < 2) { $("#rdate").textContent = ""; return; }
     const t = tOf(tl.scrollLeft + nx);
-    const s = [...scenarios].reverse().find(s => t >= ms(s.start)) || scenarios[0];
+    // Scrolled all the way right: the last scenario may never reach the needle, so take the last card's
+    const atEnd = tl.scrollLeft >= tl.scrollWidth - tl.clientWidth - 2;
+    const lastT = atEnd ? ms([...tl.querySelectorAll(".col")].at(-1)?.dataset.iso ?? "") : NaN;
+    const s = [...scenarios].reverse().find(s => (Number.isNaN(lastT) ? t : Math.max(t, lastT)) >= ms(s.start)) || scenarios[0];
     $("#rdate").textContent = fmtDate(t);
     if (s !== current) {
       current = s;

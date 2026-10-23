@@ -13,7 +13,7 @@ const ratings = rows =>
   `<div class="box rate">${rows.map(([label, value]) => `<div><b>${label}</b>${value}</div>`).join("")}</div>`;
 
 /** Key skills: [{html, sub: [html]}] → nested list (inherited / evolved versions under each skill). */
-const skillList = skills => !skills.length ? "" : `<div class="box"><h4>Key skills</h4><ul>${
+const skillList = skills => !skills.length ? "" : `<div class="box skills"><h4>Key skills</h4><ul>${
   skills.map(s => `<li>${s.html}${s.sub ? `<ul>${s.sub.map(x => `<li>${x}</li>`).join("")}</ul>` : ""}</li>`).join("")
 }</ul></div>`;
 
