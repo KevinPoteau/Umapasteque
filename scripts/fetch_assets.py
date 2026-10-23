@@ -37,6 +37,8 @@ def targets():
         yield ROOT / "assets" / "scenarios" / f"{sc['slug']}{ext_of(sc['imgSource'])}", sc["imgSource"]
     for role in ("front", "pace", "late", "end"):
         yield ROOT / "assets" / "icons" / "roles" / f"{role}.webp", f"https://uma.guide/img/banner-reviews/badges/playstyle-{role}.webp"
+    yield (ROOT / "assets" / "icons" / "shoes.png",
+           "https://s3-us-west-2.amazonaws.com/public.notion-static.com/e2557030-cdaa-41e2-9521-eab8e5b5e50a/uma_aptitude_shoes.png")
     yield (ROOT / "assets" / "icons" / "sp.png",
            "https://s3-us-west-2.amazonaws.com/public.notion-static.com/01249879-d648-48a2-b3c8-b368ffff1156/uma_sp_star.png")
 

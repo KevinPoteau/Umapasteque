@@ -1,7 +1,7 @@
 // Card markup, laid out like the v1 Notion callouts.
 //   supportCardHTML(card): support card
 //   umaCardHTML(uma):      Uma (character)
-import { VERDICTS, rankOf, typeIcon, cardImage, umaImage, SP_ICON, roleById } from "./config.js";
+import { VERDICTS, rankOf, typeIcon, cardImage, umaImage, SP_ICON, SHOE_ICON, roleById } from "./config.js";
 import { img } from "./util.js";
 
 // ---------- shared pieces ----------
@@ -77,7 +77,7 @@ export function umaCardHTML(u, pageRole) {
     </div>
     <div class="right">
       ${skillList(u.keyskills)}
-      ${u.aptitudes.length ? `<div class="box apt"><h4>Aptitudes</h4>${u.aptitudes.map(aptitudeTag).join("")}</div>` : ""}
+      ${u.aptitudes.length ? `<div class="box apt"><h4>${img(SHOE_ICON, 'class="shoe" alt=""')}Aptitudes</h4>${u.aptitudes.map(aptitudeTag).join("")}</div>` : ""}
       ${verdictBox(u)}
     </div>
   </div>

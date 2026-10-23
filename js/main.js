@@ -35,7 +35,8 @@ function parseHash(hash) {
 
 function renderNav() {
   $("#kinds").innerHTML = Object.entries(KINDS).map(([k, v]) =>
-    `<a href="#${k}/${page.role}"${k === page.kind ? ' aria-current="page"' : ""}>${v.label}</a>`).join("");
+    `<a href="#${k}/${page.role}"${k === page.kind ? ' aria-current="page"' : ""}>` +
+    `<img src="${v.art}" alt="" style="object-position:${v.focus}"><span>${v.label}</span></a>`).join("");
   $("#roles").innerHTML = ROLES.map(r =>
     `<a href="#${page.kind}/${r.id}"${r.id === page.role ? ' aria-current="page"' : ""}>${img(r.icon, 'alt=""')}${r.label}</a>`).join("");
   const role = ROLES.find(r => r.id === page.role);

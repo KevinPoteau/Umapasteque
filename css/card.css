@@ -319,3 +319,15 @@
 .box.skills > ul > li {
   break-inside: avoid;
 }
+
+/* Shoe icon before "Aptitudes" */
+.apt h4 {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.apt h4 .shoe {
+  width: 16px;
+  height: 16px;
+}

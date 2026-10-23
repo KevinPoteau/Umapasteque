@@ -130,29 +130,61 @@ select {
   color: var(--bg);
 }
 
-/* Support cards / Umas switch: a two-way segmented control */
+/* Support cards / Umas switch: two tiles with art behind the label */
 .kinds {
   display: inline-flex;
+  gap: 4px;
+  padding: 3px;
   border: 1px solid var(--line);
-  border-radius: 999px;
-  overflow: hidden;
+  border-radius: 12px;
+  background: var(--bar);
 }
 
 .kinds a {
-  padding: 4px 12px;
-  color: var(--muted);
+  position: relative;
+  width: 128px;
+  height: 34px;
+  border-radius: 9px;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
   text-decoration: none;
-  font-weight: 700;
-  font-size: 13px;
+  color: var(--fg);
+  font: 800 13px/1 var(--display);
+  background: linear-gradient(135deg, #4a3550, #2c3e5a);   /* shows through transparent Uma art */
 }
 
-.kinds a + a {
-  border-left: 1px solid var(--line);
+.kinds a img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: .45;
+  filter: grayscale(.7);
+  transition: opacity .2s, filter .2s;
+}
+
+.kinds a span {
+  position: absolute;          /* covers the art: darkens it behind the label */
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(closest-side, #0009, #0000);
+  text-shadow: 0 1px 3px #000;
+}
+
+.kinds a:hover img {
+  opacity: .7;
 }
 
 .kinds a[aria-current] {
-  background: var(--accent);
-  color: var(--bg);
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.kinds a[aria-current] img {
+  opacity: 1;
+  filter: none;
 }
 
 .crumbs a:not([aria-current]):hover {
@@ -365,6 +397,12 @@ select {
   width: 22px;
   height: 22px;
   border-radius: 50%;
+}
+
+.chip .ico.shoe {
+  border-radius: 0;
+  clip-path: none;
+  object-fit: contain;
 }
 
 .chip .ico {
