@@ -21,7 +21,7 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v5
+      - uses: actions/checkout@v7
       - name: Check the data
         run: python3 scripts/validate_data.py
       # Fresh URLs on every deploy, so browsers never mix new and cached files
