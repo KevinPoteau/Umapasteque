@@ -33,7 +33,7 @@ assets/
 scripts/fetch_assets.py downloads missing images into assets/
 .github/workflows/
   pages.yml             deploys to GitHub Pages on push to main
-  fetch-assets.yml      stores new images in assets/ when data changes, then redeploys
+  fetch-assets.yml      downloads new images when data changes and opens a PR with them
 ```
 
 Images not yet in `assets/` are loaded from their original site, so the page works before and after the sync.

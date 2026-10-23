@@ -1,7 +1,7 @@
 name: Store images in the repo
 
-# Downloads card, scenario and role images into assets/ and commits them,
-# then redeploys the site. Runs when card data changes, or by hand.
+# Downloads card, scenario and role images into assets/ and opens a pull
+# request with them. Runs when card data changes, or by hand.
 on:
   push:
     branches: [main]
@@ -15,7 +15,7 @@ on:
 
 permissions:
   contents: write
-  actions: write
+  pull-requests: write
 
 concurrency:
   group: fetch-assets
@@ -28,23 +28,24 @@ jobs:
       - uses: actions/checkout@v4
       - name: Download missing images
         run: python3 scripts/fetch_assets.py ${{ inputs.force && '--force' || '' }}
-      - name: Commit new images
-        id: commit
+      # main is protected (changes go through pull requests), so the images
+      # arrive as a PR to merge; merging it redeploys the site.
+      - name: Open a pull request with the new images
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
           git add assets
           if git diff --cached --quiet; then
-            echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No new images."
-          else
-            git config user.name "github-actions[bot]"
-            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Store images in assets/"
-            git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
-      # Pushes made with GITHUB_TOKEN do not trigger other workflows, so start the deploy explicitly
-      - name: Redeploy the site
-        if: steps.commit.outputs.changed == 'true'
-        env:
-          GH_TOKEN: ${{ github.token }}
-        run: gh workflow run pages.yml --ref main
+          count=$(git diff --cached --name-only | wc -l)
+          branch="bot/assets-${{ github.run_id }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git commit -m "Store $count images in assets/"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" \
+            --title "Store $count images in assets/" \
+            --body "Downloaded by scripts/fetch_assets.py (run ${{ github.run_id }}). Merge to publish them; the site already falls back to the original URLs until then."
