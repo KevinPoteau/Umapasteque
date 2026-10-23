@@ -10,6 +10,7 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
   const reader = $("#reader"), needle = $("#needle");
   let anchors = []; // [{x, t}], t strictly increasing
   let current = null;
+  let lastX = 0;    // left edge of the last card, in timeline coordinates
 
   // Scenario art, stacked and cross-faded by readRuler()
   const shot = $("#shot");
@@ -31,11 +32,18 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
     const cols = [...tl.querySelectorAll(".col")];
     if (!cols.length) { anchors = []; read(); return; }
 
-    anchors = [];
-    for (const c of cols) {
-      const a = { x: c.offsetLeft, t: ms(c.dataset.iso) };
-      if (!anchors.length || a.t > anchors.at(-1).t) anchors.push(a);
+    lastX = cols.at(-1).offsetLeft;
+    // Anchors: each card's left edge at its release date, and each scenario
+    // section's left edge at the scenario's start date (so the ruler changes
+    // scenario exactly where the sections change). Kept only if dates increase.
+    const raw = cols.map(c => ({ x: c.offsetLeft, t: ms(c.dataset.iso) }));
+    for (const sec of tl.querySelectorAll(".sc")) {
+      const s = scenarios[+sec.id.slice(2)];
+      if (s) raw.push({ x: sec.offsetLeft, t: ms(s.start) });
     }
+    raw.sort((a, b) => a.x - b.x || a.t - b.t);
+    anchors = [];
+    for (const a of raw) if (!anchors.length || a.t > anchors.at(-1).t) anchors.push(a);
     // Pad both ends at 4 px/day so the ruler runs past the first and last card
     const pxDay = 4, colW = cols[0].offsetWidth + 24, first = anchors[0], last = anchors.at(-1);
     anchors.unshift({ x: first.x - 90 * pxDay, t: first.t - 90 * DAY });
@@ -68,13 +76,24 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
 
   function read() {
     const nx = reader.offsetWidth;
-    needle.style.left = nx + "px";
-    if (anchors.length < 2) { $("#rdate").textContent = ""; return; }
-    const t = tOf(tl.scrollLeft + nx);
-    // Scrolled all the way right: the last scenario may never reach the needle, so take the last card's
-    const atEnd = tl.scrollLeft >= tl.scrollWidth - tl.clientWidth - 2;
-    const lastT = atEnd ? ms([...tl.querySelectorAll(".col")].at(-1)?.dataset.iso ?? "") : NaN;
-    const s = [...scenarios].reverse().find(s => (Number.isNaN(lastT) ? t : Math.max(t, lastT)) >= ms(s.start)) || scenarios[0];
+    if (anchors.length < 2) { needle.style.left = nx + "px"; $("#rdate").textContent = ""; return; }
+
+    // The needle normally sits just right of the reader panel. Near the end of
+    // the timeline the last cards cannot scroll that far left, so over the last
+    // half-screen of scrolling the needle slides right until it reaches the
+    // last card: what it reads stays continuous and the last scenario is reached.
+    const max = tl.scrollWidth - tl.clientWidth;
+    const overshoot = lastX - max - nx;           // > 0: last card never reaches the needle
+    let vx = nx;
+    if (overshoot > 0) {
+      const span = Math.max(200, tl.clientWidth / 2);
+      const p = Math.min(1, Math.max(0, (tl.scrollLeft - (max - span)) / span));
+      vx = nx + p * overshoot;
+    }
+    needle.style.left = vx + "px";
+
+    const t = tOf(tl.scrollLeft + vx);
+    const s = [...scenarios].reverse().find(s => t >= ms(s.start)) || scenarios[0];
     $("#rdate").textContent = fmtDate(t);
     if (s !== current) {
       current = s;
