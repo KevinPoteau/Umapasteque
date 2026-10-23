@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<meta name="darkreader-lock">
+<meta name="robots" content="noindex">
+<title>Umapastèque · Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/card.css">
+<link rel="stylesheet" href="css/admin.css">
+<script type="module" src="js/admin.js"></script>
+</head>
+<body class="admin">
+
+<header class="pad mast">
+  <h1>Umapast<span>è</span>que <small class="tag-admin">Admin</small></h1>
+  <a class="back" href="./">← Back to the site</a>
+  <span class="sp"></span>
+  <span class="who" id="who"></span>
+  <button class="btn" id="token-btn">GitHub token</button>
+  <button class="btn primary" id="publish" disabled>Publish</button>
+</header>
+
+<div class="bar">
+  <div class="pad">
+    <nav class="kinds simple" id="a-kinds" aria-label="Support cards or Umas"></nav>
+    <select class="sel" id="a-role" aria-label="Running style"></select>
+    <div class="seg" id="a-scope" role="group" aria-label="Which entries">
+      <button data-scope="todo" aria-pressed="true">To rate</button>
+      <button data-scope="all" aria-pressed="false">All</button>
+      <button data-scope="changed" aria-pressed="false">Changed</button>
+    </div>
+    <input class="search" id="a-q" type="search" placeholder="Search…" aria-label="Search">
+    <span class="count" id="a-count"></span>
+  </div>
+</div>
+
+<main class="admin-main">
+  <section class="list" id="list" aria-label="Entries"></section>
+  <section class="editor" id="editor" aria-label="Rating">
+    <p class="empty">Pick an entry on the left to rate it.</p>
+  </section>
+</main>
+
+<dialog id="token-dlg">
+  <form method="dialog" class="dlg">
+    <h2>GitHub token</h2>
+    <p>Publishing opens a pull request on <b>KevinPoteau/Umapasteque</b>. It needs a
+      <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">fine-grained token</a>
+      limited to that repository, with <b>Contents: Read and write</b> and <b>Pull requests: Read and write</b>.
+      Give it an expiry date.</p>
+    <p class="muted">The token stays in this browser (local storage) and is only sent to api.github.com.</p>
+    <label for="token-in">Token</label>
+    <input id="token-in" type="password" autocomplete="off" placeholder="github_pat_…">
+    <div class="row">
+      <button value="clear" class="btn">Remove</button>
+      <span class="sp"></span>
+      <button value="cancel" class="btn">Cancel</button>
+      <button value="save" class="btn primary">Save</button>
+    </div>
+  </form>
+</dialog>
+
+</body>
+</html>

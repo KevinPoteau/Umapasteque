@@ -21,7 +21,8 @@ def stamp(path, rules):
     path.write_text(text, encoding="utf-8")
 
 # <link href="css/x.css"> and <script src="js/x.js">
-stamp(ROOT / "index.html", [(r'((?:href|src)="(?:css|js)/[\w-]+\.(?:css|js))"', rf'\1?v={v}"')])
+for page in ("index.html", "admin.html"):
+    stamp(ROOT / page, [(r'((?:href|src)="(?:css|js)/[\w-]+\.(?:css|js))"', rf'\1?v={v}"')])
 
 for js in (ROOT / "js").glob("*.js"):
     stamp(js, [
