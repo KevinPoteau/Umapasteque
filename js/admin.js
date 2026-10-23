@@ -145,11 +145,28 @@ const starsInput = (field, value) => `<div class="stars-in" data-field="${field}
   [1, 2, 3, 4, 5].map(n => `<button type="button" data-n="${n}" aria-label="${n} of 5" class="${n <= value ? "on" : ""}">★</button>`).join("")
 }</div>`;
 
-/** A new running style starts unrated; support cards reuse the stat bonus of another style. */
+/** Key skills ⇄ text: one skill per line, "↳ " lines belong to the skill above. */
+const skillsToText = skills => (skills ?? []).map(s => [s.html, ...(s.sub ?? []).map(x => `↳ ${x}`)].join("\n")).join("\n");
+function textToSkills(text) {
+  const out = [];
+  for (const raw of text.split("\n")) {
+    const line = raw.trim();
+    if (!line) continue;
+    const sub = line.match(/^(↳|->|-)\s*(.*)$/);
+    if (sub && out.length) (out[out.length - 1].sub ??= []).push(sub[2]);
+    else out.push({ html: line });
+  }
+  return out;
+}
+
+/** A new running style starts unrated. */
 function newRole(kind, it) {
   if (kind === "uma") return { verdict: [] };
   const other = Object.values(it.roles ?? {})[0];
-  return { verdict: [], stats: 0, skills: 0, longevity: "", bonus: other?.bonus ?? [] };
+  const r = { verdict: [], stats: 0, skills: 0, longevity: "" };
+  // stat bonus: shared one if the entry has it (imported cards), else copy another style's
+  if (!it.bonus) r.bonus = other?.bonus ?? [];
+  return r;
 }
 
 async function renderEditor() {
@@ -216,6 +233,18 @@ async function renderEditor() {
       </div>
       <label class="check"><input name="todo" type="checkbox" ${it.todo ? "checked" : ""}> Keep in the “To rate” list</label>
     </fieldset>
+
+    <details class="texts"${(view.textsOpen ?? !!it.todo) ? " open" : ""}>
+      <summary>Card text <small>(shared · HTML allowed)</small></summary>
+      ${support ? `
+      <label>Effects<input name="effects" value="${esc(it.effects)}"></label>
+      <div class="grid2">
+        <label>Start<input name="start" value="${esc(it.start)}"></label>
+        <label>Unique<input name="unique" value="${esc(it.unique)}"></label>
+      </div>` : `<label>Outfit<input name="outfit" value="${esc(it.outfit)}"></label>`}
+      <label>Key skills <small>(one per line; “↳ ” in front = inherited / evolved version of the line above)</small>
+        <textarea name="keyskills" rows="7" spellcheck="false">${esc(skillsToText(it.keyskills))}</textarea></label>
+    </details>
   </form>
   <div class="preview"><h3>Preview${role ? ` · ${roleById(role).label}` : ""}</h3><div class="pv">${
     role ? (support ? supportCardHTML(forRole(it, role)) : umaCardHTML(forRole(it, role), role)) : '<p class="empty">No running style yet.</p>'}</div></div>`;
@@ -233,6 +262,7 @@ async function renderEditor() {
     set({ roles, ...(done && "rank" in fields ? { todo: null } : {}) });
   };
 
+  form.querySelector(".texts").addEventListener("toggle", e => { view.textsOpen = e.target.open; });
   form.querySelectorAll(".rtab[data-tab]").forEach(b => b.onclick = () => { view.edRole = b.dataset.tab; renderEditor(); });
   form.querySelectorAll(".rtab[data-add]").forEach(b => b.onclick = () => {
     const roles = structuredClone(it.roles ?? {});
@@ -269,6 +299,8 @@ async function renderEditor() {
     else if (el.name === "todo") set({ todo: el.checked || null });
     else if (el.name === "iso") { if (el.value) set({ iso: el.value }); }
     else if (el.name === "date") set({ date: el.value.trim() });
+    else if (["effects", "start", "unique", "outfit"].includes(el.name)) set({ [el.name]: el.value.trim() });
+    else if (el.name === "keyskills") set({ keyskills: textToSkills(el.value) });
   });
 }
 
@@ -386,7 +418,7 @@ $("#list").addEventListener("click", e => {
   const s = e.target.closest("[data-scope]");
   if (s) { view.scope = s.dataset.scope; renderControls(); renderList(); return; }
   const row = e.target.closest(".row"); if (!row) return;
-  view.sel = +row.dataset.id; view.edRole = null;
+  view.sel = +row.dataset.id; view.edRole = null; view.textsOpen = undefined;
   $$("#list .row").forEach(r => r.classList.toggle("on", r === row));
   renderEditor();
 });

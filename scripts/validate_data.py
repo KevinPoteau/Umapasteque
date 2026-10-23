@@ -54,6 +54,7 @@ FIELDS = {
         **SHARED,
         "rarity": (True, lambda v: v in {"SSR", "SR", "R"}), "type": (True, lambda v: v in TYPES),
         "universal": (True, is_bool), "effects": (True, is_str), "start": (True, is_str), "unique": (True, is_str),
+        "bonus": (False, is_bonus),   # shared stat bonus; a running style can override it
     },
     "uma": {
         **SHARED,
@@ -129,11 +130,13 @@ def check_kind(kind, scenarios):
                 elif not ok(v):
                     err(rw, f"bad {f}: {v!r}")
             if kind == "support":
-                for f in ("verdict", "stats", "skills", "longevity", "bonus"):
+                for f in ("verdict", "stats", "skills", "longevity"):
                     if f not in r:
                         err(rw, f"missing {f}")
             elif "verdict" not in r:
                 err(rw, "missing verdict")
+            if kind == "support" and "bonus" not in r and "bonus" not in item:
+                err(rw, "missing bonus (here or shared)")
     print(f"{path.name}: {len(data)} entries, "
           + ", ".join(f"{r} {sum(1 for x in data if r in (x.get('roles') or {}))}" for r in ("front", "pace", "late", "end")))
 
