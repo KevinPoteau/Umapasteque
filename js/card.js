@@ -1,7 +1,7 @@
 // Card markup, laid out like the v1 Notion callouts.
 //   supportCardHTML(card): support card
 //   umaCardHTML(uma):      Uma (character)
-import { VERDICTS, rankOf, typeIcon, cardImage, umaImage, SP_ICON, shoeIcon, APTITUDE_SHOE, roleById } from "./config.js";
+import { VERDICTS, rankOf, typeIcon, cardImage, umaImage, SP_ICON, roleById } from "./config.js";
 import { img } from "./util.js";
 
 // ---------- shared pieces ----------
@@ -56,12 +56,10 @@ export function supportCardHTML(c) {
 
 // ---------- Uma ----------
 
-/** "Turf A" → tag with its shoe and the grade letter coloured like in the game; anything else (e.g. "1★") stays plain */
+/** "Turf A" → tag with the grade letter coloured like in the game; anything else (e.g. "1★") stays plain */
 function aptitudeTag(text) {
   const m = /^(.*) ([A-G])$/.exec(text);
-  if (!m) return `<span class="tag">${text}</span>`;
-  const shoe = APTITUDE_SHOE[m[1]];
-  return `<span class="tag">${shoe ? `<img class="shoe" src="${shoeIcon(shoe)}" alt="">` : ""}${m[1]} <b class="grade g-${m[2]}">${m[2]}</b></span>`;
+  return m ? `<span class="tag">${m[1]} <b class="grade g-${m[2]}">${m[2]}</b></span>` : `<span class="tag">${text}</span>`;
 }
 
 export function umaCardHTML(u, pageRole) {

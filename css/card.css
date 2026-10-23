@@ -319,11 +319,3 @@
 .box.skills > ul > li {
   break-inside: avoid;
 }
-
-/* Shoe in front of distance / surface aptitudes */
-.apt .tag .shoe {
-  width: 16px;
-  height: 16px;
-  align-self: center;
-  margin-left: -3px;
-}
