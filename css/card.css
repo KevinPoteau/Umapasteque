@@ -247,16 +247,32 @@
   object-position: top;
 }
 
-/* Aptitudes as small tags */
-.apt span {
-  display: inline-block;
-  margin: 2px 4px 0 0;
-  padding: 1px 7px;
-  border-radius: 999px;
-  background: var(--inset);
-  font-size: 11.5px;
+/* Aptitudes as tags: lighter than the box behind them, grade letter coloured */
+.apt .tag {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  margin: 3px 4px 0 0;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: #ffffff1f;
+  border: 1px solid #ffffff2e;
+  color: var(--fg);
+  font-size: 12px;
   font-weight: 600;
 }
+
+.apt .grade {
+  font: 800 12.5px/1 var(--display);
+}
+
+.g-A { color: #ffb347; }   /* A: orange, as in the game */
+.g-B { color: #f5d76e; }
+.g-C { color: #9be07c; }
+.g-D,
+.g-E,
+.g-F,
+.g-G { color: var(--muted); }
 
 /* Running style badge when an Uma is listed on another style's page */
 .meta .style {
