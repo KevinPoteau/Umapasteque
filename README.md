@@ -38,6 +38,19 @@ scripts/fetch_assets.py downloads missing images into assets/
 
 Images not yet in `assets/` are loaded from their original site, so the page works before and after the sync.
 
+## How to edit
+
+| I want to… | Edit |
+|---|---|
+| Add or change a card | `data/support/end.json`: one object per card. `id` is the game's card id (it names the image), `iso` is the release date, `rank` the verdict (5 = Highly recommended … 1 = Very bad), `color` the card background (`blue`, `red`, `orange`, `pink`, `green`, `yellow`, `purple`). |
+| Change a scenario date or colour | `data/scenarios.json` |
+| Change a colour or the card width | the `:root` block at the top of `css/base.css` (every token is commented) |
+| Rename a verdict or swap its icon | `VERDICTS` in `js/config.js` + `assets/icons/verdicts/` |
+| Change the card layout | markup in `js/card.js`, styles in `css/card.css` |
+| Change the filters | `js/filters.js` (buttons), `js/state.js` (what "matches" means) |
+
+After a push to `main` (through a pull request), the site redeploys on its own in about a minute.
+
 ## Run locally
 
 ES modules and `fetch()` do not work from `file://`, so serve the folder:
