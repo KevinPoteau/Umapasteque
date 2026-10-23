@@ -4678,5 +4678,1039 @@
     ]
    }
   }
+ },
+ {
+  "id": 30133,
+  "name": "Hishi Akebono",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Nov 12",
+  "iso": "2026-11-12",
+  "universal": false,
+  "scenario": "Grand Live",
+  "effects": "Friendship 25% · Mood 30% · Specialty 35 · Hint Lv2 / 30% · Wit recovery 5",
+  "start": "Start: Bond 20 · Spd +30 · Wit +30",
+  "unique": "Wit +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Plan X</span></b> – Acc +0.40 · 3s<br /><small>Sprint · Late mid-race · Pos 2+ / Top 50%</small>"
+   },
+   {
+    "html": "Sunny Days ○ · Final Push · Sprint Corners ○ · Countermeasure · Meticulous Measures · Hydrate · Sprinting Gear"
+   }
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30133_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30135,
+  "name": "Katsuragi Ace",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Nov 29",
+  "iso": "2026-11-29",
+  "universal": false,
+  "scenario": "Grand Masters",
+  "effects": "Friendship 25% · Mood 30% · Race 5% · Fans 10% · Specialty 35 · Hint Lv1 / 20%",
+  "start": "Start: Bond 20",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Unyielding</span></b> – TS +0.35 · Acc +0.10 · 3s<br /><small>Medium · Final corner · Overtaking</small>"
+   },
+   {
+    "html": "Tokyo Racecourse ○ · Fast-Paced · Steadfast · Medium Straightaways ○ · Front Runner Corners ○ · Leader's Pride · Aspire · Steady Gait · Firm Resolve · Final Push · Groundwork"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30135_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30136,
+  "name": "Symboli Kris S",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Nov 29",
+  "iso": "2026-11-29",
+  "universal": false,
+  "scenario": "Grand Masters",
+  "effects": "Friendship 20% · Training eff. 10% · Specialty 65 · Hint Lv2 / 40%",
+  "start": "Start: Bond 30 · Guts +30",
+  "unique": "Guts +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Burning Soul</span></b> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Medium · Mid-race · 30–80% of the pack · Blocked</small>"
+   },
+   {
+    "html": "Medium Corners ○ · Late Surger Corners ○ · 1,500,000 CC · All I've Got · Fighting Spirit · Fearless · Hawkeye · Cloudy Days ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30136_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30140,
+  "name": "Tokai Teio",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Dec 23",
+  "iso": "2026-12-23",
+  "universal": false,
+  "scenario": "Grand Masters",
+  "effects": "Friendship 20% · Specialty 35 · Hint Lv4 / 60%",
+  "start": "Start: Bond 20 · Spd +20",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Lightning Step</span></b> – Lane +0.04 · Acc +0.30 · 4s<br /><small>Medium · Mid-race</small>"
+   },
+   {
+    "html": "Prudent Positioning · Nimble Navigator · Go with the Flow · Thunderbolt Step · Soft Step · Shrewd Step · Steady Gait · Pace Chaser Corners ○ · Pace Chaser Straightaways ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30140_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30037,
+  "name": "Symboli Rudolf",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jan 6",
+  "iso": "2027-01-06",
+  "universal": false,
+  "scenario": "Grand Masters",
+  "effects": "Friendship 20% · Training eff. 10% · Race 5% · Fans 10% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 25 · Spd +20",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Swinging Maestro</span></b> – Rec +5.5%<br /><small>Mid-race · Corner</small>"
+   },
+   {
+    "html": "Right-Handed ○ · Nakayama Racecourse ○ · Corner Recovery ○ · Rosy Outlook · Medium Corners ○ · Fighting Spirit · Eager · Aspire · Steady Gait · Latch On · Break the Mold · Corner Acceleration ○ · Corner Adept ○ · Rainy Days ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30037_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30143,
+  "name": "Ikuno Dictus",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Jan 13",
+  "iso": "2027-01-13",
+  "universal": false,
+  "scenario": "Grand Masters",
+  "effects": "Friendship 20% · Mood 50% · Specialty 50 · Hint Lv2 / 30%",
+  "start": "Start: Bond 30",
+  "unique": "Sta +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Hard Worker</span></b> – Acc +0.30 · 4s<br /><small>Late · Overtaking</small>"
+   },
+   {
+    "html": "Calm in a Crowd · Position Pilfer · Late Surger Straightaways ○ · Late Surger Savvy ○ · Studious"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "Power",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30143_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30150,
+  "name": "Vodka",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Feb 3",
+  "iso": "2027-02-03",
+  "universal": false,
+  "scenario": "Grand Masters",
+  "effects": "Friendship 15% · Mood 30% · Race 5% · Fans 15% · Specialty 35 · Hint Lv2 / 30%",
+  "start": "Start: Bond 30 · Guts +30",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">15,000,000 CC</span></b> – TS +0.35 · 2.4s<br /><small>Late · Uphill</small>"
+   },
+   {
+    "html": "Tokyo Racecourse ○ · Straightaway Recovery · Position Pilfer · Acceleration · Take the Chance · Full Throttle · Nimble Navigator"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30150_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30155,
+  "name": "Daitaku Helios",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Feb 25",
+  "iso": "2027-02-25",
+  "universal": false,
+  "scenario": "Grand Masters",
+  "effects": "Friendship 15% · Mood 50% · Training eff. 5% · Race 5% · Fans 15% · Specialty 35 · Hint Lv3 / 40% · Wit recovery 5",
+  "start": "Start: Bond 25 · Wit +35",
+  "unique": "Specialty +40 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Staggering Lead</span></b> – TS +0.35 · 3s<br /><small>Sprint · Mid-race · 1st</small>"
+   },
+   {
+    "html": "Firm Conditions ○ · Summer Runner ○ · Sunny Days ○ · Sprint Corners ○ · Mile Corners ○ · Slipstream · Light as a Feather · Sympathy · Long Shot ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30155_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30159,
+  "name": "Air Groove",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Mar 20",
+  "iso": "2027-03-20",
+  "universal": false,
+  "scenario": "Grand Masters",
+  "effects": "Friendship 20% · Mood 30% · Race 5% · Fans 10% · Specialty 35 · Hint Lv2 / 40%",
+  "start": "Start: Bond 20",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Speed Star</span></b> – TS +0.35 · 1.8s<br /><small>Pace · Final corner · Top 50%</small>"
+   },
+   {
+    "html": "Stamina to Spare · Pace Chaser Corners ○ · Straight Descent · Pace Chaser Savvy ○ · Head-On · On the Attack · Straightaway Acceleration · Go with the Flow"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30159_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30162,
+  "name": "Admire Vega",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Apr 5",
+  "iso": "2027-04-05",
+  "universal": false,
+  "scenario": "Grand Masters",
+  "effects": "Friendship 30% · Mood 40% · Specialty 50 · Hint Lv2 / 40%",
+  "start": "Start: Bond 25 · Sta +30",
+  "unique": "Sta +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Serenity</span></b> – Rec +5.5%<br /><small>End</small>"
+   },
+   {
+    "html": "Standing By · Masterful Gambit · End Closer Corners ○ · Strategist · Early Start · Medium Corners ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30162_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30167,
+  "name": "Fine Motion",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. May 1",
+  "iso": "2027-05-01",
+  "universal": false,
+  "scenario": "Project L'Arc",
+  "effects": "Friendship 20% · Mood 30% · Race 10% · Fans 15% · Specialty 35",
+  "start": "Start: Bond 25 · Spd +20",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Calm and Collected</span></b> – Rec +5.5%<br /><small>Pace · Late early-race · Top 50%</small>"
+   },
+   {
+    "html": "Right-Handed ○ · Prudent Positioning · Stamina to Spare · Productive Plan · Up-Tempo · On the Attack · Corner Adept ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30167_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30171,
+  "name": "Haru Urara",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. May 22",
+  "iso": "2027-05-22",
+  "universal": false,
+  "scenario": "Project L'Arc",
+  "effects": "Friendship 25% · Mood 40% · Race 10% · Fans 20% · Specialty 20",
+  "start": "Start: Bond 20 · Pow +25",
+  "unique": "Specialty +40 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Iron Will</span></b> – Rec +5.5% · Lane +0.04 · 2s<br /><small>Before late-race · Blocked</small>"
+   },
+   {
+    "html": "Long Shot ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30171_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30176,
+  "name": "Mejiro Ryan",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jun 13",
+  "iso": "2027-06-13",
+  "universal": false,
+  "scenario": "Project L'Arc",
+  "effects": "Friendship 20% · Mood 40% · Specialty 50",
+  "start": "Start: Bond 30 · Guts +25",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Hard Worker</span></b> – Acc +0.30 · 4s<br /><small>Late · Overtaking</small>"
+   },
+   {
+    "html": "Non-Standard Distance ○ · Winter Runner ○ · Pressure · Late Surger Straightaways ○ · Fighter · Fighting Spirit · Pace Strategy"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30176_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30180,
+  "name": "Carvers of History",
+  "rarity": "SSR",
+  "type": "Group",
+  "color": "purple",
+  "date": "Est. Jul 3",
+  "iso": "2027-07-03",
+  "universal": false,
+  "scenario": "Project L'Arc",
+  "effects": "Friendship 20% · Race 5% · Fans 15% · Wit recovery 2 · Event recovery 30% · Event eff. 20%",
+  "start": "Start: Bond 25 · Spd +30",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">In Body and Mind</span></b> – TS +0.35 · 2.4s<br /><small>Last spurt / Early last spurt</small>"
+   },
+   {
+    "html": "Extra Tank · Pace Chaser Straightaways ○ · Long Straightaways ○ · Thunderbolt Step · Homestretch Haste · Tokyo Racecourse ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30180_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30181,
+  "name": "Twin Turbo",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Jul 3",
+  "iso": "2027-07-03",
+  "universal": false,
+  "scenario": "Project L'Arc",
+  "effects": "Friendship 20% · Mood 60% · Race 10% · Fans 15% · Specialty 35 · Hint Lv1 / 20%",
+  "start": "Start: Bond 20 · Guts +25",
+  "unique": "Guts +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Top Runner</span></b> – TS +0.35 · 3s<br /><small>Front · Before late-race · Blocked</small>"
+   },
+   {
+    "html": "Competitive Spirit ○ · Ramp Up · Early Lead · Final Push · Steadfast · Keeping the Lead · Moxie · Risky Business · Mad Dash · Confident · Leader's Pride"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30181_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30189,
+  "name": "Kitasan Black",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jul 18",
+  "iso": "2027-07-18",
+  "universal": false,
+  "scenario": "Project L'Arc",
+  "effects": "Friendship 25% · Mood 30% · Specialty 35 · Hint Lv2 / 30%",
+  "start": "Start: Bond 30 · Guts +25",
+  "unique": "Guts +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Trackblazer</span></b> – Rec +5.5%<br /><small>Medium · Mid-race · Top 3</small>"
+   },
+   {
+    "html": "Kyoto Racecourse ○ · Focus · Up-Tempo · Extra Tank · Moxie · Front Runner Savvy ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30189_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30185,
+  "name": "North Flight",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Jul 27",
+  "iso": "2027-07-27",
+  "universal": false,
+  "scenario": "Project L'Arc",
+  "effects": "Friendship 25% · Mood 30% · Specialty 35 · Hint Lv2 / 30% · Wit recovery 5",
+  "start": "Start: Bond 30 · Spd +30",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Changing Gears</span></b> – TS +0.35 · 2.4s<br /><small>Mile · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "Standard Distance ○ · Focus · Go with the Flow · Prepared to Pass · Productive Plan · Updrafters · Mile Corners ○ · Acceleration · Beating Heart"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Wit",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30185_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30190,
+  "name": "Duramente",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Aug 5",
+  "iso": "2027-08-05",
+  "universal": false,
+  "scenario": "Project L'Arc",
+  "effects": "Friendship 20% · Training eff. 5% · Specialty 35 · Hint Lv2 / 30%",
+  "start": "Start: Bond 15 · Sta +30",
+  "unique": "Sta +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Rushing Gale!</span></b> – Acc +0.40 · TS +0.15 · 3s<br /><small>Straight</small>"
+   },
+   {
+    "html": "Pace Strategy · Homestretch Haste · Medium Straightaways ○ · Eager · Ignition"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30190_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30186,
+  "name": "Gentildonna",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Aug 12",
+  "iso": "2027-08-12",
+  "universal": false,
+  "scenario": "UAF Ready GO!",
+  "effects": "Friendship 30% · Training eff. 10% · Specialty 35 · Hint Lv1 / 20%",
+  "start": "Start: Bond 20 · Pow +30",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">It's On!</span></b> – TS +0.35 · 1.8s<br /><small>Mid-race</small>"
+   },
+   {
+    "html": "Firm Conditions ○ · Straightaway Adept · Homestretch Haste · Stamina to Spare · Fighter · Uma Stan · Graceful Gait · Mile Straightaways ○ · Medium Straightaways ○ · Downhill Speedster"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30186_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30191,
+  "name": "Sounds of Earth",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Aug 24",
+  "iso": "2027-08-24",
+  "universal": false,
+  "scenario": "UAF Ready GO!",
+  "effects": "Friendship 20% · Mood 30% · Training eff. 5% · Race 5% · Fans 10% · Specialty 35",
+  "start": "Start: Bond 20 · Sta +25",
+  "unique": "Pow +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Unruffled</span></b> – Rec +5.5%<br /><small>Mid-race · Surrounded</small>"
+   },
+   {
+    "html": "Ramp Up · Nimble Navigator · Homestretch Haste · Up-Tempo · Sympathy · Middle Leg Adept · Locked On"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30191_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30194,
+  "name": "Rhein Kraft",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Aug 31",
+  "iso": "2027-08-31",
+  "universal": false,
+  "scenario": "UAF Ready GO!",
+  "effects": "Friendship 25% · Mood 20% · Race 5% · Fans 10% · Specialty 50 · Hint Lv2 / 30%",
+  "start": "Start: Bond 30",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Unstoppable</span></b> – TS +0.35 · 2.4s<br /><small>Pace · Mid-race</small>"
+   },
+   {
+    "html": "Hanshin Racecourse ○ · Prepared to Pass · Productive Plan · Mile Straightaways ○ · Acceleration · Unyielding Spirit · Mile Corners ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30194_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30197,
+  "name": "Bamboo Memory",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Sep 5",
+  "iso": "2027-09-05",
+  "universal": false,
+  "scenario": "UAF Ready GO!",
+  "effects": "Friendship 20% · Mood 20% · Training eff. 5% · Specialty 50 · Hint Lv2 / 30%",
+  "start": "Start: Bond 30",
+  "unique": "Pow +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Moonlit Flash</span></b> – TS +0.35 · 3s<br /><small>End · Straight</small>"
+   },
+   {
+    "html": "Tokyo Racecourse ○ · Masterful Gambit · Gap Closer · Updrafters · Meticulous Measures · Unyielding Spirit · Breakin' Out · Standard Distance ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30197_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30192,
+  "name": "Vivlos",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Sep 13",
+  "iso": "2027-09-13",
+  "universal": false,
+  "scenario": "UAF Ready GO!",
+  "effects": "Friendship 25% · Mood 40% · Race 5% · Fans 10% · Specialty 35 · Hint Lv2 / 30%",
+  "start": "Start: Bond 25 · Spd +30",
+  "unique": "Spd +1 & Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Relax</span></b> – Rec +5.5%<br /><small>Late · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Outer Swell · Unyielding Spirit · Fighter · Confident · Late Surger Straightaways ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30192_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30200,
+  "name": "No Reason",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Sep 28",
+  "iso": "2027-09-28",
+  "universal": false,
+  "scenario": "UAF Ready GO!",
+  "effects": "Friendship 25% · Mood 50% · Race 5% · Fans 15% · Specialty 50 · Hint Lv1 / 20%",
+  "start": "Start: Bond 25 · Pow +30 · Guts +30",
+  "unique": "Guts +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Dauntless</span></b> – TS +0.35 · Acc +0.10 · 2.4s<br /><small>Late · 30–80% of the pack</small>"
+   },
+   {
+    "html": "Long Shot ○ · Straightaway Acceleration · Fighter · A Small Breather · Fighting Spirit · Latch On · Confident · All I've Got"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30200_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30203,
+  "name": "Jungle Pocket",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Oct 12",
+  "iso": "2027-10-12",
+  "universal": false,
+  "scenario": "UAF Ready GO!",
+  "effects": "Friendship 30% · Mood 30% · Race 5% · Fans 10% · Specialty 50 · Hint Lv2 / 30%",
+  "start": "Start: Bond 30 · Sta +25",
+  "unique": "Pow +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Elated</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Tokyo Racecourse ○ · Calm in a Crowd · Homestretch Haste · Medium Straightaways ○ · Eager · Break the Mold · Confident · Scramble"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30203_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30205,
+  "name": "Verxina",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Oct 19",
+  "iso": "2027-10-19",
+  "universal": false,
+  "scenario": "UAF Ready GO!",
+  "effects": "Friendship 20% · Training eff. 10% · Specialty 50 · Hint Lv1 / 20%",
+  "start": "Start: Bond 20 · Spd +25 · Pow +25",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Cyclone Flash</span></b> – TS +0.35 · 3s<br /><small>Mile · Straight</small>"
+   },
+   {
+    "html": "Corner Acceleration ○ · Focus · Ramp Up · Go with the Flow · Shifting Gears · Second Wind · Graceful Gait · Productive Plan"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30205_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30212,
+  "name": "Wonder Acute",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Nov 30",
+  "iso": "2027-11-30",
+  "universal": false,
+  "scenario": "Great Food Festival",
+  "effects": "Friendship 20% · Mood 20% · Race 5% · Fans 10% · Specialty 35 · Hint Lv2 / 30%",
+  "start": "Start: Bond 30 · Guts +30",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Full Speed!</span></b> – TS +0.35 · 3s<br /><small>Dirt · Last spurt · Top 50%</small>"
+   },
+   {
+    "html": "Pace Strategy · Forward, March! · Collaborative Graded Races ○ · On the Attack · Dust Off · Solid Steps"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30212_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30213,
+  "name": "Tokai Teio",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Dec 18",
+  "iso": "2027-12-18",
+  "universal": false,
+  "scenario": "Great Food Festival",
+  "effects": "Friendship 30% · Mood 20% · Training eff. 5% · Race 5% · Fans 15% · Specialty 35",
+  "start": "Start: Bond 20 · Spd +30",
+  "unique": "Start Pow +20 · SP +1",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Miraculous Step</span></b> – Rec +5.5%<br /><small>Medium</small>"
+   },
+   {
+    "html": "Nakayama Racecourse ○ · Corner Adept ○ · Go with the Flow · Up-Tempo · Tail Held High · Pace Chaser Straightaways ○"
+   }
+  ],
+  "bonus": [
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30213_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30216,
+  "name": "Buena Vista",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Dec 18",
+  "iso": "2027-12-18",
+  "universal": false,
+  "scenario": "Great Food Festival",
+  "effects": "Friendship 30% · Mood 40% · Specialty 50 · Hint Lv2 / 30%",
+  "start": "Start: Bond 25 · Spd +30",
+  "unique": "Guts +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Corner Connoisseur</span></b> – Acc +0.40 · 3s<br /><small>Corner</small>"
+   },
+   {
+    "html": "Corner Acceleration ○ · Straightaway Acceleration · Ramp Up · Updrafters · Unyielding Spirit · Pumped · Confident · Unrestrained Passion"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30216_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30221,
+  "name": "Satono Diamond",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Dec 18",
+  "iso": "2027-12-18",
+  "universal": false,
+  "scenario": "Great Food Festival",
+  "effects": "Friendship 20% · Mood 40% · Race 5% · Fans 10% · Specialty 50 · Hint Lv1 / 20%",
+  "start": "Start: Bond 20 · Sta +30 · Guts +30",
+  "unique": "Sta +1 & Guts +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "Homestretch Haste · Deep Breaths · Inside Scoop · Extra Tank · Passing Pro · All Set · Latch On"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30221_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30220,
+  "name": "Symboli Kris S",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Dec 22",
+  "iso": "2027-12-22",
+  "universal": false,
+  "scenario": "Great Food Festival",
+  "effects": "Friendship 20% · Race 5% · Fans 10% · Specialty 50 · Hint Lv2 / 30% · Wit recovery 5",
+  "start": "Start: Bond 25",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Innate Experience</span></b> – TS +0.35 · 3s<br /><small>Long · Corner · Final corner</small>"
+   },
+   {
+    "html": "Ramp Up · Pace Strategy · Deep Breaths · Extra Tank · Long Corners ○ · Middle Leg Adept · Cloudy Days ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30220_thumb.webp",
+  "roles": {},
+  "todo": true
  }
 ]
