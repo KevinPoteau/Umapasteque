@@ -28,6 +28,7 @@
   --t-green: #21362a;       /* Wit */
   --t-yellow: #433a1c;      /* Pal */
   --t-purple: #2f2645;      /* Group */
+  --t-brown: #3a2c22;       /* (Umas only) */
 
   /* Verdict pill colours, by rank (see js/config.js) */
   --v5: #a98bf5;            /* Highly recommended */
@@ -49,6 +50,11 @@
 
 * {
   box-sizing: border-box;
+}
+
+/* The hidden attribute must win over display: flex on filter groups */
+[hidden] {
+  display: none !important;
 }
 
 body {
@@ -118,6 +124,35 @@ select {
 .crumbs a[aria-current] {
   background: var(--fg);
   color: var(--bg);
+}
+
+/* Support cards / Umas switch: a two-way segmented control */
+.kinds {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.kinds a {
+  padding: 4px 12px;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.kinds a + a {
+  border-left: 1px solid var(--line);
+}
+
+.kinds a[aria-current] {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.crumbs a:not([aria-current]):hover {
+  color: var(--fg);
 }
 
 /* ---------- Filter bar ---------- */

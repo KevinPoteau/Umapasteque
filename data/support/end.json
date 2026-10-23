@@ -16,10 +16,15 @@
   "longevity": "Under 0.5 scenario",
   "unique": "Specialty +40 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Razor-Sharp Steps</em> – Acc +0.40 · 1.2s<br /><small>End · Early late-race</small>",
-   "End Closer Straightaways ○"
+   {
+    "html": "<b><span class=\"gold\">Razor-Sharp Steps</span></b> – Acc +0.40 · 1.2s<br /><small>End · Early late-race</small>"
+   },
+   {
+    "html": "End Closer Straightaways ○"
+   }
   ],
   "rank": 3,
+  "verdictKey": "importance-consider",
   "verdict": [
    "Strong End Wit, outclassed by Ramonu.",
    "No TE, low SPE."
@@ -53,10 +58,15 @@
   "longevity": "DOA",
   "unique": "Mood +60 on friendship training",
   "keyskills": [
-   "<em class=\"gold\">No Stopping Me!</em> – Acc +0.40 · 3s<br /><small>Behind a rival · Last spurt</small>",
-   "Nimble Navigator"
+   {
+    "html": "<b><span class=\"gold\">No Stopping Me!</span></b> – Acc +0.40 · 3s<br /><small>Behind a rival · Last spurt</small>"
+   },
+   {
+    "html": "Nimble Navigator"
+   }
   ],
   "rank": 1,
+  "verdictKey": "8184",
   "verdict": [
    "No.",
    "Okay TE, dead Specialty, bad bonuses."
@@ -94,10 +104,15 @@
   "longevity": "DOA",
   "unique": "Training eff. +15 at max bond",
   "keyskills": [
-   "<em class=\"gold\">Indomitable</em> – Rec +5.5%<br /><small>Mid-race · After passing</small>",
-   "Long Straightaways ○"
+   {
+    "html": "<b><span class=\"gold\">Indomitable</span></b> – Rec +5.5%<br /><small>Mid-race · After passing</small>"
+   },
+   {
+    "html": "Long Straightaways ○"
+   }
   ],
   "rank": 1,
+  "verdictKey": "8184",
   "verdict": [
    "Okayish bonuses but terrible recovery."
   ],
@@ -134,10 +149,15 @@
   "longevity": "Long",
   "unique": "Training eff. +4 per Speed skill (max +20)",
   "keyskills": [
-   "<em class=\"gold\">Superb Gait</em> – TS +0.35 · 2.4s<br /><small>Mile / Medium · Mid-race</small>",
-   "Mile Straightaways ○ · Mile Corners ○ · Medium Straightaways ○ · Medium Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Superb Gait</span></b> – TS +0.35 · 2.4s<br /><small>Mile / Medium · Mid-race</small>"
+   },
+   {
+    "html": "Mile Straightaways ○ · Mile Corners ○ · Medium Straightaways ○ · Medium Corners ○"
+   }
   ],
   "rank": 5,
+  "verdictKey": "importance-must",
   "verdict": [
    "Best Wit card for ~2 years.",
    "20% TE, Hint lv4.",
@@ -173,10 +193,15 @@
   "longevity": "4 scenarios",
   "unique": "Sta bonus +3 at max bond",
   "keyskills": [
-   "<em class=\"gold\">Light-Footed as a Hare</em> – Rec +5.5% · TS +0.25 · 2.4s<br /><small>Long · Mid-race</small>",
-   "Long Straightaways ○ · Long Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Light-Footed as a Hare</span></b> – Rec +5.5% · TS +0.25 · 2.4s<br /><small>Long · Mid-race</small>"
+   },
+   {
+    "html": "Long Straightaways ○ · Long Corners ○"
+   }
   ],
   "rank": 4,
+  "verdictKey": "importance-good",
   "verdict": [
    "Excellent Stamina card, few hints.",
    "Thought limited to Long races. We don’t have a lot of Long races so she’s a borrow target.",
@@ -215,10 +240,15 @@
   "longevity": "7/8 scenario",
   "unique": "Friendship +10, Mood +15 & SP +1 at max bond",
   "keyskills": [
-   "<em class=\"gold\">Divine Speed</em> – CS +0.35 · Rec +1.5% · 3s<br /><small>After 50%</small>",
-   "Sprint Corners ○ · Long Straightaways ○ · Mile Corners ○ · Medium Corners ○ · Uma Stan"
+   {
+    "html": "<b><span class=\"gold\">Divine Speed</span></b> – CS +0.35 · Rec +1.5% · 3s<br /><small>After 50%</small>"
+   },
+   {
+    "html": "Sprint Corners ○ · Long Straightaways ○ · Mile Corners ○ · Medium Corners ○ · Uma Stan"
+   }
   ],
   "rank": 3,
+  "verdictKey": "importance-consider",
   "verdict": [
    "Solo on its banner, releases later, only last 1 scenario.",
    "Can pull but better to borrow it for the scenario duration, better cards exists."
@@ -260,10 +290,15 @@
   "longevity": "DOA",
   "unique": "Pow bonus +3 at max bond",
   "keyskills": [
-   "<em class=\"gold\">Perfect Spot!</em> – TS +0.35 · 3s<br /><small>Behind a rival</small>",
-   "Uma Stan · Nimble Navigator"
+   {
+    "html": "<b><span class=\"gold\">Perfect Spot!</span></b> – TS +0.35 · 3s<br /><small>Behind a rival</small>"
+   },
+   {
+    "html": "Uma Stan · Nimble Navigator"
+   }
   ],
   "rank": 1,
+  "verdictKey": "8184",
   "verdict": [
    "Power, for Target speed."
   ],
@@ -300,10 +335,15 @@
   "longevity": "≥ 3 scenarios",
   "unique": "Spd +3 at max bond",
   "keyskills": [
-   "<em class=\"gold\">Rising Pulse</em> – CS +0.35 · 3s<br /><small>Medium / Long · Early late-race · Pos 30-80%</small>",
-   "Medium Straightaways ○ · Medium Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Rising Pulse</span></b> – CS +0.35 · 3s<br /><small>Medium / Long · Early late-race · Pos 30-80%</small>"
+   },
+   {
+    "html": "Medium Straightaways ○ · Medium Corners ○"
+   }
   ],
   "rank": 4,
+  "verdictKey": "importance-good",
   "verdict": [
    "Current Speed during Late race is fantastic. Limited to Medium and Long.",
    "Replaces Kitasan Black, will play with El Condor Pasa.",
@@ -343,9 +383,12 @@
   "longevity": "DOA",
   "unique": "Pow +2 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Dancer in the Dirt</em> – TS +0.35 · 3s<br /><small>Dirt · Behind a rival</small>"
+   {
+    "html": "<b><span class=\"gold\">Dancer in the Dirt</span></b> – TS +0.35 · 3s<br /><small>Dirt · Behind a rival</small>"
+   }
   ],
   "rank": 2,
+  "verdictKey": "importance-niche",
   "verdict": [
    "Dirt-focused hints. Niche.",
    "It has good event skills, +1SP but low TE, low specialty and PWR card."
@@ -383,11 +426,18 @@
   "longevity": "TBD",
   "unique": "Wit +2 & SP +1 at max bond",
   "keyskills": [
-   "<em class=\"gold\">Claw Forward</em> – Acc +0.40 · Rec -2.0% · 1.5s<br /><small>Long · Late · Last spurt · Back 60%</small>",
-   "<em class=\"gold\">Cooldown</em> – Rec +5.5%<br /><small>Long · Mid-race</small>",
-   "Long Straightaways ○ · Late Surger Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Claw Forward</span></b> – Acc +0.40 · Rec -2.0% · 1.5s<br /><small>Long · Late · Last spurt · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Cooldown</span></b> – Rec +5.5%<br /><small>Long · Mid-race</small>"
+   },
+   {
+    "html": "Long Straightaways ○ · Late Surger Corners ○"
+   }
   ],
   "rank": 3,
+  "verdictKey": "importance-consider",
   "verdict": [
    "Long Late/End Wit. Great for Long CMs.",
    "Better for late, great candidate when playing Late/End.",
@@ -423,11 +473,18 @@
   "longevity": "4 scenarios?<br />OR 2.5 scenarios for Mono SPD Deck",
   "unique": "All stats +1 & SP +1 at max bond",
   "keyskills": [
-   "<em class=\"gold\">Check</em> – Acc +0.40 · 0.9s<br /><small>Pace / Late · Late-race+ · 600+ m left · Corner · Final corner · Top 70%</small>",
-   "<em class=\"gold\">Professor of Curvature</em> – TS +0.35 · 2.4s<br /><small>Corner</small>",
-   "Medium Corners ○ · Pace Chaser Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Check</span></b> – Acc +0.40 · 0.9s<br /><small>Pace / Late · Late-race+ · 600+ m left · Corner · Final corner · Top 70%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Professor of Curvature</span></b> – TS +0.35 · 2.4s<br /><small>Corner</small>"
+   },
+   {
+    "html": "Medium Corners ○ · Pace Chaser Corners ○"
+   }
   ],
   "rank": 5,
+  "verdictKey": "importance-must",
   "verdict": [
    "Huge stats stick, Scenario card, Curvature, +2 SP bonus.",
    "She’s great for <b>all</b> runners.",
@@ -478,9 +535,12 @@
   "longevity": "1 scenario",
   "unique": "Pal card · 2 facilities at once (bond 60)",
   "keyskills": [
-   "<em class=\"gold\">Never Give Up</em> – TS +0.25 · 4s"
+   {
+    "html": "<b><span class=\"gold\">Never Give Up</span></b> – TS +0.25 · 4s"
+   }
   ],
   "rank": 5,
+  "verdictKey": "importance-must",
   "verdict": [
    "Project L'Arc friend card. Scenario banner: must pull."
   ],
@@ -509,9 +569,12 @@
   "longevity": "DOA",
   "unique": "Training eff. +10 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Right-Handed Demon</em> – Spd +60 · Pow +60<br /><small>Right-handed</small>"
+   {
+    "html": "<b><span class=\"gold\">Right-Handed Demon</span></b> – Spd +60 · Pow +60<br /><small>Right-handed</small>"
+   }
   ],
   "rank": 2,
+  "verdictKey": "importance-niche",
   "verdict": [
    "Green skill merchant",
    "Ramonu wit exist, borrow."
@@ -545,11 +608,18 @@
   "longevity": "≥ 2.5 scenarios",
   "unique": "SP +2 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Moonlight Slash</em> – TS +0.35 · 3s<br /><small>End · Corner</small>",
-   "<em class=\"gold\">Encroaching Shadow</em> – Acc +0.40 · 0.9s<br /><small>End · Last spurt · Straight</small>",
-   "Nimble Navigator · End Closer Straightaways ○ · End Closer Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Moonlight Slash</span></b> – TS +0.35 · 3s<br /><small>End · Corner</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Encroaching Shadow</span></b> – Acc +0.40 · 0.9s<br /><small>End · Last spurt · Straight</small>"
+   },
+   {
+    "html": "Nimble Navigator · End Closer Straightaways ○ · End Closer Corners ○"
+   }
   ],
   "rank": null,
+  "verdictKey": "8161",
   "verdict": [
    "Encroashing Shadow source but power.",
    "Narita Taishin wit arrives in 6 months, every Endcloser already has Encroashing Shadow.",
@@ -585,10 +655,15 @@
   "longevity": "DOA",
   "unique": "Guts +2 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Elated</em> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Back 50%</small>",
-   "Nimble Navigator · Medium Straightaways ○ · End Closer Straightaways ○"
+   {
+    "html": "<b><span class=\"gold\">Elated</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Back 50%</small>"
+   },
+   {
+    "html": "Nimble Navigator · Medium Straightaways ○ · End Closer Straightaways ○"
+   }
   ],
   "rank": 1,
+  "verdictKey": "8184",
   "verdict": [
    "If you need Stamina card, get Sounds of Earth.",
    "Otherwise stay on Super Creek."
@@ -622,10 +697,15 @@
   "longevity": "DOA?",
   "unique": "Spd +2 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Superstan</em> – TS +0.35 · 3s",
-   "End Closer Straightaways ○ · End Closer Corners ○ · Uma Stan"
+   {
+    "html": "<b><span class=\"gold\">Superstan</span></b> – TS +0.35 · 3s"
+   },
+   {
+    "html": "End Closer Straightaways ○ · End Closer Corners ○ · Uma Stan"
+   }
   ],
   "rank": 4,
+  "verdictKey": "importance-good",
   "verdict": [
    "Strong Speed, End hints + Superstan.",
    "BUT",
@@ -662,10 +742,15 @@
   "longevity": "Outclassed",
   "unique": "Training eff. 5% to 20% scaling with energy (max at 100+)",
   "keyskills": [
-   "<em class=\"gold\">Flash Forward</em> – TS +0.35 · 3s<br /><small>Medium · Straight</small>",
-   "Medium Straightaways ○"
+   {
+    "html": "<b><span class=\"gold\">Flash Forward</span></b> – TS +0.35 · 3s<br /><small>Medium · Straight</small>"
+   },
+   {
+    "html": "Medium Straightaways ○"
+   }
   ],
   "rank": null,
+  "verdictKey": "81e5",
   "verdict": [
    "Good TE, but power and just okay skill.",
    "If you want a power card, you just missed Hishi Amazon was there."
@@ -699,11 +784,18 @@
   "longevity": "DOA",
   "unique": "Spd +1 per Speed skill (max +3)",
   "keyskills": [
-   "<em class=\"gold\">Vying for the Throne</em> – TS +0.35 · debuffs rivals · 1.8s<br /><small>Late · Final corner · Back 60%</small>",
-   "<em class=\"gold\">Unyielding Tenacity</em> – TS +0.35 · 2.4s<br /><small>Sprint · Late mid-race · Back 60%</small>",
-   "Sprint Straightaways ○"
+   {
+    "html": "<b><span class=\"gold\">Vying for the Throne</span></b> – TS +0.35 · debuffs rivals · 1.8s<br /><small>Late · Final corner · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Unyielding Tenacity</span></b> – TS +0.35 · 2.4s<br /><small>Sprint · Late mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Sprint Straightaways ○"
+   }
   ],
   "rank": 1,
+  "verdictKey": "8184",
   "verdict": [
    "The interesting skill is late surger only.",
    "Orfevre guts is close."
@@ -737,11 +829,18 @@
   "longevity": "2.5 scenarios",
   "unique": "Training eff. +10 with 4+ card types",
   "keyskills": [
-   "<em class=\"gold\">Beeline Burst</em> – TS +0.35 · 3s<br /><small>Straight</small>",
-   "<em class=\"gold\">Breath of Fresh Air</em> – Rec +5.5%<br /><small>Mid-race · Straight</small>",
-   "Nimble Navigator"
+   {
+    "html": "<b><span class=\"gold\">Beeline Burst</span></b> – TS +0.35 · 3s<br /><small>Straight</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Breath of Fresh Air</span></b> – Rec +5.5%<br /><small>Mid-race · Straight</small>"
+   },
+   {
+    "html": "Nimble Navigator"
+   }
   ],
   "rank": 3,
+  "verdictKey": "importance-consider",
   "verdict": [
    "Flexible Stamina, Beeline Burst.",
    "Don’t pull if you have Super Creek MLB. Air Shakur arrives in 6 Months.",
@@ -776,10 +875,15 @@
   "longevity": "Outclassed",
   "unique": "Pow +2 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Full of Vigor</em> – TS +0.35 · 1.8s<br /><small>Mile · Final corner · Back 50%</small>",
-   "Mile Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Full of Vigor</span></b> – TS +0.35 · 1.8s<br /><small>Mile · Final corner · Back 50%</small>"
+   },
+   {
+    "html": "Mile Corners ○"
+   }
   ],
   "rank": 1,
+  "verdictKey": "8184",
   "verdict": [
    "Full of Vigor is good but doesn’t justify a pull.",
    "2 Power is good on a speed card but sounds like an event card.",
@@ -814,10 +918,15 @@
   "longevity": "TBD",
   "unique": "Pow +1 per Accel skill (max +3)",
   "keyskills": [
-   "<em class=\"gold\">Chilling Wind</em> – Spd +60 · Pow +60",
-   "Medium Straightaways ○ · Medium Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Chilling Wind</span></b> – Spd +60 · Pow +60"
+   },
+   {
+    "html": "Medium Straightaways ○ · Medium Corners ○"
+   }
   ],
   "rank": 4,
+  "verdictKey": "importance-good",
   "verdict": [
    "Strong, near U.A.F rainbow cards, green skills are fantastic stat sticks.",
    "2SP bonus",
@@ -856,10 +965,15 @@
   "longevity": "2 scenarios",
   "unique": "Friendship +10 & Mood +15 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Never Give Up</em> – TS +0.25 · 4s",
-   "Medium Straightaways ○ · End Closer Straightaways ○"
+   {
+    "html": "<b><span class=\"gold\">Never Give Up</span></b> – TS +0.25 · 4s"
+   },
+   {
+    "html": "Medium Straightaways ○ · End Closer Straightaways ○"
+   }
   ],
   "rank": null,
+  "verdictKey": "8161",
   "verdict": [
    "Specialty 120 Speed, 15% TE. Very good.",
    "BUTT",
@@ -893,11 +1007,18 @@
   "longevity": "≥ 2 scenarios",
   "unique": "Friendship +10% & SP +1 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Keep Going!</em> – TS +0.45 · Rec -2.0% · 2.4s<br /><small>Late · Mid-race</small>",
-   "<em class=\"gold\">Burning Soul</em> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Medium · Mid-race · Pos 30-80% · Blocked</small>",
-   "Late Surger Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Keep Going!</span></b> – TS +0.45 · Rec -2.0% · 2.4s<br /><small>Late · Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Burning Soul</span></b> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Medium · Mid-race · Pos 30-80% · Blocked</small>"
+   },
+   {
+    "html": "Late Surger Corners ○"
+   }
   ],
   "rank": null,
+  "verdictKey": "81e5",
   "verdict": [
    "Low specialty, burning Soul sounds like a good skill but depends on how “blocked” is defined.",
    "Near U.A.F when Ramonu wit exist.",
@@ -932,10 +1053,15 @@
   "longevity": "Outclassed",
   "unique": "Training eff. +15 on friendship training",
   "keyskills": [
-   "<em class=\"gold\">Call & Response</em> – TS +0.25 · 2.4s<br /><small>Dirt · Mid-race</small>",
-   "Head-On"
+   {
+    "html": "<b><span class=\"gold\">Call & Response</span></b> – TS +0.25 · 2.4s<br /><small>Dirt · Mid-race</small>"
+   },
+   {
+    "html": "Head-On"
+   }
   ],
   "rank": 2,
+  "verdictKey": "importance-niche",
   "verdict": [
    "Dirt Stamina. Low TE, low specialty. Is it an event card?"
   ],
@@ -968,11 +1094,18 @@
   "longevity": "DOA",
   "unique": "Spd +2 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Rocket Start</em> – Acc +0.40 · 1.5s<br /><small>Sprint</small>",
-   "<em class=\"gold\">Lightning Slash</em> – TS +0.35 · 3s<br /><small>Sprint · Corner</small>",
-   "Sprint Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Rocket Start</span></b> – Acc +0.40 · 1.5s<br /><small>Sprint</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Lightning Slash</span></b> – TS +0.35 · 3s<br /><small>Sprint · Corner</small>"
+   },
+   {
+    "html": "Sprint Corners ○"
+   }
   ],
   "rank": null,
+  "verdictKey": "81e5",
   "verdict": [
    "Good skills, no skill point bonus.",
    "Unsure if acceleration at start helps for End closer, Uma stan might do a better work.",
@@ -1009,10 +1142,15 @@
   "longevity": "≥ 2 scenarios",
   "unique": "Stat bonus per matching card type in deck (max +2 per stat, bond 80)",
   "keyskills": [
-   "<em class=\"gold\">Divine Speed</em> – CS +0.35 · Rec +1.5% · 3s<br /><small>After 50%</small>",
-   "Nimble Navigator"
+   {
+    "html": "<b><span class=\"gold\">Divine Speed</span></b> – CS +0.35 · Rec +1.5% · 3s<br /><small>After 50%</small>"
+   },
+   {
+    "html": "Nimble Navigator"
+   }
   ],
   "rank": 5,
+  "verdictKey": "importance-must",
   "verdict": [
    "Where do I fucking start",
    "Scenario card, Auto pull.",
@@ -1045,9 +1183,12 @@
   "longevity": "1 scenario",
   "unique": "Pal card · supports appear more (bond 60)",
   "keyskills": [
-   "<em class=\"gold\">Battle for Initiative</em> – TS +0.35 · 1.8s<br /><small>Late early-race</small>"
+   {
+    "html": "<b><span class=\"gold\">Battle for Initiative</span></b> – TS +0.35 · 1.8s<br /><small>Late early-race</small>"
+   }
   ],
   "rank": 5,
+  "verdictKey": "importance-must",
   "verdict": [
    "UAF friend card. Scenario banner: must pull."
   ],
@@ -1071,10 +1212,15 @@
   "longevity": "Outclassed",
   "unique": "Pow +1 & SP +1 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Turbo Sprint</em> – Acc +0.40 · 3s<br /><small>Sprint · Late-race</small>",
-   "Sprint Straightaways ○"
+   {
+    "html": "<b><span class=\"gold\">Turbo Sprint</span></b> – Acc +0.40 · 3s<br /><small>Sprint · Late-race</small>"
+   },
+   {
+    "html": "Sprint Straightaways ○"
+   }
   ],
   "rank": 2,
+  "verdictKey": "importance-niche",
   "verdict": [
    "Sprint Power. Better cards exist for 0.4 Accel. (Hishi Amazon)"
   ],
@@ -1107,10 +1253,15 @@
   "longevity": "≥ 1 scenario",
   "unique": "Wit +2 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">From the Brink</em> – Acc +0.40 · 1.8s<br /><small>Medium · Early late-race · Back 60%</small>",
-   "Medium Corners ○ · Uma Stan"
+   {
+    "html": "<b><span class=\"gold\">From the Brink</span></b> – Acc +0.40 · 1.8s<br /><small>Medium · Early late-race · Back 60%</small>"
+   },
+   {
+    "html": "Medium Corners ○ · Uma Stan"
+   }
   ],
   "rank": 1,
+  "verdictKey": "8184",
   "verdict": [
    "Ramonu exists, Taishin soon"
   ],
@@ -1143,9 +1294,12 @@
   "longevity": "Outclassed",
   "unique": "Friendship +20% at max bond",
   "keyskills": [
-   "<em class=\"gold\">Sure Shot</em> – TS +0.35 · 2.4s<br /><small>Long · Late mid-race · Back 50%</small>"
+   {
+    "html": "<b><span class=\"gold\">Sure Shot</span></b> – TS +0.35 · 2.4s<br /><small>Long · Late mid-race · Back 50%</small>"
+   }
   ],
   "rank": 1,
+  "verdictKey": "8184",
   "verdict": [
    "Stamina with no recovery?"
   ],
@@ -1178,11 +1332,18 @@
   "longevity": "4 scenarios",
   "unique": "Wit +2 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Soaring Stride</em> – TS +0.35 · 2.4s<br /><small>End · Late mid-race · Back 60%</small>",
-   "<em class=\"gold\">Encroaching Shadow</em> – Acc +0.40 · 0.9s<br /><small>End · Last spurt · Straight</small>",
-   "End Closer Straightaways ○"
+   {
+    "html": "<b><span class=\"gold\">Soaring Stride</span></b> – TS +0.35 · 2.4s<br /><small>End · Late mid-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Encroaching Shadow</span></b> – Acc +0.40 · 0.9s<br /><small>End · Last spurt · Straight</small>"
+   },
+   {
+    "html": "End Closer Straightaways ○"
+   }
   ],
   "rank": null,
+  "verdictKey": "8168",
   "verdict": [
    "Encroashing Shadow. At this point most endcloser either have it but Soaring stride is very good.",
    "1SP Bonus + 15% TE, good SPE.",
@@ -1217,10 +1378,15 @@
   "longevity": "≥ 1 scenario",
   "unique": "Spd +1 & Pow +1 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Lightning Surge</em> – Acc +0.40 · 2s<br /><small>Sprint / Mile · Late-race+ · Back 50% · Overtaking</small>",
-   "Nimble Navigator"
+   {
+    "html": "<b><span class=\"gold\">Lightning Surge</span></b> – Acc +0.40 · 2s<br /><small>Sprint / Mile · Late-race+ · Back 50% · Overtaking</small>"
+   },
+   {
+    "html": "Nimble Navigator"
+   }
   ],
   "rank": 2,
+  "verdictKey": "importance-niche",
   "verdict": [
    "Sprint/Mile Guts. We’re still in UAF, Lightning Surge can come from Daichi Ruby. Competing with Orfevre Spot.",
    "No SP bonus but no TE.",
@@ -1259,10 +1425,15 @@
   "longevity": "1 scenario",
   "unique": "Training eff. +1% per 30 total bond (max +20%)",
   "keyskills": [
-   "<em class=\"gold\">Fluttering Heart</em> – CS +0.35 · 2.4s<br /><small>Sprint / Mile · Early late-race</small>",
-   "<em class=\"gold\">Frontal Attack</em> – TS +0.35 · 2.4s<br /><small>Mid-race · Top 50%</small>"
+   {
+    "html": "<b><span class=\"gold\">Fluttering Heart</span></b> – CS +0.35 · 2.4s<br /><small>Sprint / Mile · Early late-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Frontal Attack</span></b> – TS +0.35 · 2.4s<br /><small>Mid-race · Top 50%</small>"
+   }
   ],
   "rank": 5,
+  "verdictKey": "importance-must",
   "verdict": [
    "Great Food Festival banner. Must pull.",
    "TE Merchant?",
@@ -1294,9 +1465,12 @@
   "longevity": "1 scenario",
   "unique": "Pal card · +1 bond for all supports in training",
   "keyskills": [
-   "<em class=\"gold\">Superstan</em> – TS +0.35 · 3s"
+   {
+    "html": "<b><span class=\"gold\">Superstan</span></b> – TS +0.35 · 3s"
+   }
   ],
   "rank": null,
+  "verdictKey": "8168",
   "verdict": [
    "Great Food Festival friend card. Must pull."
   ],
@@ -1329,11 +1503,18 @@
   "longevity": "Open-ended",
   "unique": "Spd +1 & SP +1 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Pure Instincts</em> – CS +0.35 · 2.4s<br /><small>Late / End · Last 200 m</small>",
-   "<em class=\"gold\">Sharp-Witted Composure</em> – TS +0.25 · Rec +3.5% · 4s<br /><small>Medium · Mid-race</small>",
-   "Nimble Navigator · Medium Corners ○"
+   {
+    "html": "<b><span class=\"gold\">Pure Instincts</span></b> – CS +0.35 · 2.4s<br /><small>Late / End · Last 200 m</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Sharp-Witted Composure</span></b> – TS +0.25 · Rec +3.5% · 4s<br /><small>Medium · Mid-race</small>"
+   },
+   {
+    "html": "Nimble Navigator · Medium Corners ○"
+   }
   ],
   "rank": null,
+  "verdictKey": "8168",
   "verdict": [
    "Strong Speed, 15% TE, 100 SPE, Hint Lv4, Late/End golds.",
    "2 SP, Speed bonus, power bonus.",
@@ -1374,10 +1555,15 @@
   "longevity": "Open-ended",
   "unique": "Sta +1 & SP +1 at bond 80",
   "keyskills": [
-   "<em class=\"gold\">Strong Steps</em> – Spd +80<br /><small>Dirt</small>",
-   "<em class=\"gold\">Embracing Virtue and Vice</em> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Dirt · Mid-race</small>"
+   {
+    "html": "<b><span class=\"gold\">Strong Steps</span></b> – Spd +80<br /><small>Dirt</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Embracing Virtue and Vice</span></b> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Dirt · Mid-race</small>"
+   }
   ],
   "rank": 2,
+  "verdictKey": "importance-niche",
   "verdict": [
    "Dirt Power. Niche. Good green but borrow"
   ],

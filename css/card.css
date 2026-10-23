@@ -202,3 +202,55 @@
   font-weight: 600;
   font-size: 11px;
 }
+
+/* Skill names: golden, inherited (unique), evolved */
+.gold {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.inh {
+  color: #7fb3f0;
+}
+
+.evo {
+  color: #f08fc0;
+}
+
+/* Inherited / evolved versions listed under their skill */
+.box ul ul {
+  margin: 2px 0 2px;
+  padding-left: 14px;
+  list-style: "↳ ";
+  font-size: 12px;
+}
+
+/* Uma portrait: full-body art, so top-aligned instead of centred */
+.art.uma img {
+  object-fit: cover;
+  object-position: top;
+}
+
+/* Aptitudes as small tags */
+.apt span {
+  display: inline-block;
+  margin: 2px 4px 0 0;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--inset);
+  font-size: 11.5px;
+  font-weight: 600;
+}
+
+/* Running style badge when an Uma is listed on another style's page */
+.meta .style {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.meta .style img {
+  width: 16px;
+  height: 16px;
+}
+

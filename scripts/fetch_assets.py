@@ -29,6 +29,10 @@ def targets():
         for card in json.loads(f.read_text(encoding="utf-8")):
             if card.get("id") and card.get("imgSource"):
                 yield ROOT / "assets" / "cards" / f"{card['id']}.webp", card["imgSource"]
+    for f in sorted((ROOT / "data" / "uma").glob("*.json")):
+        for uma in json.loads(f.read_text(encoding="utf-8")):
+            if uma.get("id") and uma.get("imgSource"):
+                yield ROOT / "assets" / "umas" / f"{uma['id']}.webp", uma["imgSource"]
     for sc in json.loads((ROOT / "data" / "scenarios.json").read_text(encoding="utf-8")):
         yield ROOT / "assets" / "scenarios" / f"{sc['slug']}{ext_of(sc['imgSource'])}", sc["imgSource"]
     for role in ("front", "pace", "late", "end"):

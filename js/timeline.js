@@ -1,13 +1,13 @@
 // Horizontal release timeline: scenario sections, date rail, "Today" marker,
 // wheel / keyboard / button scrolling.
 import { TODAY } from "./config.js";
-import { cardHTML } from "./card.js";
 import { $, fmtDate } from "./util.js";
 
 export function createTimeline(tl, scenarios, ruler) {
   const prev = $("#prev"), next = $("#next");
 
-  function render(cards) {
+  /** cards: filtered items; renderCard(item) → HTML; noun: "card" / "Uma" for the counts */
+  function render(cards, renderCard, noun = "card") {
     let html = '<div class="spacer"></div>', todayDone = false;
     let jump = '<option value="">Jump to…</option><option value="today">Today</option>';
 
@@ -18,16 +18,16 @@ export function createTimeline(tl, scenarios, ruler) {
       let cols = "";
       for (const c of cs) {
         if (!todayDone && c.iso >= TODAY) { cols += '<div class="today" id="today"><b>Today</b></div>'; todayDone = true; }
-        cols += `<div class="col" data-iso="${c.iso}"><div class="when${c.iso < TODAY ? " past" : ""}"><i></i><span>${c.date}</span></div>${cardHTML(c)}</div>`;
+        cols += `<div class="col" data-iso="${c.iso}"><div class="when${c.iso < TODAY ? " past" : ""}"><i></i><span>${c.date}</span></div>${renderCard(c)}</div>`;
       }
       const since = s.live ? `live since ${fmtDate(s.start)}` : `est. ${fmtDate(s.start)}`;
       html += `<section class="sc" id="sc${i}" style="--sc:${s.color}">
-        <div class="sc-head"><h2>${s.name}</h2><small>${since} · ${cs.length} card${cs.length > 1 ? "s" : ""}</small></div>
+        <div class="sc-head"><h2>${s.name}</h2><small>${since} · ${cs.length} ${noun}${cs.length > 1 ? "s" : ""}</small></div>
         <div class="cards">${cols}</div></section>`;
     });
     if (!todayDone) html += '<div class="today" id="today"><b>Today</b></div>';
 
-    tl.innerHTML = cards.length ? html + '<div class="spacer"></div>' : '<p class="empty">No card matches these filters.</p>';
+    tl.innerHTML = cards.length ? html + '<div class="spacer"></div>' : `<p class="empty">No ${noun} matches these filters.</p>`;
     $("#jump").innerHTML = jump;
     watchSizes();
     navState();

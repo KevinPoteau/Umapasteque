@@ -6,7 +6,7 @@
 <!-- The site is dark by design: tell the browser and dark-mode extensions not to recolour it -->
 <meta name="color-scheme" content="dark">
 <meta name="darkreader-lock">
-<title>Umapastèque · End Closer</title>
+<title>Umapastèque</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@500;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap">
@@ -19,6 +19,7 @@
 
 <header class="pad mast">
   <h1>Umapast<span>è</span>que</h1>
+  <nav class="kinds" id="kinds" aria-label="Support cards or Umas"></nav>
   <nav class="crumbs" id="roles" aria-label="Running style"></nav>
 </header>
 
@@ -26,6 +27,8 @@
   <div class="pad">
     <input class="search" id="q" type="search" placeholder="Search a card…" aria-label="Search a card">
     <div class="types" id="types" role="group" aria-label="Card type"></div>
+    <div class="types" id="dist" role="group" aria-label="Distance" hidden></div>
+    <div class="types" id="surf" role="group" aria-label="Surface" hidden></div>
     <div class="vbar" id="verdict" role="group" aria-label="Minimum verdict"><span class="vlbl" id="vlbl">Any verdict</span></div>
     <button class="link" id="reset">Reset</button>
     <span class="sp"></span>

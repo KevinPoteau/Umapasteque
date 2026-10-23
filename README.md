@@ -23,14 +23,17 @@ js/                     ES modules, no build step
   util.js               helpers, image fallback (local copy → original URL)
 data/
   scenarios.json        scenario names, start dates, colours, art source
-  support/end.json      End Closer support cards
+  support/<role>.json   support cards per running style (front, pace, late, end)
+  uma/<role>.json       Umas per running style
 assets/
   icons/types/          card type icons (SVG)
   icons/verdicts/       verdict arrows
   icons/roles/          running style badges      ┐ downloaded by
   cards/<id>.webp       card art (id = game id)    │ scripts/fetch_assets.py
+  umas/<id>.webp        Uma art (id = outfit id)   │
   scenarios/            scenario art               ┘
 scripts/fetch_assets.py downloads missing images into assets/
+scripts/notion_export.py one-off: converts the v1 Notion pages into data/
 .github/workflows/
   pages.yml             deploys to GitHub Pages on push to main
   fetch-assets.yml      downloads new images when data changes and opens a PR with them
@@ -42,7 +45,9 @@ Images not yet in `assets/` are loaded from their original site, so the page wor
 
 | I want to… | Edit |
 |---|---|
-| Add or change a card | `data/support/end.json`: one object per card. `id` is the game's card id (it names the image), `iso` is the release date, `rank` the verdict (5 = Highly recommended … 1 = Very bad), `color` the card background (`blue`, `red`, `orange`, `pink`, `green`, `yellow`, `purple`). |
+| Add or change a card | `data/support/<role>.json`: one object per card. `id` is the game's card id (it names the image), `iso` is the release date, `rank` the verdict (5 = Highly recommended … 1 = Very bad), `color` the card background (`blue`, `red`, `orange`, `pink`, `green`, `yellow`, `purple`). |
+| Add or change an Uma | `data/uma/<role>.json`: same idea, with `runner` / `inherit` / `evolved` stars, `aptitudes`, `outfit` and `style` (her own running style) |
+| Rate an entry still shown "Unrated" | `CUSTOM_VERDICTS` in `js/config.js`: maps the Notion custom emoji id (`verdictKey`) to a rank |
 | Change a scenario date or colour | `data/scenarios.json` |
 | Change a colour or the card width | the `:root` block at the top of `css/base.css` (every token is commented) |
 | Rename a verdict or swap its icon | `VERDICTS` in `js/config.js` + `assets/icons/verdicts/` |
@@ -65,4 +70,3 @@ python3 scripts/fetch_assets.py   # optional: store images locally
 1. ~~Static site on GitHub Pages~~
 2. Mobile layout: vertical timeline, fixed filter header
 3. Notion sync: a scheduled GitHub Action exports the Notion databases to `data/` and redeploys
-4. Front / Pace / Late pages
