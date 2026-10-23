@@ -1,7 +1,7 @@
 // Horizontal release timeline: scenario sections, date rail, "Today" marker,
 // wheel / keyboard / button scrolling.
-import { TODAY } from "./config.js";
-import { $, fmtDate } from "./util.js";
+import { TODAY, scenarioImage } from "./config.js";
+import { $, $$, fmtDate, img } from "./util.js";
 
 export function createTimeline(tl, scenarios, ruler) {
   const prev = $("#prev"), next = $("#next");
@@ -9,12 +9,12 @@ export function createTimeline(tl, scenarios, ruler) {
   /** cards: filtered items; renderCard(item) → HTML; noun: "card" / "Uma" for the counts */
   function render(cards, renderCard, noun = "card") {
     let html = '<div class="spacer"></div>', todayDone = false;
-    let jump = '<option value="">Jump to…</option><option value="today">Today</option>';
+    let jump = '<button class="jb today-btn" data-to="today">Today</button>';
 
     scenarios.forEach((s, i) => {
       const cs = cards.filter(c => c.scenario === s.name).sort((a, b) => a.iso.localeCompare(b.iso));
       if (!cs.length) return;
-      jump += `<option value="sc${i}">${s.name}</option>`;
+      jump += `<button class="jb" data-to="sc${i}" data-sc="${s.slug}" style="--sc:${s.color}" title="${s.name}">${img(scenarioImage(s), 'alt=""')}<span>${s.name}</span></button>`;
       let cols = "";
       for (const c of cs) {
         if (!todayDone && c.iso >= TODAY) { cols += '<div class="today" id="today"><b>Today</b></div>'; todayDone = true; }
@@ -54,6 +54,12 @@ export function createTimeline(tl, scenarios, ruler) {
   // Vertical wheel scrolls the timeline sideways (Firefox reports lines/pages, not pixels)
   $(".tl-wrap").addEventListener("wheel", e => {
     if (Math.abs(e.deltaY) <= Math.abs(e.deltaX) || e.ctrlKey) return;
+    // A card taller than the screen scrolls its own text first
+    const card = e.target.closest(".card");
+    if (card && card.scrollHeight > card.clientHeight) {
+      const atTop = card.scrollTop <= 0, atBottom = card.scrollTop + card.clientHeight >= card.scrollHeight - 1;
+      if ((e.deltaY < 0 && !atTop) || (e.deltaY > 0 && !atBottom)) return;
+    }
     const k = e.deltaMode === 1 ? 40 : e.deltaMode === 2 ? tl.clientWidth : 1;
     tl.scrollLeft += e.deltaY * k;
     e.preventDefault();
@@ -69,16 +75,22 @@ export function createTimeline(tl, scenarios, ruler) {
   tl.addEventListener("scroll", () => { navState(); ruler.read(); }, { passive: true });
   addEventListener("resize", () => { navState(); ruler.build(); });
 
-  $("#jump").onchange = e => {
-    const el = document.getElementById(e.target.value);
+  // Scenario buttons: jump to the start of that scenario (or to Today)
+  $("#jump").addEventListener("click", e => {
+    const b = e.target.closest(".jb");
+    const el = b && document.getElementById(b.dataset.to);
     if (el) scrollToEl(el, true);
-    e.target.value = "";
-  };
+  });
 
   // Rebuild the ruler when sections change size after render (images, fonts)
   let timer = 0;
   const ro = new ResizeObserver(() => { clearTimeout(timer); timer = setTimeout(ruler.build, 120); });
   function watchSizes() { ro.disconnect(); tl.querySelectorAll(".sc").forEach(s => ro.observe(s)); }
 
-  return { render, scrollToToday };
+  /** Highlight the button of the scenario under the needle (called by the ruler). */
+  function markScenario(slug) {
+    $$("#jump .jb[data-sc]").forEach(b => b.toggleAttribute("aria-current", b.dataset.sc === slug));
+  }
+
+  return { render, scrollToToday, markScenario };
 }

@@ -51,6 +51,7 @@ function update() {
   $("#count").textContent = `${shown.length} / ${items.length} ${noun}s`;
   const render = page.kind === "uma" ? u => umaCardHTML(u, page.role) : supportCardHTML;
   timeline.render(shown, render, noun);
+  ruler.refresh();
 }
 
 async function openPage(next) {
@@ -92,7 +93,7 @@ async function boot() {
     tl.innerHTML = '<p class="empty">Could not load the data. If you opened index.html as a file, serve the folder instead (see README).</p>';
     return;
   }
-  ruler = createRuler(tl, scenarios);
+  ruler = createRuler(tl, scenarios, slug => timeline?.markScenario(slug));
   timeline = createTimeline(tl, scenarios, ruler);
   initFilters(update);
   addEventListener("hashchange", route);
