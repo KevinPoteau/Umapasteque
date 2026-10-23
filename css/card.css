@@ -319,3 +319,14 @@
 .box.skills > ul > li {
   break-inside: avoid;
 }
+
+/* Skill name + effect: one line; the card widens instead of wrapping it */
+.sk {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.card.wrap .sk {
+  white-space: normal;
+}
+
