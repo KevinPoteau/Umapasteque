@@ -14,10 +14,12 @@ import { $, $$, img, fmtDate } from "./util.js";
 import * as gh from "./github.js";
 
 const DRAFT_KEY = "uma-admin-drafts-v2";
+const DROP_KEY = "uma-admin-drop-v2";   // entries to stop tracking: { kind: [id, …] }
 const VIEW_KEY = "uma-admin-view-v2";
 
 const files = {};        // kind → { data: [...], sha } as on main
 let drafts = load(DRAFT_KEY, {});
+let dropping = load(DROP_KEY, {});
 const view = { kind: "support", role: "all", scope: "todo", q: "", sel: null, edRole: null, ...load(VIEW_KEY, {}) };
 
 function load(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } }
@@ -52,7 +54,18 @@ function current(kind, item) {
 const rolesOf = it => Object.keys(it.roles ?? {});
 const isTodo = it => it.todo === true || !rolesOf(it).length || rolesOf(it).some(r => rankOf(it.roles[r]) == null);
 const isChanged = (kind, id) => !!drafts[kind]?.[id];
-const changeCount = () => Object.values(drafts).reduce((n, d) => n + Object.keys(d).length, 0);
+const isDropped = (kind, id) => (dropping[kind] ?? []).includes(id);
+const changeCount = () => Object.values(drafts).reduce((n, d) => n + Object.keys(d).length, 0)
+  + Object.values(dropping).reduce((n, ids) => n + ids.length, 0);
+
+/** "Don't track": removed from the data on publish, and listed in data/ignored.json so the import skips it. */
+function setDropped(kind, id, on) {
+  const ids = new Set(dropping[kind] ?? []);
+  on ? ids.add(id) : ids.delete(id);
+  if (ids.size) dropping[kind] = [...ids]; else delete dropping[kind];
+  store(DROP_KEY, dropping);
+  syncPublish();
+}
 
 function patch(kind, original, fields) {
   const d = (drafts[kind] ??= {});
@@ -98,7 +111,8 @@ async function renderList() {
   const inRole = it => view.role === "all" || (view.role === "none" ? !rolesOf(it).length : !!it.roles?.[view.role]);
   const pool = data.map(item => current(kind, item)).filter(inRole);
   const rows = pool
-    .filter(it => view.scope === "all" || (view.scope === "todo" ? isTodo(it) : isChanged(kind, it.id)))
+    .filter(it => view.scope === "changed" ? isChanged(kind, it.id) || isDropped(kind, it.id)
+      : !isDropped(kind, it.id) && (view.scope === "all" || isTodo(it)))
     .filter(it => !q || `${it.name} ${it.outfit ?? ""} ${it.type ?? ""}`.toLowerCase().includes(q))
     .sort((a, b) => b.iso.localeCompare(a.iso));
 
@@ -120,7 +134,7 @@ function rowHTML(kind, it) {
   return `<button class="row${it.id === view.sel ? " on" : ""}" data-id="${it.id}" style="--tint:var(--t-${it.color})">
     <span class="thumb">${img(pic, 'alt="" loading="lazy"')}</span>
     <span class="txt"><b>${esc(it.name)}</b><small>${esc(sub)} · ${fmtDate(it.iso)}</small></span>
-    ${isChanged(kind, it.id) ? '<span class="dot" title="Changed in this session"></span>' : ""}
+    ${isChanged(kind, it.id) || isDropped(kind, it.id) ? '<span class="dot" title="Changed in this session"></span>' : ""}
     <span class="rbs">${roleBadges(it)}</span>
   </button>`;
 }
@@ -178,7 +192,10 @@ async function renderEditor() {
     <div class="ed-head">
       <h2>${esc(it.name)} <small>${esc(support ? `${it.rarity} ${it.type}` : it.outfit)}</small></h2>
       ${isChanged(kind, it.id) ? '<button type="button" class="btn" id="revert">Undo changes</button>' : ""}
+      ${isDropped(kind, it.id) ? "" : `<button type="button" class="btn danger" id="drop" title="Remove it from the site and from the import">Don't track</button>`}
     </div>
+    ${isDropped(kind, it.id) ? `<div class="dropped">On publish, this ${KINDS[kind].noun} is removed and the import will not add it again.
+      <button type="button" class="btn" id="undrop">Keep tracking</button></div>` : ""}
 
     <fieldset>
       <legend>Running styles</legend>
@@ -237,6 +254,8 @@ async function renderEditor() {
     const f = g.dataset.field, n = +b.dataset.n;
     ROLE_FIELDS[kind].includes(f) ? setRole({ [f]: n }) : set({ [f]: n });
   });
+  form.querySelector("#drop")?.addEventListener("click", () => { setDropped(kind, original.id, true); renderEditor(); renderList(); });
+  form.querySelector("#undrop")?.addEventListener("click", () => { setDropped(kind, original.id, false); renderEditor(); renderList(); });
   form.querySelector("#revert")?.addEventListener("click", () => {
     delete drafts[kind][original.id];
     if (!Object.keys(drafts[kind]).length) delete drafts[kind];
@@ -285,15 +304,30 @@ async function doPublish() {
   const btn = $("#publish");
   btn.disabled = true; btn.textContent = "Publishing…";
   try {
-    const kinds = Object.keys(drafts);
+    const kinds = [...new Set([...Object.keys(drafts), ...Object.keys(dropping)])];
     for (const k of kinds) { delete files[k]; await loadKind(k); }   // latest main
-    const out = kinds.map(k => ({ path: pathOf(k), content: JSON.stringify(files[k].data.map(item => current(k, item)), null, 1) + "\n" }));
+    const out = kinds.map(k => ({ path: pathOf(k), content: JSON.stringify(
+      files[k].data.filter(item => !isDropped(k, item.id)).map(item => current(k, item)), null, 1) + "\n" }));
 
-    const lines = kinds.flatMap(k => Object.keys(drafts[k]).map(id => {
-      const item = files[k].data.find(x => String(x.id) === id);
-      if (!item) return `- ${k} ${id}: entry no longer on main, skipped`;
-      return `- **${item.name}**${item.outfit ? ` (${item.outfit})` : ` (${item.rarity} ${item.type})`}: ${describe(item, current(k, item))}`;
-    }));
+    const title = item => `**${item.name}**${item.outfit ? ` (${item.outfit})` : ` (${item.rarity} ${item.type})`}`;
+    const lines = kinds.flatMap(k => [
+      ...Object.keys(drafts[k] ?? {}).filter(id => !isDropped(k, +id)).map(id => {
+        const item = files[k].data.find(x => String(x.id) === id);
+        return item ? `- ${title(item)}: ${describe(item, current(k, item))}` : `- ${k} ${id}: entry no longer on main, skipped`;
+      }),
+      ...(dropping[k] ?? []).map(id => {
+        const item = files[k].data.find(x => x.id === id);
+        return `- ${item ? title(item) : `${k} ${id}`}: don't track (removed, added to data/ignored.json)`;
+      }),
+    ]);
+
+    // Stopped entries go to data/ignored.json, so the weekly import skips them
+    if (Object.keys(dropping).length) {
+      let ignored = { support: [], uma: [] };
+      try { ignored = { ...ignored, ...(await gh.readJSON("data/ignored.json")).data }; } catch { /* first time */ }
+      for (const [k, ids] of Object.entries(dropping)) ignored[k] = [...new Set([...(ignored[k] ?? []), ...ids])].sort((a, b) => a - b);
+      out.push({ path: "data/ignored.json", content: JSON.stringify(ignored, null, 1) + "\n" });
+    }
     const n = lines.length;
     const url = await gh.publish(out, {
       title: `Ratings: ${n} entr${n > 1 ? "ies" : "y"}`,
@@ -301,6 +335,7 @@ async function doPublish() {
     });
 
     drafts = {}; store(DRAFT_KEY, drafts);
+    dropping = {}; store(DROP_KEY, dropping);
     for (const k of kinds) delete files[k];
     toast(`Pull request opened: <a href="${url}" target="_blank" rel="noopener">${url.replace(/^https:\/\/github\.com\//, "")}</a> — merge it to update the site.`);
     await renderList(); await renderEditor();

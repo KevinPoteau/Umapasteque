@@ -38,9 +38,12 @@ assets/
   scenarios/            scenario art               ┘
 scripts/fetch_assets.py downloads missing images into assets/
 scripts/validate_data.py checks data/ (runs on every pull request and deploy)
+scripts/import_new.py   adds newly announced SSR cards and Umas to rate (source: GameTora)
 .github/workflows/
   pages.yml             deploys to GitHub Pages on push to main
   fetch-assets.yml      downloads new images when data changes and opens a PR with them
+  import.yml            every Monday: new cards and Umas to rate → one PR
+  validate.yml          checks data/ on every pull request
 ```
 
 Images not yet in `assets/` are loaded from their original site, so the page works before and after the sync.
@@ -53,6 +56,14 @@ Open `admin.html` on the site (e.g. https://kevinpoteau.github.io/Umapasteque/ad
 2. Pick Support cards / Umas, and optionally a running style. **To rate** lists entries with no running style yet, a style without a verdict, or `"todo": true`; **Changed** lists what you edited in this session.
 3. Add the running styles the entry is good for (**+ Pace Chaser**…), then rate each one: verdict, stars, text. Dates are shared. The preview shows the card as it will look. Changes are kept in the browser until published.
 4. **Publish** opens one pull request with every change. The *Check data* run on it must be green; merge it and the site redeploys.
+
+## New cards and Umas (weekly import)
+
+Every Monday, *Import new cards and Umas* looks at [GameTora](https://gametora.com)'s data for SSR support cards and Umas whose global release (real, or GameTora's prediction) is within the next ~14 months and not in `data/` yet. It adds them with `"todo": true` and no running style, and opens (or updates) one pull request listing them. It can also be run by hand from the Actions tab.
+
+After merging, they appear in the admin page's **To rate** list, but not on the site: an entry only shows once a running style is added to it. **Don't track** removes an entry and records its id in `data/ignored.json`, so the import never adds it again.
+
+The import never changes an existing entry; if GameTora has a confirmed global date that differs from ours, the pull request only mentions it.
 
 ## How to edit
 

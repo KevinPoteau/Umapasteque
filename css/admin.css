@@ -381,6 +381,17 @@ legend {
   gap: 12px;
 }
 
+.dropped {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  border: 1px solid #e9999966;
+  border-radius: 10px;
+  background: #42262255;
+  font-size: 13.5px;
+}
+
 .btn.danger {
   color: #e99;
   border-color: #e9999944;
