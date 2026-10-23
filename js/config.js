@@ -60,11 +60,11 @@ export const SP_ICON = {
   local: "assets/icons/sp.png",
   remote: "https://s3-us-west-2.amazonaws.com/public.notion-static.com/01249879-d648-48a2-b3c8-b368ffff1156/uma_sp_star.png",
 };
-// Aptitude shoe, as in the game (distance filter, Aptitudes box)
-export const SHOE_ICON = {
-  local: "assets/icons/shoes.png",
-  remote: "https://s3-us-west-2.amazonaws.com/public.notion-static.com/e2557030-cdaa-41e2-9521-eab8e5b5e50a/uma_aptitude_shoes.png",
-};
+// Race shoes from the game, one per distance and surface (Turf is a recoloured
+// Dirt shoe, the game has none). Used by the filters and the aptitude tags.
+export const shoeIcon = name => `assets/icons/shoes/${name.toLowerCase()}.png`;
+// Aptitude tag prefix → shoe ("Med A" → medium)
+export const APTITUDE_SHOE = { Sprint: "sprint", Mile: "mile", Med: "medium", Medium: "medium", Long: "long", Turf: "turf", Dirt: "dirt" };
 export const cardImage = card => ({ local: `assets/cards/${card.id}.webp`, remote: card.imgSource });
 export const umaImage = uma => ({ local: `assets/umas/${uma.id}.webp`, remote: uma.imgSource });
 export const scenarioImage = sc => ({ local: `assets/scenarios/${sc.slug}${extOf(sc.imgSource)}`, remote: sc.imgSource });

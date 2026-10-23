@@ -1,8 +1,8 @@
 // Filter bar: search, chips (card type for support cards, distance + surface
 // for Umas), verdict scale.
-import { TYPES, DISTANCES, SURFACES, VERDICTS, SHOE_ICON, typeIcon } from "./config.js";
+import { TYPES, DISTANCES, SURFACES, VERDICTS, shoeIcon, typeIcon } from "./config.js";
 import { state } from "./state.js";
-import { $, $$, img } from "./util.js";
+import { $, $$ } from "./util.js";
 
 let onChange = () => {};
 
@@ -11,8 +11,9 @@ export function initFilters(changed) {
   onChange = changed;
 
   chipGroup("#types", TYPES, "types", t => `<img class="ico" src="${typeIcon(t)}" alt="">${t}`);
-  chipGroup("#dist", DISTANCES, "dist", d => `${img(SHOE_ICON, 'class="ico shoe" alt=""')}${d}`);
-  chipGroup("#surf", SURFACES, "surf", s => s);
+  const shoe = v => `<img class="ico shoe" src="${shoeIcon(v)}" alt="">${v}`;
+  chipGroup("#dist", DISTANCES, "dist", shoe);
+  chipGroup("#surf", SURFACES, "surf", shoe);
 
   // Worst → best, left to right. Clicking an icon keeps that verdict and everything better.
   const bar = $("#verdict"), label = $("#vlbl");
