@@ -6,9 +6,10 @@ export const TODAY = [now.getFullYear(), String(now.getMonth() + 1).padStart(2, 
 
 // ---------- Pages: what (support cards / Umas) × running style ----------
 
+// art: background of the Support cards / Umas switch (focus = which part of the image to show)
 export const KINDS = {
-  support: { label: "Support cards", noun: "card" },
-  uma:     { label: "Umas",          noun: "Uma" },
+  support: { label: "Support cards", noun: "card", art: "assets/cards/30161.webp", focus: "50% 38%" },
+  uma:     { label: "Umas",          noun: "Uma",  art: "assets/umas/106520.webp", focus: "50% 36%" },
 };
 
 const roleIcon = id => ({ local: `assets/icons/roles/${id}.webp`, remote: `https://uma.guide/img/banner-reviews/badges/playstyle-${id}.webp` });
@@ -58,6 +59,11 @@ export const typeIcon = type => `assets/icons/types/${type.toLowerCase()}.svg`;
 export const SP_ICON = {
   local: "assets/icons/sp.png",
   remote: "https://s3-us-west-2.amazonaws.com/public.notion-static.com/01249879-d648-48a2-b3c8-b368ffff1156/uma_sp_star.png",
+};
+// Aptitude shoe, as in the game (distance filter, Aptitudes box)
+export const SHOE_ICON = {
+  local: "assets/icons/shoes.png",
+  remote: "https://s3-us-west-2.amazonaws.com/public.notion-static.com/e2557030-cdaa-41e2-9521-eab8e5b5e50a/uma_aptitude_shoes.png",
 };
 export const cardImage = card => ({ local: `assets/cards/${card.id}.webp`, remote: card.imgSource });
 export const umaImage = uma => ({ local: `assets/umas/${uma.id}.webp`, remote: uma.imgSource });
