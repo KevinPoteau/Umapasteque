@@ -44,7 +44,7 @@ export const CUSTOM_VERDICTS = {
   "8168": 5,   // Highly recommended — e.g. Narita Taishin Wit, Still in Love SPD
   "8161": 4,   // Recommended        — e.g. Hishi Amazon PWR, Duramente SPD, Satono Diamond Wit (Late)
   "81e5": 2,   // Bad                — e.g. Vivlos Guts
-  // "81fc": ?, // still unknown     — e.g. Vivlos SPD, Daitaku Helios (Uma), Zenno Rob Roy (Uma)
+  "81fc": 3,   // Sidegrade          — e.g. Daitaku Helios (Uma), Vivlos SPD, Zenno Rob Roy (Uma)
 };
 
 export const rankOf = item => item.rank ?? CUSTOM_VERDICTS[item.verdictKey] ?? null;
