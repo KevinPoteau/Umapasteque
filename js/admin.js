@@ -159,6 +159,14 @@ function textToSkills(text) {
   return out;
 }
 
+/** Preview of an entry with no running style yet: its shared data, no verdict. */
+function unratedPreview(kind, it) {
+  const { roles, ...base } = it;
+  return kind === "support"
+    ? supportCardHTML({ verdict: [], stats: 0, skills: 0, longevity: "", bonus: [], ...base })
+    : umaCardHTML({ verdict: [], ...base }, it.style);
+}
+
 /** A new running style starts unrated. */
 function newRole(kind, it) {
   if (kind === "uma") return { verdict: [] };
@@ -251,8 +259,8 @@ async function renderEditor() {
         <textarea name="keyskills" rows="7" spellcheck="false">${esc(skillsToText(it.keyskills))}</textarea></label>
     </details>
   </form>
-  <div class="preview"><h3>Preview${role ? ` · ${roleById(role).label}` : ""}</h3><div class="pv">${
-    role ? (support ? supportCardHTML(forRole(it, role)) : umaCardHTML(forRole(it, role), role)) : '<p class="empty">No running style yet.</p>'}</div></div>`;
+  <div class="preview"><h3>Preview${role ? ` · ${roleById(role).label}` : " · not on the site yet"}</h3><div class="pv">${
+    role ? (support ? supportCardHTML(forRole(it, role)) : umaCardHTML(forRole(it, role), role)) : unratedPreview(kind, it)}</div></div>`;
 
   const form = ed.querySelector("form");
   if (refocus) {

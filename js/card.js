@@ -1,7 +1,7 @@
 // Card markup, laid out like the v1 Notion callouts.
 //   supportCardHTML(card): support card
 //   umaCardHTML(uma):      Uma (character)
-import { VERDICTS, rankOf, typeIcon, cardImage, umaImage, SP_ICON, roleById } from "./config.js";
+import { VERDICTS, rankOf, typeIcon, cardImage, umaImage, SP_ICON, roleById, cardLink, umaLink } from "./config.js";
 import { img } from "./util.js";
 
 // ---------- shared pieces ----------
@@ -40,6 +40,10 @@ const bonusIcon = stat => stat === "SP" ? img(SP_ICON, 'alt=""') : `<img src="${
 const bonusRow = bonus => !bonus.length ? "" :
   `<div class="bonus">${bonus.map(([stat, val]) => `<span>${bonusIcon(stat)}${val}<em>${stat}</em></span>`).join("")}</div>`;
 
+/** A link to the card's page elsewhere, opened in a new tab. */
+const ext = (href, inner, label) =>
+  `<a class="ext" href="${href}" target="_blank" rel="noopener" title="${label}">${inner}</a>`;
+
 const frame = (color, inner) => `<article class="card" style="--tint:var(--t-${color})">${inner}</article>`;
 
 // ---------- support card ----------
@@ -47,13 +51,13 @@ const frame = (color, inner) => `<article class="card" style="--tint:var(--t-${c
 export function supportCardHTML(c) {
   return frame(c.color, `
   <header>
-    <h3><img class="tico" src="${typeIcon(c.type)}" alt="${c.type}">${c.name} <span class="sub">· ${c.rarity} ${c.type}</span></h3>
+    <h3><img class="tico" src="${typeIcon(c.type)}" alt="${c.type}">${ext(cardLink(c), c.name, "Open on uma.guide")} <span class="sub">· ${c.rarity} ${c.type}</span></h3>
     <div class="meta">${c.universal ? '<span class="uni">universal</span>' : ""}</div>
   </header>
   ${c.effects ? `<div class="eff">${c.effects}<small>${c.start}</small></div>` : ""}
   <div class="body">
     <div class="left">
-      <div class="art">${img(cardImage(c), `alt="${c.name}" loading="lazy" data-placeholder`)}</div>
+      ${ext(cardLink(c), `<div class="art">${img(cardImage(c), `alt="${c.name}" loading="lazy" data-placeholder`)}</div>`, "Open on uma.guide")}
       ${ratings([["Stats", stars(c.stats)], ["Skills", stars(c.skills)], ["Longevity", c.longevity]])}
     </div>
     <div class="right">
@@ -78,12 +82,12 @@ export function umaCardHTML(u, pageRole) {
   const other = u.style !== pageRole ? roleById(u.style) : null;
   return frame(u.color, `
   <header>
-    <h3>${u.name} <span class="sub">· ${u.outfit}</span></h3>
+    <h3>${ext(umaLink(u), u.name, "Open on uma.guide")} <span class="sub">· ${u.outfit}</span></h3>
     ${other ? `<div class="meta"><span class="style">${img(other.icon, 'alt=""')}${other.label}</span></div>` : ""}
   </header>
   <div class="body">
     <div class="left">
-      <div class="art uma">${img(umaImage(u), `alt="${u.name}" loading="lazy" data-placeholder`)}</div>
+      ${ext(umaLink(u), `<div class="art uma">${img(umaImage(u), `alt="${u.name}" loading="lazy" data-placeholder`)}</div>`, "Open on uma.guide")}
       ${ratings([["Runner", stars(u.runner)], ["Inherit", stars(u.inherit)], ["Evolved skills", stars(u.evolved)]])}
     </div>
     <div class="right">
