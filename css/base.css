@@ -43,7 +43,7 @@
   --body: "Nunito Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   /* Sizes */
-  --cardw: min(86vw, 410px);                        /* card width */
+  --cardw: min(86vw, 440px);                        /* card width */
   --gut: max(16px, env(safe-area-inset-left, 0px)); /* side margin, clears phone notches */
   --rh: 58px;                                       /* ruler height */
 }
@@ -65,7 +65,7 @@ body {
   overflow: hidden;
   background: var(--bg);
   color: var(--fg);
-  font: 14px/1.45 var(--body);
+  font: 15px/1.45 var(--body);
 }
 
 small {
