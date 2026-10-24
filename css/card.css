@@ -19,7 +19,7 @@
 
 .card h3 {
   margin: 0;
-  font: 700 16.5px/1.25 var(--display);
+  font: 700 18px/1.25 var(--display);
 }
 
 .card h3 .sub {
@@ -28,7 +28,7 @@
 }
 
 .meta {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--muted);
   display: flex;
   gap: 8px;
@@ -41,12 +41,12 @@
 }
 
 .eff {
-  font-size: 12.5px;
+  font-size: 13.5px;
 }
 
 .eff small {
   display: block;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* Two columns: image + ratings | unique, skills, verdict */
@@ -100,7 +100,7 @@
 }
 
 .art .ph {
-  font: 700 13px var(--display);
+  font: 700 14px var(--display);
   color: var(--muted);
   text-align: center;
   padding: 8px;
@@ -112,12 +112,12 @@
   border-radius: 8px;
   padding: 8px 10px;
   min-width: 0;
-  font-size: 12.5px;
+  font-size: 13.5px;
 }
 
 .box h4 {
   margin: 0 0 2px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
 }
 
@@ -128,12 +128,12 @@
 
 .rate b {
   display: block;
-  font-size: 11.5px;
+  font-size: 12.5px;
 }
 
 .stars {
   letter-spacing: 1px;
-  font-size: 12.5px;
+  font-size: 13.5px;
 }
 
 .stars .off {
@@ -164,7 +164,7 @@
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   padding: 1px 9px 1px 2px;
   border-radius: 999px;
@@ -204,7 +204,7 @@
   align-items: center;
   gap: 5px;
   font-weight: 700;
-  font-size: 12.5px;
+  font-size: 13.5px;
 }
 
 .bonus img {
@@ -216,7 +216,7 @@
   font-style: normal;
   color: var(--muted);
   font-weight: 600;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 /* Skill names: golden, inherited (unique), evolved */
@@ -238,7 +238,7 @@
   margin: 2px 0 2px;
   padding-left: 14px;
   list-style: "↳ ";
-  font-size: 12px;
+  font-size: 13px;
 }
 
 /* Uma portrait: full-body art, so top-aligned instead of centred */
@@ -258,12 +258,12 @@
   background: #ffffff1f;
   border: 1px solid #ffffff2e;
   color: var(--fg);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
 }
 
 .apt .grade {
-  font: 800 12.5px/1 var(--display);
+  font: 800 13.5px/1 var(--display);
 }
 
 .g-A { color: #ffb347; }   /* A: orange, as in the game */
