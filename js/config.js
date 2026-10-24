@@ -25,19 +25,24 @@ export const dataPath = kind => `data/${kind}.json`;
 // ---------- Data: one entry per card / Uma, rated per running style ----------
 //
 // An entry only appears on the running styles listed in its "roles" object,
-// e.g. { "pace": {…}, "late": {…} } → shown on Pace Chaser and Late Surger only.
+// e.g. { "pace": {…}, "late": {…} } → shown on Pace Chaser and Late Surger only,
+// or { "all": {…} } → shown on every style with the same rating.
 // Each role holds that style's rating; its fields override the shared ones.
 export const ROLE_FIELDS = {
   support: ["rank", "verdict", "stats", "skills", "longevity", "bonus"],
   uma:     ["rank", "verdict"],
 };
 
+// "all" = one universal rating shown on every style's page; a style listed
+// as well (e.g. "front") replaces it on that page only.
+export const ALL_STYLES = "all";
+
 /** The entry as seen on one running style's page, or null if it is not rated there. */
 export function forRole(item, role) {
-  const r = item.roles?.[role];
+  const r = item.roles?.[role] ?? item.roles?.[ALL_STYLES];
   if (!r) return null;
   const { roles, ...base } = item;
-  return { ...base, ...r };
+  return { ...base, ...(roles[ALL_STYLES] ? { universal: true } : {}), ...r };
 }
 
 /** Every entry of this running style's page. */
