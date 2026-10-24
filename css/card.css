@@ -80,6 +80,37 @@
   margin-bottom: 0;
 }
 
+/* Name and picture link to the card's page (js/config.js: cardLink, umaLink) */
+a.ext {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.ext:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--muted);
+  text-underline-offset: 3px;
+}
+
+.left > a.ext {
+  display: block;
+}
+
+.card.flow a.ext:has(.art) {
+  display: block;
+  break-inside: avoid;
+  margin-bottom: 8px;
+  max-width: 128px;
+}
+
+a.ext .art {
+  transition: filter .15s;
+}
+
+a.ext:hover .art {
+  filter: brightness(1.08);
+}
+
 /* Card art, with a text placeholder when the image is missing */
 .art {
   position: relative;

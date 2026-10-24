@@ -62,6 +62,13 @@ export const VERDICTS = {
 
 export const rankOf = item => item?.rank ?? null;
 
+// ---------- Links ----------
+
+// Clicking a card's picture or name opens its page on uma.guide (new tab).
+// Change these two lines if the site moves its pages.
+export const cardLink = card => `https://uma.guide/support-cards/${card.id}`;
+export const umaLink = uma => `https://uma.guide/characters/${uma.id}`;
+
 // ---------- Images ----------
 
 export const typeIcon = type => `assets/icons/types/${type.toLowerCase()}.svg`;
