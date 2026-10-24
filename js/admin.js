@@ -204,6 +204,11 @@ async function renderEditor() {
       <textarea name="verdict" rows="4">${esc((R.verdict ?? []).join("\n"))}</textarea></label>
     <div><button type="button" class="btn danger" id="drop-role">Remove from ${roleById(role).label}</button></div>`;
 
+  // Redrawing replaces every field: remember which one has the focus (the
+  // user may have just clicked into the next field) to give it back after.
+  const active = document.activeElement;
+  const refocus = ed.contains(active) && active.name ? { name: active.name, value: active.value, start: active.selectionStart, end: active.selectionEnd } : null;
+
   ed.innerHTML = `
   <form class="form" autocomplete="off">
     <div class="ed-head">
@@ -250,6 +255,14 @@ async function renderEditor() {
     role ? (support ? supportCardHTML(forRole(it, role)) : umaCardHTML(forRole(it, role), role)) : '<p class="empty">No running style yet.</p>'}</div></div>`;
 
   const form = ed.querySelector("form");
+  if (refocus) {
+    const el = form.querySelector(`[name="${refocus.name}"]`);
+    if (el) {
+      if (typeof refocus.value === "string" && el.type !== "checkbox" && el.type !== "date") el.value = refocus.value;
+      el.focus();
+      try { el.setSelectionRange(refocus.start, refocus.end); } catch { /* not a text field */ }
+    }
+  }
   const redraw = () => { renderEditor(); refreshRow(); };
   const set = fields => { patch(kind, original, fields); redraw(); };
   /** Change this running style's rating; the "To rate" flag goes once every style has a verdict. */
@@ -292,8 +305,10 @@ async function renderEditor() {
     store(DRAFT_KEY, drafts); syncPublish(); redraw();
   });
   // Text fields: save on change (when leaving the field), not on every key
-  form.addEventListener("change", e => {
-    const el = e.target;
+  // Wait for the click that ended the edit to put the focus somewhere, so the
+  // redraw can hand it back to the same field (see refocus above).
+  form.addEventListener("change", e => setTimeout(() => onChange(e.target), 0));
+  function onChange(el) {
     if (el.name === "verdict") setRole({ verdict: el.value.split("\n").map(s => s.trim()).filter(Boolean) });
     else if (el.name === "longevity") setRole({ longevity: el.value.trim() });
     else if (el.name === "todo") set({ todo: el.checked || null });
@@ -301,7 +316,7 @@ async function renderEditor() {
     else if (el.name === "date") set({ date: el.value.trim() });
     else if (["effects", "start", "unique", "outfit"].includes(el.name)) set({ [el.name]: el.value.trim() });
     else if (el.name === "keyskills") set({ keyskills: textToSkills(el.value) });
-  });
+  }
 }
 
 /** Update the selected row in place (keeps the list scroll position). */
