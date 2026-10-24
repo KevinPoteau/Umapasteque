@@ -4697,7 +4697,7 @@
     "html": "<b><span class=\"gold\">Plan X</span></b> – Acc +0.40 · 3s<br /><small>Sprint · Late mid-race · Pos 2+ / Top 50%</small>"
    },
    {
-    "html": "Sunny Days ○ · Final Push · Sprint Corners ○ · Countermeasure · Meticulous Measures · Hydrate · Sprinting Gear"
+    "html": "Sunny Days ○ · Final Push · Sprint Corners ○ · Countermeasure · Sprinting Gear"
    }
   ],
   "bonus": [
@@ -4711,8 +4711,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30133_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Plan X is a terrible skill.",
+     "Arrives near Mejiro Ramonut Wit."
+    ],
+    "stats": 4,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30135,
@@ -4732,7 +4742,7 @@
     "html": "<b><span class=\"gold\">Unyielding</span></b> – TS +0.35 · Acc +0.10 · 3s<br /><small>Medium · Final corner · Overtaking</small>"
    },
    {
-    "html": "Tokyo Racecourse ○ · Fast-Paced · Steadfast · Medium Straightaways ○ · Front Runner Corners ○ · Leader's Pride · Aspire · Steady Gait · Firm Resolve · Final Push · Groundwork"
+    "html": "Medium Straightaways ○ · Front Runner Corners ○ · Steady Gait · Groundwork"
    }
   ],
   "bonus": [
@@ -4746,8 +4756,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30135_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "No TE, low SPE.",
+     "Much better cards exists"
+    ],
+    "stats": 3,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30136,
@@ -4767,7 +4787,7 @@
     "html": "<b><span class=\"gold\">Burning Soul</span></b> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Medium · Mid-race · 30–80% of the pack · Blocked</small>"
    },
    {
-    "html": "Medium Corners ○ · Late Surger Corners ○ · 1,500,000 CC · All I've Got · Fighting Spirit · Fearless · Hawkeye · Cloudy Days ○"
+    "html": "Medium Corners ○ · Late Surger Corners ○"
    }
   ],
   "bonus": [
@@ -4781,7 +4801,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30136_thumb.webp",
-  "roles": {},
+  "roles": {
+   "all": {
+    "verdict": [
+     "Burning soul is a good skill but Guts cards are hardly relevant."
+    ],
+    "stats": 2,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -4802,7 +4831,7 @@
     "html": "<b><span class=\"gold\">Lightning Step</span></b> – Lane +0.04 · Acc +0.30 · 4s<br /><small>Medium · Mid-race</small>"
    },
    {
-    "html": "Prudent Positioning · Nimble Navigator · Go with the Flow · Thunderbolt Step · Soft Step · Shrewd Step · Steady Gait · Pace Chaser Corners ○ · Pace Chaser Straightaways ○"
+    "html": "Nimble Navigator · Shrewd Step · Steady Gait · Pace Chaser Corners ○ · Pace Chaser Straightaways ○"
    }
   ],
   "bonus": [
@@ -4816,8 +4845,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30140_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 1,
+    "verdict": [
+     "Good stat bonus but no TE, low SPE.",
+     "Lightning Step is a terrible skill, acceleration midrace is worthless."
+    ],
+    "stats": 3,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30037,
@@ -4837,7 +4876,7 @@
     "html": "<b><span class=\"gold\">Swinging Maestro</span></b> – Rec +5.5%<br /><small>Mid-race · Corner</small>"
    },
    {
-    "html": "Right-Handed ○ · Nakayama Racecourse ○ · Corner Recovery ○ · Rosy Outlook · Medium Corners ○ · Fighting Spirit · Eager · Aspire · Steady Gait · Latch On · Break the Mold · Corner Acceleration ○ · Corner Adept ○ · Rainy Days ○"
+    "html": "Right-Handed ○ · Medium Corners ○ · Steady Gait · Corner Adept ○ · Rainy Days ○"
    }
   ],
   "bonus": [
@@ -4855,8 +4894,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30037_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Sounds like a good card, 10% TE, good SPE, good hints, Swinging Maestro, lots of stats growth.",
+     "But Guts card."
+    ],
+    "stats": 3,
+    "skills": 4,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30143,
@@ -4890,8 +4939,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30143_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Good stats bonus but no TE, no SPE and a terrible skill. Hard worker can proc at any time."
+    ],
+    "stats": 2,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30150,
@@ -4911,7 +4969,7 @@
     "html": "<b><span class=\"gold\">15,000,000 CC</span></b> – TS +0.35 · 2.4s<br /><small>Late · Uphill</small>"
    },
    {
-    "html": "Tokyo Racecourse ○ · Straightaway Recovery · Position Pilfer · Acceleration · Take the Chance · Full Throttle · Nimble Navigator"
+    "html": "Tokyo Racecourse ○ · Straightaway Recovery · Nimble Navigator"
    }
   ],
   "bonus": [
@@ -4921,8 +4979,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30150_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Low SPE, bad stats, Stamina card when better options exists.",
+     "Skill is too niche."
+    ],
+    "stats": 0,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30155,
@@ -4956,8 +5024,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30155_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Low TE, low SPE, Runaway cards, fights against Mihono Bourbon Wit and Mejiro Ramonu."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30159,
@@ -4977,7 +5054,7 @@
     "html": "<b><span class=\"gold\">Speed Star</span></b> – TS +0.35 · 1.8s<br /><small>Pace · Final corner · Top 50%</small>"
    },
    {
-    "html": "Stamina to Spare · Pace Chaser Corners ○ · Straight Descent · Pace Chaser Savvy ○ · Head-On · On the Attack · Straightaway Acceleration · Go with the Flow"
+    "html": "Pace Chaser Corners ○ · Straight Descent · Pace Chaser Savvy ○ · Head-On"
    }
   ],
   "bonus": [
@@ -4987,8 +5064,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30159_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 1,
+    "verdict": [
+     "Right before El Condor Pasa SPD.",
+     "Low Stats bonus, low SPE.",
+     "Speed Star is \"available\" on Fine Motion."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30162,
@@ -5008,7 +5096,7 @@
     "html": "<b><span class=\"gold\">Serenity</span></b> – Rec +5.5%<br /><small>End</small>"
    },
    {
-    "html": "Standing By · Masterful Gambit · End Closer Corners ○ · Strategist · Early Start · Medium Corners ○"
+    "html": "Standing By · End Closer Corners ○ · Strategist · Medium Corners ○"
    }
   ],
   "bonus": [
@@ -5018,8 +5106,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30162_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 1,
+    "verdict": [
+     "If you need Serenity, go for Air Shakur SPD.",
+     "If you need Stamina, go for Super Creek."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30167,
@@ -5039,7 +5137,7 @@
     "html": "<b><span class=\"gold\">Calm and Collected</span></b> – Rec +5.5%<br /><small>Pace · Late early-race · Top 50%</small>"
    },
    {
-    "html": "Right-Handed ○ · Prudent Positioning · Stamina to Spare · Productive Plan · Up-Tempo · On the Attack · Corner Adept ○"
+    "html": "Right-Handed ○ · Corner Adept ○"
    }
   ],
   "bonus": [
@@ -5049,8 +5147,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30167_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "RNG recovery, okay TE but low speciality and very bad stats bonus.",
+     "We have El Condor Pasa SPD and Kitasan Black, there is no reason to include this card in a deck"
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30171,
@@ -5080,8 +5188,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30171_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "No TE, okay SPE.",
+     "This card shouldn't touch your deck."
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30176,
@@ -5101,7 +5219,7 @@
     "html": "<b><span class=\"gold\">Hard Worker</span></b> – Acc +0.30 · 4s<br /><small>Late · Overtaking</small>"
    },
    {
-    "html": "Non-Standard Distance ○ · Winter Runner ○ · Pressure · Late Surger Straightaways ○ · Fighter · Fighting Spirit · Pace Strategy"
+    "html": "Non-Standard Distance ○ · Winter Runner ○ · Late Surger Straightaways ○"
    }
   ],
   "bonus": [
@@ -5115,8 +5233,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30176_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Guts card and Hardworker."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30180,
@@ -5136,7 +5263,7 @@
     "html": "<b><span class=\"gold\">In Body and Mind</span></b> – TS +0.35 · 2.4s<br /><small>Last spurt / Early last spurt</small>"
    },
    {
-    "html": "Extra Tank · Pace Chaser Straightaways ○ · Long Straightaways ○ · Thunderbolt Step · Homestretch Haste · Tokyo Racecourse ○"
+    "html": "Pace Chaser Straightaways ○ · Long Straightaways ○ · Homestretch Haste · Tokyo Racecourse ○"
    }
   ],
   "bonus": [
@@ -5150,7 +5277,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30180_thumb.webp",
-  "roles": {},
+  "roles": {
+   "all": {
+    "verdict": [
+     "Group card not especially strong.",
+     "Date card but the slot should already be taken by the current and future event.",
+     "In Body and Mind is good, but not enough to include the card in decks."
+    ],
+    "stats": 1,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
