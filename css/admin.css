@@ -205,6 +205,24 @@
   object-fit: cover;
 }
 
+.rb.all {
+  width: auto;
+  padding: 0 7px;
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 800;
+  color: var(--fg);
+}
+
+.rtab.all:not(.add) {
+  padding-left: 12px;
+}
+
+.rtab small {
+  color: var(--muted);
+  font-weight: 600;
+}
+
 .rbs .none {
   font-size: 10.5px;
   font-weight: 700;

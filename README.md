@@ -55,7 +55,7 @@ Open `admin.html` on the site (e.g. https://kevinpoteau.github.io/Umapasteque/ad
 
 1. **GitHub token** (once per browser): create a [fine-grained token](https://github.com/settings/personal-access-tokens/new) with *Repository access → Only select repositories → Umapasteque*, permissions *Contents: Read and write* and *Pull requests: Read and write*, and an expiry date. Paste it in the dialog. It stays in that browser only.
 2. Pick Support cards / Umas, and optionally a running style. **To rate** lists entries with no running style yet, a style without a verdict, or `"todo": true`; **Changed** lists what you edited in this session.
-3. Add the running styles the entry is good for (**+ Pace Chaser**…), then rate each one: verdict, stars, text. Dates and **Card text** (effects, unique, key skills) are shared. The preview shows the card as it will look. Changes are kept in the browser until published.
+3. Add the running styles the entry is good for (**+ Pace Chaser**…), or **+ All styles** for one rating on every page (a style added on top gets its own rating there), then rate each one: verdict, stars, text. Dates and **Card text** (effects, unique, key skills) are shared. The preview shows the card as it will look. Changes are kept in the browser until published.
 4. **Publish** opens one pull request with every change. The *Check data* run on it must be green; merge it and the site redeploys.
 
 ## New cards and Umas (weekly import)
@@ -73,7 +73,7 @@ The import never changes an existing entry; if GameTora has a confirmed global d
 | I want to… | Edit |
 |---|---|
 | Rate, or show an entry on another running style | the admin page (above), or `roles` in the data file |
-| Add or change a card | `data/support.json`: one object per card. `id` is the game's card id (it names the image), `iso` is the release date, `color` the card background (`blue`, `red`, `orange`, `pink`, `green`, `yellow`, `purple`). `roles` lists the running styles the card is shown on, each with its own rating: `{"pace": {"rank": 4, "verdict": ["…"], "stats": 3, "skills": 4, "longevity": "…", "bonus": [["Speed", "+1"]]}}` (`rank`: 5 = Highly recommended … 1 = Very bad). A style missing from `roles` never shows the card. |
+| Add or change a card | `data/support.json`: one object per card. `id` is the game's card id (it names the image), `iso` is the release date, `color` the card background (`blue`, `red`, `orange`, `pink`, `green`, `yellow`, `purple`). `roles` lists the running styles the card is shown on, each with its own rating: `{"pace": {"rank": 4, "verdict": ["…"], "stats": 3, "skills": 4, "longevity": "…", "bonus": [["Speed", "+1"]]}}` (`rank`: 5 = Highly recommended … 1 = Very bad). A style missing from `roles` never shows the card. `"all": {…}` = one rating shown on every style (marked *universal*); a style listed as well replaces it on that page. |
 | Add or change an Uma | `data/uma.json`: same idea, with `runner` / `inherit` / `evolved` stars, `aptitudes`, `outfit` and `style` (her own running style); each role holds `rank` and `verdict` |
 | Check my edits by hand | `python3 scripts/validate_data.py` |
 | Change a scenario date, colour or picture | `data/scenarios.json` (`gt` = GameTora's id, used by the import) |

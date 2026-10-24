@@ -122,8 +122,8 @@ def check_kind(kind, scenarios):
             continue
         for role, r in roles.items():
             rw = f"{where} roles.{role}"
-            if role not in ROLES:
-                err(rw, f"unknown running style (use {', '.join(sorted(ROLES))})")
+            if role not in ROLES and role != "all":
+                err(rw, f"unknown running style (use {', '.join(sorted(ROLES))}, or all)")
             if not isinstance(r, dict):
                 err(rw, "should be an object")
                 continue
@@ -142,7 +142,7 @@ def check_kind(kind, scenarios):
             if kind == "support" and "bonus" not in r and "bonus" not in item:
                 err(rw, "missing bonus (here or shared)")
     print(f"{path.name}: {len(data)} entries, "
-          + ", ".join(f"{r} {sum(1 for x in data if r in (x.get('roles') or {}))}" for r in ("front", "pace", "late", "end")))
+          + ", ".join(f"{r} {sum(1 for x in data if r in (x.get('roles') or {}))}" for r in ("all", "front", "pace", "late", "end")))
 
 
 def check_ignored():

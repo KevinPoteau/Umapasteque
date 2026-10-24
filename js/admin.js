@@ -8,7 +8,7 @@
 // Edits are kept as patches of top-level fields ({ kind: { id: { field: value } } },
 // "roles" being replaced as a whole) in this browser's local storage, so nothing
 // is lost on reload and a patch still applies if the file changed on GitHub.
-import { KINDS, ROLES, VERDICTS, ROLE_FIELDS, dataPath, rankOf, forRole, roleById, cardImage, umaImage } from "./config.js";
+import { KINDS, ROLES, VERDICTS, ROLE_FIELDS, ALL_STYLES, dataPath, rankOf, forRole, roleById, cardImage, umaImage } from "./config.js";
 import { supportCardHTML, umaCardHTML } from "./card.js";
 import { $, $$, img, fmtDate } from "./util.js";
 import * as gh from "./github.js";
@@ -52,6 +52,9 @@ function current(kind, item) {
   return out;
 }
 const rolesOf = it => Object.keys(it.roles ?? {});
+// "All styles" first, then front → end
+const ROLE_ORDER = [ALL_STYLES, ...ROLES.map(r => r.id)];
+const styleLabel = id => id === ALL_STYLES ? "All styles" : roleById(id).label;
 const isTodo = it => it.todo === true || !rolesOf(it).length || rolesOf(it).some(r => rankOf(it.roles[r]) == null);
 const isChanged = (kind, id) => !!drafts[kind]?.[id];
 const isDropped = (kind, id) => (dropping[kind] ?? []).includes(id);
@@ -108,7 +111,7 @@ async function renderList() {
   if (kind !== view.kind) return;   // switched while loading
 
   const q = view.q.trim().toLowerCase();
-  const inRole = it => view.role === "all" || (view.role === "none" ? !rolesOf(it).length : !!it.roles?.[view.role]);
+  const inRole = it => view.role === "all" || (view.role === "none" ? !rolesOf(it).length : !!(it.roles?.[view.role] || it.roles?.[ALL_STYLES]));
   const pool = data.map(item => current(kind, item)).filter(inRole);
   const rows = pool
     .filter(it => view.scope === "changed" ? isChanged(kind, it.id) || isDropped(kind, it.id)
@@ -125,7 +128,8 @@ async function renderList() {
 /** Small running-style badges, ringed with the colour of that style's verdict. */
 const roleBadges = it => rolesOf(it).map(r => {
   const v = VERDICTS[rankOf(it.roles[r])];
-  return `<span class="rb" style="--vc:var(${v ? v.color : "--v0"})" title="${roleById(r).label}: ${v ? v.label : "Unrated"}">${img(roleById(r).icon, 'alt=""')}</span>`;
+  const inner = r === ALL_STYLES ? "All" : img(roleById(r).icon, 'alt=""');
+  return `<span class="rb${r === ALL_STYLES ? " all" : ""}" style="--vc:var(${v ? v.color : "--v0"})" title="${styleLabel(r)}: ${v ? v.label : "Unrated"}">${inner}</span>`;
 }).join("") || '<span class="none">no style</span>';
 
 function rowHTML(kind, it) {
@@ -191,13 +195,17 @@ async function renderEditor() {
   const R = role ? it.roles[role] : null;
   const rank = rankOf(R);
 
-  const tabs = ROLES.map(r => roles.includes(r.id)
-    ? `<button type="button" class="rtab" data-tab="${r.id}" aria-pressed="${r.id === role}">${img(r.icon, 'alt=""')}${r.label}</button>`
-    : `<button type="button" class="rtab add" data-add="${r.id}" title="Show this ${KINDS[kind].noun} on the ${r.label} page">+ ${r.label}</button>`).join("");
+  const universal = roles.includes(ALL_STYLES);
+  const allTab = universal
+    ? `<button type="button" class="rtab all" data-tab="${ALL_STYLES}" aria-pressed="${role === ALL_STYLES}">All styles</button>`
+    : `<button type="button" class="rtab add all" data-add="${ALL_STYLES}" title="One rating, shown on every running style's page">+ All styles</button>`;
+  const tabs = allTab + ROLES.map(r => roles.includes(r.id)
+    ? `<button type="button" class="rtab" data-tab="${r.id}" aria-pressed="${r.id === role}">${img(r.icon, 'alt=""')}${r.label}${universal ? " <small>(own rating)</small>" : ""}</button>`
+    : `<button type="button" class="rtab add" data-add="${r.id}" title="${universal ? `A different rating on the ${r.label} page only` : `Show this ${KINDS[kind].noun} on the ${r.label} page`}">+ ${r.label}${universal ? " (own rating)" : ""}</button>`).join("");
 
-  const rolePanel = !role ? `<p class="hint">Not shown on the site yet: add the running styles this ${KINDS[kind].noun} is good for.</p>` : `
+  const rolePanel = !role ? `<p class="hint">Not shown on the site yet: add the running styles this ${KINDS[kind].noun} is good for, or <b>All styles</b> for one rating everywhere.</p>` : `
     <fieldset>
-      <legend>Verdict as ${roleById(role).label}</legend>
+      <legend>${role === ALL_STYLES ? "Verdict on every running style" : `Verdict as ${roleById(role).label}${universal ? " (replaces the All styles rating on this page)" : ""}`}</legend>
       <div class="vpick">${[5, 4, 3, 2, 1].map(r => `
         <button type="button" data-r="${r}" style="--vc:var(${VERDICTS[r].color})" aria-pressed="${r === rank}">
           <img src="${VERDICTS[r].icon}" alt=""><span>${VERDICTS[r].label}</span></button>`).join("")}
@@ -210,7 +218,7 @@ async function renderEditor() {
     </fieldset>` : ""}
     <label>Verdict text <small>(one paragraph per line, HTML allowed)</small>
       <textarea name="verdict" rows="4">${esc((R.verdict ?? []).join("\n"))}</textarea></label>
-    <div><button type="button" class="btn danger" id="drop-role">Remove from ${roleById(role).label}</button></div>`;
+    <div><button type="button" class="btn danger" id="drop-role">${role === ALL_STYLES ? "Remove the All styles rating" : `Remove from ${roleById(role).label}`}</button></div>`;
 
   // Redrawing replaces every field: remember which one has the focus (the
   // user may have just clicked into the next field) to give it back after.
@@ -259,8 +267,8 @@ async function renderEditor() {
         <textarea name="keyskills" rows="7" spellcheck="false">${esc(skillsToText(it.keyskills))}</textarea></label>
     </details>
   </form>
-  <div class="preview"><h3>Preview${role ? ` · ${roleById(role).label}` : " · not on the site yet"}</h3><div class="pv">${
-    role ? (support ? supportCardHTML(forRole(it, role)) : umaCardHTML(forRole(it, role), role)) : unratedPreview(kind, it)}</div></div>`;
+  <div class="preview"><h3>Preview${role ? ` · ${styleLabel(role)}` : " · not on the site yet"}</h3><div class="pv">${
+    role ? (support ? supportCardHTML(forRole(it, role)) : umaCardHTML(forRole(it, role), role === ALL_STYLES ? it.style : role)) : unratedPreview(kind, it)}</div></div>`;
 
   const form = ed.querySelector("form");
   if (refocus) {
@@ -288,8 +296,8 @@ async function renderEditor() {
   form.querySelectorAll(".rtab[data-add]").forEach(b => b.onclick = () => {
     const roles = structuredClone(it.roles ?? {});
     roles[b.dataset.add] = newRole(kind, it);
-    // keep the usual order: front, pace, late, end
-    const ordered = Object.fromEntries(ROLES.filter(r => roles[r.id]).map(r => [r.id, roles[r.id]]));
+    // keep the usual order: all, front, pace, late, end
+    const ordered = Object.fromEntries(ROLE_ORDER.filter(r => roles[r]).map(r => [r, roles[r]]));
     view.edRole = b.dataset.add;
     set({ roles: ordered });
   });
@@ -342,7 +350,7 @@ async function refreshRow() {
 function describe(before, after) {
   const out = [];
   const b = before.roles ?? {}, a = after.roles ?? {};
-  for (const r of ROLES.map(x => x.id)) {
+  for (const r of ROLE_ORDER) {
     if (!b[r] && a[r]) out.push(`+${r}${a[r].rank ? ` ${VERDICTS[a[r].rank].label}` : ""}`);
     else if (b[r] && !a[r]) out.push(`−${r}`);
     else if (b[r] && JSON.stringify(b[r]) !== JSON.stringify(a[r])) {
