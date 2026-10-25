@@ -1,6 +1,7 @@
 [
  {
   "id": 106710,
+  "cardId": 106702,
   "name": "Satono Diamond",
   "outfit": "New Year",
   "style": "late",
@@ -62,6 +63,7 @@
  },
  {
   "id": 106810,
+  "cardId": 106802,
   "name": "Kitasan Black",
   "outfit": "New Year",
   "style": "front",
@@ -249,6 +251,7 @@
  },
  {
   "id": 102713,
+  "cardId": 102702,
   "name": "Mejiro Ryan",
   "outfit": "Valentine",
   "style": "pace",
@@ -311,6 +314,7 @@
  },
  {
   "id": 103113,
+  "cardId": 103102,
   "name": "Ines Fujin",
   "outfit": "Valentine",
   "style": "front",
@@ -697,6 +701,7 @@
  },
  {
   "id": 106920,
+  "cardId": 106902,
   "name": "Sakura Chiyono O",
   "outfit": "Ballroom",
   "style": "pace",
@@ -763,6 +768,7 @@
  },
  {
   "id": 107120,
+  "cardId": 107102,
   "name": "Mejiro Ardan",
   "outfit": "Ballroom",
   "style": "pace",
@@ -950,6 +956,7 @@
  },
  {
   "id": 104150,
+  "cardId": 104102,
   "name": "Sakura Bakushin O",
   "outfit": "Red Hot☆Leader",
   "style": "front",
@@ -1015,6 +1022,7 @@
  },
  {
   "id": 106250,
+  "cardId": 106202,
   "name": "Matikanetannhauser",
   "outfit": "Blue Turbulence",
   "style": "late",
@@ -1204,6 +1212,7 @@
  },
  {
   "id": 101226,
+  "cardId": 101202,
   "name": "Hishi Amazon",
   "outfit": "Wedding",
   "style": "end",
@@ -1268,6 +1277,7 @@
  },
  {
   "id": 105126,
+  "cardId": 105102,
   "name": "Nishino Flower",
   "outfit": "Wedding",
   "style": "pace",
@@ -1332,6 +1342,7 @@
  },
  {
   "id": 101023,
+  "cardId": 101002,
   "name": "Taiki Shuttle",
   "outfit": "Bubblegum☆Memories",
   "style": "pace",
@@ -1449,6 +1460,7 @@
  },
  {
   "id": 104823,
+  "cardId": 104802,
   "name": "Tosen Jordan",
   "outfit": "Summer Trip",
   "style": "late",
@@ -1512,6 +1524,7 @@
  },
  {
   "id": 105323,
+  "cardId": 105302,
   "name": "Bamboo Memory",
   "outfit": "Summer Trip",
   "style": "late",
@@ -1705,6 +1718,7 @@
  },
  {
   "id": 100230,
+  "cardId": 100202,
   "name": "Silence Suzuka",
   "outfit": "Emerald Tidings",
   "style": "front",
@@ -1767,6 +1781,7 @@
  },
  {
   "id": 103230,
+  "cardId": 103202,
   "name": "Agnes Tachyon",
   "outfit": "Lunatic Lab",
   "style": "pace",
@@ -2028,6 +2043,7 @@
  },
  {
   "id": 103640,
+  "cardId": 103602,
   "name": "Air Shakur",
   "outfit": "Belphegor's Prime",
   "style": "late",
@@ -2103,6 +2119,7 @@
  },
  {
   "id": 108340,
+  "cardId": 108302,
   "name": "Symboli Kris S",
   "outfit": "Jetblack Automaton",
   "style": "late",
@@ -2223,6 +2240,7 @@
  },
  {
   "id": 100343,
+  "cardId": 100303,
   "name": "Tokai Teio",
   "outfit": "Dream Butterfly of Purple Clouds",
   "style": "pace",
@@ -2289,6 +2307,7 @@
  },
  {
   "id": 103943,
+  "cardId": 103902,
   "name": "Kawakami Princess",
   "outfit": "Suikan Beauty",
   "style": "late",
@@ -2479,6 +2498,7 @@
  },
  {
   "id": 106446,
+  "cardId": 106402,
   "name": "Mejiro Palmer",
   "outfit": "Warm-Hearted Reindeer",
   "style": "front",
@@ -2541,6 +2561,7 @@
  },
  {
   "id": 107446,
+  "cardId": 107402,
   "name": "Mejiro Bright",
   "outfit": "Starry Snow Lolita",
   "style": "late",
@@ -2784,6 +2805,7 @@
  },
  {
   "id": 106010,
+  "cardId": 106003,
   "name": "Nice Nature",
   "outfit": "New Year",
   "style": "late",
@@ -2916,6 +2938,7 @@
  },
  {
   "id": 102513,
+  "cardId": 102502,
   "name": "Manhattan Cafe",
   "outfit": "Willow-Green Evening",
   "style": "end",
@@ -2975,6 +2998,7 @@
  },
  {
   "id": 102913,
+  "cardId": 102902,
   "name": "Yukino Bijin",
   "outfit": "Snowy Girl of Tea and Cake",
   "style": "pace",
@@ -3297,6 +3321,7 @@
  },
  {
   "id": 106520,
+  "cardId": 106502,
   "name": "Daitaku Helios",
   "outfit": "Joyful Jamboree!",
   "style": "front",
@@ -3362,6 +3387,7 @@
  },
  {
   "id": 108520,
+  "cardId": 108502,
   "name": "Daiichi Ruby",
   "outfit": "Flowing Blue",
   "style": "late",
@@ -3686,6 +3712,7 @@
  },
  {
   "id": 104550,
+  "cardId": 104503,
   "name": "Super Creek",
   "outfit": "Flowery Shadow Amongst the Gentle Rain",
   "style": "pace",
@@ -3751,6 +3778,7 @@
  },
  {
   "id": 107250,
+  "cardId": 107202,
   "name": "Yaeno Muteki",
   "outfit": "Black General, Zen",
   "style": "pace",
@@ -3813,6 +3841,7 @@
  },
  {
   "id": 104426,
+  "cardId": 104402,
   "name": "Sweep Tosho",
   "outfit": "Wedding",
   "style": "end",
@@ -3878,6 +3907,7 @@
  },
  {
   "id": 106126,
+  "cardId": 106103,
   "name": "King Halo",
   "outfit": "Wedding",
   "style": "late",
@@ -4263,6 +4293,7 @@
  },
  {
   "id": 103730,
+  "cardId": 103703,
   "name": "Eishin Flash",
   "outfit": "Reines Plätschern",
   "style": "late",
@@ -4329,6 +4360,7 @@
  },
  {
   "id": 109930,
+  "cardId": 109902,
   "name": "Hokko Tarumae",
   "outfit": "Pastel Marine Locodol",
   "style": "pace",
@@ -4391,6 +4423,7 @@
  },
  {
   "id": 104723,
+  "cardId": 104702,
   "name": "Zenno Rob Roy",
   "outfit": "Inlaid Stories",
   "style": "pace",
@@ -4457,6 +4490,7 @@
  },
  {
   "id": 110523,
+  "cardId": 110502,
   "name": "Neo Universe",
   "outfit": "Like \"ZEER\"",
   "style": "late",

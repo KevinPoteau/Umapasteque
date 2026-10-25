@@ -74,7 +74,7 @@ The import never changes an existing entry; if GameTora has a confirmed global d
 |---|---|
 | Rate, or show an entry on another running style | the admin page (above), or `roles` in the data file |
 | Add or change a card | `data/support.json`: one object per card. `id` is the game's card id (it names the image), `iso` is the release date, `color` the card background (`blue`, `red`, `orange`, `pink`, `green`, `yellow`, `purple`). `roles` lists the running styles the card is shown on, each with its own rating: `{"pace": {"rank": 4, "verdict": ["…"], "stats": 3, "skills": 4, "longevity": "…", "bonus": [["Speed", "+1"]]}}` (`rank`: 5 = Highly recommended … 1 = Very bad). A style missing from `roles` never shows the card. `"all": {…}` = one rating shown on every style (marked *universal*); a style listed as well replaces it on that page. |
-| Add or change an Uma | `data/uma.json`: same idea, with `runner` / `inherit` / `evolved` stars, `aptitudes`, `outfit` and `style` (her own running style); each role holds `rank` and `verdict` |
+| Add or change an Uma | `data/uma.json`: `id` names the picture (outfit id); for alternate outfits `cardId` is the game's card id, used for the uma.guide link. Same idea otherwise, with `runner` / `inherit` / `evolved` stars, `aptitudes`, `outfit` and `style` (her own running style); each role holds `rank` and `verdict` |
 | Check my edits by hand | `python3 scripts/validate_data.py` |
 | Change a scenario date, colour or picture | `data/scenarios.json` (`gt` = GameTora's id, used by the import) |
 | Change a colour or the card width | the `:root` block at the top of `css/base.css` (every token is commented) |

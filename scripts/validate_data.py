@@ -59,6 +59,7 @@ FIELDS = {
     "uma": {
         **SHARED,
         "outfit": (True, is_str), "style": (True, lambda v: v in ROLES),
+        "cardId": (False, is_id),   # game card id when "id" is an outfit id (alternate outfits)
         "runner": (True, is_star), "inherit": (True, is_star), "evolved": (True, is_star),
         "aptitudes": (True, is_strs), "bonus": (True, is_bonus),
     },

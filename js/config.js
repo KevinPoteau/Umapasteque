@@ -72,7 +72,9 @@ export const rankOf = item => item?.rank ?? null;
 // Clicking a card's picture or name opens its page on uma.guide (new tab).
 // Change these two lines if the site moves its pages.
 export const cardLink = card => `https://uma.guide/support-cards/detail?id=${card.id}`;
-export const umaLink = uma => `https://uma.guide/characters/${uma.id}`;
+// Umas: "id" is the outfit id used by the pictures; alternate outfits also carry
+// "cardId", the game's card id that uma.guide's pages use.
+export const umaLink = uma => `https://uma.guide/characters/${uma.cardId ?? uma.id}`;
 
 // ---------- Images ----------
 
