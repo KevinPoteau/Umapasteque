@@ -2110,13 +2110,15 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30168_thumb.webp",
   "roles": {
    "end": {
-    "rank": 4,
+    "rank": 3,
     "verdict": [
      "Strong Speed, End hints + Superstan.",
      "BUT",
      "Low TE",
      "No Power bonus. Consider only if you lack Endcloser cards.",
-     "Jungle Pocket or Duramente are better stats stick. Uma stan is enough since both Super Stan and Uma Stan last 3 seconds."
+     "Jungle Pocket or Duramente are better stats stick. Uma stan is enough since both Super Stan and Uma Stan last 3 seconds.",
+     "Recommended in a vacuum but SPD has strong contenders.",
+     "Great parent card thought!"
     ],
     "stats": 3,
     "skills": 3,
