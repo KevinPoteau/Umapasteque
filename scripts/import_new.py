@@ -280,7 +280,7 @@ def main():
     # --- Umas ---
     path = ROOT / "data" / "uma.json"
     ours = json.loads(path.read_text(encoding="utf-8"))
-    known_ids = {u["id"] for u in ours}
+    known_ids = {u["id"] for u in ours} | {u["cardId"] for u in ours if "cardId" in u}
     known_names = {(u["name"].lower(), u["outfit"].lower()) for u in ours}
     skip = set(ignored.get("uma", []))
     added = []
