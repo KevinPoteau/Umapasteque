@@ -189,14 +189,15 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30130_thumb.webp",
   "roles": {
    "pace": {
-    "rank": 2,
+    "rank": 4,
     "verdict": [
      "Good Pace hints, weak card type, no SP bonus.",
-     "Borrow target for Sprint Pace Chaser. Neck and Neck is a good skills but there’s better solutions."
+     "Borrow target for Pace Chaser.",
+     "Basically carried by Neck and Neck, strong card for Gutsmaxxing."
     ],
     "stats": 2,
-    "skills": 3,
-    "longevity": "DOA",
+    "skills": 4,
+    "longevity": "TBD",
     "bonus": [
      [
       "Power",
@@ -4803,6 +4804,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30136_thumb.webp",
   "roles": {
    "all": {
+    "rank": 2,
     "verdict": [
      "Burning soul is a good skill but Guts cards are hardly relevant."
     ],
@@ -4810,8 +4812,7 @@
     "skills": 3,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30140,
@@ -5279,6 +5280,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30180_thumb.webp",
   "roles": {
    "all": {
+    "rank": 2,
     "verdict": [
      "Group card not especially strong.",
      "Date card but the slot should already be taken by the current and future event.",
@@ -5288,8 +5290,7 @@
     "skills": 3,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30181,
