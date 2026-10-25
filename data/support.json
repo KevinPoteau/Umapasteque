@@ -5504,6 +5504,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30186_thumb.webp",
   "roles": {
    "all": {
+    "rank": 2,
     "verdict": [
      "Okay TE, Low SPE",
      "It's On is a good skill, the card sounds like a parent card but Yaeno Muteki PWR also gives it.",
@@ -5513,8 +5514,7 @@
     "skills": 3,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30191,
@@ -5684,6 +5684,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30192_thumb.webp",
   "roles": {
    "late": {
+    "rank": 2,
     "verdict": [
      "No TE, low SPE",
      "Good recovery but hard to recommend."
@@ -5774,13 +5775,6 @@
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30203_thumb.webp",
   "roles": {
-   "pace": {
-    "rank": 2,
-    "verdict": [],
-    "stats": 0,
-    "skills": 0,
-    "longevity": ""
-   },
    "late": {
     "rank": 2,
     "verdict": [
@@ -6008,6 +6002,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30221_thumb.webp",
   "roles": {
    "pace": {
+    "rank": 2,
     "verdict": [
      "Gourmand is a very good skill for Pace chaser.",
      "But she has no TE, basically a downgrade of Super Creek. Good for F2P, thought!"
@@ -6016,8 +6011,7 @@
     "skills": 3,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30220,
