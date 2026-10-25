@@ -575,7 +575,7 @@
   "date": "Est. Dec 10 - 20",
   "iso": "2026-12-10",
   "scenario": "Grand Masters",
-  "runner": 3,
+  "runner": 4,
   "inherit": 2,
   "evolved": 4,
   "keyskills": [
@@ -1270,7 +1270,9 @@
     "rank": 3,
     "verdict": [
      "Very good golden skills but unique requires downhill.",
-     "Razor-Sharp evolved sounds great."
+     "Razor needs restrained from parents.",
+     "Razor's 2nd evolved sounds great for medium.",
+     "Solid but requires downhill and later on medium."
     ]
    }
   }
@@ -3900,7 +3902,8 @@
     "rank": 3,
     "verdict": [
      "Eh",
-     "Early not that great, somehow consumes Stamina for mitigated results."
+     "Early not that great, somehow consumes Stamina for mitigated results.",
+     "Classic Sweep Tosho is better."
     ]
    }
   }
