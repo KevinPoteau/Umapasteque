@@ -5310,7 +5310,7 @@
     "html": "<b><span class=\"gold\">Top Runner</span></b> – TS +0.35 · 3s<br /><small>Front · Before late-race · Blocked</small>"
    },
    {
-    "html": "Competitive Spirit ○ · Ramp Up · Early Lead · Final Push · Steadfast · Keeping the Lead · Moxie · Risky Business · Mad Dash · Confident · Leader's Pride"
+    "html": "Competitive Spirit ○ · Early Lead · Final Push · Steadfast · Keeping the Lead · Leader's Pride"
    }
   ],
   "bonus": [
@@ -5320,8 +5320,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30181_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "No TE",
+     "Basically what if Maruzensky SPD was a bad Stam card"
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30189,
@@ -5351,8 +5361,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30189_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Guts card with a recovery, arrives near U.A.F with a much better guts card."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30185,
@@ -5372,7 +5391,7 @@
     "html": "<b><span class=\"gold\">Changing Gears</span></b> – TS +0.35 · 2.4s<br /><small>Mile · Mid-race · Top 50%</small>"
    },
    {
-    "html": "Standard Distance ○ · Focus · Go with the Flow · Prepared to Pass · Productive Plan · Updrafters · Mile Corners ○ · Acceleration · Beating Heart"
+    "html": "Standard Distance ○ · Focus · Go with the Flow · Prepared to Pass · Mile Corners ○"
    }
   ],
   "bonus": [
@@ -5386,8 +5405,28 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30185_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 2,
+    "verdict": [
+     "Low TE, low SPE.",
+     "Would be an okay wit card if Front didn't had Mejiro Ramonu Wit and Mihono Bourbon Wit"
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "DOA"
+   },
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Low TE, low SPE.",
+     "Would be an okay wit card if Pace didn't had Mejiro Ramonu Wit and Finemo Wit"
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30190,
@@ -5407,7 +5446,7 @@
     "html": "<b><span class=\"gold\">Rushing Gale!</span></b> – Acc +0.40 · TS +0.15 · 3s<br /><small>Straight</small>"
    },
    {
-    "html": "Pace Strategy · Homestretch Haste · Medium Straightaways ○ · Eager · Ignition"
+    "html": "Pace Strategy · Homestretch Haste · Medium Straightaways ○ · Ignition"
    }
   ],
   "bonus": [
@@ -5421,8 +5460,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30190_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Low TE, Low SPE",
+     "Good stats bonus",
+     "Rushing gale is never a good skill due to its gambling nature."
+    ],
+    "stats": 2,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30186,
@@ -5452,7 +5502,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30186_thumb.webp",
-  "roles": {},
+  "roles": {
+   "all": {
+    "verdict": [
+     "Okay TE, Low SPE",
+     "It's On is a good skill, the card sounds like a parent card but Yaeno Muteki PWR also gives it.",
+     "This card alors fights against the strong SPD contenders, El Condor Pasa, Kitasan Black, Maruzensky, Duramente, Jungle Pocket..."
+    ],
+    "stats": 2,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -5473,7 +5534,7 @@
     "html": "<b><span class=\"gold\">Unruffled</span></b> – Rec +5.5%<br /><small>Mid-race · Surrounded</small>"
    },
    {
-    "html": "Ramp Up · Nimble Navigator · Homestretch Haste · Up-Tempo · Sympathy · Middle Leg Adept · Locked On"
+    "html": "Nimble Navigator · Homestretch Haste · Middle Leg Adept"
    }
   ],
   "bonus": [
@@ -5483,8 +5544,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30191_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Power card",
+     "Low TE, low SPE",
+     "Skill is bad"
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30194,
@@ -5504,7 +5576,7 @@
     "html": "<b><span class=\"gold\">Unstoppable</span></b> – TS +0.35 · 2.4s<br /><small>Pace · Mid-race</small>"
    },
    {
-    "html": "Hanshin Racecourse ○ · Prepared to Pass · Productive Plan · Mile Straightaways ○ · Acceleration · Unyielding Spirit · Mile Corners ○"
+    "html": "Hanshin Racecourse ○ · Prepared to Pass · Mile Straightaways ○ · Unyielding Spirit · Mile Corners ○"
    }
   ],
   "bonus": [
@@ -5518,8 +5590,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30194_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Not a bad card",
+     "Okay TE, good SPE",
+     "Skills are good.",
+     "But guts card when Tachyon SPD exist for the Pace Chasers."
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30197,
@@ -5539,7 +5623,7 @@
     "html": "<b><span class=\"gold\">Moonlit Flash</span></b> – TS +0.35 · 3s<br /><small>End · Straight</small>"
    },
    {
-    "html": "Tokyo Racecourse ○ · Masterful Gambit · Gap Closer · Updrafters · Meticulous Measures · Unyielding Spirit · Breakin' Out · Standard Distance ○"
+    "html": "Tokyo Racecourse ○ · Standard Distance ○"
    }
   ],
   "bonus": [
@@ -5553,8 +5637,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30197_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 2,
+    "verdict": [
+     "Low TE, okay SPE.",
+     "Good stats bonus but doubtful when Hishi Amazon PWR exist."
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30192,
@@ -5574,7 +5668,7 @@
     "html": "<b><span class=\"gold\">Relax</span></b> – Rec +5.5%<br /><small>Late · Mid-race · Back 60%</small>"
    },
    {
-    "html": "Outer Swell · Unyielding Spirit · Fighter · Confident · Late Surger Straightaways ○"
+    "html": "Late Surger Straightaways ○"
    }
   ],
   "bonus": [
@@ -5588,7 +5682,26 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30192_thumb.webp",
-  "roles": {},
+  "roles": {
+   "late": {
+    "verdict": [
+     "No TE, low SPE",
+     "Good recovery but hard to recommend."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   },
+   "end": {
+    "verdict": [
+     "No TE, low SPE",
+     "Good recovery but hard to recommend."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -5619,8 +5732,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30200_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "No TE, good SPE.",
+     "Could be relevant for Late Surger gutsmaxxing."
+    ],
+    "stats": 2,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30203,
@@ -5650,7 +5773,34 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30203_thumb.webp",
-  "roles": {},
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [],
+    "stats": 0,
+    "skills": 0,
+    "longevity": ""
+   },
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "No TE, good SPE",
+     "Skills are okay, hard to recommend pulling a power card for a midgame."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   },
+   "end": {
+    "verdict": [
+     "No TE, good SPE",
+     "Skills are okay, hard to recommend pulling a power card for a midgame."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -5681,8 +5831,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30205_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Not a bad card",
+     "Good TE, Good SPE. No power or SP bonus on a SPD card hurts.",
+     "Skill is good.",
+     "Card that fights against giants."
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30212,
@@ -5716,8 +5878,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30212_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Stam card, good TE, low SPE",
+     "Dirt card kills it anyway."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30213,
@@ -5747,8 +5919,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30213_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "That's some bad card here.",
+     "Barely gives any stats and low SPE.",
+     "Recovery is good but it stops here.",
+     "Also releases around a must pull SPD card."
+    ],
+    "stats": 1,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30216,
@@ -5766,9 +5950,6 @@
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">Corner Connoisseur</span></b> – Acc +0.40 · 3s<br /><small>Corner</small>"
-   },
-   {
-    "html": "Corner Acceleration ○ · Straightaway Acceleration · Ramp Up · Updrafters · Unyielding Spirit · Pumped · Confident · Unrestrained Passion"
    }
   ],
   "bonus": [
@@ -5782,8 +5963,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30216_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Guts card with Corner Connoisseur",
+     "Low TE, good SPE.",
+     "Bad, bad skills"
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30221,
@@ -5800,7 +5992,7 @@
   "unique": "Sta +1 & Guts +1 at bond 80",
   "keyskills": [
    {
-    "html": "Homestretch Haste · Deep Breaths · Inside Scoop · Extra Tank · Passing Pro · All Set · Latch On"
+    "html": "<b><span class=\"gold\">Gourmand</span></b> – Acc +0.40 · 3s<br /><small>Pace Chaser · Mid-race</small>"
    }
   ],
   "bonus": [
@@ -5814,7 +6006,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30221_thumb.webp",
-  "roles": {},
+  "roles": {
+   "pace": {
+    "verdict": [
+     "Gourmand is a very good skill for Pace chaser.",
+     "But she has no TE, basically a downgrade of Super Creek. Good for F2P, thought!"
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -5835,7 +6037,7 @@
     "html": "<b><span class=\"gold\">Innate Experience</span></b> – TS +0.35 · 3s<br /><small>Long · Corner · Final corner</small>"
    },
    {
-    "html": "Ramp Up · Pace Strategy · Deep Breaths · Extra Tank · Long Corners ○ · Middle Leg Adept · Cloudy Days ○"
+    "html": "Long Corners ○ · Middle Leg Adept · Cloudy Days ○"
    }
   ],
   "bonus": [
@@ -5849,7 +6051,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30220_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "An actually okay card.",
+     "Good TE, Good SPE, good stats bonus.",
+     "But limited to Long, fights with a lot of other wit cards."
+    ],
+    "stats": 3,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  }
 ]
