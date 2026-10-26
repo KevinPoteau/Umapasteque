@@ -209,7 +209,7 @@ def new_uma(u, when, est, scenarios, chars):
         "style": style, "color": nearest_color(chars.get(u["char_id"], {}).get("color_main")),
         "date": label(when, est), "iso": iso, "scenario": scenario_for(iso, scenarios),
         "runner": 0, "inherit": 0, "evolved": 0, "keyskills": [],
-        "aptitudes": [f"{APT[i]} {g}" for i, g in enumerate(apt[:10]) if g in "SAB"],
+        "aptitudes": [f"{APT[i]} {g}" for i, g in enumerate(apt[:10]) if g in "SABCD"],
         "bonus": [[STATS[i], f"+{v}%"] for i, v in enumerate(u.get("stat_bonus") or []) if v],
         "imgSource": f"https://uma.guide/img/uma/chara_stand_{u['char_id']}_{u['card_id']}.webp",
         "roles": {}, "todo": True,

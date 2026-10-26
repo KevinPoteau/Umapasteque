@@ -73,7 +73,7 @@ export function supportCardHTML(c) {
 
 /** "Turf A" → tag with the grade letter coloured like in the game; anything else (e.g. "1★") stays plain */
 function aptitudeTag(text) {
-  const m = /^(.*) ([A-G])$/.exec(text);
+  const m = /^(.*) ([SA-G])$/.exec(text);
   return m ? `<span class="tag">${m[1]} <b class="grade g-${m[2]}">${m[2]}</b></span>` : `<span class="tag">${text}</span>`;
 }
 

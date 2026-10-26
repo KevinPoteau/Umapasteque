@@ -300,7 +300,8 @@ a.ext:hover .art {
 .g-A { color: #ffb347; }   /* A: orange, as in the game */
 .g-B { color: #f5d76e; }
 .g-C { color: #9be07c; }
-.g-D,
+.g-S { color: #f0c95c; }
+.g-D { color: #7fb3e8; }
 .g-E,
 .g-F,
 .g-G { color: var(--muted); }
