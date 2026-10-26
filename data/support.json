@@ -5686,7 +5686,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30192_thumb.webp",
   "roles": {
    "late": {
-    "rank": 2,
+    "rank": 1,
     "verdict": [
      "No TE, low SPE",
      "Good recovery but hard to recommend."
@@ -5696,6 +5696,7 @@
     "longevity": "DOA"
    },
    "end": {
+    "rank": 1,
     "verdict": [
      "No TE, low SPE",
      "Good recovery but hard to recommend."
@@ -5704,8 +5705,7 @@
     "skills": 2,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30200,
@@ -5788,6 +5788,7 @@
     "longevity": "DOA"
    },
    "end": {
+    "rank": 2,
     "verdict": [
      "No TE, good SPE",
      "Skills are okay, hard to recommend pulling a power card for a midgame."
@@ -5796,8 +5797,7 @@
     "skills": 2,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30205,
