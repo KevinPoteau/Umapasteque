@@ -44,10 +44,17 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
     raw.sort((a, b) => a.x - b.x || a.t - b.t);
     anchors = [];
     for (const a of raw) if (!anchors.length || a.t > anchors.at(-1).t) anchors.push(a);
-    // Pad both ends at 4 px/day so the ruler runs past the first and last card
-    const pxDay = 4, colW = cols[0].offsetWidth + 24, first = anchors[0], last = anchors.at(-1);
-    anchors.unshift({ x: first.x - 90 * pxDay, t: first.t - 90 * DAY });
-    anchors.push({ x: last.x + colW, t: last.t + Math.round(colW / pxDay) * DAY });
+    // Cards released the same day share one anchor; when the last cards do,
+    // also pin the last card's own edge (1 ms later) so the needle reads its date.
+    if (lastX > anchors.at(-1).x) anchors.push({ x: lastX, t: anchors.at(-1).t + 1 });
+    // Pad both ends so the ruler runs past the first and last card. The end pad
+    // keeps the spacing of the last stretch of cards, so the ruler stops about
+    // where the last card ends instead of running months ahead.
+    const colW = cols.at(-1).offsetWidth + 24, first = anchors[0], last = anchors.at(-1);
+    const prev = [...anchors].reverse().find(a => a.t <= last.t - DAY);
+    const endPx = prev ? Math.min(40, Math.max(4, (last.x - prev.x) / ((last.t - prev.t) / DAY))) : 4;
+    anchors.unshift({ x: first.x - 90 * 4, t: first.t - 90 * DAY });
+    anchors.push({ x: last.x + colW, t: last.t + Math.max(1, Math.round(colW / endPx)) * DAY });
 
     let h = "";
     const end = anchors.at(-1).t;
