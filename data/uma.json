@@ -332,7 +332,7 @@
   "date": "Est. Nov 12 - 26",
   "iso": "2026-11-12",
   "scenario": "Grand Live",
-  "runner": 2,
+  "runner": 3,
   "inherit": 2,
   "evolved": 4,
   "keyskills": [
@@ -355,7 +355,7 @@
     ]
    },
    {
-    "html": "Front Runner Corners ○"
+    "html": "Front Runner Corners ○ · Groundwork · Speed Eater"
    }
   ],
   "aptitudes": [
@@ -383,9 +383,11 @@
   "imgSource": "https://uma.guide/img/uma/chara_stand_1031_103113.webp",
   "roles": {
    "front": {
-    "rank": 2,
+    "rank": 4,
     "verdict": [
-     "Early-race unique. Niche."
+     "Early-race unique recovering.",
+     "Very similar to Mihono Bourbon, has grounwork in kit and 2 activator.",
+     "Can use Mihono Bourbon wit unlike Mihono Bourbon."
     ]
    }
   }
