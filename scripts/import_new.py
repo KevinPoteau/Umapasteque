@@ -18,7 +18,8 @@ What it does:
   - appends them with "todo": true and no running style ("roles": {}), so they
     show up in the admin page's "To rate" list and nowhere on the site until a
     running style is added there,
-  - writes a summary for the pull request to import-summary.md.
+  - writes a summary for the pull request to import-summary.md,
+  - refreshes data/numbers.json (rating grid on the admin page).
 
 It never changes a hand-written entry (it only fills the texts of entries it
 imported itself, still "todo" and empty). When GameTora has a confirmed global date
@@ -325,6 +326,8 @@ def main():
     if filled:
         text_lines = f"\nFilled in effects / unique / key skills of {filled} entr{'y' if filled == 1 else 'ies'} imported earlier."
         (ROOT / "import-summary.md").write_text((ROOT / "import-summary.md").read_text(encoding="utf-8") + text_lines + "\n", encoding="utf-8")
+    import card_numbers                      # GameTora numbers for the admin rating grid
+    card_numbers.write(src)
     print(f"\nnew={n_support + n_uma + filled + len(new_scenarios)}")
     return 0
 
