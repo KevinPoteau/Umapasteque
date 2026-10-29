@@ -3,7 +3,7 @@
 // A page is "<kind>/<role>", e.g. #support/end or #uma/front, kept in the URL hash
 // so every page can be bookmarked and shared.
 import { KINDS, ROLES, dataPath, entriesFor } from "./config.js";
-import { useStateFor, save, matches } from "./state.js";
+import { useStateFor, resetState, save, matches } from "./state.js";
 import { initFilters, syncFilters } from "./filters.js";
 import { createRuler } from "./ruler.js";
 import { createTimeline } from "./timeline.js";
@@ -56,10 +56,13 @@ function update() {
 }
 
 async function openPage(next) {
+  // Another style or kind than the page shown: start with empty filters.
+  // (First page after a reload: keep the filters saved for it.)
+  const changed = page && (page.kind !== next.kind || page.role !== next.role);
   page = next;
   try { localStorage.setItem(LAST_PAGE_KEY, `${page.kind}/${page.role}`); } catch { /* ignore */ }
   renderNav();
-  useStateFor(page.kind);
+  changed ? resetState(page.kind) : useStateFor(page.kind);
   try {
     items = entriesFor(await loadJSON(dataPath(page.kind)), page.role);
   } catch (e) {
