@@ -5,12 +5,15 @@
 // each column's left edge is an anchor (x, date) and the ruler interpolates between them.
 import { TODAY, scenarioImage } from "./config.js";
 import { $, DAY, ms, fmtDate, img } from "./util.js";
+import { isVertical } from "./layout.js";
 
 export function createRuler(tl, scenarios, onScenario = () => {}) {
   const reader = $("#reader"), needle = $("#needle");
   let anchors = []; // [{x, t}], t strictly increasing
   let current = null;
-  let lastX = 0;    // left edge of the last card, in timeline coordinates
+  let lastX = 0;    // left (or top, vertical layout) edge of the last card, in timeline coordinates
+  // Horizontal layout: positions are x (offsetLeft); vertical layout: y (offsetTop)
+  const at = el => isVertical() ? el.offsetTop : el.offsetLeft;
 
   // Scenario art, stacked and cross-faded by readRuler()
   const shot = $("#shot");
@@ -32,14 +35,14 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
     const cols = [...tl.querySelectorAll(".col")];
     if (!cols.length) { anchors = []; read(); return; }
 
-    lastX = cols.at(-1).offsetLeft;
+    lastX = at(cols.at(-1));
     // Anchors: each card's left edge at its release date, and each scenario
     // section's left edge at the scenario's start date (so the ruler changes
     // scenario exactly where the sections change). Kept only if dates increase.
-    const raw = cols.map(c => ({ x: c.offsetLeft, t: ms(c.dataset.iso) }));
+    const raw = cols.map(c => ({ x: at(c), t: ms(c.dataset.iso) }));
     for (const sec of tl.querySelectorAll(".sc")) {
       const s = scenarios[+sec.id.slice(2)];
-      if (s) raw.push({ x: sec.offsetLeft, t: ms(s.start) });
+      if (s) raw.push({ x: at(sec), t: ms(s.start) });
     }
     raw.sort((a, b) => a.x - b.x || a.t - b.t);
     anchors = [];
@@ -50,11 +53,14 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
     // Pad both ends so the ruler runs past the first and last card. The end pad
     // keeps the spacing of the last stretch of cards, so the ruler stops about
     // where the last card ends instead of running months ahead.
-    const colW = cols.at(-1).offsetWidth + 24, first = anchors[0], last = anchors.at(-1);
+    const colW = (isVertical() ? cols.at(-1).offsetHeight : cols.at(-1).offsetWidth) + 24, first = anchors[0], last = anchors.at(-1);
     const prev = [...anchors].reverse().find(a => a.t <= last.t - DAY);
     const endPx = prev ? Math.min(40, Math.max(4, (last.x - prev.x) / ((last.t - prev.t) / DAY))) : 4;
     anchors.unshift({ x: first.x - 90 * 4, t: first.t - 90 * DAY });
     anchors.push({ x: last.x + colW, t: last.t + Math.max(1, Math.round(colW / endPx)) * DAY });
+
+    // Vertical layout: no tick ruler, only the reader bar (date + scenario at the top)
+    if (isVertical()) { read(); return; }
 
     let h = "";
     const end = anchors.at(-1).t;
@@ -82,6 +88,7 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
   }
 
   function read() {
+    if (isVertical()) return readVertical();
     const nx = reader.offsetWidth;
     if (anchors.length < 2) { needle.style.left = nx + "px"; $("#rdate").textContent = ""; return; }
 
@@ -99,7 +106,25 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
     }
     needle.style.left = vx + "px";
 
-    const t = tOf(tl.scrollLeft + vx);
+    show(tOf(tl.scrollLeft + vx));
+  }
+
+  /** Vertical layout: read the date just under the reader bar; near the bottom, slide down to the last card. */
+  function readVertical() {
+    if (anchors.length < 2) { $("#rdate").textContent = ""; return; }
+    const ny = reader.offsetHeight + 8;
+    const max = tl.scrollHeight - tl.clientHeight;
+    const overshoot = lastX - max - ny;
+    let vy = ny;
+    if (overshoot > 0) {
+      const span = Math.max(200, tl.clientHeight / 2);
+      vy = ny + Math.min(1, Math.max(0, (tl.scrollTop - (max - span)) / span)) * overshoot;
+    }
+    show(tOf(Math.min(tl.scrollTop + vy, lastX)));   // inside the last card: its date
+  }
+
+  /** Date + scenario art of time t. */
+  function show(t) {
     const s = [...scenarios].reverse().find(s => t >= ms(s.start)) || scenarios[0];
     $("#rdate").textContent = fmtDate(t);
     if (s !== current) {

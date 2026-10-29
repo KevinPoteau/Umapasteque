@@ -343,6 +343,15 @@ a.ext:hover .art {
 
 /* The key skills list is the longest box: it may continue in the next
    column, keeping each skill (with its inherited / evolved lines) whole */
+.box.skills {
+  -webkit-box-decoration-break: clone;   /* each column's piece gets its own padding and corners */
+  box-decoration-break: clone;
+}
+
+.box.skills h4 {
+  break-after: avoid;                    /* never leave "Key skills" alone at the foot of a column */
+}
+
 .right > .box.skills,
 .card.flow .body .box.skills {
   break-inside: auto;

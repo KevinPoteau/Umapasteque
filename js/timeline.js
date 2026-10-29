@@ -2,6 +2,7 @@
 // wheel / keyboard / button scrolling.
 import { TODAY, scenarioImage } from "./config.js";
 import { $, $$, fmtDate, img } from "./util.js";
+import { isVertical } from "./layout.js";
 
 export function createTimeline(tl, scenarios, ruler) {
   const prev = $("#prev"), next = $("#next");
@@ -37,7 +38,9 @@ export function createTimeline(tl, scenarios, ruler) {
 
   function scrollToEl(el, smooth) {
     const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-    tl.scrollTo({ left: Math.max(0, el.offsetLeft - $("#reader").offsetWidth - 12), behavior: smooth && !reduce ? "smooth" : "auto" });
+    const behavior = smooth && !reduce ? "smooth" : "auto";
+    if (isVertical()) tl.scrollTo({ top: Math.max(0, el.offsetTop - $("#reader").offsetHeight - 8), behavior });
+    else tl.scrollTo({ left: Math.max(0, el.offsetLeft - $("#reader").offsetWidth - 12), behavior });
   }
 
   /** Open on "Today", keeping the latest released card in view. */
@@ -48,21 +51,24 @@ export function createTimeline(tl, scenarios, ruler) {
   }
 
   function navState() {
-    prev.disabled = tl.scrollLeft < 4;
-    next.disabled = tl.scrollLeft > tl.scrollWidth - tl.clientWidth - 4;
+    const pos = isVertical() ? tl.scrollTop : tl.scrollLeft;
+    const max = isVertical() ? tl.scrollHeight - tl.clientHeight : tl.scrollWidth - tl.clientWidth;
+    prev.disabled = pos < 4;
+    next.disabled = pos > max - 4;
   }
 
   // Vertical wheel scrolls the timeline sideways (Firefox reports lines/pages, not pixels)
   $(".tl-wrap").addEventListener("wheel", e => {
-    if (Math.abs(e.deltaY) <= Math.abs(e.deltaX) || e.ctrlKey) return;
+    if (isVertical() || Math.abs(e.deltaY) <= Math.abs(e.deltaX) || e.ctrlKey) return;
     const k = e.deltaMode === 1 ? 40 : e.deltaMode === 2 ? tl.clientWidth : 1;
     tl.scrollLeft += e.deltaY * k;
     e.preventDefault();
   }, { passive: false });
 
-  const step = () => Math.max(300, tl.clientWidth * 0.8);
-  prev.onclick = () => tl.scrollBy({ left: -step(), behavior: "smooth" });
-  next.onclick = () => tl.scrollBy({ left: step(), behavior: "smooth" });
+  const step = () => Math.max(300, (isVertical() ? tl.clientHeight : tl.clientWidth) * 0.8);
+  const by = d => tl.scrollBy(isVertical() ? { top: d, behavior: "smooth" } : { left: d, behavior: "smooth" });
+  prev.onclick = () => by(-step());
+  next.onclick = () => by(step());
   tl.addEventListener("keydown", e => {
     if (e.key === "ArrowRight") { e.preventDefault(); next.click(); }
     if (e.key === "ArrowLeft") { e.preventDefault(); prev.click(); }
@@ -87,6 +93,14 @@ export function createTimeline(tl, scenarios, ruler) {
     });
     const tooTall = card => card.scrollHeight > card.clientHeight + 1 || lineTooLong(card);
 
+    // Vertical layout: cards are full width and as tall as they need, nothing to fit
+    if (isVertical()) {
+      for (const col of tl.querySelectorAll(".col")) {
+        col.style.removeProperty("--w");
+        col.querySelector(".card").classList.remove("flow", "wrap");
+      }
+      return;
+    }
     for (const col of tl.querySelectorAll(".col")) {
       const card = col.querySelector(".card");
       col.style.removeProperty("--w");
