@@ -4,6 +4,7 @@
     start_text(card)              "Start: Bond 15 · Pow +25"
     bonus_rows(card)              [["Wit", "+2"], ["SP", "+1"]]
     unique_text(card)             "Specialty +40 at bond 80"
+    on_global(skill)              the skill with the global server's values (GameTora "loc.en")
     skill_line(skill, kind)       "<b><span class="gold">Name</span></b> – Acc +0.40 · 1.2s<br /><small>End · Early late-race</small>"
 
 The wording follows the entries written by hand in data/, so imported cards
@@ -288,9 +289,25 @@ def skill_name(skill):
     return skill.get("name_en") or skill.get("enname") or skill.get("jpname") or str(skill.get("id"))
 
 
+def on_global(skill):
+    """The skill as it is on the global server.
+
+    GameTora's top-level values are the Japanese ones; where the global
+    version differs (duration, conditions…), "loc.en" holds the global values
+    (e.g. Shooting Star: 5s and top 50% instead of 6s and top 70%).
+    """
+    en = (skill.get("loc") or {}).get("en")
+    if not en:
+        return skill
+    out = {**skill, **{k: v for k, v in en.items() if k != "gene_version"}}
+    if "gene_version" in en and isinstance(skill.get("gene_version"), dict):
+        out["gene_version"] = {**skill["gene_version"], **en["gene_version"]}
+    return out
+
+
 def skill_detail(skill):
-    """("TS +0.35 · 2.4s", "Corner") from the first condition group."""
-    groups = skill.get("condition_groups") or []
+    """("TS +0.35 · 2.4s", "Corner") from the first condition group, global values."""
+    groups = on_global(skill).get("condition_groups") or []
     if not groups:
         return "", ""
     g = groups[0]

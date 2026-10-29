@@ -4215,7 +4215,7 @@
   "unique": "Spd +1 per Speed skill (max +3)",
   "keyskills": [
    {
-    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front</small>"
+    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front · Early-race</small>"
    },
    {
     "html": "Front Runner Straightaways ○ · Front Runner Corners ○"
@@ -4876,7 +4876,7 @@
   "unique": "Spd +2 at bond 80",
   "keyskills": [
    {
-    "html": "<b><span class=\"gold\">Swinging Maestro</span></b> – Rec +5.5%<br /><small>Mid-race · Corner</small>"
+    "html": "<b><span class=\"gold\">Swinging Maestro</span></b> – Rec +5.5%<br /><small>Corner</small>"
    },
    {
     "html": "Right-Handed ○ · Medium Corners ○ · Steady Gait · Corner Adept ○ · Rainy Days ○"
@@ -5763,7 +5763,7 @@
   "unique": "Pow +2 at bond 80",
   "keyskills": [
    {
-    "html": "<b><span class=\"gold\">Elated</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Back 60%</small>"
+    "html": "<b><span class=\"gold\">Elated</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Back 50%</small>"
    },
    {
     "html": "Tokyo Racecourse ○ · Calm in a Crowd · Homestretch Haste · Medium Straightaways ○ · Eager · Break the Mold · Confident · Scramble"
