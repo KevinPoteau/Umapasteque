@@ -46,7 +46,9 @@ def totals(card):
 
 
 def skill_info(s):
-    g = (s.get("condition_groups") or [{}])[0]
+    # global server's values where they differ from the Japanese ones (GameTora "loc.en")
+    groups = ((s.get("loc") or {}).get("en") or {}).get("condition_groups") or s.get("condition_groups")
+    g = (groups or [{}])[0]
     kind, value = "other", 0
     for eff in g.get("effects", []):
         k = KIND.get(eff.get("type"))
