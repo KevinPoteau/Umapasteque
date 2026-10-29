@@ -3,10 +3,18 @@ name: Import new cards and Umas
 # Every Monday, adds newly announced SSR support cards and Umas (source:
 # GameTora) to data/ with "todo": true and no running style, then opens or
 # updates one pull request. Merge it, then rate them on the admin page.
+#
+# Run it by hand with "since" (e.g. 2025-06-26, the global launch) to also
+# catch up on what already came out: past SSR cards, Umas and scenarios.
 on:
   schedule:
     - cron: "43 5 * * 1"     # Mondays 05:43 UTC
   workflow_dispatch:
+    inputs:
+      since:
+        description: "Also import what came out since this date (YYYY-MM-DD, e.g. 2025-06-26). Leave empty for the usual run."
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -26,8 +34,10 @@ jobs:
       - uses: actions/checkout@v7
       - name: Look for new entries
         id: run
+        env:
+          SINCE: ${{ inputs.since }}
         run: |
-          python3 scripts/import_new.py | tee import.log
+          python3 scripts/import_new.py ${SINCE:+--since "$SINCE"} | tee import.log
           echo "new=$(grep -oP '^new=\K\d+' import.log)" >> "$GITHUB_OUTPUT"
       - name: Check the data
         if: steps.run.outputs.new != '0'
