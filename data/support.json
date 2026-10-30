@@ -10132,5 +10132,3945 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30129_thumb.webp",
   "roles": {},
   "todo": true
+ },
+ {
+  "id": 30217,
+  "name": "Cesario",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Jan 6",
+  "iso": "2028-01-06",
+  "universal": false,
+  "scenario": "Great Food Festival",
+  "effects": "Friendship 20% · Mood 30% · Specialty 35 · Hint Lv2 / 40% · Wit recovery 5",
+  "start": "Start: Bond 20 · Spd +30 · Wit +25",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Refraction Arc</span></b> – TS +0.35 · 3s<br /><small>Medium · Corner</small>"
+   },
+   {
+    "html": "Standard Distance ○ · Ramp Up · Homestretch Haste · All I've Got · Fighting Spirit · Latch On · Satisfying Pace"
+   }
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30217_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30223,
+  "name": "Hishi Amazon",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jan 13",
+  "iso": "2028-01-13",
+  "universal": false,
+  "scenario": "Great Food Festival",
+  "effects": "Friendship 30% · Mood 30% · Race 10% · Fans 15% · Specialty 65 · Hint Lv3 / 40%",
+  "start": "Start: Bond 30 · Spd +30",
+  "unique": "Training eff. +4% per Speed skill (max +20)",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Daring Strike</span></b> – TS +0.25 · 4s<br /><small>End · Mid-race · Back 50%</small>"
+   },
+   {
+    "html": "Masterful Gambit · Straightaway Spurt · End Closer Corners ○ · Uma Stan · Slipstream · Mighty Step · Boiling Blood · Early Start"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30223_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30224,
+  "name": "Narita Brian",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Jan 13",
+  "iso": "2028-01-13",
+  "universal": false,
+  "scenario": "Great Food Festival",
+  "effects": "Friendship 30% · Mood 30% · Training eff. 15% · Race 10% · Fans 20% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 25 · Spd +25 · Pow +35",
+  "unique": "Spd +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Beast Mode</span></b> – Acc +0.40 · 1.2s<br /><small>Pace · Long · Late-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Breaking Free</span></b> – TS +0.45 · Rec −2.0% · 2.4s<br /><small>Pace · Mid-race</small>"
+   },
+   {
+    "html": "Pace Chaser Straightaways ○ · Pace Chaser Corners ○ · Head-On · Latch On · My True Strength · Aggressive · Restless Step · Lone Wolf"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30224_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30225,
+  "name": "Matikanefukukitaru",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jan 13",
+  "iso": "2028-01-13",
+  "universal": false,
+  "scenario": "Great Food Festival",
+  "effects": "Friendship 30% · Race 5% · Fans 10% · Specialty 50 · Hint Lv1 / 20%",
+  "start": "Start: Bond 30 · Guts +30",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Sharp Arc</span></b> – TS +0.35 · 3s<br /><small>Late · Corner</small>"
+   },
+   {
+    "html": "1,500,000 CC · A Small Breather · Lucky Seven · Triple 7s · First Step"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30225_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30226,
+  "name": "Air Shakur",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Feb 2",
+  "iso": "2028-02-02",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 35% · Mood 30% · Training eff. 15% · Race 10% · Fans 15% · Specialty 80 · Hint Lv2 / 40%",
+  "start": "Start: Bond 30 · SP +40",
+  "unique": "Sta +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Chain Reaction</span></b> – Rec +5.5% · CS +0.15 · 2.4s<br /><small>Mid-race · Straight</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Like a Blaze</span></b> – CS +0.35 · 3s<br /><small>Medium / Long · Early late-race · Back 60%</small>"
+   },
+   {
+    "html": "Non-Standard Distance ○ · Corner Adept ○ · Homestretch Haste · Long Corners ○ · Break the Mold · Fuse · Surprise Attack · Pace Strategy"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30226_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30227,
+  "name": "Daiwa Scarlet",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Feb 2",
+  "iso": "2028-02-02",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 40% · Mood 20% · Training eff. 10% · Race 5% · Fans 10% · Specialty 80 · Hint Lv4 / 60% · Wit recovery 5",
+  "start": "Start: Bond 30",
+  "unique": "Wit +1 per Speed skill (max +3)",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">One Sky, One Goal</span></b> – Acc +0.40 · 0.9s<br /><small>Front · Long · Last spurt · Straight · Top 3</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Top Runner</span></b> – TS +0.35 · 3s<br /><small>Front · Before late-race · Blocked</small>"
+   },
+   {
+    "html": "Straightaway Adept · Front Runner Corners ○ · Dodging Danger · Leader's Pride · Playtime's Over! · Opening Leg Adept · Finale · No Hesitation · Firm Resolve · Spearhead · Front Runner Straightaways ○ · Feature Act · Fast-Paced · Stamina to Spare"
+   }
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+3"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30227_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30228,
+  "name": "Symboli Kris S",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Feb 9",
+  "iso": "2028-02-09",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 35% · Training eff. 20% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30 · Sta +30",
+  "unique": "Pow +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Claw Forward</span></b> – Acc +0.40 · Rec −2.0% · 1.5s<br /><small>Late · Long · Last spurt · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">A Journey in a Step</span></b> – TS +0.25 · 4s<br /><small>Late · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Position Pilfer · Late Surger Corners ○ · Slipstream · Pedal to the Metal · Hurry Up! · Unrestrained Passion · Start the Charge · Scramble · First Step · Cloudy Days ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30228_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30229,
+  "name": "Agnes Digital",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Feb 23",
+  "iso": "2028-02-23",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 25% · Mood 50% · Training eff. 10% · Race 5% · Fans 10% · Specialty 65 · Hint Lv3 / 50% · Wit recovery 5",
+  "start": "Start: Bond 30",
+  "unique": "Wit +1 per Speed skill (max +3)",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Brave and Bold</span></b> – TS +0.45 · Rec −2.0% · 2.4s<br /><small>Mile · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Mile Straightaways ○ · Mile Corners ○ · Unyielding Spirit · Slipstream · Pumped · Leap Forward · Boiling Emotions · Wind Vane · High Pitch · Rainy Days ○ · Wet Conditions ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+3"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30229_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30230,
+  "name": "Meisho Doto",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Feb 23",
+  "iso": "2028-02-23",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 30% · Mood 40% · Training eff. 10% · Race 5% · Fans 10% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35 · Spd +30 · Pow +30",
+  "unique": "Spd +3 at max bond",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Rampaging Passion</span></b> – TS +0.35 · 2.4s<br /><small>Late · Late mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Right-Handed ○ · Slick Surge · Late Surger Straightaways ○ · 1,500,000 CC · Uma Stan · Full Throttle · Latch On · Forward Step by Step · Be Still · Start the Charge · Pace Chaser Corners ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+3"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30230_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30231,
+  "name": "TM Opera O",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Feb 23",
+  "iso": "2028-02-23",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 20% · Training eff. 10% · Specialty 50 · Hint Lv2 / 40%",
+  "start": "Start: Bond 20 · Sta +25 · Pow +25",
+  "unique": "Sta +1 & Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Speed Star</span></b> – TS +0.35 · 1.8s<br /><small>Pace · Final corner · Top 50%</small>"
+   },
+   {
+    "html": "Corner Recovery ○ · Ramp Up · Preferred Position · Pace Chaser Straightaways ○ · Shrewd Step · Toward Victory · Non-Standard Distance ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30231_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30232,
+  "name": "Blast Onepiece",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Mar 3",
+  "iso": "2028-03-03",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 30% · Mood 50% · Training eff. 10% · Race 5% · Fans 10% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35",
+  "unique": "Pow +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Fruits of Labor</span></b> – TS +0.35 · 3s<br /><small>Pace · Long · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Forthright</span></b> – TS +0.35 · 3s<br /><small>Pace · Last spurt / Early last spurt</small>"
+   },
+   {
+    "html": "Corner Adept ○ · Stamina to Spare · Pace Chaser Straightaways ○ · Uma Stan · On the Attack · Honing In · Decisive Blow · Steady Effort · Believe in Yourself · Long Straightaways ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+3"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30232_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30233,
+  "name": "Symboli Rudolf",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Mar 15",
+  "iso": "2028-03-15",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 30% · Mood 30% · Training eff. 20% · Race 5% · Fans 15% · Specialty 80 · Hint Lv3 / 50% · Wit recovery 5",
+  "start": "Start: Bond 30",
+  "unique": "Spd +1 & Wit +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Check</span></b> – Acc +0.40 · 0.9s<br /><small>Pace / Late · Late-race+ · 600+ m left · Corner · Final corner · Top 70%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Perfect Spot!</span></b> – TS +0.35 · 3s"
+   },
+   {
+    "html": "Medium Straightaways ○ · Uma Stan · Tail Held High · Slipstream · Downhill Speedster · High Speed · Satisfying Pace · Opening Leg Adept · Dynamic Motion · Rainy Days ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30233_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30234,
+  "name": "Mejiro Ardan",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Mar 15",
+  "iso": "2028-03-15",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 40% · Mood 30% · Training eff. 10% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35",
+  "unique": "Sta +1 & Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Pure Perfection</span></b> – CS +0.35 · 3s<br /><small>Mile / Medium · Corner · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Curtain Closer</span></b> – TS +0.45 · 2.4s<br /><small>Pace · Final straight</small>"
+   },
+   {
+    "html": "Left-Handed ○ · Pace Chaser Corners ○ · On the Attack · Graceful Gait · Refined Conduct · Leap Premonition · An Honest Step · Decisive Blow · Restless Step · Surpassing Ambitions"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30234_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30235,
+  "name": "Maruzensky",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Mar 15",
+  "iso": "2028-03-15",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 30% · Mood 30% · Specialty 50 · Hint Lv2 / 30%",
+  "start": "Start: Bond 20 · Spd +30 · Pow +25",
+  "unique": "Spd +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Can't Even Catch My Shadow</span></b> – TS +0.45 · 2.4s<br /><small>Front · Straight · Final corner · 1st</small>"
+   },
+   {
+    "html": "Straightaway Acceleration · Focus · Final Push · Front Runner Corners ○ · Moxie · Front Runner Savvy ○ · Playtime's Over! · An Honest Step · Early Lead"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30235_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30236,
+  "name": "Seeking the Pearl",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Mar 25",
+  "iso": "2028-03-25",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 30% · Mood 50% · Training eff. 5% · Race 5% · Fans 15% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30",
+  "unique": "Spd +2 & SP +1 at max bond",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Unyielding Tenacity</span></b> – TS +0.35 · 2.4s<br /><small>Sprint · Late mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Sprinting Gear · Sprint Straightaways ○ · Sprint Corners ○ · Leap Forward · Explosive Force · Pounding Chest · Turning Point · Single-Minded Advance · Straight Course ○ · Uma Stan"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+3"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30236_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30237,
+  "name": "Curren Chan",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Apr 8",
+  "iso": "2028-04-08",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 35% · Mood 20% · Training eff. 10% · Race 5% · Fans 15% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30",
+  "unique": "Spd +1 & Guts +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Fierce Clash</span></b> – Acc +0.40 · 1.8s<br /><small>Pace · Sprint · Early late-race · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Concentration</span></b>"
+   },
+   {
+    "html": "Focus · Sprinting Gear · Sprint Straightaways ○ · Sprint Corners ○ · Groundwork · Light as a Feather · Swift Takeoff · Explosive Force · Flying Sparks · Opening Leg Adept"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30237_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30238,
+  "name": "Ikuno Dictus",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Apr 8",
+  "iso": "2028-04-08",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 35% · Mood 20% · Training eff. 10% · Race 10% · Fans 15% · Specialty 65 · Hint Lv2 / 30% · Wit recovery 5",
+  "start": "Start: Bond 20",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Big-Sisterly</span></b> – TS +0.35 · 2.4s<br /><small>Mile · Overtaking</small>"
+   },
+   {
+    "html": "Mile Straightaways ○ · Mile Corners ○ · Unyielding Spirit · Groundwork · No Looking Back · Confident · Boiling Emotions · Wind Vane · Pounding Chest"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+3"
+   ],
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30238_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30239,
+  "name": "Nice Nature",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Apr 8",
+  "iso": "2028-04-08",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 25% · Race 5% · Fans 15% · Specialty 50 · Hint Lv2 / 30%",
+  "start": "Start: Bond 30 · Sta +30 · Guts +30",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Relax</span></b> – Rec +5.5%<br /><small>Late · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Lay Low · Pace Strategy · Position Pilfer · Be Still · Eager · Fearless · Ramp Up"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30239_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30240,
+  "name": "Jungle Pocket",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Apr 18",
+  "iso": "2028-04-18",
+  "universal": false,
+  "scenario": "Run, Mecha Umamusume!",
+  "effects": "Friendship 25% · Mood 30% · Specialty 35 · Hint Lv2 / 30%",
+  "start": "Start: Bond 30 · Sta +25 · Guts +30",
+  "unique": "Sta +1 & Guts +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "Tokyo Racecourse ○ · Go with the Flow · Homestretch Haste · Outer Swell · Late Surger Straightaways ○ · Fighter · A Small Breather · Late Surger Savvy ○ · Scramble"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30240_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30241,
+  "name": "Embodiment of Legends",
+  "rarity": "SSR",
+  "type": "Group",
+  "color": "purple",
+  "date": "Est. Apr 25",
+  "iso": "2028-04-25",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 30% · Training eff. 10% · Race 10% · Fans 20% · Wit recovery 2 · Event recovery 30% · Event eff. 20%",
+  "start": "Start: Bond 25 · SP +40",
+  "unique": "All stats +1 & SP +1 at max bond",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Unpredecented Prodigy</span></b> – CS +0.35 · 3s<br /><small>Mid-race</small>"
+   },
+   {
+    "html": "Slipstream · Corner Adept ○ · Opening Leg Adept · Middle Leg Adept · Straightaway Adept · Rising Heat · Uma Stan · Peerless · Tail Held High · Fighting Spirit · Groundwork"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30241_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30242,
+  "name": "Almond Eye",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Apr 25",
+  "iso": "2028-04-25",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 35% · Training eff. 20% · Race 15% · Fans 30% · Specialty 120 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30 · SP +40",
+  "unique": "Pow +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Singularity</span></b> – Spd +80<br /><small>Pace · Medium</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Brilliant Mind</span></b> – TS +0.35 · 3s<br /><small>Medium · Last spurt / Early last spurt</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Beeline Burst</span></b> – TS +0.35 · 3s<br /><small>Straight</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Professor of Curvature</span></b> – TS +0.35 · 2.4s<br /><small>Corner</small>"
+   },
+   {
+    "html": "Corner Adept ○ · Straightaway Adept · Nimble Navigator · Uma Stan · Tail Held High · Adventurer · Leap Premonition · To Greater Heights · Dynamic Motion · Surpassing Ambitions · Refined Conduct"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30242_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30243,
+  "name": "Gran Alegria",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Apr 25",
+  "iso": "2028-04-25",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 30% · Training eff. 5% · Race 5% · Fans 15% · Specialty 50 · Hint Lv2 / 40%",
+  "start": "Start: Bond 30 · Sta +20 · Pow +30",
+  "unique": "Pow +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Cyclone Flash</span></b> – TS +0.35 · 3s<br /><small>Mile · Straight</small>"
+   },
+   {
+    "html": "Standard Distance ○ · Updrafters · Pumped · High Speed · Confident · Pounding Chest · Forward Step by Step · Mile Straightaways ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30243_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30244,
+  "name": "Mejiro Bright",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. May 6",
+  "iso": "2028-05-06",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 35% · Mood 20% · Training eff. 5% · Race 5% · Fans 15% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 25 · Guts +30",
+  "unique": "Sta +2 & Guts +1 at max bond",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">In One Fell Swoop</span></b> – CS +0.35 · 3s<br /><small>Late · Long · Early late-race</small>"
+   },
+   {
+    "html": "Spring Runner ○ · Long Straightaways ○ · Late Surger Straightaways ○ · Be Still · Scramble · Locked On · Hurry Up! · Fuse · Preliminary Preparation · Fierce Struggle · Deep Breaths"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+3"
+   ],
+   [
+    "Guts",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30244_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30245,
+  "name": "Vodka",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. May 20",
+  "iso": "2028-05-20",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 30% · Mood 60% · Training eff. 15% · Race 10% · Fans 15% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30",
+  "unique": "Sta +1 & Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Sharp Streak</span></b> – TS +0.35 · 3s<br /><small>Late · Straight</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Breach</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Late mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Left-Handed ○ · Medium Corners ○ · Late Surger Straightaways ○ · Late Surger Corners ○ · Pedal to the Metal · Unrestrained Passion · Confident · Satisfying Pace · Towards the Light · Foothold · Nimble Navigator"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30245_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30246,
+  "name": "Dream Journey",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. May 20",
+  "iso": "2028-05-20",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 35% · Mood 30% · Training eff. 15% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30 · Spd +30 · Pow +25",
+  "unique": "Spd +1 & Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Complete Combustion</span></b> – TS +0.45 · 2.4s<br /><small>End · Final straight · Pos 2+</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Relentless Approach</span></b> – TS +0.35 · 2.4s<br /><small>End · After 50% · Overtaking</small>"
+   },
+   {
+    "html": "Right-Handed ○ · Nimble Navigator · Masterful Gambit · End Closer Corners ○ · Early Start · Boiling Blood · Sufficient Thrust · No Reluctance · Shadowstepper · Capture · Breakin' Out"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30246_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30247,
+  "name": "Symboli Kris S",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. May 20",
+  "iso": "2028-05-20",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 35% · Race 5% · Fans 10% · Specialty 50 · Hint Lv1 / 20%",
+  "start": "Start: Bond 20 · Pow +30",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Wind Slash</span></b> – TS +0.35 · 3s<br /><small>Long · Corner</small>"
+   },
+   {
+    "html": "Pace Strategy · Homestretch Haste · Deep Breaths · Pressure · Free-Spirited · Locked On · Fervor · Cloudy Days ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30247_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30248,
+  "name": "Daring Tact",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. May 27",
+  "iso": "2028-05-27",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 40% · Mood 20% · Training eff. 10% · Race 10% · Fans 20% · Specialty 80 · Hint Lv4 / 60% · Wit recovery 5",
+  "start": "Start: Bond 30 · Spd +30",
+  "unique": "Wit +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Independence</span></b> – TS +0.35 · 3s<br /><small>Late · Last spurt / Early last spurt</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Fast & Furious</span></b> – TS +0.35 · 2.4s<br /><small>Late · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Spring Runner ○ · Position Pilfer · Late Surger Straightaways ○ · 1,500,000 CC · Downhill Speedster · Pedal to the Metal · Unrestrained Passion · Start the Charge · Descent · Pushing Through! · Graceful Gait · Forward Step by Step"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30248_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30249,
+  "name": "Transcend",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jun 10",
+  "iso": "2028-06-10",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 30% · Mood 30% · Training eff. 10% · Race 5% · Fans 10% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35",
+  "unique": "Guts +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Sandstorm Flash</span></b> – TS +0.35 · 3s<br /><small>Dirt · Straight</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Magnificent Sand Stride</span></b> – TS +0.35 · 3s<br /><small>Dirt</small>"
+   },
+   {
+    "html": "Groundwork · Playtime's Over! · Top Pick · Forward, March! · Solid Steps · Pioneer · Dirt Straights ○ · Dirt Corners ○ · Contradicting Emotions · Sand Stride"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+3"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30249_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30250,
+  "name": "Buena Vista",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Jun 10",
+  "iso": "2028-06-10",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 30% · Mood 20% · Training eff. 10% · Race 10% · Fans 20% · Specialty 65 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30",
+  "unique": "Training eff. +10% with 4+ card types",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Reign</span></b> – Acc +0.40 · 0.9s<br /><small>End · Medium · Late-race+ · Corner · Final corner · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Elated</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Back 50%</small>"
+   },
+   {
+    "html": "Medium Straightaways ○ · End Closer Corners ○ · Eager · Graceful Gait · Mighty Step · Switch Over Pro · Creeping Footsteps · Dynamic Motion · Glimpse of Light · Gateway to Success · Unrestrained Passion"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30250_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30251,
+  "name": "Espoir City",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jun 10",
+  "iso": "2028-06-10",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 30% · Training eff. 10% · Race 5% · Fans 15% · Specialty 35 · Hint Lv2 / 40%",
+  "start": "Start: Bond 35",
+  "unique": "Spd +1 & Guts +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Trending in the Charts!</span></b> – TS +0.35 · 2.4s<br /><small>Dirt · Mid-race · Blocked</small>"
+   },
+   {
+    "html": "Ramp Up · Go with the Flow · Mile Straightaways ○ · Full Tilt · Down in the Dirt ○ · Muddy ○ · Confident · Wind Vane · Dust Off"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30251_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30260,
+  "name": "Mejiro McQueen",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Jun 10",
+  "iso": "2028-06-10",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 30% · Mood 20% · Training eff. 5% · Race 5% · Fans 15% · Specialty 35 · Hint Lv1 / 20%",
+  "start": "Start: Bond 20 · Spd +30",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Peak Ferocity</span></b> – TS +0.35 · 1.8s<br /><small>Long · Mid-race</small>"
+   },
+   {
+    "html": "Go with the Flow · Extra Tank · Long Corners ○ · Hydrate · Pace Chaser Savvy ○ · On the Attack · Toward Victory · Early Lead"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30260_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30252,
+  "name": "Silence Suzuka",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jun 18",
+  "iso": "2028-06-18",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 30% · Mood 20% · Training eff. 15% · Race 5% · Fans 15% · Specialty 65 · Hint Lv3 / 40%",
+  "start": "Start: Bond 35",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">The Fight's Not Over Yet!</span></b> – Acc +0.40 · 0.9s<br /><small>Front · Medium · Late-race+ · Corner · Final corner · Top 3</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Escape Artist</span></b> – TS +0.35 · 3s<br /><small>Front · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "Prudent Positioning · Fast-Paced · Front Runner Straightaways ○ · Groundwork · Goin' First · An Honest Step · Pulling Away · Unprecedented · Riding the Tailwind · Outstanding Step · Left-Handed ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30252_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30253,
+  "name": "Rhein Kraft",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Jul 1",
+  "iso": "2028-07-01",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 35% · Mood 40% · Training eff. 15% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35 · Spd +30",
+  "unique": "Pow +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Changing Gears</span></b> – TS +0.35 · 2.4s<br /><small>Mile · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">High Voltage</span></b> – Acc +0.40 · 1.8s<br /><small>Mile · Early late-race · Top 50%</small>"
+   },
+   {
+    "html": "Productive Plan · Mile Straightaways ○ · Shifting Gears · Groundwork · Leap Forward · Beating Heart · Wind Vane · An Honest Step · Overflowing Fighting Spirit · Mile Corners ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30253_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30254,
+  "name": "Daring Heart",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Jul 1",
+  "iso": "2028-07-01",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 35% · Mood 40% · Training eff. 10% · Race 5% · Fans 15% · Specialty 80 · Hint Lv3 / 50% · Wit recovery 5",
+  "start": "Start: Bond 35",
+  "unique": "Spd +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Reckless Charge</span></b> – TS +0.35 · 2.4s<br /><small>Mile · Late mid-race · Top 50%</small>"
+   },
+   {
+    "html": "Mile Corners ○ · Unyielding Spirit · Pace Chaser Straightaways ○ · Head-On · No Looking Back · Confident · Pounding Chest · Fearless Advance · Believe in Yourself · Aggressive"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30254_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30255,
+  "name": "Air Messiah",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Jul 1",
+  "iso": "2028-07-01",
+  "universal": false,
+  "scenario": "The Twinkle Legends",
+  "effects": "Friendship 25% · Mood 40% · Race 5% · Fans 10% · Specialty 50 · Hint Lv2 / 40% · Wit recovery 5",
+  "start": "Start: Bond 30 · Wit +25",
+  "unique": "Spd +1 & Wit +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">15,000,000 CC</span></b> – TS +0.35 · 2.4s<br /><small>Late · Uphill</small>"
+   },
+   {
+    "html": "Standard Distance ○ · Go with the Flow · Position Pilfer · Fighter · Highlander · Fuse · Descent · Slick Surge"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30255_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30256,
+  "name": "Tamamo Cross",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Jul 20",
+  "iso": "2028-07-20",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 40% · Training eff. 10% · Race 10% · Fans 15% · Specialty 100 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35 · SP +30",
+  "unique": "Mood +60% on friendship training",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Divine Speed</span></b> – CS +0.35 · Rec +1.5% · 3s"
+   },
+   {
+    "html": "<b><span class=\"gold\">Proven Mettle</span></b> – TS +0.35 · 2.4s<br /><small>Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Long Haul</span></b> – TS +0.25 · 4s<br /><small>Medium / Long · Mid-race</small>"
+   },
+   {
+    "html": "Nimble Navigator · Homestretch Haste · Tail Held High · Break the Mold · High Speed · Forward Step by Step · Peerless · Trekker · Slipstream · Opening Leg Adept · Calm in a Crowd"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30256_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30257,
+  "name": "Tucker Bryne",
+  "rarity": "SSR",
+  "type": "Pal",
+  "color": "yellow",
+  "date": "Est. Jul 20",
+  "iso": "2028-07-20",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Mood 30% · Training eff. 10% · Event recovery 60% · Event eff. 30% · Fail protection 20% · Energy cost -20%",
+  "start": "Start: Bond 25 · Sta +30",
+  "unique": "Special effect (see GameTora)",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Pathfinder</span></b> – TS +0.35 · 2.4s<br /><small>Medium / Long · Mid-race</small>"
+   },
+   {
+    "html": "Straightaway Recovery · Find a Way! · Fuse"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30257_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30258,
+  "name": "Mejiro Ryan",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Jul 30",
+  "iso": "2028-07-30",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 30% · Mood 60% · Training eff. 10% · Race 5% · Fans 10% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35 · Guts +30",
+  "unique": "Guts +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Latent Fighting Spirit</span></b> – TS +0.35 · 3s<br /><small>Late · Medium · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Slick Surge · Late Surger Corners ○ · All I've Got · Take the Chance · Eager · Fearless · Descent · Preliminary Preparation · Foothold · Ceaseless Training · Pace Strategy"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30258_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30259,
+  "name": "Fusaichi Pandora",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Aug 7",
+  "iso": "2028-08-07",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 35% · Mood 20% · Race 5% · Fans 15% · Specialty 65 · Hint Lv2 / 30%",
+  "start": "Start: Bond 25 · Spd +30",
+  "unique": "Spd +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Bravery Slash</span></b> – TS +0.35 · 3s<br /><small>Pace · Corner</small>"
+   },
+   {
+    "html": "Go with the Flow · Homestretch Haste · Preferred Position · Pace Chaser Corners ○ · Straight Descent · Steady Gait · Leap Premonition · Switch Over Pro"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30259_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30261,
+  "name": "Win Variation",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Aug 13",
+  "iso": "2028-08-13",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 35% · Mood 50% · Training eff. 10% · Race 5% · Fans 10% · Specialty 80 · Hint Lv3 / 50% · Wit recovery 5",
+  "start": "Start: Bond 30 · Wit +25",
+  "unique": "Wit +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Energetic</span></b> – TS +0.25 · Rec +3.5% · 3s<br /><small>Long · Early mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Innate Experience</span></b> – TS +0.35 · 3s<br /><small>Long · Corner · Final corner</small>"
+   },
+   {
+    "html": "Right-Handed ○ · Summer Runner ○ · Straightaway Recovery · Inside Scoop · Long Straightaways ○ · Undistracted · Rapid Overtakes · Fierce Struggle · Find a Way! · Enthusiastic · Unwavering Heart · Peerless · Long Corners ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30261_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30262,
+  "name": "Duramente",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Aug 13",
+  "iso": "2028-08-13",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 35% · Training eff. 15% · Race 5% · Fans 15% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30 · Guts +30",
+  "unique": "Sta +1 & Guts +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Soaring Stride</span></b> – TS +0.35 · 2.4s<br /><small>End · Late mid-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Afterimage</span></b> – TS +0.35 · 1.8s<br /><small>End · Mid-race</small>"
+   },
+   {
+    "html": "Straightaway Spurt · End Closer Straightaways ○ · End Closer Corners ○ · Slipstream · Breakin' Out · Immovable Spirit · Bare Passion · High Ambitions · Chasing the Shadow · Give Chase · Ignition"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "Guts",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30262_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30263,
+  "name": "Vivlos",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Aug 13",
+  "iso": "2028-08-13",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 30% · Mood 30% · Race 10% · Fans 15% · Specialty 50 · Hint Lv1 / 20%",
+  "start": "Start: Bond 35 · Pow +25",
+  "unique": "Pow +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Full of Vigor</span></b> – TS +0.35 · 1.8s<br /><small>Mile · Final corner · Back 50%</small>"
+   },
+   {
+    "html": "Acceleration · Unyielding Spirit · 1,500,000 CC · Late Surger Savvy ○ · Downhill Speedster · First Step · Confident · Late Surger Straightaways ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30263_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30264,
+  "name": "Stay Gold",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Aug 30",
+  "iso": "2028-08-30",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 35% · Mood 20% · Training eff. 5% · Race 5% · Fans 15% · Specialty 100 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30 · SP +50",
+  "unique": "Special effect (see GameTora)",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Never Give Up</span></b> – TS +0.25 · 4s<br /><small>Corner</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Curiosity</span></b> – TS +0.35 · 2.4s<br /><small>Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Freewheeling</span></b> – CS +0.35 · 3s<br /><small>Medium · Before late-race · Blocked</small>"
+   },
+   {
+    "html": "Corner Adept ○ · Uma Stan · Groundwork · Slipstream · Graceful Gait · Ignition · Unbreakable Mind · Forward Step by Step · Peerless · Dream-Fulfilling Challenge · Intrigued · Carefree Step · Straightaway Adept"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30264_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30265,
+  "name": "Admire Groove",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Aug 30",
+  "iso": "2028-08-30",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 30% · Mood 30% · Training eff. 20% · Race 15% · Fans 20% · Specialty 100 · Hint Lv4 / 60%",
+  "start": "Start: Bond 35 · SP +50",
+  "unique": "Spd +1 & Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Natural Talent</span></b> – Acc +0.40 · 1.2s<br /><small>Late · Medium · Start of late-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Brains and Beauty</span></b> – TS +0.25 · 4s<br /><small>Medium · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Fall Runner ○ · Medium Straightaways ○ · Medium Corners ○ · 1,500,000 CC · Fearless · Descent · Dynamic Motion · Foothold · Simmering Heat · Aim for the Summit · Model Student · Unrestrained Passion · Take the Chance"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30265_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30266,
+  "name": "Chrono Genesis",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Aug 30",
+  "iso": "2028-08-30",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 30% · Training eff. 5% · Race 5% · Fans 10% · Specialty 50 · Hint Lv2 / 30% · Wit recovery 5",
+  "start": "Start: Bond 30 · Wit +35",
+  "unique": "Spd +1 & Wit +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Killer Tunes</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "Non-Standard Distance ○ · Calm in a Crowd · Latch On · Unshakeable Faith · Self-Restraint · Restless Step · Frontal Breakthrough"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30266_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30267,
+  "name": "Calstone Light O",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Sep 3",
+  "iso": "2028-09-03",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 35% · Mood 60% · Training eff. 10% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30 · Spd +35",
+  "unique": "Spd +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">In High Spirits</span></b> – TS +0.35 · 2.4s<br /><small>Sprint · Late mid-race · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Foregone Conclusion</span></b> – TS +0.35 · 2.4s<br /><small>Sprint · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "Fall Runner ○ · Straightaway Adept · Prudent Positioning · Sprinting Gear · Sprint Straightaways ○ · Playtime's Over! · Swift Takeoff · An Honest Step · Pounding Chest · No Second Thoughts · No Third Chances · Unyielding Step · In No Time · Straight Course ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+3"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30267_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30268,
+  "name": "Durandal",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Sep 3",
+  "iso": "2028-09-03",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 30% · Mood 60% · Training eff. 15% · Race 5% · Fans 15% · Specialty 80 · Hint Lv3 / 50% · Wit recovery 5",
+  "start": "Start: Bond 30 · Wit +30",
+  "unique": "Spd +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Moonlit Flash</span></b> – TS +0.35 · 3s<br /><small>End · Straight</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Lightning Surge</span></b> – Acc +0.40 · 2s<br /><small>Sprint / Mile · Late-race+ · Back 50% · Overtaking</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Swift Decision</span></b> – TS +0.35 · 3s<br /><small>End · Last spurt / Early last spurt</small>"
+   },
+   {
+    "html": "Firm Conditions ○ · Straightaway Adept · End Closer Straightaways ○ · Breakin' Out · Leap Forward · No Reluctance · Bare Passion · Give Chase · Heat Up · Nosedive · Capture"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30268_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30269,
+  "name": "Dantsu Flame",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Sep 3",
+  "iso": "2028-09-03",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 25% · Specialty 35 · Hint Lv1 / 20%",
+  "start": "Start: Bond 30 · Pow +25",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Come What May</span></b> – TS +0.35 · 3s<br /><small>Medium · Last spurt · Straight · 20–60% of the pack</small>"
+   },
+   {
+    "html": "Hanshin Racecourse ○ · Prepared to Pass · Slick Surge · Full Throttle · Unbreakable Mind · Refined Conduct · To Greater Heights · Latch On"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30269_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30270,
+  "name": "Daiichi Ruby",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Sep 10",
+  "iso": "2028-09-10",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 35% · Training eff. 10% · Race 10% · Fans 15% · Specialty 80 · Hint Lv4 / 60%",
+  "start": "Start: Bond 35 · Spd +30 · Pow +25",
+  "unique": "Training eff. +10% with 4+ card types",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Radiant Treasure</span></b> – TS +0.35 · 3s<br /><small>Late · Sprint · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Fall Runner ○ · Slick Surge · Sprint Straightaways ○ · Meticulous Measures · Late Surger Corners ○ · Leap Forward · Single-Minded Advance · Pounding Chest · Turning Point · With Pride · Prelude · Gap Closer"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30270_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30271,
+  "name": "Fuji Kiseki",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Sep 24",
+  "iso": "2028-09-24",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 35% · Mood 50% · Training eff. 10% · Race 10% · Fans 15% · Specialty 80 · Hint Lv4 / 60%",
+  "start": "Start: Bond 35 · Spd +25 · Pow +30",
+  "unique": "Spd +1 & Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Steadfast Spirit</span></b> – TS +0.35 · 3s<br /><small>Pace · Mile · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "Straightaway Adept · Nimble Navigator · Productive Plan · Mile Corners ○ · Slipstream · Head-On · On the Attack · Beating Heart · Refined Conduct · Fearless Advance · Restless Step · Resolute Stance · Prepared to Pass"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30271_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30272,
+  "name": "Eishin Flash",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Sep 24",
+  "iso": "2028-09-24",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 35% · Mood 60% · Training eff. 15% · Race 5% · Fans 15% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 35 · Pow +30",
+  "unique": "Spd +1 & Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">A Journey in a Step</span></b> – TS +0.25 · 4s<br /><small>Late · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Heat Haze</span></b> – CS +0.35 · 2.4s<br /><small>Late · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Straightaway Adept · Ramp Up · Late Surger Straightaways ○ · Late Surger Corners ○ · Playtime's Over! · Fearless · Full Throttle · Unrestrained Passion · First Step · Simmering Heat · Preliminary Preparation · Racing Spirit: Speed · Eyes on the Goal · Glittering Star · Target in Sight ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30272_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30273,
+  "name": "Tosen Jordan",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Sep 24",
+  "iso": "2028-09-24",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 30% · Training eff. 10% · Race 5% · Fans 10% · Specialty 50 · Hint Lv1 / 20%",
+  "start": "Start: Bond 30 · Sta +35",
+  "unique": "Pow +1 & Mood +15% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Dauntless</span></b> – TS +0.35 · Acc +0.10 · 2.4s<br /><small>Late · 30–80% of the pack</small>"
+   },
+   {
+    "html": "Tokyo Racecourse ○ · Slick Surge · Fighter · Playtime's Over! · Be Still · Unrestrained Passion · Unbreakable Mind · Towards the Light · Lucky Seven"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30273_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30274,
+  "name": "Curren Bouquetd'or",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Oct 2",
+  "iso": "2028-10-02",
+  "universal": false,
+  "scenario": "Design Your Island",
+  "effects": "Friendship 20% · Mood 30% · Training eff. 5% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 50%",
+  "start": "Start: Bond 30 · Sta +30 · Guts +25",
+  "unique": "Friendship +20% at max bond",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Swinging Maestro</span></b> – Rec +5.5%<br /><small>Corner</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Blooming</span></b> – CS +0.35 · 2.4s<br /><small>Pace · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "Spring Runner ○ · Corner Recovery ○ · Stamina to Spare · On the Attack · Latch On · My True Strength · Leap Premonition · An Honest Step · Luminance · Find a Way! · Time to Awaken · To Greater Heights"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30274_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30275,
+  "name": "Tokai Teio",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Oct 15",
+  "iso": "2028-10-15",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 35% · Mood 100% · Training eff. 15% · Race 10% · Fans 15% · Specialty 100 · Hint Lv4 / 100%",
+  "start": "Start: Bond 35 · Pow +25 · SP +60",
+  "unique": "SP +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Surging Spirit</span></b> – CS +0.35 · 3s<br /><small>Pace · Before late-race · Blocked</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Forthright</span></b> – TS +0.35 · 3s<br /><small>Pace · Last spurt / Early last spurt</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">To the Stage of Dreams</span></b> – Acc +0.40 · 1.2s<br /><small>Pace · Medium · Start of late-race · Top 50%</small>"
+   },
+   {
+    "html": "Pace Chaser Straightaways ○ · Pace Chaser Corners ○ · Head-On · On the Attack · To Greater Heights · Restless Step · Believe in Yourself · Surpassing Ambitions · Luminance · One Brave Step · Time to Awaken · Stubborn · Peerless · Dynamic Motion"
+   }
+  ],
+  "bonus": [
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30275_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30276,
+  "name": "Kiyoko Hoshina",
+  "rarity": "SSR",
+  "type": "Pal",
+  "color": "yellow",
+  "date": "Est. Oct 15",
+  "iso": "2028-10-15",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Mood 60% · Training eff. 10% · Race 5% · Fans 15% · Event eff. 80% · Fail protection 15% · Energy cost -25%",
+  "start": "Start: Bond 25 · Guts +25",
+  "unique": "Training eff. +5% & Energy cost -5% at bond 60",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">See Ya Later!</span></b> – TS +0.35 · 3s"
+   },
+   {
+    "html": "Opening Leg Adept · Middle Leg Adept"
+   }
+  ],
+  "bonus": [
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30276_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30277,
+  "name": "Mihono Bourbon",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Oct 24",
+  "iso": "2028-10-24",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 40% · Mood 30% · Training eff. 15% · Race 10% · Fans 15% · Specialty 100 · Hint Lv3 / 80%",
+  "start": "Start: Bond 35 · Pow +25",
+  "unique": "SP +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front · Early-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Preeminent</span></b> – TS +0.35 · 2.4s<br /><small>Front · After 50% · Overtaking</small>"
+   },
+   {
+    "html": "Standard Distance ○ · Prudent Positioning · Early Lead · Fast-Paced · Front Runner Straightaways ○ · Front Runner Corners ○ · Leader's Pride · Groundwork · Restraint · Spearhead · Outstanding Step · Running is Winning! · Focus"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30277_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30278,
+  "name": "Gold Ship",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Nov 5",
+  "iso": "2028-11-05",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 35% · Mood 60% · Training eff. 10% · Race 10% · Fans 20% · Specialty 80 · Hint Lv3 / 80%",
+  "start": "Start: Bond 35",
+  "unique": "Sta +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Encroaching Shadow</span></b> – Acc +0.40 · 0.9s<br /><small>End · Last spurt · Straight</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Clear Mind</span></b> – Rec +5.5%<br /><small>End · Late early-race · Back 60%</small>"
+   },
+   {
+    "html": "Winter Runner ○ · Straightaway Spurt · Long Corners ○ · End Closer Straightaways ○ · Uma Stan · Locked On · Rapid Overtakes · Boiling Blood · Immovable Spirit · Surprise Attack · Gateway to Success · Capture · Give Chase · Seize the Chance · Hanshin Racecourse ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30278_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30279,
+  "name": "Fenomeno",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Nov 5",
+  "iso": "2028-11-05",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 35% · Mood 50% · Training eff. 15% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 60%",
+  "start": "Start: Bond 35",
+  "unique": "Sta +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Headliner</span></b> – TS +0.35 · 2.4s<br /><small>Long · Late mid-race · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Laser-Focused</span></b> – Acc +0.40 · 1.2s<br /><small>Pace · Long · Start of late-race · Top 50%</small>"
+   },
+   {
+    "html": "Long Corners ○ · Feature Act · All Set · My True Strength · Rising Heat · Honing In · Decisive Blow · Steady Effort · Take the Plunge · One Brave Step · Brute Force"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30279_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30280,
+  "name": "Orfevre",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Nov 5",
+  "iso": "2028-11-05",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 20% · Mood 30% · Training eff. 10% · Race 10% · Fans 15% · Specialty 50 · Hint Lv2 / 50%",
+  "start": "Start: Bond 20",
+  "unique": "Sta +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Go-Home Specialist</span></b> – Rec +5.5%<br /><small>End · Downhill</small>"
+   },
+   {
+    "html": "Levelheaded · Early Start · Breakin' Out · High Speed · Rising Heat · Sufficient Thrust · Seize the Chance · Chasing the Shadow · Break the Mold"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30280_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30281,
+  "name": "Inari One",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Nov 14",
+  "iso": "2028-11-14",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 35% · Mood 60% · Training eff. 15% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 80%",
+  "start": "Start: Bond 30 · Sta +25",
+  "unique": "Guts +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Claw Forward</span></b> – Acc +0.40 · Rec −2.0% · 1.5s<br /><small>Late · Long · Last spurt · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Thorough Preparation</span></b> – TS +0.35 · 2.4s<br /><small>Late · Early mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Right-Handed ○ · Long Straightaways ○ · Late Surger Corners ○ · Be Still · Scramble · Hurry Up! · Rising Heat · Bare Passion · Surprise Attack · Preliminary Preparation · Unwavering Heart · Crucial Stage · Kyoto Racecourse ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30281_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30282,
+  "name": "Air Groove",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Nov 25",
+  "iso": "2028-11-25",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 35% · Mood 30% · Training eff. 20% · Race 10% · Fans 15% · Specialty 120 · Hint Lv4 / 100%",
+  "start": "Start: Bond 30 · Pow +25",
+  "unique": "Pow +1 & Training eff. +5% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Check</span></b> – Acc +0.40 · 0.9s<br /><small>Pace / Late · Late-race+ · 600+ m left · Corner · Final corner · Top 70%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">10000 Days of Practice</span></b> – TS +0.25 · 4s<br /><small>Medium · Corner</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Crowning Beauty</span></b> – CS +0.35 · 2.4s<br /><small>Medium</small>"
+   },
+   {
+    "html": "Left-Handed ○ · Medium Straightaways ○ · Medium Corners ○ · All I've Got · Fighting Spirit · Latch On · Confident · Satisfying Pace · Towards the Light · Dynamic Motion · Spare No Effort · Gorgeous Step · No Stagnation · Dream-Fulfilling Challenge · Believe in Yourself · Preliminary Preparation · Go with the Flow"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30282_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30283,
+  "name": "Fine Motion",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Nov 25",
+  "iso": "2028-11-25",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 40% · Mood 40% · Training eff. 15% · Race 5% · Fans 15% · Specialty 100 · Hint Lv2 / 100%",
+  "start": "Start: Bond 30",
+  "unique": "Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Send It Flying!</span></b> – TS +0.25 · 4s<br /><small>Pace · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Smooth Sailing</span></b> – TS +0.35 · 2.4s<br /><small>Late mid-race · Top 50%</small>"
+   },
+   {
+    "html": "Winter Runner ○ · Straightaway Adept · Straight Descent · Downhill Speedster · Adventurer · Refined Conduct · Toward Victory · Leap Premonition · An Honest Step · Aggressive · With a Light in My Heart · With Feelings Aboard · Ride the Momentum · Committed Push · Racing Spirit: Stamina · Sun's Blessing · Corner Adept ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30283_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30284,
+  "name": "Bubble Gum Fellow",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Nov 25",
+  "iso": "2028-11-25",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 30% · Mood 40% · Race 10% · Fans 15% · Specialty 50 · Hint Lv2 / 40%",
+  "start": "Start: Bond 25",
+  "unique": "Guts +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Valiant Flash</span></b> – TS +0.35 · 3s<br /><small>Pace · Straight</small>"
+   },
+   {
+    "html": "Competitive Spirit ○ · Corner Acceleration ○ · Pace Chaser Savvy ○ · Groundwork · On the Attack · Aspire · Latch On · Aggressive · Head-On"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30284_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30285,
+  "name": "King Halo",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Dec 4",
+  "iso": "2028-12-04",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 35% · Mood 20% · Training eff. 15% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 80%",
+  "start": "Start: Bond 30 · Spd +25 · Guts +30",
+  "unique": "Pow +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Rampaging Passion</span></b> – TS +0.35 · 2.4s<br /><small>Late · Late mid-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Determination Brings Success</span></b> – TS +0.35 · 2.4s<br /><small>Late · Mid-race</small>"
+   },
+   {
+    "html": "Position Pilfer · Slick Surge · Late Surger Straightaways ○ · 1,500,000 CC · Leap Forward · Start the Charge · Bare Passion · Preliminary Preparation · Forward Step by Step · Footloose · Intrigued · Be Ambitious · Pushing Through! · Homestretch Haste"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30285_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30286,
+  "name": "Matikanefukukitaru",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Dec 20",
+  "iso": "2028-12-20",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 40% · Mood 40% · Training eff. 10% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 80%",
+  "start": "Start: Bond 35 · Spd +30 · Pow +25",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Gordian Cut</span></b> – CS +0.35 · 3s<br /><small>Pace · Long · Early late-race</small>"
+   },
+   {
+    "html": "Right-Handed ○ · Inside Scoop · Long Straightaways ○ · Uma Stan · My True Strength · Pop Off! · Honing In · Fervor · Overflowing Fighting Spirit · Take the Plunge · Ride the Momentum · Strategist"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30286_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30287,
+  "name": "Neo Universe",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Dec 20",
+  "iso": "2028-12-20",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 35% · Mood 20% · Training eff. 20% · Race 5% · Fans 15% · Specialty 100 · Hint Lv4 / 100%",
+  "start": "Start: Bond 30",
+  "unique": "Sta +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Luminescence</span></b> – CS +0.35 · 2.4s<br /><small>Medium</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Sharp-Witted Composure</span></b> – TS +0.25 · Rec +3.5% · 4s<br /><small>Medium · Mid-race</small>"
+   },
+   {
+    "html": "Tail Held High · Sympathy · All I've Got · Take the Chance · Graceful Gait · High Speed · Ignition · Self-Restraint · Foothold · Dream-Fulfilling Challenge · Find a Way! · With a Light in My Heart · Forward Step by Step · Start the Charge"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30287_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30288,
+  "name": "Silence Suzuka",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Dec 20",
+  "iso": "2028-12-20",
+  "universal": false,
+  "scenario": "Yukoma Hot Springs",
+  "effects": "Friendship 30% · Race 5% · Fans 15% · Specialty 35 · Hint Lv2 / 50% · Wit recovery 5",
+  "start": "Start: Bond 35 · Spd +30",
+  "unique": "Spd +1 & Mood +15% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Gale Flash</span></b> – TS +0.35 · 3s<br /><small>Front · Straight</small>"
+   },
+   {
+    "html": "Left-Handed ○ · Focus · Mile Corners ○ · Dodging Danger · Front Runner Savvy ○ · Groundwork · Wind Vane · Pounding Chest"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30288_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30289,
+  "name": "Forever Young",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Jan 6",
+  "iso": "2029-01-06",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 40% · Mood 30% · Training eff. 10% · Race 10% · Fans 20% · Specialty 100 · Hint Lv2 / 100% · Wit recovery 5",
+  "start": "Start: Bond 30 · SP +40",
+  "unique": "Training eff. +5% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Call & Response</span></b> – TS +0.25 · 2.4s<br /><small>Dirt · Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Innovation</span></b> – TS +0.25 · 4s<br /><small>Dirt · Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Tail Nine</span></b> – TS +0.35 · 3s"
+   },
+   {
+    "html": "<b><span class=\"gold\">Uncharted Heights</span></b> – TS +0.35 · 2.4s<br /><small>Mid-race · 1st</small>"
+   },
+   {
+    "html": "Straightaway Adept · Ramp Up · Nimble Navigator · Groundwork · Tail Held High · Playtime's Over! · High Speed · Pioneer · Peerless · Intrigued · Putting All on the Line · Giant Stride · One More Push · Vitality · Backup Planning · Approach · With a Light in My Heart"
+   }
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+3"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30289_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30290,
+  "name": "Casino Drive",
+  "rarity": "SSR",
+  "type": "Pal",
+  "color": "yellow",
+  "date": "Est. Jan 6",
+  "iso": "2029-01-06",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Mood 30% · Training eff. 10% · Race 5% · Fans 15% · Event recovery 60% · Event eff. 30% · Fail protection 15% · Energy cost -25%",
+  "start": "Start: Bond 30 · SP +40",
+  "unique": "Pow +1 & SP +1 at bond 60",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Perfect Spot!</span></b> – TS +0.35 · 3s"
+   },
+   {
+    "html": "Uma Stan · Slipstream · Homestretch Haste"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30290_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30291,
+  "name": "Victoire Pisa",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Jan 6",
+  "iso": "2029-01-06",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 35% · Training eff. 5% · Specialty 65 · Hint Lv2 / 40%",
+  "start": "Start: Bond 30 · Pow +25",
+  "unique": "Spd +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Pathfinder</span></b> – TS +0.35 · 2.4s<br /><small>Medium / Long · Mid-race</small>"
+   },
+   {
+    "html": "Nakayama Racecourse ○ · Corner Recovery ○ · Homestretch Haste · Uma Stan · Ignition · Middle Leg Adept · Find a Way! · Trekker · Overflowing Vitality · Intrigued"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30291_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30292,
+  "name": "Marche Lorraine",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Jan 17",
+  "iso": "2029-01-17",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 25% · Mood 50% · Training eff. 20% · Race 10% · Fans 15% · Specialty 80 · Hint Lv4 / 100%",
+  "start": "Start: Bond 35 · Spd +25 · Pow +30",
+  "unique": "Pow +1 & Friendship +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Sum of Small Efforts</span></b> – TS +0.35 · 3s<br /><small>Dirt · Last spurt / Early last spurt</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Dancer in the Dirt</span></b> – TS +0.35 · 3s<br /><small>Dirt</small>"
+   },
+   {
+    "html": "Long Shot ○ · Top Pick · Forward, March! · Sunny Sign · Down in the Dirt ○ · Solid Steps · Dirt Straights ○ · Dirt Corners ○ · Contradicting Emotions · Sand Stride · Diligence · Belligerent · Vitality · Intrigued · Thunderous Footfall"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30292_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30293,
+  "name": "Daring Tact",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jan 30",
+  "iso": "2029-01-30",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 30% · Mood 20% · Training eff. 20% · Race 5% · Fans 15% · Specialty 80 · Hint Lv3 / 80%",
+  "start": "Start: Bond 35 · Spd +25",
+  "unique": "Spd +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Killer Instict</span></b> – CS +0.35 · 3s<br /><small>Mile / Medium · Corner · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Soul Ablaze</span></b> – CS +0.35 · 2.4s<br /><small>Mile / Medium · Early late-race</small>"
+   },
+   {
+    "html": "Spring Runner ○ · Uma Stan · Eager · Downhill Speedster · Graceful Gait · Confident · Bare Passion · High Pitch · Forward Step by Step · Belligerent · With a Light in My Heart · Perfect Sync · Boiling Emotions · Foothold"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+2"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30293_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30294,
+  "name": "Daring Heart",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jan 30",
+  "iso": "2029-01-30",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 35% · Mood 20% · Training eff. 5% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 80%",
+  "start": "Start: Bond 35 · Guts +25",
+  "unique": "Training eff. +10% with 4+ card types",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Superb Gait</span></b> – TS +0.35 · 2.4s<br /><small>Mile / Medium · Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Pure Perfection</span></b> – CS +0.35 · 3s<br /><small>Mile / Medium · Corner · Top 50%</small>"
+   },
+   {
+    "html": "Spring Runner ○ · Playtime's Over! · Graceful Gait · Confident · Refined Conduct · Opening Leg Adept · An Honest Step · Carefree Step · With a Light in My Heart · With Feelings Aboard · Perfect Sync · No Looking Back · Unshakeable Faith · Aggressive"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30294_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30295,
+  "name": "Curren Bouquetd'or",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Jan 30",
+  "iso": "2029-01-30",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 20% · Mood 20% · Race 5% · Fans 15% · Specialty 50 · Hint Lv2 / 50%",
+  "start": "Start: Bond 30",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Bravery Slash</span></b> – TS +0.35 · 3s<br /><small>Pace · Corner</small>"
+   },
+   {
+    "html": "Pace Strategy · Stamina to Spare · Tactical Tweak · Restraint · On the Attack · Steady Effort · Surpassing Ambitions · Time to Awaken · To Greater Heights"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30295_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30296,
+  "name": "Aston Machan",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Feb 7",
+  "iso": "2029-02-07",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 35% · Mood 20% · Training eff. 10% · Race 10% · Fans 15% · Specialty 100 · Hint Lv4 / 100%",
+  "start": "Start: Bond 30",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Masterful Steering</span></b> – CS +0.35 · 2.4s<br /><small>Sprint · Corner · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Overwhelm</span></b> – Acc +0.40 · 1.8s<br /><small>Sprint · Early late-race · Top 50%</small>"
+   },
+   {
+    "html": "Fall Runner ○ · Sprint Straightaways ○ · Sprint Corners ○ · Light as a Feather · Swift Takeoff · Explosive Force · Unyielding Step · Flying Sparks · Bouncy Step · Committed Push · Sharp Turn · Fierce Push · On the Offensive · Dodging Danger · Sprinting Gear · Sea's Blessing · Forever Healthy"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30296_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30297,
+  "name": "Agnes Digital",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Feb 21",
+  "iso": "2029-02-21",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 30% · Mood 60% · Training eff. 20% · Race 5% · Fans 15% · Specialty 80 · Hint Lv4 / 100%",
+  "start": "Start: Bond 30",
+  "unique": "Initial stats +10 per same-type card in deck",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Keep Going!</span></b> – TS +0.45 · Rec −2.0% · 2.4s<br /><small>Late · Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Mighty Warrior</span></b> – TS +0.25 · 4s<br /><small>Late · Corner · Back 60%</small>"
+   },
+   {
+    "html": "Slick Surge · Late Surger Straightaways ○ · Late Surger Corners ○ · 1,500,000 CC · Full Throttle · Latch On · Start the Charge · Pushing Through! · No Stagnation · Be Ambitious · Muster Your Courage · Grand Fight · Go With the Flow · Forward Step by Step · Rainy Days ○ · Wet Conditions ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30297_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30298,
+  "name": "Tap Dance City",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Feb 21",
+  "iso": "2029-02-21",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 40% · Mood 30% · Training eff. 20% · Race 10% · Fans 15% · Specialty 120 · Hint Lv2 / 100%",
+  "start": "Start: Bond 35 · Spd +25",
+  "unique": "Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Concentration</span></b>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Top Runner</span></b> – TS +0.35 · 3s<br /><small>Front · Before late-race · Blocked</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Cloud-Riding Dragon</span></b> – Acc +0.40 · 1.2s<br /><small>Front · Medium · Start of late-race · Top 50%</small>"
+   },
+   {
+    "html": "Focus · Fast-Paced · Front Runner Straightaways ○ · Front Runner Corners ○ · Dodging Danger · Leader's Pride · Mad Dash · Goin' First · Opening Leg Adept · An Honest Step · Pulling Away · Riding the Tailwind · Overflowing Fighting Spirit · Building Momentum · Running is Winning!"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30298_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30299,
+  "name": "Agnes Tachyon",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Feb 21",
+  "iso": "2029-02-21",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 25% · Mood 50% · Specialty 35 · Hint Lv2 / 40%",
+  "start": "Start: Bond 25 · Spd +30 · Guts +25",
+  "unique": "Spd +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Speed Star</span></b> – TS +0.35 · 1.8s<br /><small>Pace · Final corner · Top 50%</small>"
+   },
+   {
+    "html": "Preferred Position · Pace Chaser Corners ○ · Shrewd Step · Tactical Tweak · Aspire · Middle Leg Adept · Leap Premonition · Ride the Momentum · Late Surger Savvy ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30299_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30300,
+  "name": "Sakura Chiyono O",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Feb 28",
+  "iso": "2029-02-28",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 30% · Mood 30% · Training eff. 20% · Race 5% · Fans 10% · Specialty 65 · Hint Lv4 / 100%",
+  "start": "Start: Bond 35 · Sta +25 · Guts +35",
+  "unique": "Guts +1 & Training eff. +5% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Proof of Strength</span></b> – TS +0.35 · 3s<br /><small>Pace · Medium · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Persistence Is Power</span></b> – TS +0.35 · 1.8s<br /><small>Pace · Mid-race</small>"
+   },
+   {
+    "html": "Stamina to Spare · Up-Tempo · Fighting Spirit · Ignition · Satisfying Pace · Refined Conduct · Unshakeable Faith · To Greater Heights · Surpassing Ambitions · Carefree Step · Brute Force · Ride the Momentum · Honest Run · Spring Runner ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30300_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30301,
+  "name": "Gran Alegria",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Mar 13",
+  "iso": "2029-03-13",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 25% · Mood 40% · Training eff. 20% · Race 10% · Fans 15% · Specialty 80 · Hint Lv3 / 80%",
+  "start": "Start: Bond 30 · Sta +20",
+  "unique": "Pow +1 & Training eff. +5% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Carefree Stride</span></b> – Acc +0.40 · 1.8s<br /><small>Mile · Early late-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Bursting with Energy</span></b> – TS +0.35 · 3s<br /><small>Mile · Last spurt / Early last spurt</small>"
+   },
+   {
+    "html": "Mile Straightaways ○ · Mile Corners ○ · Unyielding Spirit · Pumped · Leap Forward · Boiling Emotions · Pounding Chest · Footloose · Step Up · Electrifying Run · Lively · Now, Onto My Path! · High Pitch"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30301_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30302,
+  "name": "Satono Diamond",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. Mar 13",
+  "iso": "2029-03-13",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 35% · Mood 30% · Training eff. 20% · Race 10% · Fans 15% · Specialty 100 · Hint Lv4 / 100%",
+  "start": "Start: Bond 35 · Spd +25 · Pow +20",
+  "unique": "Pow +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Chain Reaction</span></b> – Rec +5.5% · CS +0.15 · 2.4s<br /><small>Mid-race · Straight</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">With All My Might</span></b> – TS +0.35 · 3s<br /><small>Long · Last spurt / Early last spurt</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Dazzling Brilliance</span></b> – CS +0.35 · 3s<br /><small>Long</small>"
+   },
+   {
+    "html": "Straightaway Recovery · Inside Scoop · Long Straightaways ○ · Long Corners ○ · Locked On · Fuse · High Ambitions · Fierce Struggle · Unwavering Heart · Crucial Stage · Strategist · Ultra-Long-Distance Recovery ○ · Radiating Brilliance · Scramble"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30302_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30303,
+  "name": "Blast Onepiece",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Mar 13",
+  "iso": "2029-03-13",
+  "universal": false,
+  "scenario": "Beyond Dreams",
+  "effects": "Friendship 30% · Mood 30% · Race 5% · Fans 10% · Specialty 50 · Hint Lv2 / 50%",
+  "start": "Start: Bond 30 · Sta +25 · Guts +30",
+  "unique": "Training eff. +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Hot Pursuit</span></b> – TS +0.35 · 2.4s<br /><small>Pace / Late · After 50% · Overtaking</small>"
+   },
+   {
+    "html": "Corner Adept ○ · Preferred Position · A Small Breather · Pedal to the Metal · Rising Heat · Middle Leg Adept · Natural Genius · No Stagnation · Be Ambitious · Long Straightaways ○"
+   }
+  ],
+  "bonus": [],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30303_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30304,
+  "name": "Meisho Doto",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Apr 4",
+  "iso": "2029-04-04",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 40% · Mood 40% · Training eff. 15% · Race 10% · Fans 20% · Specialty 120 · Hint Lv4 / 100%",
+  "start": "Start: Bond 35 · Guts +30 · SP +60",
+  "unique": "Sta +1 & Guts +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Professor of Curvature</span></b> – TS +0.35 · 2.4s<br /><small>Corner</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Pathfinder</span></b> – TS +0.35 · 2.4s<br /><small>Medium / Long · Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Dawnlight</span></b> – CS +0.35 · 3s<br /><small>Medium / Long · Early late-race · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Carefree Ease</span></b> – Rec +5.5% · CS +0.15 · 2.4s<br /><small>Early mid-race</small>"
+   },
+   {
+    "html": "Corner Adept ○ · Corner Recovery ○ · Uma Stan · Slipstream · Feature Act · Downhill Speedster · Ignition · Luminance · Find a Way! · Breaktime Pro · Roused Spirit · Pace Chaser Corners ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30304_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30305,
+  "name": "Tazuna Hayakawa",
+  "rarity": "SSR",
+  "type": "Pal",
+  "color": "yellow",
+  "date": "Est. Apr 4",
+  "iso": "2029-04-04",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Training eff. 20% · Race 5% · Fans 15% · Event recovery 60% · Event eff. 30% · Fail protection 15% · Energy cost -30%",
+  "start": "Start: Bond 30 · SP +40",
+  "unique": "Sta +1 & SP +1 at bond 60",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">See Ya Later!</span></b> – TS +0.35 · 3s"
+   },
+   {
+    "html": "Intrigued · Playtime's Over! · Middle Leg Adept"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30305_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30306,
+  "name": "Nice Nature",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Apr 11",
+  "iso": "2029-04-11",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 30% · Mood 50% · Training eff. 20% · Race 10% · Fans 20% · Specialty 80 · Hint Lv4 / 100% · Wit recovery 5",
+  "start": "Start: Bond 35 · Spd +25",
+  "unique": "Wit +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Breach</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Late mid-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Latent Fighting Spirit</span></b> – TS +0.35 · 3s<br /><small>Late · Medium · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "Late Surger Straightaways ○ · Late Surger Corners ○ · Fighting Spirit · Unrestrained Passion · Surprise Attack · High Ambitions · Foothold · Ceaseless Training · Exploit the Gap · Belligerent · Mental Strength · Aim for the Summit · One More Push · Simmering Heat · Ramp Up"
+   }
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+3"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30306_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30307,
+  "name": "Kiseki",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. Apr 25",
+  "iso": "2029-04-25",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 35% · Mood 60% · Training eff. 10% · Race 10% · Fans 20% · Specialty 100 · Hint Lv4 / 100%",
+  "start": "Start: Bond 30 · Sta +35 · Guts +30",
+  "unique": "Sta +1 & Training eff. +5% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">One Sky, One Goal</span></b> – Acc +0.40 · 0.9s<br /><small>Front · Long · Last spurt · Straight · Top 3</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Race Maker</span></b> – TS +0.35 · 3s<br /><small>Front · Long · Mid-race · Top 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Send It! ☆</span></b> – TS +0.35 · Rec +3.5% · 2.4s<br /><small>Long · Mid-race</small>"
+   },
+   {
+    "html": "Corner Recovery ○ · Prudent Positioning · Early Lead · Groundwork · Feature Act · Pop Off! · Finale · No Hesitation · Luminance · Running is Winning! · Let the Brush Lead · Point Man · Firm Resolve · Wet Conditions ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30307_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30308,
+  "name": "Almond Eye",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Apr 25",
+  "iso": "2029-04-25",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 35% · Mood 30% · Training eff. 10% · Race 15% · Fans 20% · Specialty 80 · Hint Lv3 / 80%",
+  "start": "Start: Bond 30 · Spd +30",
+  "unique": "SP +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">One and Only</span></b> – CS +0.35 · 3s<br /><small>Medium</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Two Birds, One Stone</span></b> – TS +0.25 · CS +0.15 · 2.4s<br /><small>Medium · Early mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Counterclockwise Demon</span></b> – Spd +60 · Pow +60"
+   },
+   {
+    "html": "Left-Handed ○ · Nimble Navigator · Slipstream · All I've Got · Ignition · Confident · Towards the Light · Dream-Fulfilling Challenge · Carefree Step · One More Push · Double Axel · Switch Over Pro · Refined Conduct"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30308_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30309,
+  "name": "Fusaichi Pandora",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Apr 25",
+  "iso": "2029-04-25",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 25% · Mood 60% · Race 10% · Fans 15% · Specialty 35 · Hint Lv2 / 40% · Wit recovery 5",
+  "start": "Start: Bond 30",
+  "unique": "Wit +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Determined Descent</span></b> – Acc +0.30 · 3s<br /><small>Pace · Downhill</small>"
+   },
+   {
+    "html": "Summer Runner ○ · Prepared to Pass · Downhill Speedster · Steady Gait · Adventurer · Stubborn · Ride the Momentum · Honest Run · Switch Over Pro"
+   }
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30309_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30310,
+  "name": "Red Desire",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. May 5",
+  "iso": "2029-05-05",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 25% · Mood 40% · Race 5% · Fans 10% · Specialty 35 · Hint Lv2 / 40% · Wit recovery 5",
+  "start": "Start: Bond 20 · Wit +30",
+  "unique": "Wit +1 & Training eff. +5% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Elated</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race · Back 50%</small>"
+   },
+   {
+    "html": "Steadfast · Soft Step · Hydrate · Graceful Gait · Ignition · Foothold · Simmering Heat"
+   }
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30310_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30311,
+  "name": "Efforia",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. May 13",
+  "iso": "2029-05-13",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 40% · Mood 20% · Training eff. 20% · Race 10% · Fans 20% · Specialty 120 · Hint Lv4 / 100%",
+  "start": "Start: Bond 35 · Spd +30 · SP +50",
+  "unique": "Pow +1 & Training eff. +5% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Proof of Talent</span></b> – CS +0.25 · 4s<br /><small>Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Refined Elegance</span></b> – CS +0.35 · 3s<br /><small>Medium · Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Purehearted</span></b> – CS +0.35 · 3s<br /><small>Pace</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Showdown</span></b> – Acc +0.40 · 0.9s<br /><small>Pace · Last spurt · Straight</small>"
+   },
+   {
+    "html": "Right-Handed ○ · Corner Adept ○ · Straightaway Adept · Pace Chaser Straightaways ○ · Pace Chaser Corners ○ · Rising Heat · Dream-Fulfilling Challenge · Carefree Step · Brute Force · Strategist · Simply Onward · Breakthrough Run · With Feelings Aboard · Splendid Stride · One Brave Step · Go With the Flow"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30311_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30312,
+  "name": "Mr. C.B.",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. May 13",
+  "iso": "2029-05-13",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 35% · Mood 80% · Training eff. 20% · Race 10% · Fans 20% · Specialty 120 · Hint Lv2 / 100%",
+  "start": "Start: Bond 30 · SP +40",
+  "unique": "Pow +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Daring Strike</span></b> – TS +0.25 · 4s<br /><small>End · Mid-race · Back 50%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Decisive Moment</span></b> – TS +0.35 · 2.4s<br /><small>End · Mid-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Reign</span></b> – Acc +0.40 · 0.9s<br /><small>End · Medium · Late-race+ · Corner · Final corner · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Clean Sweep</span></b> – CS +0.35 · 3s<br /><small>End · Long · Early late-race</small>"
+   },
+   {
+    "html": "Straightaway Spurt · End Closer Straightaways ○ · End Closer Corners ○ · Early Start · Breakin' Out · Break the Mold · Rapid Overtakes · Mighty Step · Shadowstepper · Capture · Give Chase · Nosedive · Seize the Turning Tide · Widening Vista · My Step · Immovable Spirit"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30312_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30313,
+  "name": "Rulership",
+  "rarity": "SSR",
+  "type": "Stamina",
+  "color": "red",
+  "date": "Est. May 13",
+  "iso": "2029-05-13",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 30% · Mood 60% · Race 10% · Fans 15% · Specialty 50 · Hint Lv1 / 20%",
+  "start": "Start: Bond 30",
+  "unique": "Sta +1 & Guts +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Come What May</span></b> – TS +0.35 · 3s<br /><small>Medium · Last spurt · Straight · 20–60% of the pack</small>"
+   },
+   {
+    "html": "Wet Conditions ○ · Homestretch Haste · Steadfast · Soft Step · Rising Heat · Towards the Light · Dynamic Motion · Strategist · High Ambitions"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30313_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30314,
+  "name": "Haru Urara",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. May 18",
+  "iso": "2029-05-18",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 40% · Mood 100% · Training eff. 5% · Race 10% · Fans 20% · Specialty 80 · Hint Lv3 / 60%",
+  "start": "Start: Bond 35 · Pow +30",
+  "unique": "SP +2 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Trending in the Charts!</span></b> – TS +0.35 · 2.4s<br /><small>Dirt · Mid-race · Blocked</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Blast a Hole Through!</span></b> – Acc +0.40 · 3s<br /><small>Dirt · Last spurt</small>"
+   },
+   {
+    "html": "Top Pick · Comeback · Down in the Dirt ○ · Solid Steps · Dirt Straights ○ · Dirt Corners ○ · Sand Stride · Vitality · Thunderous Footfall · Through the Sandstorm · Long Shot ○"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30314_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30315,
+  "name": "Biko Pegasus",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. May 18",
+  "iso": "2029-05-18",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 30% · Mood 40% · Training eff. 10% · Race 10% · Fans 15% · Specialty 100 · Hint Lv4 / 100%",
+  "start": "Start: Bond 35 · Guts +20",
+  "unique": "Pow +1 & Friendship +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Unyielding Tenacity</span></b> – TS +0.35 · 2.4s<br /><small>Sprint · Late mid-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Resolute Perseverance</span></b> – Acc +0.40 · 1.8s<br /><small>Sprint · Early late-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Fall Frenzy</span></b> – Spd +60 · Pow +60"
+   },
+   {
+    "html": "Fall Runner ○ · Sprinting Gear · Sprint Straightaways ○ · Sprint Corners ○ · Leap Forward · Single-Minded Advance · Explosive Force · Pounding Chest · Turning Point · Prelude · Here's My Chance · Energy Burst · Bouncy Step"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30315_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30316,
+  "name": "Samson Big",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. May 18",
+  "iso": "2029-05-18",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 20% · Mood 60% · Race 10% · Fans 15% · Specialty 35 · Hint Lv3 / 60%",
+  "start": "Start: Bond 25 · Guts +35",
+  "unique": "Guts +1 & SP +1 at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Crescent Gale</span></b> – TS +0.35 · 3s<br /><small>Front · Corner</small>"
+   },
+   {
+    "html": "Final Push · Dodging Danger · Moxie · Second Wind · Front Runner Savvy ○ · Mad Dash · Firm Resolve · Overflowing Fighting Spirit · An Honest Step"
+   }
+  ],
+  "bonus": [
+   [
+    "Guts",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30316_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30317,
+  "name": "Matikanetannhauser",
+  "rarity": "SSR",
+  "type": "Speed",
+  "color": "blue",
+  "date": "Est. May 26",
+  "iso": "2029-05-26",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 30% · Mood 40% · Training eff. 20% · Race 10% · Fans 20% · Specialty 120 · Hint Lv2 / 100%",
+  "start": "Start: Bond 35 · Pow +30",
+  "unique": "Friendship +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Rampaging Passion</span></b> – TS +0.35 · 2.4s<br /><small>Late · Late mid-race · Back 60%</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">A Rousing Shout</span></b> – CS +0.35 · 3s<br /><small>Late · Mid-race</small>"
+   },
+   {
+    "html": "Position Pilfer · Late Surger Straightaways ○ · Late Surger Corners ○ · 1,500,000 CC · Pedal to the Metal · Unrestrained Passion · Start the Charge · Descent · Preliminary Preparation · Pushing Through! · Simmering Heat · Faster Than Shadow · Tracking · Raise Your Spirits · Crucial Stage"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30317_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30318,
+  "name": "Rice Shower",
+  "rarity": "SSR",
+  "type": "Guts",
+  "color": "pink",
+  "date": "Est. Jun 6",
+  "iso": "2029-06-06",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 20% · Mood 30% · Race 10% · Fans 15% · Specialty 35 · Hint Lv2 / 50%",
+  "start": "Start: Bond 30 · Spd +30 · Guts +25",
+  "unique": "Training eff. +10% with 4+ card types",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Bravery Slash</span></b> – TS +0.35 · 3s<br /><small>Pace · Corner</small>"
+   },
+   {
+    "html": "Kyoto Racecourse ○ · Stamina to Spare · Prepared to Pass · Straight Descent · Pace Chaser Savvy ○ · Highlander · Uma Stan · Honest Run · Firm Conditions ○"
+   }
+  ],
+  "bonus": [
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30318_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30319,
+  "name": "Narita Brian",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Jun 8",
+  "iso": "2029-06-08",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 40% · Mood 50% · Training eff. 10% · Race 10% · Fans 20% · Specialty 80 · Hint Lv2 / 100% · Wit recovery 5",
+  "start": "Start: Bond 35 · Wit +30",
+  "unique": "Training eff. +5% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Unstoppable</span></b> – TS +0.35 · 2.4s<br /><small>Pace · Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Breakaway!</span></b> – TS +0.25 · 4s<br /><small>Pace · Corner · Top 50%</small>"
+   },
+   {
+    "html": "Pace Chaser Straightaways ○ · Pace Chaser Corners ○ · Pace Chaser Savvy ○ · On the Attack · Latch On · My True Strength · Leap Premonition · Decisive Blow · Time to Awaken · Ride the Momentum · No Stagnation · The Only Way is Forward · One More Push · Grand Fight · Go With the Flow · No Worries · Lone Wolf"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Wit",
+    "+2"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30319_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30320,
+  "name": "Admire Groove",
+  "rarity": "SSR",
+  "type": "Wit",
+  "color": "green",
+  "date": "Est. Jun 8",
+  "iso": "2029-06-08",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 30% · Mood 30% · Training eff. 20% · Race 15% · Fans 20% · Specialty 100 · Hint Lv4 / 100% · Wit recovery 5",
+  "start": "Start: Bond 30 · Spd +30 · SP +50",
+  "unique": "Wit +1 & Friendship +10% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Unshackled Passion</span></b> – TS +0.25 · 2.4s<br /><small>Mile / Medium · Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Unwavering Advance</span></b> – TS +0.35 · 2.4s<br /><small>Medium · Mid-race</small>"
+   },
+   {
+    "html": "Fall Runner ○ · Nimble Navigator · Medium Straightaways ○ · Medium Corners ○ · Tail Held High · Graceful Gait · Confident · Unquenched Longing · Intrigued · With a Light in My Heart · Putting All on the Line · One More Push · Without Flinching · Slipstream · Take the Chance"
+   }
+  ],
+  "bonus": [
+   [
+    "Wit",
+    "+3"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30320_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30321,
+  "name": "Duramente",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Jun 8",
+  "iso": "2029-06-08",
+  "universal": false,
+  "scenario": "Tracen-ken",
+  "effects": "Friendship 30% · Training eff. 5% · Race 10% · Fans 15% · Specialty 50 · Hint Lv2 / 50%",
+  "start": "Start: Bond 25 · Sta +25 · Pow +30",
+  "unique": "Pow +1 & Training eff. +5% at bond 80",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Moonlight Slash</span></b> – TS +0.35 · 3s<br /><small>End · Corner</small>"
+   },
+   {
+    "html": "Homestretch Haste · Levelheaded · Breakin' Out · Boiling Blood · No Reluctance · Bare Passion · Chasing the Shadow · Giant Stride · Ignition"
+   }
+  ],
+  "bonus": [
+   [
+    "Power",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30321_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30322,
+  "name": "Mayano Top Gun",
+  "rarity": "SSR",
+  "type": "Power",
+  "color": "orange",
+  "date": "Est. Jun 26",
+  "iso": "2029-06-26",
+  "universal": false,
+  "scenario": "Shuntaisai",
+  "effects": "Friendship 35% · Mood 60% · Training eff. 10% · Race 10% · Fans 20% · Specialty 120 · Hint Lv4 / 100%",
+  "start": "Start: Bond 35 · Sta +30 · SP +60",
+  "unique": "Training eff. +10% with 4+ card types",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Unpredecented Prodigy</span></b> – CS +0.35 · 3s<br /><small>Mid-race</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Quick Thinking</span></b> – TS +0.25 · 4s<br /><small>Medium · After 50% · Overtaking</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Exceptional Acumen</span></b> – CS +0.35 · 3s<br /><small>Long · Before late-race · Blocked</small>"
+   },
+   {
+    "html": "<b><span class=\"gold\">Advantage</span></b> – TS +0.35 · 2.4s<br /><small>Late early-race · Top 50%</small>"
+   },
+   {
+    "html": "Kyoto Racecourse ○ · Straightaway Adept · Groundwork · Fuse · Peerless · Find a Way! · Intrigued · With Feelings Aboard · Giant Stride · Presence · On the Ball · Intuitive Power · Taking the Reins · With All I Have · Ignited Spirit WIT"
+   }
+  ],
+  "bonus": [
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "SP",
+    "+2"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30322_thumb.webp",
+  "roles": {},
+  "todo": true
+ },
+ {
+  "id": 30323,
+  "name": "Azuma",
+  "rarity": "SSR",
+  "type": "Pal",
+  "color": "yellow",
+  "date": "Est. Jun 26",
+  "iso": "2029-06-26",
+  "universal": false,
+  "scenario": "Shuntaisai",
+  "effects": "Mood 20% · Training eff. 10% · Race 5% · Fans 15% · Event recovery 60% · Event eff. 30% · Fail protection 20% · Energy cost -25%",
+  "start": "Start: Bond 30 · SP +60",
+  "unique": "Spd +1 & Sta +1 at bond 60",
+  "keyskills": [
+   {
+    "html": "<b><span class=\"gold\">Divine Speed</span></b> – CS +0.35 · Rec +1.5% · 3s"
+   },
+   {
+    "html": "Tracing an Arc · High Speed · Homestretch Haste"
+   }
+  ],
+  "bonus": [
+   [
+    "Speed",
+    "+1"
+   ],
+   [
+    "Stamina",
+    "+1"
+   ],
+   [
+    "SP",
+    "+1"
+   ]
+  ],
+  "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30323_thumb.webp",
+  "roles": {},
+  "todo": true
  }
 ]

@@ -62,5 +62,61 @@
   "start": "2027-10-22",
   "color": "#ec9a45",
   "imgSource": "https://umamusu.wiki/w/thumb.php?f=Food_Fes_Art.png&width=600"
+ },
+ {
+  "name": "Run, Mecha Umamusume!",
+  "slug": "run-mecha-umamusume",
+  "gt": 9,
+  "start": "2028-02-02",
+  "color": "#0ce2d6",
+  "imgSource": ""
+ },
+ {
+  "name": "The Twinkle Legends",
+  "slug": "the-twinkle-legends",
+  "gt": 10,
+  "start": "2028-04-25",
+  "color": "#d0c36b",
+  "imgSource": ""
+ },
+ {
+  "name": "Design Your Island",
+  "slug": "design-your-island",
+  "gt": 11,
+  "start": "2028-07-20",
+  "color": "#d9733c",
+  "imgSource": ""
+ },
+ {
+  "name": "Yukoma Hot Springs",
+  "slug": "yukoma-hot-springs",
+  "gt": 12,
+  "start": "2028-10-15",
+  "color": "#ffad01",
+  "imgSource": ""
+ },
+ {
+  "name": "Beyond Dreams",
+  "slug": "beyond-dreams",
+  "gt": 13,
+  "start": "2029-01-06",
+  "color": "#8568d7",
+  "imgSource": ""
+ },
+ {
+  "name": "Tracen-ken",
+  "slug": "tracen-ken",
+  "gt": 14,
+  "start": "2029-04-03",
+  "color": "#f9684b",
+  "imgSource": ""
+ },
+ {
+  "name": "Shuntaisai",
+  "slug": "shuntaisai",
+  "gt": 15,
+  "start": "2029-06-26",
+  "color": "#d96bb9",
+  "imgSource": ""
  }
 ]
