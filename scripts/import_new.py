@@ -7,7 +7,7 @@ out, and its own prediction before that ("foresight").
 
 What it does:
   - finds SSR support cards and Umas whose global date (real or predicted) falls
-    between today and HORIZON_DAYS from today,
+    between today and HORIZON_DAYS from today (or the --until date),
   - skips anything already in data/ and anything listed in data/ignored.json.
     "Already in data/" = same id, or same name (+ type for cards) with a date
     less than 3 weeks apart (our Uma ids and outfit names are not the game's),
@@ -31,6 +31,9 @@ Usage:
   python3 scripts/import_new.py --since 2025-06-26
                                                 one-off catch-up: also what came out since then
                                                 (past scenarios included, with their real dates)
+  python3 scripts/import_new.py --until 2029-12-31
+                                                look further ahead than HORIZON_DAYS (dates that far
+                                                are GameTora's estimates, shown as "Est.")
 """
 import argparse
 import colorsys
@@ -238,10 +241,12 @@ def main():
     ap.add_argument("--today", help="YYYY-MM-DD (tests)")
     ap.add_argument("--since", help=f"YYYY-MM-DD: also import what came out since then (one-off catch-up; "
                                     f"the global server opened on {GLOBAL_LAUNCH})")
+    ap.add_argument("--until", help="YYYY-MM-DD: import up to this date instead of HORIZON_DAYS ahead (if later)")
     args = ap.parse_args()
 
     today = iso_to_date(args.today) if args.today else dt.date.today()
-    lo, hi = min(today, iso_to_date(args.since)) if args.since else today, today + dt.timedelta(days=HORIZON_DAYS)
+    lo = min(today, iso_to_date(args.since)) if args.since else today
+    hi = max(today + dt.timedelta(days=HORIZON_DAYS), iso_to_date(args.until) if args.until else today)
     src = load_source(args.from_dir)
     predicted = src["en/foresight/predicted_releases"]
     chars = {c["char_id"]: c for c in src["characters"]}

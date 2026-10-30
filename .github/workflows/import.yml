@@ -6,6 +6,8 @@ name: Import new cards and Umas
 #
 # Run it by hand with "since" (e.g. 2025-06-26, the global launch) to also
 # catch up on what already came out: past SSR cards, Umas and scenarios.
+# With "until" (e.g. 2029-12-31) it looks further ahead than the usual 14
+# months, to rate cards early (dates that far are GameTora's estimates).
 on:
   schedule:
     - cron: "43 5 * * 1"     # Mondays 05:43 UTC
@@ -13,6 +15,10 @@ on:
     inputs:
       since:
         description: "Also import what came out since this date (YYYY-MM-DD, e.g. 2025-06-26). Leave empty for the usual run."
+        required: false
+        default: ""
+      until:
+        description: "Also import what is expected up to this date (YYYY-MM-DD, e.g. 2029-12-31). Leave empty for the usual 14 months."
         required: false
         default: ""
 
@@ -36,8 +42,9 @@ jobs:
         id: run
         env:
           SINCE: ${{ inputs.since }}
+          UNTIL: ${{ inputs.until }}
         run: |
-          python3 scripts/import_new.py ${SINCE:+--since "$SINCE"} | tee import.log
+          python3 scripts/import_new.py ${SINCE:+--since "$SINCE"} ${UNTIL:+--until "$UNTIL"} | tee import.log
           echo "new=$(grep -oP '^new=\K\d+' import.log)" >> "$GITHUB_OUTPUT"
       - name: Check the data
         if: steps.run.outputs.new != '0'
