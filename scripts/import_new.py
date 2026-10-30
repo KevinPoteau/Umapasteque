@@ -27,6 +27,9 @@ that differs from ours, it is only listed in the summary.
 Usage:
   python3 scripts/import_new.py                 fetch from gametora.com
   python3 scripts/import_new.py --from DIR      read saved files instead (tests)
+  python3 scripts/import_new.py --since 2025-06-26
+                                                one-off catch-up: also what came out since then
+                                                (past scenarios included, with their real dates)
 """
 import argparse
 import colorsys
@@ -41,6 +44,7 @@ import gametora_text as text
 
 ROOT = Path(__file__).resolve().parent.parent
 HORIZON_DAYS = 430          # how far ahead to import (about 14 months)
+GLOBAL_LAUNCH = "2025-06-26"  # global server release (for --since)
 SAME_WINDOW = 21            # days: same name this close in time = the same entry
 BASE = "https://gametora.com/data"
 UA = {"User-Agent": "Umapasteque importer (weekly; github.com/KevinPoteau/Umapasteque)"}
@@ -97,20 +101,31 @@ def scenario_image(url_name, offline):
         return ""
 
 
-def add_scenarios(src, scenarios, hi, offline):
-    """Append scenarios GameTora expects on the global server before `hi` and missing from ours."""
+def scenario_start(g, predicted):
+    """(global start date, estimated?) of a GameTora scenario, or (None, None)."""
+    if g.get("start_en"):
+        return dt.datetime.fromtimestamp(g["start_en"], dt.timezone.utc).date(), False
+    p = predicted.get(str(g["id"]))
+    if p and p.get("release_date"):
+        return iso_to_date(p["release_date"]), True
+    return None, None
+
+
+def add_scenarios(src, scenarios, lo, hi, offline):
+    """Append the scenarios running on the global server between `lo` and `hi` that are missing from ours
+    (the one already running on `lo` included)."""
     known = {s.get("gt") for s in scenarios} | {s["slug"] for s in scenarios}
     predicted = src["en/foresight/predicted_releases"].get("scenarios", {})
+    dated = sorted(((d, est, g) for g in src["scenarios"] for d, est in [scenario_start(g, predicted)] if d), key=lambda x: x[0])
+    running = [d for d, _, _ in dated if d <= lo]
+    first = running[-1] if running else lo
     added = []
-    for g in sorted(src["scenarios"], key=lambda g: g.get("order", 0)):
-        if g["id"] in known or g.get("url_name") in known:
-            continue
-        p = predicted.get(str(g["id"]))
-        if not p or not p.get("release_date") or iso_to_date(p["release_date"]) > hi:
+    for when, est, g in dated:
+        if g["id"] in known or g.get("url_name") in known or not (first <= when <= hi):
             continue
         added.append({
             "name": g.get("name_en") or g.get("name_en_old") or g.get("url_name"),
-            "slug": g.get("url_name") or f"scenario-{g['id']}", "gt": g["id"], "start": p["release_date"],
+            "slug": g.get("url_name") or f"scenario-{g['id']}", "gt": g["id"], "start": when.isoformat(), "est": est,
             "color": "#" + (g.get("bg_color") or "888888").lower(),
             "imgSource": scenario_image(g.get("url_name"), offline),
         })
@@ -220,10 +235,12 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--from", dest="from_dir")
     ap.add_argument("--today", help="YYYY-MM-DD (tests)")
+    ap.add_argument("--since", help=f"YYYY-MM-DD: also import what came out since then (one-off catch-up; "
+                                    f"the global server opened on {GLOBAL_LAUNCH})")
     args = ap.parse_args()
 
     today = iso_to_date(args.today) if args.today else dt.date.today()
-    lo, hi = today, today + dt.timedelta(days=HORIZON_DAYS)
+    lo, hi = min(today, iso_to_date(args.since)) if args.since else today, today + dt.timedelta(days=HORIZON_DAYS)
     src = load_source(args.from_dir)
     predicted = src["en/foresight/predicted_releases"]
     chars = {c["char_id"]: c for c in src["characters"]}
@@ -233,9 +250,9 @@ def main():
 
     sc_path = ROOT / "data" / "scenarios.json"
     scenarios = json.loads(sc_path.read_text(encoding="utf-8"))
-    new_scenarios = add_scenarios(src, scenarios, hi, bool(args.from_dir))
+    new_scenarios = add_scenarios(src, scenarios, lo, hi, bool(args.from_dir))
     if new_scenarios:
-        scenarios += new_scenarios
+        scenarios = sorted(scenarios + [{k: v for k, v in x.items() if k != "est"} for x in new_scenarios], key=lambda s: s["start"])
         sc_path.write_text(json.dumps(scenarios, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     ignored_path = ROOT / "data" / "ignored.json"
     ignored = json.loads(ignored_path.read_text(encoding="utf-8")) if ignored_path.exists() else {}
@@ -316,8 +333,8 @@ def main():
             "to stop tracking one, use *Don't track* there.", ""]
     text += summary or ["(nothing new)"]
     if new_scenarios:
-        text += ["", "**New scenarios** (start = GameTora's estimate; check the name, colour and picture in data/scenarios.json):",
-                 *[f"- **{x['name']}** · est. {x['start']}" + ("" if x["imgSource"] else " · no picture found") for x in new_scenarios]]
+        text += ["", "**New scenarios** (check the name, colour and picture in data/scenarios.json):",
+                 *[f"- **{x['name']}** · {'est. ' if x['est'] else ''}{x['start']}" + ("" if x["imgSource"] else " · no picture found") for x in new_scenarios]]
     if drift:
         text += ["", "**Confirmed global dates that differ from ours** (not changed, check by hand):", *drift]
     (ROOT / "import-summary.md").write_text("\n".join(text) + "\n", encoding="utf-8")
