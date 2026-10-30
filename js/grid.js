@@ -1,19 +1,22 @@
-// Rating grid (admin page): a checklist read from the card's GameTora numbers
-// (data/numbers.json, made by scripts/card_numbers.py) and a suggested
-// verdict out of 5. It is a hint only: nothing here is saved.
+// Rating grid (admin page): the card's GameTora numbers (data/numbers.json,
+// made by scripts/card_numbers.py) scored 1 to 5 per criterion, a suggested
+// verdict, and where the card stands among its peers. A hint only: nothing
+// here is saved.
 //
-// Scales:
-//   Training eff.      0% bad · 5% low · 10% good · 15%+ high
-//   Specialty          0 very bad · <40 low · 40-59 okay · 60-79 high · 80+ very high
-//   Stats bonus        any stat good · SP very good
-//   Friendship         higher is better (it lines up with the ratings)
-//   Mood               shown, not scored: it does not line up with the ratings
-//   Skills (gold)      Current Speed very good · late Acceleration very good ·
-//                      Target speed okay · Acceleration at another time very bad
+// Criteria (1 → 5):
+//   Training eff.   <5% · 5% · 10% · 15% · 20%+      (with what the unique can add)
+//   Specialty       0 · 1-39 · 40-59 · 60-79 · 80+
+//   Friendship      <20% · 20% · 25% · 30% · 35%+
+//   Stats bonus     none 1 · a stat +2 · two stats or more +1 · SP +1 each (max 2)
+//   Hints           +1 each: Lv3+, Lv4+, 40%+, 60%+
+// Suggested verdict = weighted mean (WEIGHTS). Skills are left out on purpose:
+// how much they are worth depends too much on the running style and the CMs.
 //
-// Points were tuned on the cards rated so far (see the pull request that added
-// this file): about 4 in 10 suggestions match the verdict, 9 in 10 are within 1.
+// Peers: the same type of card released within PEER_DAYS; "top 10%" = better
+// than 90% of them on the weighted mean.
 const NUMBERS = "data/numbers.json";
+const WEIGHTS = { te: .3, spe: .3, friend: .15, bonus: .15, hints: .1 };
+const PEER_DAYS = 730;
 let numbers = null;
 
 export async function loadNumbers() {
@@ -25,54 +28,52 @@ export async function loadNumbers() {
   return numbers;
 }
 
-const BASE = 0.6;
-const level = (v, steps) => steps.findLastIndex(s => v >= s);
+/** 1 + how many of the thresholds v reaches. */
+const step = (v, cuts) => 1 + cuts.filter(c => v >= c).length;
+const STEP_TEXT = { 1: "very low", 2: "low", 3: "okay", 4: "good", 5: "very good" };
 
-function te(v) {
-  const i = Math.max(0, level(v, [0, 5, 10, 15]));
-  return { label: "Training eff.", value: `${v}%`, grade: ["bad", "low", "good", "high"][i], pts: [0, .2, .4, .6][i] };
+function criteria(n) {
+  const te = n.te + (n.te_upto ?? 0);
+  const stats = n.bonus.filter(([k]) => k !== "SP");
+  const sp = Math.min(Object.fromEntries(n.bonus).SP ?? 0, 2);
+  const lv = n.hint_lv ?? 0, freq = n.hint_freq ?? 0;
+  return [
+    { key: "te", label: "Training eff.", score: step(te, [5, 10, 15, 20]),
+      value: n.te_upto ? `${n.te}% → up to ${te}%` : `${te}%`, note: n.te_upto ? `${n.te_how} (unique)` : "" },
+    { key: "spe", label: "Specialty", score: step(n.spe, [1, 40, 60, 80]), value: String(n.spe) },
+    { key: "friend", label: "Friendship", score: step(n.friend, [20, 25, 30, 35]), value: `${n.friend}%` },
+    { key: "bonus", label: "Stats bonus", score: Math.min(5, 1 + (stats.length ? 2 : 0) + (stats.length > 1 ? 1 : 0) + sp),
+      value: n.bonus.length ? n.bonus.map(([k, v]) => `${k} +${v}`).join(" · ") : "none" },
+    { key: "hints", label: "Hints", score: Math.min(5, 1 + (lv >= 3) + (lv >= 4) + (freq >= 40) + (freq >= 60)),
+      value: lv || freq ? `Lv${lv} · ${freq}%` : "none" },
+  ].map(c => ({ ...c, grade: STEP_TEXT[c.score] }));
 }
 
-function spe(v) {
-  const i = v <= 0 ? 0 : level(v, [0, 1, 40, 60, 80]);
-  return { label: "Specialty", value: String(v), grade: ["very bad", "low", "okay", "high", "very high"][i], pts: [0, .25, .5, .75, 1][i] };
-}
+const mean = rows => rows.reduce((a, c) => a + c.score * WEIGHTS[c.key], 0);
+const clamp = x => Math.min(5, Math.max(1, Math.round(x)));
+const days = (a, b) => Math.abs(Date.parse(a) - Date.parse(b)) / 864e5;
 
-function bonus(rows) {
-  const b = Object.fromEntries(rows);
-  const stats = rows.filter(([k]) => k !== "SP");
-  const sp = Math.min(b.SP ?? 0, 2);
-  const value = rows.length ? rows.map(([k, v]) => `${k} +${v}`).join(" · ") : "none";
-  const grade = sp ? "very good" : stats.length ? "good" : "bad";
-  return { label: "Stats bonus", value, grade, pts: (stats.length ? .4 : 0) + .25 * sp };
-}
+/** Mean score of a card from its numbers. */
+export const strength = n => mean(criteria(n));
 
-function friend(v) {
-  const pts = Math.max(-.35, Math.min(.5, (v - 25) / 10 * .35));
-  const grade = v >= 35 ? "high" : v >= 30 ? "good" : v >= 25 ? "okay" : "low";
-  return { label: "Friendship", value: `${v}%`, grade, pts };
-}
-
-function mood(v) {
-  return { label: "Mood", value: `${v}%`, grade: "not scored", pts: 0, note: "Does not line up with the ratings so far" };
-}
-
-/** One gold skill → its grade. */
-export function skillGrade(s) {
-  if (s.kind === "cs") return { grade: "very good", pts: 2, what: `Current Speed +${s.value.toFixed(2)}` };
-  if (s.kind === "accel" && s.late) return { grade: "very good", pts: 1.25, what: `Accel +${s.value.toFixed(2)}, late` };
-  if (s.kind === "accel") return { grade: "very bad", pts: 0, what: `Accel +${s.value.toFixed(2)}, too early` };
-  if (s.kind === "ts") return { grade: "okay", pts: .35, what: `Target speed +${s.value.toFixed(2)}` };
-  if (s.kind === "recovery") return { grade: "not scored", pts: 0, what: `Recovery ${s.value.toFixed(1)}%` };
-  return { grade: "not scored", pts: 0, what: "Other effect" };
-}
-
-/** {rows, skills, score, raw} for a support card, or null without numbers. */
-export function gridFor(n) {
+/**
+ * Grid for support card `it`, compared with the cards in `all` (support.json)
+ * using `nums` (numbers.json). Null without numbers.
+ */
+export function gridFor(it, all, nums) {
+  const n = nums[it.id];
   if (!n) return null;
-  const rows = [te(n.te), spe(n.spe), bonus(n.bonus), friend(n.friend), mood(n.mood)];
-  const skills = n.skills.filter(s => s.gold).map(s => ({ ...s, ...skillGrade(s) }));
-  const best = Math.max(0, ...skills.map(s => s.pts));
-  const raw = BASE + rows.reduce((a, r) => a + r.pts, 0) + best;
-  return { rows, skills, best, raw, score: Math.min(5, Math.max(1, Math.round(raw))) };
+  const rows = criteria(n);
+  const raw = mean(rows);
+  const peers = all.filter(c => c.type === it.type && c.id !== it.id && nums[c.id] && days(c.iso, it.iso) <= PEER_DAYS)
+    .map(c => strength(nums[c.id]));
+  const below = peers.filter(s => s < raw).length + peers.filter(s => s === raw).length / 2;
+  const share = peers.length ? below / peers.length : null;        // 0 = weakest, 1 = strongest
+  return {
+    rows, raw, score: clamp(raw),
+    peers: peers.length, share,
+    peerScore: share == null ? null : 1 + Math.min(4, Math.floor(share * 5)),
+    skills: n.skills.filter(s => s.gold),
+    years: PEER_DAYS / 365,
+  };
 }

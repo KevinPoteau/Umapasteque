@@ -4,6 +4,9 @@ Writes data/numbers.json: {support id: {...}}, values at max level, the unique
 effect included (it is part of what the card gives once the bond is up).
 
     te, spe, mood, friend, race   Training eff. %, Specialty priority, Mood %, Friendship %, Race %
+    te_upto, te_how               Training eff. the unique effect can add on top, and how
+                                  (20, "+4 per Speed skill"), when it depends on something
+    hint_lv, hint_freq            Hint level and hint frequency %
     bonus                         [["Speed", 1], ["SP", 2]]  stat / skill point bonus per training
     skills                        key skills: [{name, gold, kind, value, phase, cond}]
                                   kind: accel / cs / ts / recovery / other
@@ -45,6 +48,15 @@ def totals(card):
     return e
 
 
+def conditional_te(card):
+    """(max, how) of Training eff. that the unique effect adds per skill of a kind, else (0, "")."""
+    for eff in (card.get("unique") or {}).get("effects") or []:
+        if eff.get("type") == 116 and eff.get("value_1") == 8:
+            per, n = eff.get("value_2") or 0, eff.get("value_3") or 0
+            return per * n, f"+{per} per {text.SKILL_KIND.get(eff.get('value'), 'matching')} skill"
+    return 0, ""
+
+
 def skill_info(s):
     # global server's values where they differ from the Japanese ones (GameTora "loc.en")
     groups = ((s.get("loc") or {}).get("en") or {}).get("condition_groups") or s.get("condition_groups")
@@ -65,7 +77,9 @@ def numbers(card, skills):
     ids = list(dict.fromkeys((card.get("hints") or {}).get("hint_skills", []) + (card.get("event_skills") or [])))
     found = [skills[i] for i in ids if i in skills]
     found = [s for s in found if s.get("rarity") in (1, 2) and "dbf" not in (s.get("type") or [])]
+    upto, how = conditional_te(card)
     return {
+        "te_upto": upto, "te_how": how, "hint_lv": e.get(17, 0), "hint_freq": e.get(18, 0),
         "te": e.get(8, 0), "spe": e.get(19, 0), "mood": e.get(2, 0), "friend": e.get(1, 0), "race": e.get(15, 0),
         "bonus": [[k, int(v.lstrip("+"))] for k, v in text.bonus_rows(card)],
         "skills": [skill_info(s) for s in found],
