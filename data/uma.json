@@ -91,7 +91,7 @@
     ]
    },
    {
-    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front</small>",
+    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front · Early-race</small>",
     "sub": [
      "<b><span class=\"evo\">Preamble of Victory!</span></b><br />Acc +0.50 · 1.2s"
     ]
@@ -552,7 +552,7 @@
     ]
    },
    {
-    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front</small>",
+    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front · Early-race</small>",
     "sub": [
      "<b><span class=\"evo\">Keep Up with Turbo!</span></b><br />Acc +0.50 · 1.2s"
     ]
@@ -1662,7 +1662,7 @@
     ]
    },
    {
-    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front</small>",
+    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front · Early-race</small>",
     "sub": [
      "<b><span class=\"evo\">Beat You to It!</span></b><br />Acc +0.50 · 1.2s"
     ]
@@ -3451,7 +3451,7 @@
     ]
    },
    {
-    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front</small>",
+    "html": "<b><span class=\"gold\">Taking the Lead</span></b> – Acc +0.40 · 1.2s<br /><small>Front · Early-race</small>",
     "sub": [
      "<b><span class=\"evo\">Ahead of the Trend☆</span></b><br />Acc +0.50 · 1.2s"
     ]
