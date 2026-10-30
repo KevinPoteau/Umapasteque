@@ -12,6 +12,7 @@ import { KINDS, ROLES, VERDICTS, ROLE_FIELDS, ALL_STYLES, dataPath, rankOf, forR
 import { supportCardHTML, umaCardHTML } from "./card.js";
 import { $, $$, img, fmtDate } from "./util.js";
 import * as gh from "./github.js";
+import { loadNumbers, gridFor } from "./grid.js";
 
 const DRAFT_KEY = "uma-admin-drafts-v2";
 const DROP_KEY = "uma-admin-drop-v2";   // entries to stop tracking: { kind: [id, …] }
@@ -194,6 +195,7 @@ async function renderEditor() {
   const role = view.edRole;
   const R = role ? it.roles[role] : null;
   const rank = rankOf(R);
+  const grid = support ? gridFor((await loadNumbers())[it.id]) : null;
 
   const universal = roles.includes(ALL_STYLES);
   const allTab = universal
@@ -268,7 +270,8 @@ async function renderEditor() {
     </details>
   </form>
   <div class="preview"><h3>Preview${role ? ` · ${styleLabel(role)}` : " · not on the site yet"}</h3><div class="pv">${
-    role ? (support ? supportCardHTML(forRole(it, role)) : umaCardHTML(forRole(it, role), role === ALL_STYLES ? it.style : role)) : unratedPreview(kind, it)}</div></div>`;
+    role ? (support ? supportCardHTML(forRole(it, role)) : umaCardHTML(forRole(it, role), role === ALL_STYLES ? it.style : role)) : unratedPreview(kind, it)}</div></div>
+  ${support ? gridHTML(grid, role, rank, it) : ""}`;
 
   const form = ed.querySelector("form");
   if (refocus) {
@@ -307,6 +310,7 @@ async function renderEditor() {
     view.edRole = null;
     set({ roles });
   });
+  ed.querySelector("#use-grid")?.addEventListener("click", () => setRole({ rank: grid.score }));
   form.querySelectorAll(".vpick button").forEach(b => b.onclick = () => setRole({ rank: +b.dataset.r }));
   form.querySelectorAll(".stars-in").forEach(g => g.onclick = e => {
     const b = e.target.closest("button"); if (!b) return;
@@ -333,6 +337,32 @@ async function renderEditor() {
     else if (["effects", "start", "unique", "outfit"].includes(el.name)) set({ [el.name]: el.value.trim() });
     else if (el.name === "keyskills") set({ keyskills: textToSkills(el.value) });
   }
+}
+
+const GRADE = { "very bad": "g0", bad: "g0", low: "g1", okay: "g2", good: "g3", high: "g4", "very good": "g4", "very high": "g4", "not scored": "gn" };
+
+/** The rating grid beside the preview (support cards). */
+function gridHTML(grid, role, rank, it) {
+  if (!grid) return `<aside class="gridbox"><h3>Rating grid</h3><p class="hint">No GameTora numbers for this card yet (they come with the next import).</p></aside>`;
+  const v = VERDICTS[grid.score];
+  const row = (label, value, grade, note) => `<li><span class="gl">${label}</span><span class="gv">${esc(value)}</span>
+    <span class="gg ${GRADE[grade]}">${grade}</span>${note ? `<small>${note}</small>` : ""}</li>`;
+  const skills = grid.skills.length
+    ? grid.skills.map(s => row(esc(s.name), s.what, s.grade, s.cond ? esc(s.cond) : "")).join("")
+    : row("Gold skills", "none", "not scored");
+  const scenario = ["Pal", "Group"].includes(it.type) ? '<p class="hint">Friend and group cards: the grid misses what they bring to their scenario.</p>' : "";
+  return `<aside class="gridbox">
+    <h3>Rating grid <small>from GameTora, max level</small></h3>
+    <ul class="checks">${grid.rows.map(r => row(r.label, r.value, r.grade, r.note)).join("")}</ul>
+    <h4>Gold skills <small>best one counts</small></h4>
+    <ul class="checks">${skills}</ul>
+    <div class="suggest" style="--vc:var(${v.color})">
+      <img src="${v.icon}" alt=""><div><b>${v.label}</b><small>Suggested · ${grid.raw.toFixed(1)} / 5</small></div>
+      ${role ? (rank === grid.score ? '<span class="muted">Same as the verdict</span>' : '<button type="button" class="btn" id="use-grid">Use it</button>') : ""}
+    </div>
+    ${scenario}
+    <p class="hint">A hint only: hints, events and the meta are not in it.</p>
+  </aside>`;
 }
 
 /** Update the selected row in place (keeps the list scroll position). */
