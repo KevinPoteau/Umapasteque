@@ -9,6 +9,7 @@ import { createRuler } from "./ruler.js";
 import { createTimeline } from "./timeline.js";
 import { supportCardHTML, umaCardHTML } from "./card.js";
 import { $, img } from "./util.js";
+import { initLayout } from "./layout.js";
 
 const DEFAULT_PAGE = { kind: "support", role: "end" };
 const LAST_PAGE_KEY = "uma-last-page";
@@ -97,6 +98,8 @@ async function boot() {
   ruler = createRuler(tl, scenarios, slug => timeline?.markScenario(slug));
   timeline = createTimeline(tl, scenarios, ruler);
   initFilters(update);
+  // Re-draw on the same date when the layout flips (horizontal <-> vertical)
+  initLayout(() => { if (page) { update(); requestAnimationFrame(() => { ruler.build(); timeline.scrollToToday(); ruler.read(); }); } });
   addEventListener("hashchange", route);
   route();
 }

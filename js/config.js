@@ -67,6 +67,12 @@ export const VERDICTS = {
 
 export const rankOf = item => item?.rank ?? null;
 
+// ---------- Layout ----------
+
+// Screens where the timeline runs top to bottom (js/layout.js): narrow ones,
+// and short ones where side-by-side cards would get squeezed into columns.
+export const VERTICAL_QUERY = "(max-width: 1000px), (max-height: 760px)";
+
 // ---------- Links ----------
 
 // Clicking a card's picture or name opens its page on uma.guide (new tab).
