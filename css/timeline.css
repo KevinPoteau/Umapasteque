@@ -375,8 +375,7 @@
 }
 
 /* =====================================================================
-   Vertical layout (small screens, or forced with the Layout button —
-   js/layout.js): scenarios top to bottom, each card full width, the
+   Vertical layout (small screens, js/layout.js): scenarios top to bottom, each card full width, the
    reader as a bar across the top that shows the date at its lower edge.
    ===================================================================== */
 .vertical .tl {

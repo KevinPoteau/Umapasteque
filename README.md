@@ -96,5 +96,5 @@ python3 scripts/fetch_assets.py   # optional: store images locally
 ## Roadmap
 
 1. ~~Static site on GitHub Pages~~
-2. Mobile layout: vertical timeline, fixed filter header
+2. ~~Mobile layout: vertical timeline on small screens~~
 3. Notion sync: a scheduled GitHub Action exports the Notion databases to `data/` and redeploys
