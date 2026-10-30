@@ -195,7 +195,7 @@ async function renderEditor() {
   const role = view.edRole;
   const R = role ? it.roles[role] : null;
   const rank = rankOf(R);
-  const grid = support ? gridFor((await loadNumbers())[it.id]) : null;
+  const grid = support ? gridFor(it, data, await loadNumbers()) : null;
 
   const universal = roles.includes(ALL_STYLES);
   const allTab = universal
@@ -310,7 +310,7 @@ async function renderEditor() {
     view.edRole = null;
     set({ roles });
   });
-  ed.querySelector("#use-grid")?.addEventListener("click", () => setRole({ rank: grid.score }));
+  ed.querySelectorAll("[data-use]").forEach(b => b.onclick = () => setRole({ rank: +b.dataset.use }));
   form.querySelectorAll(".vpick button").forEach(b => b.onclick = () => setRole({ rank: +b.dataset.r }));
   form.querySelectorAll(".stars-in").forEach(g => g.onclick = e => {
     const b = e.target.closest("button"); if (!b) return;
@@ -339,29 +339,34 @@ async function renderEditor() {
   }
 }
 
-const GRADE = { "very bad": "g0", bad: "g0", low: "g1", okay: "g2", good: "g3", high: "g4", "very good": "g4", "very high": "g4", "not scored": "gn" };
+const KIND_TEXT = { cs: "Current Speed", accel: "Accel", ts: "Target speed", recovery: "Recovery" };
+const pct = x => `${Math.max(1, Math.round(x * 100))}%`;
 
 /** The rating grid beside the preview (support cards). */
 function gridHTML(grid, role, rank, it) {
   if (!grid) return `<aside class="gridbox"><h3>Rating grid</h3><p class="hint">No GameTora numbers for this card yet (they come with the next import).</p></aside>`;
-  const v = VERDICTS[grid.score];
-  const row = (label, value, grade, note) => `<li><span class="gl">${label}</span><span class="gv">${esc(value)}</span>
-    <span class="gg ${GRADE[grade]}">${grade}</span>${note ? `<small>${note}</small>` : ""}</li>`;
-  const skills = grid.skills.length
-    ? grid.skills.map(s => row(esc(s.name), s.what, s.grade, s.cond ? esc(s.cond) : "")).join("")
-    : row("Gold skills", "none", "not scored");
+  const dots = n => `<span class="dots" title="${n} / 5">${"●".repeat(n)}<i>${"●".repeat(5 - n)}</i></span>`;
+  const use = r => !role ? "" : rank === r ? '<span class="muted">Same as the verdict</span>' : `<button type="button" class="btn" data-use="${r}">Use it</button>`;
+  const verdict = (r, line) => `<div class="suggest" style="--vc:var(${VERDICTS[r].color})">
+      <img src="${VERDICTS[r].icon}" alt=""><div><b>${VERDICTS[r].label}</b><small>${line}</small></div>${use(r)}</div>`;
+  const rows = grid.rows.map(c => `<li><span class="gl">${c.label}</span>${dots(c.score)}
+    <span class="gv">${esc(c.value)}</span>${c.note ? `<small>${esc(c.note)}</small>` : ""}</li>`).join("");
+  const rel = grid.share == null ? "" : grid.share >= .5
+    ? `Top ${pct(1 - grid.share)} of ${grid.peers} ${esc(it.type)} cards within ${grid.years} years`
+    : `Bottom ${pct(grid.share)} of ${grid.peers} ${esc(it.type)} cards within ${grid.years} years`;
+  const skills = grid.skills.map(s => `<li><span class="gl">${esc(s.name)}</span><span class="gv">${
+    KIND_TEXT[s.kind] ? `${KIND_TEXT[s.kind]} +${s.kind === "recovery" ? s.value.toFixed(1) + "%" : s.value.toFixed(2)}` : ""}</span>${
+    s.cond ? `<small>${esc(s.cond)}</small>` : ""}</li>`).join("");
   const scenario = ["Pal", "Group"].includes(it.type) ? '<p class="hint">Friend and group cards: the grid misses what they bring to their scenario.</p>' : "";
   return `<aside class="gridbox">
-    <h3>Rating grid <small>from GameTora, max level</small></h3>
-    <ul class="checks">${grid.rows.map(r => row(r.label, r.value, r.grade, r.note)).join("")}</ul>
-    <h4>Gold skills <small>best one counts</small></h4>
-    <ul class="checks">${skills}</ul>
-    <div class="suggest" style="--vc:var(${v.color})">
-      <img src="${v.icon}" alt=""><div><b>${v.label}</b><small>Suggested · ${grid.raw.toFixed(1)} / 5</small></div>
-      ${role ? (rank === grid.score ? '<span class="muted">Same as the verdict</span>' : '<button type="button" class="btn" id="use-grid">Use it</button>') : ""}
-    </div>
+    <h3>Rating grid <small>GameTora numbers at max level</small></h3>
+    <ul class="checks">${rows}</ul>
+    <h4>Card strength</h4>
+    ${verdict(grid.score, `${grid.raw.toFixed(1)} / 5 on the numbers above`)}
+    ${grid.peerScore ? `<h4>Against its peers</h4>${verdict(grid.peerScore, rel)}` : ""}
     ${scenario}
-    <p class="hint">A hint only: hints, events and the meta are not in it.</p>
+    ${skills ? `<h4>Gold skills <small>not scored: their worth depends on the style and the CM</small></h4><ul class="checks">${skills}</ul>` : ""}
+    <p class="hint">A hint only: skills, events and the meta are not in it.</p>
   </aside>`;
 }
 
