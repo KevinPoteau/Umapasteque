@@ -1,5 +1,7 @@
 // Filter state, one set per kind of page (support cards / Umas),
 // remembered per browser (best effort: storage can be blocked).
+// Filters start empty whenever another page is opened (see js/main.js); the
+// saved copy only brings them back after a reload of the same page.
 import { rankOf } from "./config.js";
 
 const blank = () => ({ q: "", types: new Set(), dist: new Set(), surf: new Set(), vmin: 0 });
@@ -20,6 +22,14 @@ export function useStateFor(kind) {
       for (const k of SETS) state[k] = new Set(s[k] || []);
     }
   } catch { /* ignore */ }
+  return state;
+}
+
+/** Empty filters for this kind of page (used when the page changes). */
+export function resetState(kind) {
+  key = `uma-filters-${kind}`;
+  state = blank();
+  save();
   return state;
 }
 
