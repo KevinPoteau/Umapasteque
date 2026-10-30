@@ -6455,7 +6455,7 @@
     "html": "<b><span class=\"gold\">Unyielding</span></b> – TS +0.35 · Acc +0.10 · 3s<br /><small>Medium · Final corner · Overtaking</small>"
    },
    {
-    "html": "Pressure · Levelheaded · Strategist · Straightaway Spurt · Pace Strategy"
+    "html": "Straightaway Spurt"
    }
   ],
   "bonus": [
@@ -6465,8 +6465,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30013_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Lol",
+     "No SPE, bad skill(s), low TE"
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30014,
