@@ -1,5 +1,29 @@
 [
  {
+  "name": "Ura Finale",
+  "slug": "ura-finals",
+  "gt": 1,
+  "start": "2025-06-26",
+  "color": "#9cd127",
+  "imgSource": ""
+ },
+ {
+  "name": "Unity Cup",
+  "slug": "unity-cup",
+  "gt": 2,
+  "start": "2025-11-06",
+  "color": "#18b1ff",
+  "imgSource": ""
+ },
+ {
+  "name": "Trackblazer",
+  "slug": "trackblazer",
+  "gt": 4,
+  "start": "2026-03-12",
+  "color": "#eaba00",
+  "imgSource": ""
+ },
+ {
   "name": "Grand Live",
   "slug": "grand-live",
   "gt": 3,
