@@ -6093,8 +6093,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30001_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Good skills, okay stat stick.",
+     "But GUTS"
+    ],
+    "stats": 2,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30002,
@@ -6124,8 +6134,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30002_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Good Friendship, SP Bonus, Good SPE.",
+     "Very good skill for Front but heavily track dependant."
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "<1 Scenario"
+   }
+  }
  },
  {
   "id": 30003,
@@ -6155,8 +6175,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30003_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Positioning skills aren't very usefull.",
+     "Rushing Gale is a terrible skill.",
+     "No TE, low SPE."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30004,
@@ -6186,8 +6217,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30004_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Gives a lot of hints.",
+     "Not SPE, low TE, okay friendship.",
+     "Corner Connoisseur is a massive gamble. NO"
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30005,
@@ -6217,8 +6259,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30005_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Power card with no TE."
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30006,
@@ -6248,8 +6299,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30006_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Good card, no TE but GUTS"
+    ],
+    "stats": 0,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30007,
@@ -6279,8 +6339,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30007_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 3,
+    "verdict": [
+     "Good power card",
+     "But a power card in URA",
+     "Okay TE, good friendship and okay SPE."
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30008,
@@ -6310,8 +6381,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30008_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 2,
+    "verdict": [
+     "Not a bard card but Stamina role is a death sentence."
+    ],
+    "stats": 3,
+    "skills": 4,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30009,
@@ -6341,8 +6421,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30009_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Not good for Fast & Furious only.",
+     "No Spe would be an advantage if she had better TE."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30010,
@@ -6372,8 +6462,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30010_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 5,
+    "verdict": [
+     "Very long lifetime, only powercrept in Grandmaster.",
+     "She's all style thanks to her stats stick and stays relevant for a secondary wit card.",
+     "Very good TE, strong Friendship, Wit Bonus.",
+     "Prepared to pass is an okay skill"
+    ],
+    "stats": 4,
+    "skills": 3,
+    "longevity": "4 scenarios"
+   }
+  }
  },
  {
   "id": 30011,
@@ -6403,8 +6505,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30011_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 4,
+    "verdict": [
+     "Stats stick",
+     "Very good TE, bad skill but meant to give lots of stat. Borrow at best, since guts card."
+    ],
+    "stats": 4,
+    "skills": 0,
+    "longevity": "?"
+   }
+  }
  },
  {
   "id": 30012,
@@ -6434,8 +6546,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30012_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "On your left! Is very good but no TE"
+    ],
+    "stats": 0,
+    "skills": 4,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30013,
@@ -6500,8 +6621,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30014_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "With a better skill and Specialty priority, would've been a very good card.",
+     "Low TE, good Friendship, very good bonus, 0 SPE"
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30015,
@@ -6531,8 +6662,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30015_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 4,
+    "verdict": [
+     "Okay stats stick and give Turbo sprint, a very good accel.",
+     "Limited to sprint, so borrow target."
+    ],
+    "stats": 4,
+    "skills": 4,
+    "longevity": "4 Scenarios"
+   }
+  }
  },
  {
   "id": 30016,
@@ -6562,8 +6703,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30016_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 5,
+    "verdict": [
+     "You only take a stamina card when you need Stamina.",
+     "Super Creek gives EVERYTHING you need.",
+     "Swinging Maestro is the best recovery.",
+     "Remains Top 1 Stamina card for 4 scenarios."
+    ],
+    "stats": 5,
+    "skills": 5,
+    "longevity": "8 Scenarios"
+   }
+  }
  },
  {
   "id": 30017,
@@ -6597,8 +6750,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30017_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 2,
+    "verdict": [
+     "PWR, bad stats stick with no TE and low Spe.",
+     "It gives Groundwork through an event.",
+     "That's it."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30018,
@@ -6628,8 +6792,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30018_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Okay skills",
+     "No SPE"
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30019,
@@ -6659,7 +6833,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30019_thumb.webp",
-  "roles": {},
+  "roles": {
+   "all": {
+    "verdict": [
+     "Pseudo Pal card that Roam and gives Energy and has good TE and +1SP.",
+     "A good candidate in Guts deck much later on.",
+     "Also very good for F2P."
+    ],
+    "stats": 5,
+    "skills": 1,
+    "longevity": "?"
+   }
+  },
   "todo": true
  },
  {
@@ -6690,8 +6875,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30020_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 4,
+    "verdict": [
+     "Very good stat stick for the beginning of the game.",
+     "20% TE, good Friendship bonus.",
+     "Plan X is dogshit."
+    ],
+    "stats": 4,
+    "skills": 1,
+    "longevity": "2 scenarios"
+   }
+  }
  },
  {
   "id": 30021,
@@ -6716,8 +6912,19 @@
   ],
   "bonus": [],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30021_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 4,
+    "verdict": [
+     "First of SSR pal cards",
+     "Roaming card that reduces energy cost and gives energy.",
+     "2 Events to cure negative event."
+    ],
+    "stats": 5,
+    "skills": 2,
+    "longevity": "1 Scenario"
+   }
+  }
  },
  {
   "id": 30022,
@@ -6751,8 +6958,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30022_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "No TE.",
+     "Okay SPE, skill limited to Long."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30023,
@@ -6782,8 +6999,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30023_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "No TE, low spe, limited to long"
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30024,
@@ -6813,8 +7039,26 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30024_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Good skills, good stats but PWR card."
+    ],
+    "stats": 3,
+    "skills": 4,
+    "longevity": "DOA"
+   },
+   "end": {
+    "rank": 2,
+    "verdict": [
+     "Good skills, good stats but PWR card."
+    ],
+    "stats": 3,
+    "skills": 4,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30025,
@@ -6844,8 +7088,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30025_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Speed with a recovery is legit good.",
+     "But low SPE, low TE, good Friendship."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30026,
@@ -6875,8 +7129,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30026_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 2,
+    "verdict": [
+     "Not that bad, Taking the Lead is good but low SPE."
+    ],
+    "stats": 2,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30027,
@@ -6906,8 +7169,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30027_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Would be a fantastic card if it wasn't a GUTS card"
+    ],
+    "stats": 3,
+    "skills": 4,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30028,
@@ -6937,8 +7209,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30028_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 5,
+    "verdict": [
+     "Dios mios",
+     "Borrow or die.",
+     "Great TE, fantastic SPE, good Friendship, PWR bonus.",
+     "Universal skill."
+    ],
+    "stats": 5,
+    "skills": 5,
+    "longevity": "4 Scenarios"
+   }
+  }
  },
  {
   "id": 30029,
@@ -6968,8 +7252,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30029_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 3,
+    "verdict": [
+     "Not that bad but better used SR Stam cards."
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30030,
@@ -6999,8 +7292,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30030_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "GUTS",
+     "Good specialty, good friendship, low TE.",
+     "Bad skill."
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30031,
