@@ -9555,6 +9555,7 @@
     "longevity": "DOA"
    },
    "late": {
+    "rank": 2,
     "verdict": [
      "Okay card.",
      "Stam card with a half recovery and requires specific condition.",
@@ -9622,6 +9623,7 @@
     "longevity": "DOA"
    },
    "end": {
+    "rank": 2,
     "verdict": [
      "Lots of mood, around similar as 10 TE when mood is great.",
      "But no TE. Special effect is a bit weird.",
@@ -9771,6 +9773,7 @@
     "longevity": "DOA"
    },
    "end": {
+    "rank": 2,
     "verdict": [
      "Basically here for Full of Vigor.",
      "The rest is okay.",
