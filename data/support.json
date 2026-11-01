@@ -6845,6 +6845,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30019_thumb.webp",
   "roles": {
    "all": {
+    "rank": 4,
     "verdict": [
      "Pseudo Pal card that Roam and gives Energy and has good TE and +1SP.",
      "A good candidate in Guts deck much later on.",
@@ -6854,8 +6855,7 @@
     "skills": 1,
     "longevity": "?"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30020,
@@ -7766,6 +7766,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30056_thumb.webp",
   "roles": {
    "late": {
+    "rank": 2,
     "verdict": [
      "Would be a good Speed card.",
      "Good TE, great Friendship. If you somehow manage to cap Speed, good power for Sprints.",
@@ -7786,8 +7787,7 @@
     "skills": 2,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30057,
@@ -7823,6 +7823,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30057_thumb.webp",
   "roles": {
    "all": {
+    "rank": 1,
     "verdict": [
      "Lots of skills but 0 spe for a Speed card."
     ],
@@ -7830,8 +7831,7 @@
     "skills": 1,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30059,
@@ -7952,6 +7952,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30044_thumb.webp",
   "roles": {
    "pace": {
+    "rank": 2,
     "verdict": [
      "Low spe, low TE. Good friendship but cancelled by the low SPE.",
      "Skill requires to be in the back as a pace, meaning it's very lobby dependent."
@@ -7960,8 +7961,7 @@
     "skills": 1,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30045,
@@ -7997,6 +7997,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30045_thumb.webp",
   "roles": {
    "end": {
+    "rank": 2,
     "verdict": [
      "Low TE but heavily compensated by fantastic Friendship with good Spe.",
      "The issue? Dogshit skill.",
@@ -8006,8 +8007,7 @@
     "skills": 1,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30046,
@@ -8126,10 +8126,13 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30060_thumb.webp",
   "roles": {
    "front": {
-    "verdict": [],
-    "stats": 0,
-    "skills": 0,
-    "longevity": ""
+    "rank": 1,
+    "verdict": [
+     "Low TE, low SPE, guts card."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
    },
    "pace": {
     "rank": 1,
@@ -8140,8 +8143,7 @@
     "skills": 1,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30054,
@@ -8555,8 +8557,7 @@
     "skills": 3,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30068,
@@ -8848,6 +8849,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30074_thumb.webp",
   "roles": {
    "late": {
+    "rank": 4,
     "verdict": [
      "MANT card that grants 15% race bonus.",
      "Only exist for that purpose, otherwise it's a bad card."
@@ -8856,8 +8858,7 @@
     "skills": 4,
     "longevity": "1 Scenario"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30075,
@@ -9564,8 +9565,7 @@
     "skills": 2,
     "longevity": "DOA"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30091,
@@ -9617,8 +9617,7 @@
     "skills": 0,
     "longevity": ""
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30092,
@@ -9763,8 +9762,7 @@
     "skills": 0,
     "longevity": ""
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30095,
@@ -10622,8 +10620,7 @@
     "skills": 3,
     "longevity": ">1 Scenario"
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30121,
@@ -11166,8 +11163,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30120_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Guts stats stick but no specialty priority.",
+     "Good kill but limited to medium."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30146,
@@ -11181,7 +11188,7 @@
   "scenario": "Grand Live",
   "effects": "Friendship 35% · Training eff. 10% · Race 5% · Fans 10% · Specialty 50 · Hint Lv2 / 30% · Wit recovery 5",
   "start": "Start: Bond 15",
-  "unique": "Special effect (see GameTora)",
+  "unique": "Bond+5 for all supports",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">Solid Strike</span></b> – TS +0.25 · Acc +0.30 · 3s<br /><small>Pace · Medium · Late mid-race</small>"
@@ -11201,7 +11208,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30146_thumb.webp",
-  "roles": {},
+  "roles": {
+   "pace": {
+    "verdict": [],
+    "stats": 0,
+    "skills": 0,
+    "longevity": ""
+   }
+  },
   "todo": true
  },
  {
@@ -11240,8 +11254,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30122_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Good stat stick, very good bonuses.",
+     "Skills are correct. Good TE, very correct SPE.",
+     "But difficult to slot."
+    ],
+    "stats": 4,
+    "skills": 2,
+    "longevity": ">1 Scenario"
+   }
+  }
  },
  {
   "id": 30123,
@@ -11255,7 +11280,7 @@
   "scenario": "Grand Live",
   "effects": "Friendship 20% · Race 5% · Fans 10% · Specialty 65 · Hint Lv2 / 30%",
   "start": "Start: Bond 20",
-  "unique": "Special effect (see GameTora)",
+  "unique": "5 TE per facility level",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">Hot Pursuit</span></b> – TS +0.35 · 2.4s<br /><small>Pace / Late · After 50% · Overtaking</small>"
@@ -11275,8 +11300,28 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30123_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 1,
+    "verdict": [
+     "Same effect as Maruzensky Power, +5 TE per facility level!",
+     "But you rarely train PWR. So no 25 TE for you."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   },
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Same effect as Maruzensky Power, +5 TE per facility level!",
+     "But you rarely train PWR. So no 25 TE for you."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30124,
@@ -11314,8 +11359,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30124_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Actually not a bad card.",
+     "Good SPE, okay TE, very good bonuses and good skills.",
+     "But Ramonu Wit is close."
+    ],
+    "stats": 4,
+    "skills": 2,
+    "longevity": "<1 Scenario"
+   }
+  }
  },
  {
   "id": 30125,
@@ -11349,8 +11405,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30125_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Stamina card with no TE and low SPE.",
+     "Skill is too random."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30126,
@@ -11388,8 +11454,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30126_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Actually good stat stick. But guts card.",
+     "Very good TE, SP Bonus but low TE."
+    ],
+    "stats": 4,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30129,
@@ -11419,8 +11495,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30129_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Power card with recovery exclusive for long.",
+     "Simply impossible to play at the moment."
+    ],
+    "stats": 2,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30217,
