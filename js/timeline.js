@@ -15,7 +15,7 @@ export function createTimeline(tl, scenarios, ruler) {
     scenarios.forEach((s, i) => {
       const cs = cards.filter(c => c.scenario === s.name).sort((a, b) => a.iso.localeCompare(b.iso));
       if (!cs.length) return;
-      jump += `<button class="jb" data-to="sc${i}" data-sc="${s.slug}" style="--sc:${s.color}" title="${s.name}">${s.imgSource ? img(scenarioImage(s), 'alt=""') : ""}<span>${s.name}</span></button>`;
+      jump += `<button class="jb" data-to="sc${i}" data-sc="${s.slug}" style="--sc:${s.color}" title="${s.name}">${img(scenarioImage(s), 'alt=""')}<span>${s.name}</span></button>`;
       let cols = "";
       for (const c of cs) {
         if (!todayDone && c.iso >= TODAY) { cols += '<div class="today" id="today"><b>Today</b></div>'; todayDone = true; }
