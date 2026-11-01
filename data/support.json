@@ -8550,6 +8550,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30043_thumb.webp",
   "roles": {
    "pace": {
+    "rank": 2,
     "verdict": [
      "Okay stats stick, good skill but STAM card."
     ],
@@ -9543,16 +9544,25 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30090_thumb.webp",
   "roles": {
    "pace": {
-    "verdict": [],
-    "stats": 0,
-    "skills": 0,
-    "longevity": ""
+    "rank": 2,
+    "verdict": [
+     "Okay card.",
+     "Stam card with a half recovery and requires specific condition.",
+     "Better to just buildup Stamina."
+    ],
+    "stats": 2,
+    "skills": 2,
+    "longevity": "DOA"
    },
    "late": {
-    "verdict": [],
-    "stats": 0,
-    "skills": 0,
-    "longevity": ""
+    "verdict": [
+     "Okay card.",
+     "Stam card with a half recovery and requires specific condition.",
+     "Better to just buildup Stamina."
+    ],
+    "stats": 2,
+    "skills": 2,
+    "longevity": "DOA"
    },
    "end": {
     "rank": 2,
@@ -9612,10 +9622,14 @@
     "longevity": "DOA"
    },
    "end": {
-    "verdict": [],
-    "stats": 0,
-    "skills": 0,
-    "longevity": ""
+    "verdict": [
+     "Lots of mood, around similar as 10 TE when mood is great.",
+     "But no TE. Special effect is a bit weird.",
+     "From the brink is a good accel for medium only. Borrow?"
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
    }
   }
  },
@@ -9757,10 +9771,15 @@
     "longevity": "DOA"
    },
    "end": {
-    "verdict": [],
-    "stats": 0,
-    "skills": 0,
-    "longevity": ""
+    "verdict": [
+     "Basically here for Full of Vigor.",
+     "The rest is okay.",
+     "It's also an agemasen card.",
+     "Borrow for the very rare miles when the late race is preceded by the final corner."
+    ],
+    "stats": 1,
+    "skills": 3,
+    "longevity": "DOA"
    }
   }
  },
@@ -10611,6 +10630,7 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30101_thumb.webp",
   "roles": {
    "all": {
+    "rank": 5,
     "verdict": [
      "<b>Scenario Link</b>",
      "Very high friendship training that makes up for the low TE. Very good Specialty.",
@@ -11210,13 +11230,16 @@
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30146_thumb.webp",
   "roles": {
    "pace": {
-    "verdict": [],
-    "stats": 0,
-    "skills": 0,
+    "rank": 3,
+    "verdict": [
+     "Solid strike is a gambling skill.",
+     "Otherwise the card is okay to borrow."
+    ],
+    "stats": 3,
+    "skills": 1,
     "longevity": ""
    }
-  },
-  "todo": true
+  }
  },
  {
   "id": 30122,
