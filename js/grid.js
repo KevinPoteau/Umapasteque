@@ -5,8 +5,10 @@
 //
 // Criteria (1 → 5):
 //   Training eff.   <5% · 5% · 10% · 15% · 20%+      (with what the unique can add)
-//   Specialty       0 · 1-39 · 40-59 · 60-79 · 80+
+//   Mood            +1 point on Training eff. per 30% (up to 5): at Great mood,
+//                   30% Mood bonus gives about what 5% Training eff. does
 //   Friendship      <20% · 20% · 25% · 30% · 35%+
+//   Specialty       0 · 1-39 · 40-59 · 60-79 · 80+
 //   Stats bonus     none 1 · a stat +2 · two stats or more +1 · SP +1 each (max 2)
 //   Hints           +1 each: Lv3+, Lv4+, 40%+, 60%+
 // Suggested verdict = weighted mean (WEIGHTS). Skills are left out on purpose:
@@ -37,11 +39,14 @@ function criteria(n) {
   const stats = n.bonus.filter(([k]) => k !== "SP");
   const sp = Math.min(Object.fromEntries(n.bonus).SP ?? 0, 2);
   const lv = n.hint_lv ?? 0, freq = n.hint_freq ?? 0;
+  const mood = Math.floor((n.mood ?? 0) / 30);
   return [
-    { key: "te", label: "Training eff.", score: step(te, [5, 10, 15, 20]),
-      value: n.te_upto ? `${n.te}% → up to ${te}%` : `${te}%`, note: n.te_upto ? `${n.te_how} (unique)` : "" },
-    { key: "spe", label: "Specialty", score: step(n.spe, [1, 40, 60, 80]), value: String(n.spe) },
+    { key: "te", label: "Training eff.", score: Math.min(5, step(te, [5, 10, 15, 20]) + mood),
+      value: n.te_upto ? `${n.te}% → up to ${te}%` : `${te}%`,
+      note: [n.te_upto ? `${n.te_how} (unique)` : "", mood ? `+${mood} from Mood` : ""].filter(Boolean).join(" · ") },
+    { key: "mood", label: "Mood", score: mood, value: `${n.mood ?? 0}%`, note: mood ? "Counted in Training eff.: +1 per 30%" : "" },
     { key: "friend", label: "Friendship", score: step(n.friend, [20, 25, 30, 35]), value: `${n.friend}%` },
+    { key: "spe", label: "Specialty", score: step(n.spe, [1, 40, 60, 80]), value: String(n.spe) },
     { key: "bonus", label: "Stats bonus", score: Math.min(5, 1 + (stats.length ? 2 : 0) + (stats.length > 1 ? 1 : 0) + sp),
       value: n.bonus.length ? n.bonus.map(([k, v]) => `${k} +${v}`).join(" · ") : "none" },
     { key: "hints", label: "Hints", score: Math.min(5, 1 + (lv >= 3) + (lv >= 4) + (freq >= 40) + (freq >= 60)),
@@ -49,7 +54,7 @@ function criteria(n) {
   ].map(c => ({ ...c, grade: STEP_TEXT[c.score] }));
 }
 
-const mean = rows => rows.reduce((a, c) => a + c.score * WEIGHTS[c.key], 0);
+const mean = rows => rows.reduce((a, c) => a + c.score * (WEIGHTS[c.key] ?? 0), 0);
 const clamp = x => Math.min(5, Math.max(1, Math.round(x)));
 const days = (a, b) => Math.abs(Date.parse(a) - Date.parse(b)) / 864e5;
 

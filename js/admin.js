@@ -345,7 +345,7 @@ const pct = x => `${Math.max(1, Math.round(x * 100))}%`;
 /** The rating grid beside the preview (support cards). */
 function gridHTML(grid, role, rank, it) {
   if (!grid) return `<aside class="gridbox"><h3>Rating grid</h3><p class="hint">No GameTora numbers for this card yet (they come with the next import).</p></aside>`;
-  const dots = n => `<span class="dots" title="${n} / 5">${"●".repeat(n)}<i>${"●".repeat(5 - n)}</i></span>`;
+  const dots = n => `<span class="dots" title="${n} / 5">${"●".repeat(n)}<i>${"●".repeat(Math.max(0, 5 - n))}</i></span>`;
   const use = r => !role ? "" : rank === r ? '<span class="muted">Same as the verdict</span>' : `<button type="button" class="btn" data-use="${r}">Use it</button>`;
   const verdict = (r, line) => `<div class="suggest" style="--vc:var(${VERDICTS[r].color})">
       <img src="${VERDICTS[r].icon}" alt=""><div><b>${VERDICTS[r].label}</b><small>${line}</small></div>${use(r)}</div>`;
