@@ -94,6 +94,8 @@ export const SP_ICON = {
 };
 export const cardImage = card => ({ local: `assets/cards/${card.id}.webp`, remote: card.imgSource });
 export const umaImage = uma => ({ local: `assets/umas/${uma.id}.webp`, remote: uma.imgSource });
+// Scenario art: assets/scenarios/<slug>.png (or the extension of imgSource).
+// A picture dropped there by hand is used even when imgSource is empty.
 export const scenarioImage = sc => ({ local: `assets/scenarios/${sc.slug}${extOf(sc.imgSource)}`, remote: sc.imgSource });
 
 function extOf(url) {

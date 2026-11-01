@@ -17,7 +17,7 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
 
   // Scenario art, stacked and cross-faded by readRuler()
   const shot = $("#shot");
-  shot.insertAdjacentHTML("afterbegin", scenarios.filter(s => s.imgSource).map(s => img(scenarioImage(s), `alt="" data-sc="${s.slug}"`)).join(""));
+  shot.insertAdjacentHTML("afterbegin", scenarios.map(s => img(scenarioImage(s), `alt="" data-sc="${s.slug}"`)).join(""));
 
   const seg = t => { for (let i = 0; i < anchors.length - 1; i++) if (t <= anchors[i + 1].t) return i; return anchors.length - 2; };
   const xOf = t => { const i = seg(t), a = anchors[i], b = anchors[i + 1]; return a.x + (b.x - a.x) * (t - a.t) / (b.t - a.t); };
