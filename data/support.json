@@ -7344,8 +7344,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30031_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 3,
+    "verdict": [
+     "Nothing works on this card stats wise. Low TE, low SPE, low Friendship.",
+     "But she gives No Stopping Me!, one of the best accels at this time. Borrow target but you most likely have better target to borrow. Not worth in Unity as the scenario gives NSM."
+    ],
+    "stats": 1,
+    "skills": 5,
+    "longevity": "1 Scenario"
+   }
+  }
  },
  {
   "id": 30032,
@@ -7375,8 +7385,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30032_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 4,
+    "verdict": [
+     "Okay TE, no SPE.",
+     "Not a bad card but exist for the sole purpose of giving many, many skills.",
+     "Good parent card, borrow only."
+    ],
+    "stats": 2,
+    "skills": 4,
+    "longevity": "1 Scenario"
+   }
+  }
  },
  {
   "id": 30033,
@@ -7406,8 +7427,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30033_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Not a very good PWR card.",
+     "Low SPE, good late skill."
+    ],
+    "stats": 2,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30038,
@@ -7437,8 +7468,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30038_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Low TE, low friendship.",
+     "As a Stamina card, outclassed by Super Creek and other SR cards.",
+     "As a skill card, outclassed by Fine Motion Wit."
+    ],
+    "stats": 0,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30039,
@@ -7472,8 +7514,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30039_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Speed card, no TE, good bonus but there's better much candidates.",
+     "Lane movement skills are worthless."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30040,
@@ -7503,8 +7555,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30040_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Guts card that gives a movement skill, one of the worst type of skills."
+    ],
+    "stats": 2,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30041,
@@ -7534,8 +7595,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30041_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Low TE, low SPE, good Friendship.",
+     "Skill gives vision. Vision is worse than a recovery on overstammed runner."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30058,
@@ -7565,8 +7636,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30058_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Power card, no TE, low Friendship.",
+     "Recovery skill on a power card is dubious."
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30042,
@@ -7600,8 +7681,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30042_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Would be quite a good card if it wasn't a power card in URA.",
+     "Good TE, 0 SPE but this means it can roam, okay Friendship.",
+     "Skill is good for late."
+    ],
+    "stats": 4,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30055,
@@ -7631,8 +7723,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30055_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Low SPE on wit card basically kills its purpose.",
+     "Skill is limited to front for long races."
+    ],
+    "stats": 2,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30056,
@@ -7662,7 +7764,29 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30056_thumb.webp",
-  "roles": {},
+  "roles": {
+   "late": {
+    "verdict": [
+     "Would be a good Speed card.",
+     "Good TE, great Friendship. If you somehow manage to cap Speed, good power for Sprints.",
+     "However skill has a great chance of being eaten by Accel zone."
+    ],
+    "stats": 3,
+    "skills": 2,
+    "longevity": "DOA"
+   },
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Would be a good Speed card.",
+     "Good TE, great Friendship. If you somehow manage to cap Speed, good power for Sprints.",
+     "However skill has a great chance of being eaten by Accel zone."
+    ],
+    "stats": 3,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -7697,7 +7821,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30057_thumb.webp",
-  "roles": {},
+  "roles": {
+   "all": {
+    "verdict": [
+     "Lots of skills but 0 spe for a Speed card."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -7728,8 +7861,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30059_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Good skills but no TE, not SPE and low Friendship."
+    ],
+    "stats": 1,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30048,
@@ -7767,8 +7909,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30048_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Guts card and no TE.",
+     "Unyielding is a terrible skill."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30044,
@@ -7798,7 +7950,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30044_thumb.webp",
-  "roles": {},
+  "roles": {
+   "pace": {
+    "verdict": [
+     "Low spe, low TE. Good friendship but cancelled by the low SPE.",
+     "Skill requires to be in the back as a pace, meaning it's very lobby dependent."
+    ],
+    "stats": 2,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -7833,7 +7995,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30045_thumb.webp",
-  "roles": {},
+  "roles": {
+   "end": {
+    "verdict": [
+     "Low TE but heavily compensated by fantastic Friendship with good Spe.",
+     "The issue? Dogshit skill.",
+     "Has a 50% chance of giving you Straightaway spurt."
+    ],
+    "stats": 3,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -7868,8 +8041,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30046_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Stam card. No TE, no Specialty, low Friendship. Deserves a negative score.",
+     "Hard worker is a terrible skill that will do nothing in 90%+ scenario."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30047,
@@ -7899,8 +8082,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30047_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Average card, good TE low TE, okat friendship.",
+     "But Power card in URA.",
+     "Also recovery skill on a power card."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30060,
@@ -7930,7 +8124,23 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30060_thumb.webp",
-  "roles": {},
+  "roles": {
+   "front": {
+    "verdict": [],
+    "stats": 0,
+    "skills": 0,
+    "longevity": ""
+   },
+   "pace": {
+    "rank": 1,
+    "verdict": [
+     "Low TE, low SPE, guts card."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -7961,8 +8171,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30054_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 5,
+    "verdict": [
+     "Great TE, low on the SPE side.",
+     "But this card gives \"On your left!\", one of the best acceleration for Late Surger.",
+     "As a bonus, 10% race is valuable in MANT.",
+     "Should remain relevant until l'Arc."
+    ],
+    "stats": 3,
+    "skills": 5,
+    "longevity": ">3 Scenarios"
+   }
+  }
  },
  {
   "id": 30062,
@@ -7992,8 +8214,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30062_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Low TE, low SPE.",
+     "Slotting a stam card for Concentration, a skill preventing late start and activating Groundwork, is too expensive."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30061,
@@ -8023,8 +8255,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30061_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Low TE, low Spe for a wit card.",
+     "The skill limited to long doesn't help."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30034,
@@ -8058,8 +8300,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30034_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 5,
+    "verdict": [
+     "<B>Scenario Link</B>",
+     "Good TE, good SPE, power cards are good in Unity.",
+     "Gives Swinging Maestro, the best recovery"
+    ],
+    "stats": 3,
+    "skills": 5,
+    "longevity": "1 Scenario"
+   }
+  }
  },
  {
   "id": 30036,
@@ -8084,8 +8337,20 @@
   ],
   "bonus": [],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30036_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 5,
+    "verdict": [
+     "<B>Scenario Link</B>",
+     "Gives a great amount of Stamina and energy recovery.",
+     "Good TE.",
+     "10% race mean you can use it in MANT if you need Energy and Stamina."
+    ],
+    "stats": 5,
+    "skills": 1,
+    "longevity": "1.5 Scenario"
+   }
+  }
  },
  {
   "id": 30063,
@@ -8115,8 +8380,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30063_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Guts card with terrible skill."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30064,
@@ -8146,8 +8420,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30064_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "No TE and gives a skill that requires a specific configuration."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30065,
@@ -8177,8 +8460,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30065_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "By this time everyone should have Kitasan Black.",
+     "Skill is a recovery that triggers at the beginning of the race, great risk to trigger and waste stamina."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30066,
@@ -8208,8 +8501,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30066_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Despite the low output of this card, it has a fantastic groundwork activator.",
+     "And it's a F2P card, mandatory until Grandmasters, where the next Mihono Bourbon Wit will give a Golden Grounwork with 2 activator through events."
+    ],
+    "stats": 1,
+    "skills": 5,
+    "longevity": "3 Scenarios"
+   }
+  }
  },
  {
   "id": 30043,
@@ -8243,7 +8546,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30043_thumb.webp",
-  "roles": {},
+  "roles": {
+   "pace": {
+    "verdict": [
+     "Okay stats stick, good skill but STAM card."
+    ],
+    "stats": 2,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -8274,8 +8586,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30068_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Good specialty, low TE and skill is very bad, inconsistent.",
+     "Acceleration that can proc when it's not useful."
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30069,
@@ -8305,8 +8627,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30069_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Would be fine on anything else than a STAM card.",
+     "TE and SPE are good, Friendship is fantastic, but it's a stam card."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30070,
@@ -8336,8 +8668,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30070_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 4,
+    "verdict": [
+     "Good F2P stats stick for Gutsmaxxing in MANT.",
+     "Otherwise, will most likely no see use."
+    ],
+    "stats": 4,
+    "skills": 1,
+    "longevity": "2 Scenarios"
+   }
+  }
  },
  {
   "id": 30071,
@@ -8371,8 +8713,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30071_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 2,
+    "verdict": [
+     "Low TE, low SPE, good Friendship, good skill.",
+     "But hard to recommend."
+    ],
+    "stats": 1,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30072,
@@ -8406,8 +8758,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30072_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Not a bad Speed card, very good specialty and good Friendship, which compensate for the low TE.",
+     "Good bonuses and recovery on Front could work.",
+     "Hard to pull but could be a good borrow."
+    ],
+    "stats": 4,
+    "skills": 2,
+    "longevity": "2 Scenarios"
+   }
+  }
  },
  {
   "id": 30073,
@@ -8441,8 +8804,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30073_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 2,
+    "verdict": [
+     "If you heard about Narita Taishin wit, this is the wrong one.",
+     "Low SPE kills this card. Sleeping Lion sounds like a great skill but it has a secret effect where it can whiff!",
+     "\"Sleeping Lion\" has a secret condition that requires, from 1st to 9th, to be in the 25% bottom."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30074,
@@ -8472,7 +8846,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30074_thumb.webp",
-  "roles": {},
+  "roles": {
+   "late": {
+    "verdict": [
+     "MANT card that grants 15% race bonus.",
+     "Only exist for that purpose, otherwise it's a bad card."
+    ],
+    "stats": 5,
+    "skills": 4,
+    "longevity": "1 Scenario"
+   }
+  },
   "todo": true
  },
  {
@@ -8503,8 +8887,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30075_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Fantastic Friendship that makes up for the absent TE.",
+     "But Stamina Siphon belong on Debuffer as it has a lower recovery. And it's limited to long.",
+     "Super creek remains better."
+    ],
+    "stats": 4,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30076,
@@ -8534,8 +8929,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30076_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Recovery limited to Medium.",
+     "Low TE, okay SPE and Friendship."
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30077,
@@ -8565,8 +8970,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30077_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "Fantastic TE, low SPE that allows it to roam.",
+     "Daring strike is a great Endcloser skill. But if you want to pull her for the skill, you're better to wait for Mr.C.B wit, a fantastic card."
+    ],
+    "stats": 4,
+    "skills": 5,
+    "longevity": "Variable"
+   }
+  }
  },
  {
   "id": 30078,
@@ -8591,8 +9006,20 @@
   ],
   "bonus": [],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30078_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 4,
+    "verdict": [
+     "Recommended, 10% race bonus for MANT.",
+     "But not recommended for F2P!",
+     "Stats stick that gives 150 total stats at the beginning of the run.",
+     "Skill requires to be on the 7th bracket, only 12% of it happening."
+    ],
+    "stats": 5,
+    "skills": 1,
+    "longevity": "1 Scenario"
+   }
+  }
  },
  {
   "id": 30079,
@@ -8622,8 +9049,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30079_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Average card with a good medium skill but not recommended as it is a stam card competing with better choices."
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30080,
@@ -8640,7 +9076,7 @@
   "unique": "",
   "keyskills": [
    {
-    "html": "<b><span class=\"gold\">Nothing Ventured</span></b> – TS +0.45 · Rec −100.0% · 1.8s"
+    "html": "<b><span class=\"gold\">Nothing Ventured</span></b> – TS +0.45 · Rec −??% · 1.8s"
    },
    {
     "html": "Wallflower · Corner Recovery × · Risky Business · Running Idle · Uma Stan"
@@ -8653,8 +9089,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30080_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Huh",
+     "All events on this pal card have 50% chance of high rolling your run or nuking your run.",
+     "Nothing Ventured has a chance of Nuking your runner."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30082,
@@ -8688,8 +9135,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30082_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Very good bonus.",
+     "Very good friendship that compensate for the low TE. Okay Specialty.",
+     "Its strength comes from Determined Descent, a great acceleration that needs a very specific racetrack to be useful.",
+     "Borrow, don't pull."
+    ],
+    "stats": 4,
+    "skills": 5,
+    "longevity": "Niche"
+   }
+  }
  },
  {
   "id": 30083,
@@ -8703,7 +9162,7 @@
   "scenario": "Unity Cup",
   "effects": "Friendship 35% · Mood 30% · Race 10% · Fans 20% · Hint Lv3 / 50%",
   "start": "Start: Bond 25 · Guts +30",
-  "unique": "Special effect (see GameTora)",
+  "unique": "20 TE when not on Guts",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">In High Spirits</span></b> – TS +0.35 · 2.4s<br /><small>Sprint · Late mid-race · Top 50%</small>"
@@ -8719,8 +9178,32 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30083_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Very difficult card to rate.",
+     "0 Spe but its purpose is to roam and land on SPD/WIT during a fat rainbow training.",
+     "Skill is good and has a chance to speed-carry over.",
+     "Borrow for sprint, don't pull."
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "Niche"
+   },
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Very difficult card to rate.",
+     "0 Spe but its purpose is to roam and land on SPD/WIT during a fat rainbow training.",
+     "Skill is good and has a chance to speed-carry over.",
+     "Borrow for sprint, don't pull."
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "Niche"
+   }
+  }
  },
  {
   "id": 30084,
@@ -8750,8 +9233,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30084_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 3,
+    "verdict": [
+     "Average card that fights with other Speed cards.",
+     "BOFA is a good recovery skill at this point."
+    ],
+    "stats": 2,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30085,
@@ -8785,8 +9278,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30085_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "No TE, low SPE.",
+     "Skill only works on dirt. Dirt is a very rare racetrack.",
+     "And the skill is very random."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30086,
@@ -8800,7 +9304,7 @@
   "scenario": "Trackblazer",
   "effects": "Friendship 30% · Race 10% · Fans 15% · Specialty 35 · Hint Lv2 / 30%",
   "start": "Start: Bond 15",
-  "unique": "Special effect (see GameTora)",
+  "unique": "10k Fan = +1 TE (Max 20)",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">Firm Course Menace</span></b> – Pow +60 · Spd +60<br /><small>Firm</small>"
@@ -8820,8 +9324,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30086_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 4,
+    "verdict": [
+     "Very good stat stick for MANT only.",
+     "Low SPE but can highroll like crazy. Either her or Matikanefukukitaru SPD.",
+     "Downside is, you need to race a lot to build her special effect. Which means outside of MANT, she starts with broken legs."
+    ],
+    "stats": 5,
+    "skills": 4,
+    "longevity": "1 Scenario"
+   }
+  }
  },
  {
   "id": 30087,
@@ -8855,8 +9370,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30087_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Stam card with no TE.",
+     "Skill that can be eaten by accel zone."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30088,
@@ -8890,8 +9415,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30088_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "WIT card with garbage Specialty.",
+     "Lie in Wait procs too early.",
+     "Only 10 TE for a condition that requires to brick your deck."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30089,
@@ -8921,8 +9457,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30089_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Guts card but only 5% Race, a critical stat in MANT.",
+     "Otherwise, low TE, good Friendship.",
+     "But skill is limited to long, where guts cards are rare."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30081,
@@ -8952,8 +9499,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30081_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Group cards are hard to rate.",
+     "Just don't pick this one."
+    ],
+    "stats": 2,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30090,
@@ -8983,7 +9540,31 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30090_thumb.webp",
-  "roles": {},
+  "roles": {
+   "pace": {
+    "verdict": [],
+    "stats": 0,
+    "skills": 0,
+    "longevity": ""
+   },
+   "late": {
+    "verdict": [],
+    "stats": 0,
+    "skills": 0,
+    "longevity": ""
+   },
+   "end": {
+    "rank": 2,
+    "verdict": [
+     "Okay card.",
+     "Stam card with a half recovery and requires specific condition.",
+     "Better to just buildup Stamina."
+    ],
+    "stats": 2,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  },
   "todo": true
  },
  {
@@ -8998,7 +9579,7 @@
   "scenario": "Trackblazer",
   "effects": "Friendship 20% · Mood 60% · Race 10% · Fans 15% · Specialty 50 · Hint Lv1 / 10% · Wit recovery 5",
   "start": "Start: Bond 15",
-  "unique": "Special effect (see GameTora)",
+  "unique": "+3 Friendship per rainbow training",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">From the Brink</span></b> – Acc +0.40 · 1.8s<br /><small>Medium · Early late-race · Back 60%</small>"
@@ -9018,7 +9599,25 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30091_thumb.webp",
-  "roles": {},
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Lots of mood, around similar as 10 TE when mood is great.",
+     "But no TE. Special effect is a bit weird.",
+     "From the brink is a good accel for medium only. Borrow?"
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   },
+   "end": {
+    "verdict": [],
+    "stats": 0,
+    "skills": 0,
+    "longevity": ""
+   }
+  },
   "todo": true
  },
  {
@@ -9053,8 +9652,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30092_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "No TE, low Friendship... Buuuut she can serve as a replacement for a Stamina card if you put all your sparks to Stamina.",
+     "Serenity is a very good recovery."
+    ],
+    "stats": 2,
+    "skills": 4,
+    "longevity": "HMMMM"
+   }
+  }
  },
  {
   "id": 30093,
@@ -9088,8 +9697,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30093_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Very weird card.",
+     "No TE but great Friendship. But 0 specialty priority, making the great Friendship stat not as worth.",
+     "However! Neck and Neck is the best Pace Chaser skill, every pace chaser wants at least Head on.",
+     "Borrow, don't pull."
+    ],
+    "stats": 1,
+    "skills": 5,
+    "longevity": "3 Scenarios"
+   }
+  }
  },
  {
   "id": 30094,
@@ -9103,7 +9724,7 @@
   "scenario": "Trackblazer",
   "effects": "Friendship 20% · Training eff. 10% · Race 10% · Fans 20% · Specialty 65",
   "start": "Start: Bond 25",
-  "unique": "Special effect (see GameTora)",
+  "unique": "Low energy, bigger Friendship (15 max)",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">Full of Vigor</span></b> – TS +0.35 · 1.8s<br /><small>Mile · Final corner · Back 50%</small>"
@@ -9123,7 +9744,26 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30094_thumb.webp",
-  "roles": {},
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Basically here for Full of Vigor.",
+     "The rest is okay.",
+     "It's also an agemasen card.",
+     "Borrow for the very rare miles when the late race is preceded by the final corner."
+    ],
+    "stats": 1,
+    "skills": 3,
+    "longevity": "DOA"
+   },
+   "end": {
+    "verdict": [],
+    "stats": 0,
+    "skills": 0,
+    "longevity": ""
+   }
+  },
   "todo": true
  },
  {
@@ -9138,7 +9778,7 @@
   "scenario": "Trackblazer",
   "effects": "Friendship 30% · Race 5% · Fans 10% · Specialty 65 · Hint Lv1 / 20%",
   "start": "Start: Bond 30 · Pow +30",
-  "unique": "Special effect (see GameTora)",
+  "unique": "Max energy = More TE",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">Dauntless</span></b> – TS +0.35 · Acc +0.10 · 2.4s<br /><small>Late · 30–80% of the pack</small>"
@@ -9158,8 +9798,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30095_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Special effect should give 1 TE per 1 energy max. However getting max energy is very rare.",
+     "Skill is too random."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30096,
@@ -9189,8 +9839,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30096_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Power card, no TE, great Friendship.",
+     "But Unyielding is a bad skill."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30097,
@@ -9228,8 +9888,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30097_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 5,
+    "verdict": [
+     "Very recommend for Endclosers.",
+     "Despite 5% TE, High Friendship and good specialty. On top of that, gives a lot of stat bonus.",
+     "AND gives a lot of good skills, possibly spurt and corner recovery.",
+     "Won't leave your deck until mono Ramonu deck. Which shouldn't be often."
+    ],
+    "stats": 5,
+    "skills": 5,
+    "longevity": "3-4 Scenarios"
+   }
+  }
  },
  {
   "id": 30098,
@@ -9259,8 +9931,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30098_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Power card with no spe. Should roam but skill is garbage."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30099,
@@ -9290,8 +9971,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30099_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Stam card whose skill eats your stamina.",
+     "Can build up to 20 TE."
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30100,
@@ -9325,8 +10016,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30100_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 1,
+    "verdict": [
+     "Wit card with low SPE.",
+     "Shatterproof isn't good as it requires pace chaser in the back."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30053,
@@ -9364,8 +10065,30 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30053_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "A very good stats stick.",
+     "Good TE and a lot of stats.",
+     "However, it's a card specialized for miles! She's better as a borrow target."
+    ],
+    "stats": 4,
+    "skills": 4,
+    "longevity": "Niche"
+   },
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "A very good stats stick.",
+     "Good TE and a lot of stats.",
+     "However, it's a card specialized for miles! She's better as a borrow target."
+    ],
+    "stats": 4,
+    "skills": 4,
+    "longevity": "Niche"
+   }
+  }
  },
  {
   "id": 30102,
@@ -9379,7 +10102,7 @@
   "scenario": "Trackblazer",
   "effects": "Friendship 25% · Race 10% · Fans 15% · Specialty 35 · Hint Lv2 / 30%",
   "start": "Start: Bond 30 · Guts +30",
-  "unique": "Special effect (see GameTora)",
+  "unique": "5 TE per card in training",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">Speed Star</span></b> – TS +0.35 · 1.8s<br /><small>Pace · Final corner · Top 50%</small>"
@@ -9395,8 +10118,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30102_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 1,
+    "verdict": [
+     "TE scaling on the number of cards.",
+     "Sounds fantastic for gutsmaxxing.",
+     "But she herself has low Specialty and give Speed Star, a skill that overlap with Fine motion's Prepared to pass."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30103,
@@ -9430,8 +10164,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30103_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "0 TE, low specialty on a wit card.",
+     "Skill isn't bad but there's better than It's On!"
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30104,
@@ -9448,7 +10192,7 @@
   "unique": "Training eff. +10% at bond 80",
   "keyskills": [
    {
-    "html": "<b><span class=\"gold\">Clairvoyance</span></b> – Vision +15 m · 3s<br /><small>Medium · Early-race</small>"
+    "html": "<b><span class=\"gold\">Clairvoyance</span></b> - Vision +15 m · 3s<br /><small>Medium · Early-race</small>"
    },
    {
     "html": "Tokyo Racecourse ○ · Up-Tempo · Medium Corners ○ · Pace Chaser Savvy ○ · Late Surger Savvy ○ · Studious · Tactical Tweak · Medium Straightaways ○"
@@ -9461,8 +10205,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30104_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Good stat sticks but stam card and the skill is Vision.",
+     "Vision doesn't do anything."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30106,
@@ -9500,8 +10254,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30106_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "No TE, power card with a questionable recovery."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30067,
@@ -9535,8 +10298,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30067_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "<b>Scenario Link</b>",
+     "Must pull Scenario link! But why is it so late in MANT?",
+     "Fantastic card but its skills are only available for one CM.",
+     "Would've been highly recommended at the beginning of MANT."
+    ],
+    "stats": 5,
+    "skills": 3,
+    "longevity": "0.2 Scenario"
+   }
+  }
  },
  {
   "id": 30105,
@@ -9570,8 +10345,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30105_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Guts card that can be eaten during the accel zone."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30107,
@@ -9585,7 +10369,7 @@
   "scenario": "Trackblazer",
   "effects": "Friendship 25% · Mood 30% · Race 5% · Fans 10% · Specialty 35 · Hint Lv2 / 30%",
   "start": "Start: Bond 30",
-  "unique": "Special effect (see GameTora)",
+  "unique": "+5 TE per current facility level",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">Top Runner</span></b> – TS +0.35 · 3s<br /><small>Front · Before late-race · Blocked</small>"
@@ -9605,8 +10389,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30107_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 5,
+    "verdict": [
+     "+5 TE per facility level, meaning she can climb up to a whooping 25 TE!",
+     "Excellent stat stick, has groundwork and activators.",
+     "Golden skill sounds good to retake the first position."
+    ],
+    "stats": 5,
+    "skills": 3,
+    "longevity": ">4 Scenarios"
+   }
+  }
  },
  {
   "id": 30108,
@@ -9620,7 +10415,7 @@
   "scenario": "Trackblazer",
   "effects": "Friendship 20% · Mood 60% · Training eff. 15% · Race 10% · Fans 15% · Hint Lv3 / 50% · Wit recovery 5",
   "start": "Start: Bond 20",
-  "unique": "Special effect (see GameTora)",
+  "unique": "20% to nullify failure",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">Nothing Ventured</span></b> – TS +0.45 · Rec −100.0% · 1.8s"
@@ -9640,8 +10435,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30108_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Wit card supposed to roam to bring very good TE and avoid failure.",
+     "But will tank your wit.",
+     "Skill is gamba and can nuke your runner."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30109,
@@ -9675,8 +10481,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30109_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Good specialty, good bonuses, good friendship.",
+     "Skill is garbage. Too random and will whiff a lot."
+    ],
+    "stats": 2,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30110,
@@ -9714,8 +10530,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30110_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Not that bad but very specific recovery skill.",
+     "Good TE, low SPE, lots of good bonuses."
+    ],
+    "stats": 4,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30052,
@@ -9740,8 +10566,18 @@
   ],
   "bonus": [],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30052_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 5,
+    "verdict": [
+     "<b>Scenario Link</b>",
+     "Pal card, will roam and reduce energy cost while also providing enery. Can make a run with 0 rest."
+    ],
+    "stats": 5,
+    "skills": 3,
+    "longevity": "1 Scenario"
+   }
+  }
  },
  {
   "id": 30101,
@@ -9775,7 +10611,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30101_thumb.webp",
-  "roles": {},
+  "roles": {
+   "all": {
+    "verdict": [
+     "<b>Scenario Link</b>",
+     "Very high friendship training that makes up for the low TE. Very good Specialty.",
+     "Last 1 Scenario for everyone, last longer for Pace Chasers."
+    ],
+    "stats": 4,
+    "skills": 3,
+    "longevity": ">1 Scenario"
+   }
+  },
   "todo": true
  },
  {
@@ -9810,8 +10657,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30121_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Close to a great SPD card.",
+     "Low TE, low spe, limited recovery."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30111,
@@ -9845,8 +10702,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30111_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 3,
+    "verdict": [
+     "Can climb up to 20 TE, a good card for Professor of curvature when you don't have Kitasan black for whatever reason.",
+     "But low SPE."
+    ],
+    "stats": 3,
+    "skills": 3,
+    "longevity": "1 Scenario"
+   }
+  }
  },
  {
   "id": 30112,
@@ -9860,7 +10727,7 @@
   "scenario": "Grand Live",
   "effects": "Friendship 25% · Specialty 65 · Hint Lv3 / 50%",
   "start": "Start: Bond 20",
-  "unique": "Special effect (see GameTora)",
+  "unique": "3 Friendship per Rainbow training",
   "keyskills": [
    {
     "html": "<b><span class=\"gold\">Givin' It 1000%</span></b> – TS +0.45 · Rec −4.0% · 2.7s<br /><small>Front · Early mid-race</small>"
@@ -9884,8 +10751,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30112_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 1,
+    "verdict": [
+     "Guts card that nukes your uma.",
+     "Hmmmmmmmmm just no."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30113,
@@ -9919,8 +10796,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30113_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "A good stat stick.",
+     "But a terrible recovery skill."
+    ],
+    "stats": 3,
+    "skills": 1,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30114,
@@ -9954,8 +10841,32 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30114_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Gives a great Sprint and Mile skill and give good power + 1SP.",
+     "Low TE and nothing makes up for it.",
+     "Works at LB1 or borrow target. Can be replaced much later on by Vodka guts and will be definitely powercrept by Durandal wit in 7 scenario.",
+     "Great borrow target."
+    ],
+    "stats": 3,
+    "skills": 5,
+    "longevity": "Niche - 4 or 7 Scenario?"
+   },
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "Gives a great Sprint and Mile skill and give good power + 1SP.",
+     "Low TE and nothing makes up for it.",
+     "Works at LB1 or borrow target. Can be replaced much later on by Vodka guts and will be definitely powercrept by Durandal wit in 7 scenario.",
+     "Great borrow target."
+    ],
+    "stats": 3,
+    "skills": 5,
+    "longevity": "Niche - 4 or 7 Scenario?"
+   }
+  }
  },
  {
   "id": 30115,
@@ -9985,8 +10896,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30115_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 2,
+    "verdict": [
+     "Stamina card.",
+     "Has a lot of Specialty, can get a lot of TE and a good skill but a stam card nonetheless."
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30116,
@@ -10020,8 +10941,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30116_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 2,
+    "verdict": [
+     "Speed card among monsters.",
+     "Low TE, good SPE, good bonuses.",
+     "But it's just a good card compared to great cards."
+    ],
+    "stats": 0,
+    "skills": 0,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30117,
@@ -10051,8 +10983,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30117_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "Would be an okay stat stick but guts.",
+     "Now, Maestro of the mud. This skill is used once in the last CM of GrandLive. After that, there is no dirt that fulfill the conditions to activate it."
+    ],
+    "stats": 1,
+    "skills": 1,
+    "longevity": "ONE CM"
+   }
+  }
  },
  {
   "id": 30145,
@@ -10086,8 +11028,18 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30145_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 1,
+    "verdict": [
+     "Sturm und Drang is a good skill.",
+     "But the stats are low."
+    ],
+    "stats": 1,
+    "skills": 2,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30118,
@@ -10121,8 +11073,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30118_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Recommended to borrow.",
+     "Low TE, good Spe, good Friendship.",
+     "What makes this card good is Claw Forward, a perfect acceleration of late surgers on long only.",
+     "Powercrept by Manhattan cafe wit."
+    ],
+    "stats": 3,
+    "skills": 5,
+    "longevity": "1 Scenario"
+   }
+  }
  },
  {
   "id": 30119,
@@ -10156,8 +11120,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/card/composite/tex_support_card_30119_thumb.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 1,
+    "verdict": [
+     "Speed card, meaning it fights against titans.",
+     "Good stats bonuses, no TE, low SPE, big Mood.",
+     "Skills is okay for Pace chaser but can whiff if your lobby has too much Front/pace."
+    ],
+    "stats": 1,
+    "skills": 3,
+    "longevity": "DOA"
+   }
+  }
  },
  {
   "id": 30120,
