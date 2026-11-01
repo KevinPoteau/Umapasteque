@@ -283,6 +283,8 @@ select {
 .jb[data-sc] {
   width: 112px;
   justify-content: center;
+  /* shows when the scenario has no picture (yet) */
+  background: linear-gradient(135deg, color-mix(in srgb, var(--sc) 55%, transparent), color-mix(in srgb, var(--sc) 15%, var(--inset)));
 }
 
 .jb:hover img,

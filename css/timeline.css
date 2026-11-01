@@ -125,7 +125,8 @@
   margin-block: 5px;
   border-radius: 6px;
   overflow: hidden;
-  background: var(--inset);
+  /* shows when the scenario has no picture (yet) */
+  background: linear-gradient(135deg, color-mix(in srgb, var(--sc, #555) 55%, transparent), color-mix(in srgb, var(--sc, #555) 15%, var(--inset)));
   box-shadow: 0 0 0 2px var(--sc, #555);
 }
 

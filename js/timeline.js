@@ -15,7 +15,7 @@ export function createTimeline(tl, scenarios, ruler) {
     scenarios.forEach((s, i) => {
       const cs = cards.filter(c => c.scenario === s.name).sort((a, b) => a.iso.localeCompare(b.iso));
       if (!cs.length) return;
-      jump += `<button class="jb" data-to="sc${i}" data-sc="${s.slug}" style="--sc:${s.color}" title="${s.name}">${img(scenarioImage(s), 'alt=""')}<span>${s.name}</span></button>`;
+      jump += `<button class="jb" data-to="sc${i}" data-sc="${s.slug}" style="--sc:${s.color}" title="${s.name}">${s.imgSource ? img(scenarioImage(s), 'alt=""') : ""}<span>${s.name}</span></button>`;
       let cols = "";
       for (const c of cs) {
         if (!todayDone && c.iso >= TODAY) { cols += '<div class="today" id="today"><b>Today</b></div>'; todayDone = true; }
@@ -40,7 +40,8 @@ export function createTimeline(tl, scenarios, ruler) {
     const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
     const behavior = smooth && !reduce ? "smooth" : "auto";
     if (isVertical()) tl.scrollTo({ top: Math.max(0, el.offsetTop - $("#reader").offsetHeight - 8), behavior });
-    else tl.scrollTo({ left: Math.max(0, el.offsetLeft - $("#reader").offsetWidth - 12), behavior });
+    // the needle reads just right of the reader: put the element's left edge on it
+    else tl.scrollTo({ left: Math.max(0, el.offsetLeft - $("#reader").offsetWidth + 1), behavior });
   }
 
   /** Open on "Today", keeping the latest released card in view. */

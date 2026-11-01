@@ -17,7 +17,7 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
 
   // Scenario art, stacked and cross-faded by readRuler()
   const shot = $("#shot");
-  shot.insertAdjacentHTML("afterbegin", scenarios.map(s => img(scenarioImage(s), `alt="" data-sc="${s.slug}"`)).join(""));
+  shot.insertAdjacentHTML("afterbegin", scenarios.filter(s => s.imgSource).map(s => img(scenarioImage(s), `alt="" data-sc="${s.slug}"`)).join(""));
 
   const seg = t => { for (let i = 0; i < anchors.length - 1; i++) if (t <= anchors[i + 1].t) return i; return anchors.length - 2; };
   const xOf = t => { const i = seg(t), a = anchors[i], b = anchors[i + 1]; return a.x + (b.x - a.x) * (t - a.t) / (b.t - a.t); };
@@ -44,9 +44,22 @@ export function createRuler(tl, scenarios, onScenario = () => {}) {
       const s = scenarios[+sec.id.slice(2)];
       if (s) raw.push({ x: at(sec), t: ms(s.start) });
     }
+    // …and the Today marker at today's date
+    const td = tl.querySelector("#today");
+    if (td) raw.push({ x: at(td), t: ms(TODAY) });
     raw.sort((a, b) => a.x - b.x || a.t - b.t);
+    // Several cards on the same date: the date holds from the first to the last
+    // of them (a plateau 1 ms long), instead of running on toward the next date.
     anchors = [];
-    for (const a of raw) if (!anchors.length || a.t > anchors.at(-1).t) anchors.push(a);
+    let plateau = null;   // anchor that ends the current same-date run
+    for (const a of raw) {
+      const last = anchors.at(-1);
+      if (!last || a.t > (plateau ?? last).t) { anchors.push(a); plateau = null; }
+      else if (a.t === last.t || (plateau && a.t === last.t - 1)) {
+        if (plateau) plateau.x = a.x;
+        else if (a.x > last.x) { plateau = { x: a.x, t: last.t + 1 }; anchors.push(plateau); }
+      }
+    }
     // Cards released the same day share one anchor; when the last cards do,
     // also pin the last card's own edge (1 ms later) so the needle reads its date.
     if (lastX > anchors.at(-1).x) anchors.push({ x: lastX, t: anchors.at(-1).t + 1 });
