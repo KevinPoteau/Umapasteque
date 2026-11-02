@@ -57,6 +57,33 @@ const rolesOf = it => Object.keys(it.roles ?? {});
 const ROLE_ORDER = [ALL_STYLES, ...ROLES.map(r => r.id)];
 const styleLabel = id => id === ALL_STYLES ? "All styles" : roleById(id).label;
 const isTodo = it => it.todo === true || !rolesOf(it).length || rolesOf(it).some(r => rankOf(it.roles[r]) == null);
+/**
+ * What keeps an entry in the "To rate" list (needed), and the fields still
+ * empty that do not (optional). Each item: { text, role? }.
+ */
+function missing(kind, it) {
+  const roles = rolesOf(it), needed = [], optional = [];
+  if (!roles.length) needed.push({ text: "Add a running style (or All styles)" });
+  for (const r of roles) {
+    const R = it.roles[r], name = styleLabel(r);
+    if (rankOf(R) == null) needed.push({ text: `${name}: pick a verdict`, role: r });
+    const empty = [!(R.verdict ?? []).length && "verdict text"];
+    if (kind === "support") empty.push(!R.stats && "stats", !R.skills && "skills", !R.longevity && "longevity");
+    if (empty.some(Boolean)) optional.push({ text: `${name}: ${empty.filter(Boolean).join(", ")}`, role: r });
+  }
+  if (it.todo === true) needed.push({ text: "“Keep in the To rate list” is ticked", flag: true });
+  return { needed, optional };
+}
+/** One short line for the list row. */
+// (the ticked box is only named when it is the last reason: picking the
+// last verdict unticks it anyway)
+function whyTodo(kind, it) {
+  const { needed } = missing(kind, it);
+  const real = needed.filter(m => !m.flag);
+  return real.length ? real.map(m => m.role ? `${styleLabel(m.role)} verdict` : "no running style").join(" · ")
+    : "“Keep in the To rate list” ticked";
+}
+
 const isChanged = (kind, id) => !!drafts[kind]?.[id];
 const isDropped = (kind, id) => (dropping[kind] ?? []).includes(id);
 const changeCount = () => Object.values(drafts).reduce((n, d) => n + Object.keys(d).length, 0)
@@ -138,7 +165,8 @@ function rowHTML(kind, it) {
   const sub = kind === "support" ? `${it.rarity} ${it.type}` : it.outfit;
   return `<button class="row${it.id === view.sel ? " on" : ""}" data-id="${it.id}" style="--tint:var(--t-${it.color})">
     <span class="thumb">${img(pic, 'alt="" loading="lazy"')}</span>
-    <span class="txt"><b>${esc(it.name)}</b><small>${esc(sub)} · ${fmtDate(it.iso)}</small></span>
+    <span class="txt"><b>${esc(it.name)}</b><small>${esc(sub)} · ${fmtDate(it.iso)}</small>${
+      isTodo(it) ? `<small class="why">To do: ${whyTodo(kind, it)}</small>` : ""}</span>
     ${isChanged(kind, it.id) || isDropped(kind, it.id) ? '<span class="dot" title="Changed in this session"></span>' : ""}
     <span class="rbs">${roleBadges(it)}</span>
   </button>`;
@@ -198,11 +226,21 @@ async function renderEditor() {
   const grid = support ? gridFor(it, data, await loadNumbers()) : null;
 
   const universal = roles.includes(ALL_STYLES);
+  const noRank = r => rankOf(it.roles[r]) == null ? " miss" : "";   // style still without a verdict
+  const miss = missing(kind, it);
+  const goto = m => m.role ? ` <button type="button" class="link" data-go="${m.role}">open</button>` : "";
+  const todoBox = isDropped(kind, it.id) ? "" : miss.needed.length ? `
+    <div class="todo-box">
+      <b>Still in the “To rate” list because:</b>
+      <ul>${miss.needed.map(m => `<li>${m.text}${m.flag ? ' <button type="button" class="link" id="untick">Untick it</button>' : goto(m)}</li>`).join("")}</ul>
+      ${miss.optional.length ? `<small>Not filled yet (optional): ${miss.optional.map(m => m.text).join(" · ")}</small>` : ""}
+    </div>` : miss.optional.length ? `
+    <div class="todo-box ok"><small>Rated. Not filled yet (optional): ${miss.optional.map(m => m.text).join(" · ")}</small></div>` : "";
   const allTab = universal
-    ? `<button type="button" class="rtab all" data-tab="${ALL_STYLES}" aria-pressed="${role === ALL_STYLES}">All styles</button>`
+    ? `<button type="button" class="rtab all${noRank(ALL_STYLES)}" data-tab="${ALL_STYLES}" aria-pressed="${role === ALL_STYLES}">All styles</button>`
     : `<button type="button" class="rtab add all" data-add="${ALL_STYLES}" title="One rating, shown on every running style's page">+ All styles</button>`;
   const tabs = allTab + ROLES.map(r => roles.includes(r.id)
-    ? `<button type="button" class="rtab" data-tab="${r.id}" aria-pressed="${r.id === role}">${img(r.icon, 'alt=""')}${r.label}${universal ? " <small>(own rating)</small>" : ""}</button>`
+    ? `<button type="button" class="rtab${noRank(r.id)}" data-tab="${r.id}" aria-pressed="${r.id === role}">${img(r.icon, 'alt=""')}${r.label}${universal ? " <small>(own rating)</small>" : ""}</button>`
     : `<button type="button" class="rtab add" data-add="${r.id}" title="${universal ? `A different rating on the ${r.label} page only` : `Show this ${KINDS[kind].noun} on the ${r.label} page`}">+ ${r.label}${universal ? " (own rating)" : ""}</button>`).join("");
 
   const rolePanel = !role ? `<p class="hint">Not shown on the site yet: add the running styles this ${KINDS[kind].noun} is good for, or <b>All styles</b> for one rating everywhere.</p>` : `
@@ -234,6 +272,7 @@ async function renderEditor() {
       ${isChanged(kind, it.id) ? '<button type="button" class="btn" id="revert">Undo changes</button>' : ""}
       ${isDropped(kind, it.id) ? "" : `<button type="button" class="btn danger" id="drop" title="Remove it from the site and from the import">Don't track</button>`}
     </div>
+    ${todoBox}
     ${isDropped(kind, it.id) ? `<div class="dropped">On publish, this ${KINDS[kind].noun} is removed and the import will not add it again.
       <button type="button" class="btn" id="undrop">Keep tracking</button></div>` : ""}
 
@@ -294,6 +333,8 @@ async function renderEditor() {
     set({ roles, ...(done && "rank" in fields ? { todo: null } : {}) });
   };
 
+  ed.querySelectorAll("[data-go]").forEach(b => b.onclick = () => { view.edRole = b.dataset.go; renderEditor(); });
+  form.querySelector("#untick")?.addEventListener("click", () => set({ todo: null }));
   form.querySelector(".texts").addEventListener("toggle", e => { view.textsOpen = e.target.open; });
   form.querySelectorAll(".rtab[data-tab]").forEach(b => b.onclick = () => { view.edRole = b.dataset.tab; renderEditor(); });
   form.querySelectorAll(".rtab[data-add]").forEach(b => b.onclick = () => {
