@@ -6,7 +6,8 @@
 // One point ≈ what 5% Training eff. brings. Each criterion starts at 1 and
 // goes past 5 when the card does better (shown as red dots, up to 10);
 // fractions are rounded up.
-//   Training eff.   +1 per 5% (with what the unique can add), +1 per 30% Mood:
+//   Training eff.   +1 per 5% (with what the unique can add)
+//   Mood            +1 per 30%, starting at 0, weighed like Training eff.:
 //                   at Great mood, 30% Mood bonus gives about what 5% does
 //   Friendship      20% 2 · 25% 3 · 30% 4 · 35% 5 · then +1 per 5%
 //   Specialty       0 1 · 1-39 2 · 40 3 · 60 4 · 80 5 · then +1 per 20
@@ -21,7 +22,9 @@ const NUMBERS = "data/numbers.json";
 // Friendship weighs 25/30 of Training eff.: +5% Friendship ≈ 0.8 point, as it
 // only works on rainbows but multiplies. Normalised so the weights add up to 1.
 const WEIGHTS = (w => { const t = Object.values(w).reduce((a, b) => a + b, 0);
-  return Object.fromEntries(Object.entries(w).map(([k, v]) => [k, v / t])); })({ te: .3, spe: .3, friend: .25, bonus: .15, hints: .1 });
+  const out = Object.fromEntries(Object.entries(w).map(([k, v]) => [k, v / t]));
+  return { ...out, mood: out.te };   // a Mood point adds what a Training eff. point does
+})({ te: .3, spe: .3, friend: .25, bonus: .15, hints: .1 });
 const PEER_DAYS = 730;
 let numbers = null;
 
@@ -44,10 +47,10 @@ function criteria(n) {
   const lv = n.hint_lv ?? 0, freq = n.hint_freq ?? 0;
   const mood = up((n.mood ?? 0) / 30);
   return [
-    { key: "te", label: "Training eff.", score: 1 + up(te / 5) + mood,
+    { key: "te", label: "Training eff.", score: 1 + up(te / 5),
       value: n.te_upto ? `${n.te}% → up to ${te}%` : `${te}%`,
-      note: [n.te_upto ? `${n.te_how} (unique)` : "", mood ? `+${mood} from Mood` : ""].filter(Boolean).join(" · ") },
-    { key: "mood", label: "Mood", score: mood, value: `${n.mood ?? 0}%`, note: mood ? "Counted in Training eff.: +1 per 30% (rounded up)" : "" },
+      note: n.te_upto ? `${n.te_how} (unique)` : "" },
+    { key: "mood", label: "Mood", score: mood, value: `${n.mood ?? 0}%`, note: "Weighs like Training eff.: 30% Mood ≈ 5% Training eff. (rounded up)" },
     { key: "friend", label: "Friendship", score: 1 + up((n.friend - 15) / 5), value: `${n.friend}%` },
     { key: "spe", label: "Specialty", score: n.spe ? 2 + up((n.spe - 39) / 20) : 1, value: String(n.spe) },
     { key: "bonus", label: "Stats bonus", score: 1 + bonus,
