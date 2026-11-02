@@ -386,7 +386,11 @@ const pct = x => `${Math.max(1, Math.round(x * 100))}%`;
 /** The rating grid beside the preview (support cards). */
 function gridHTML(grid, role, rank, it) {
   if (!grid) return `<aside class="gridbox"><h3>Rating grid</h3><p class="hint">No GameTora numbers for this card yet (they come with the next import).</p></aside>`;
-  const dots = n => `<span class="dots" title="${n} / 5">${"●".repeat(n)}<i>${"●".repeat(Math.max(0, 5 - n))}</i></span>`;
+  // 5 dots: gold up to 5, then each point above 5 turns a gold dot red (10 = all red)
+  const dots = n => {
+    const red = Math.max(0, n - 5), gold = Math.min(n, 5) - red;
+    return `<span class="dots" title="${n} point${n > 1 ? "s" : ""}"><b>${"●".repeat(red)}</b>${"●".repeat(gold)}<i>${"●".repeat(Math.max(0, 5 - n))}</i></span>`;
+  };
   const use = r => !role ? "" : rank === r ? '<span class="muted">Same as the verdict</span>' : `<button type="button" class="btn" data-use="${r}">Use it</button>`;
   const verdict = (r, line) => `<div class="suggest" style="--vc:var(${VERDICTS[r].color})">
       <img src="${VERDICTS[r].icon}" alt=""><div><b>${VERDICTS[r].label}</b><small>${line}</small></div>${use(r)}</div>`;
@@ -403,7 +407,7 @@ function gridHTML(grid, role, rank, it) {
     <h3>Rating grid <small>GameTora numbers at max level</small></h3>
     <ul class="checks">${rows}</ul>
     <h4>Card strength</h4>
-    ${verdict(grid.score, `${grid.raw.toFixed(1)} / 5 on the numbers above`)}
+    ${verdict(grid.score, `Weighted average ${grid.raw.toFixed(1)} on the numbers above`)}
     ${grid.peerScore ? `<h4>Against its peers</h4>${verdict(grid.peerScore, rel)}` : ""}
     ${scenario}
     ${skills ? `<h4>Gold skills <small>not scored: their worth depends on the style and the CM</small></h4><ul class="checks">${skills}</ul>` : ""}
