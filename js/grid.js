@@ -18,7 +18,10 @@
 // Peers: the same type of card released within PEER_DAYS; "top 10%" = better
 // than 90% of them on the weighted mean.
 const NUMBERS = "data/numbers.json";
-const WEIGHTS = { te: .3, spe: .3, friend: .15, bonus: .15, hints: .1 };
+// Friendship weighs 25/30 of Training eff.: +5% Friendship ≈ 0.8 point, as it
+// only works on rainbows but multiplies. Normalised so the weights add up to 1.
+const WEIGHTS = (w => { const t = Object.values(w).reduce((a, b) => a + b, 0);
+  return Object.fromEntries(Object.entries(w).map(([k, v]) => [k, v / t])); })({ te: .3, spe: .3, friend: .25, bonus: .15, hints: .1 });
 const PEER_DAYS = 730;
 let numbers = null;
 
