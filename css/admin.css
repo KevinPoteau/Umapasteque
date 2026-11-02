@@ -779,3 +779,42 @@ dialog::backdrop {
   flex: none;
   font-size: 11.5px;
 }
+
+/* ---------- What is left to rate ---------- */
+.row .txt small.why {
+  color: var(--gold);
+}
+
+.todo-box {
+  display: grid;
+  gap: 6px;
+  padding: 10px 14px;
+  border: 1px solid #e7b84b66;
+  border-radius: 10px;
+  background: #433a1c55;
+  font-size: 13.5px;
+}
+
+.todo-box ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.todo-box small {
+  color: var(--muted);
+}
+
+.todo-box.ok {
+  border-color: var(--line);
+  background: var(--inset);
+}
+
+/* Running-style tab with no verdict yet */
+.rtab.miss::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-left: 6px;
+  border-radius: 50%;
+  background: var(--gold);
+}
