@@ -3,13 +3,14 @@
 // verdict, and where the card stands among its peers. A hint only: nothing
 // here is saved.
 //
-// Criteria (1 → 5):
-//   Training eff.   <5% · 5% · 10% · 15% · 20%+      (with what the unique can add)
-//   Mood            +1 point on Training eff. per 30% (up to 5): at Great mood,
-//                   30% Mood bonus gives about what 5% Training eff. does
-//   Friendship      <20% · 20% · 25% · 30% · 35%+
-//   Specialty       0 · 1-39 · 40-59 · 60-79 · 80+
-//   Stats bonus     none 1 · a stat +2 · two stats or more +1 · SP +1 each (max 2)
+// One point ≈ what 5% Training eff. brings. Each criterion starts at 1 and
+// goes past 5 when the card does better (shown as red dots, up to 10);
+// fractions are rounded up.
+//   Training eff.   +1 per 5% (with what the unique can add), +1 per 30% Mood:
+//                   at Great mood, 30% Mood bonus gives about what 5% does
+//   Friendship      20% 2 · 25% 3 · 30% 4 · 35% 5 · then +1 per 5%
+//   Specialty       0 1 · 1-39 2 · 40 3 · 60 4 · 80 5 · then +1 per 20
+//   Stats bonus     +1 per bonus point, stats and SP alike (Speed +2 → 3)
 //   Hints           +1 each: Lv3+, Lv4+, 40%+, 60%+
 // Suggested verdict = weighted mean (WEIGHTS). Skills are left out on purpose:
 // how much they are worth depends too much on the running style and the CMs.
@@ -30,28 +31,27 @@ export async function loadNumbers() {
   return numbers;
 }
 
-/** 1 + how many of the thresholds v reaches. */
-const step = (v, cuts) => 1 + cuts.filter(c => v >= c).length;
+const MAX = 10;
+const up = x => Math.max(0, Math.ceil(x));
 const STEP_TEXT = { 1: "very low", 2: "low", 3: "okay", 4: "good", 5: "very good" };
 
 function criteria(n) {
   const te = n.te + (n.te_upto ?? 0);
-  const stats = n.bonus.filter(([k]) => k !== "SP");
-  const sp = Math.min(Object.fromEntries(n.bonus).SP ?? 0, 2);
+  const bonus = n.bonus.reduce((a, [, v]) => a + v, 0);
   const lv = n.hint_lv ?? 0, freq = n.hint_freq ?? 0;
-  const mood = Math.floor((n.mood ?? 0) / 30);
+  const mood = up((n.mood ?? 0) / 30);
   return [
-    { key: "te", label: "Training eff.", score: Math.min(5, step(te, [5, 10, 15, 20]) + mood),
+    { key: "te", label: "Training eff.", score: 1 + up(te / 5) + mood,
       value: n.te_upto ? `${n.te}% → up to ${te}%` : `${te}%`,
       note: [n.te_upto ? `${n.te_how} (unique)` : "", mood ? `+${mood} from Mood` : ""].filter(Boolean).join(" · ") },
-    { key: "mood", label: "Mood", score: mood, value: `${n.mood ?? 0}%`, note: mood ? "Counted in Training eff.: +1 per 30%" : "" },
-    { key: "friend", label: "Friendship", score: step(n.friend, [20, 25, 30, 35]), value: `${n.friend}%` },
-    { key: "spe", label: "Specialty", score: step(n.spe, [1, 40, 60, 80]), value: String(n.spe) },
-    { key: "bonus", label: "Stats bonus", score: Math.min(5, 1 + (stats.length ? 2 : 0) + (stats.length > 1 ? 1 : 0) + sp),
+    { key: "mood", label: "Mood", score: mood, value: `${n.mood ?? 0}%`, note: mood ? "Counted in Training eff.: +1 per 30% (rounded up)" : "" },
+    { key: "friend", label: "Friendship", score: 1 + up((n.friend - 15) / 5), value: `${n.friend}%` },
+    { key: "spe", label: "Specialty", score: n.spe ? 2 + up((n.spe - 39) / 20) : 1, value: String(n.spe) },
+    { key: "bonus", label: "Stats bonus", score: 1 + bonus,
       value: n.bonus.length ? n.bonus.map(([k, v]) => `${k} +${v}`).join(" · ") : "none" },
     { key: "hints", label: "Hints", score: Math.min(5, 1 + (lv >= 3) + (lv >= 4) + (freq >= 40) + (freq >= 60)),
       value: lv || freq ? `Lv${lv} · ${freq}%` : "none" },
-  ].map(c => ({ ...c, grade: STEP_TEXT[c.score] }));
+  ].map(c => ({ ...c, score: Math.min(MAX, c.score), grade: STEP_TEXT[Math.min(5, c.score)] ?? "" }));
 }
 
 const mean = rows => rows.reduce((a, c) => a + c.score * (WEIGHTS[c.key] ?? 0), 0);

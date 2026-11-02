@@ -603,6 +603,11 @@ legend {
   white-space: nowrap;
 }
 
+.dots b {
+  font-weight: inherit;
+  color: #e5674f;
+}
+
 .dots i {
   font-style: normal;
   color: #ffffff22;
