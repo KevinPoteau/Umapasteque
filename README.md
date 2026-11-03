@@ -45,6 +45,8 @@ scripts/gametora_text.py turns GameTora's numbers into card texts (effects, uniq
   fetch-assets.yml      downloads new images when data changes and opens a PR with them
   import.yml            every Monday: new cards and Umas to rate → one PR
   validate.yml          checks data/ on every pull request
+  deploy-vps.yml        deploys to the VPS on every merge (skipped until set up)
+deploy/                 hosting on a VPS: setup script, Nginx config (see deploy/README.md)
 ```
 
 Images not yet in `assets/` are loaded from their original site, so the page works before and after the sync.
