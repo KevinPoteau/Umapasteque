@@ -6305,17 +6305,9 @@
     "+15%"
    ]
   ],
-  "imgSource": "https://uma.guide/img/uma/chara_stand_1011_101102.webp",
-  "roles": {
-   "late": {
-    "rank": 2,
-    "verdict": [
-     "Heavy recovery late surger.",
-     "If you don't want to play Super creek.",
-     "Bad growth and evolved don't help."
-    ]
-   }
-  }
+  "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1011_101102.png",
+  "roles": {},
+  "todo": true
  },
  {
   "id": 101402,
@@ -6563,16 +6555,9 @@
     "+10%"
    ]
   ],
-  "imgSource": "https://uma.guide/img/uma/chara_stand_1001_100102.webp",
-  "roles": {
-   "late": {
-    "rank": 4,
-    "verdict": [
-     "Recovery and Midgame.",
-     "Okay, growth a bit bad."
-    ]
-   }
-  }
+  "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1001_100102.png",
+  "roles": {},
+  "todo": true
  },
  {
   "id": 100402,
@@ -7249,7 +7234,7 @@
     "+14%"
    ]
   ],
-  "imgSource": "https://uma.guide/img/uma/chara_stand_1040_104002.webp",
+  "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1040_104002.png",
   "roles": {},
   "todo": true
  },
@@ -7418,7 +7403,7 @@
     "+15%"
    ]
   ],
-  "imgSource": "https://uma.guide/img/uma/chara_stand_1006_100602.webp",
+  "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1006_100602.png",
   "roles": {},
   "todo": true
  },
@@ -7476,7 +7461,7 @@
     "+6%"
    ]
   ],
-  "imgSource": "https://uma.guide/img/uma/chara_stand_1023_102302.webp",
+  "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1023_102302.png",
   "roles": {},
   "todo": true
  },
@@ -9290,7 +9275,7 @@
     "+14%"
    ]
   ],
-  "imgSource": "https://uma.guide/img/uma/chara_stand_1050_105002.webp",
+  "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1050_105002.png",
   "roles": {},
   "todo": true
  },

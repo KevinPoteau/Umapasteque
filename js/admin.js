@@ -131,12 +131,17 @@ function syncPublish() {
 // ---------- list ----------
 
 async function renderList() {
-  store(VIEW_KEY, { kind: view.kind, role: view.role, scope: view.scope });
+  store(VIEW_KEY, { kind: view.kind, role: view.role, scope: view.scope, cmp: view.cmp, sort: view.sort });
+  const ov = view.scope === "overview";
+  $(".admin-main").classList.toggle("ov", ov);
+  $("#overview").hidden = !ov;
+  if (ov) return renderOverview();
   const kind = view.kind;
   const list = $("#list");
   list.innerHTML = '<p class="empty">Loading…</p>';
+  const scope = view.scope;
   const { data } = await loadKind(kind);
-  if (kind !== view.kind) return;   // switched while loading
+  if (kind !== view.kind || scope !== view.scope) return;   // switched while loading
 
   const q = view.q.trim().toLowerCase();
   const inRole = it => view.role === "all" || (view.role === "none" ? !rolesOf(it).length : !!(it.roles?.[view.role] || it.roles?.[ALL_STYLES]));
@@ -170,6 +175,86 @@ function rowHTML(kind, it) {
     ${isChanged(kind, it.id) || isDropped(kind, it.id) ? '<span class="dot" title="Changed in this session"></span>' : ""}
     <span class="rbs">${roleBadges(it)}</span>
   </button>`;
+}
+
+// ---------- overview ----------
+
+/**
+ * Every entry of the kind in one table: its verdict per running style,
+ * coloured by the gap with the rating grid (the stronger the colour, the
+ * bigger the gap). A click opens the entry in the editor.
+ */
+async function renderOverview() {
+  const kind = view.kind, support = kind === "support";
+  const box = $("#overview");
+  box.innerHTML = '<p class="empty">Loading…</p>';
+  const { data } = await loadKind(kind);
+  const nums = support ? await loadNumbers() : {};
+  if (kind !== view.kind || view.scope !== "overview") return;
+  const cmp = view.cmp === "raw" ? "raw" : "peers";
+  const sort = view.sort === "gap" ? "gap" : "date";
+
+  const all = data.map(item => current(kind, item));
+  const q = view.q.trim().toLowerCase();
+  const inRole = it => view.role === "all" || (view.role === "none" ? !rolesOf(it).length : !!(it.roles?.[view.role] || it.roles?.[ALL_STYLES]));
+  const cols = view.role === "all" || view.role === "none" ? ROLE_ORDER : [ALL_STYLES, view.role];
+  // entries with no verdict yet are in "To rate", not here
+  const rows = all.filter(it => !isDropped(kind, it.id) && inRole(it) && rolesOf(it).some(r => rankOf(it.roles[r]) != null))
+    .filter(it => !q || `${it.name} ${it.outfit ?? ""} ${it.type ?? ""}`.toLowerCase().includes(q))
+    .map(it => {
+      const g = support ? gridFor(it, all, nums) : null;
+      // Friend and group cards: the grid misses what they bring, no gap shown
+      const ref = g && !["Pal", "Group"].includes(it.type) ? (cmp === "raw" ? g.score : g.peerScore) : null;
+      const gaps = cols.map(r => rankOf(it.roles?.[r]) != null && ref != null ? rankOf(it.roles[r]) - ref : null);
+      return { it, g, ref, gaps, worst: Math.max(0, ...gaps.map(d => Math.abs(d ?? 0))) };
+    })
+    .sort((a, b) => (sort === "gap" ? b.worst - a.worst : 0) || a.it.iso.localeCompare(b.it.iso) || a.it.name.localeCompare(b.it.name));
+
+  $("#a-count").textContent = `${rows.length} / ${all.length}`;
+  const vcell = (it, r, d) => {
+    const R = it.roles?.[r];
+    if (!R) return '<td class="vc"></td>';
+    const v = VERDICTS[rankOf(R)];
+    const tip = `${styleLabel(r)}: ${v ? v.label : "Unrated"}${d ? ` · ${d > 0 ? "+" : ""}${d} vs the grid` : ""}`;
+    return `<td class="vc" data-role="${r}"${d ? ` data-gap="${Math.min(3, Math.abs(d))}" data-dir="${d > 0 ? "up" : "down"}"` : ""} title="${tip}">${
+      v ? `<span class="vt" style="--vc:var(${v.color})">${rankOf(R)}</span>` : '<span class="vt none">?</span>'}</td>`;
+  };
+  const gcell = n => `<td class="gc">${n == null ? "–" : `<span class="vt" style="--vc:var(${VERDICTS[n].color})">${n}</span>`}</td>`;
+  const head = cols.map(r => `<th>${r === ALL_STYLES ? "All" : img(roleById(r).icon, `alt="${styleLabel(r)}" title="${styleLabel(r)}"`)}</th>`).join("");
+
+  box.innerHTML = `
+    <div class="ov-bar">
+      ${support ? `<span>Gap with
+        <span class="seg mini" role="group" aria-label="Compare with">
+          <button data-cmp="peers" aria-pressed="${cmp === "peers"}">Against its peers</button>
+          <button data-cmp="raw" aria-pressed="${cmp === "raw"}">Card strength</button>
+        </span></span>
+      <span>Sort by
+        <span class="seg mini" role="group" aria-label="Sort by">
+          <button data-sort="date" aria-pressed="${sort === "date"}">Release date</button>
+          <button data-sort="gap" aria-pressed="${sort === "gap"}">Biggest gap</button>
+        </span></span>
+      <span class="legend"><i data-gap="1" data-dir="up"></i><i data-gap="2" data-dir="up"></i><i data-gap="3" data-dir="up"></i> you rate higher
+        · <i data-gap="1" data-dir="down"></i><i data-gap="2" data-dir="down"></i><i data-gap="3" data-dir="down"></i> lower</span>`
+      : '<span class="hint">Umas have no rating grid: no gap to show.</span>'}
+    </div>
+    ${rows.length ? `<table class="ov-table">
+      <thead><tr><th class="nm">${KINDS[kind].label}</th><th>Released</th>${head}${support ? "<th>Grid</th><th>Peers</th>" : ""}</tr></thead>
+      <tbody>${rows.map(({ it, g, gaps }) => `<tr data-id="${it.id}">
+        <td class="nm"><div><span class="thumb">${img(support ? cardImage(it) : umaImage(it), 'alt="" loading="lazy"')}</span>
+          <span><b>${esc(it.name)}</b><small>${esc(support ? `${it.rarity} ${it.type}` : it.outfit)}</small></span></div></td>
+        <td class="dt">${fmtDate(it.iso)}</td>
+        ${cols.map((r, i) => vcell(it, r, gaps[i])).join("")}
+        ${support ? gcell(g?.score) + gcell(g?.peerScore) : ""}</tr>`).join("")}</tbody>
+    </table>` : '<p class="empty">No entry matches.</p>'}`;
+}
+
+/** Open an entry of the overview in the editor (on the style clicked, if any). */
+function openFromOverview(id, role) {
+  view.scope = "all"; view.sel = id; view.edRole = role ?? null; view.textsOpen = undefined;
+  renderControls();
+  renderList().then(() => $("#list .row.on")?.scrollIntoView({ block: "center" }));
+  renderEditor();
 }
 
 // ---------- editor ----------
@@ -525,6 +610,12 @@ $("#a-scope").onclick = e => {
   view.scope = b.dataset.scope; renderControls(); renderList();
 };
 $("#a-q").oninput = e => { view.q = e.target.value; renderList(); };
+$("#overview").addEventListener("click", e => {
+  const b = e.target.closest("[data-cmp],[data-sort]");
+  if (b) { if (b.dataset.cmp) view.cmp = b.dataset.cmp; else view.sort = b.dataset.sort; renderList(); return; }
+  const tr = e.target.closest("tr[data-id]"); if (!tr) return;
+  openFromOverview(+tr.dataset.id, e.target.closest("td[data-role]")?.dataset.role);
+});
 $("#list").addEventListener("click", e => {
   const s = e.target.closest("[data-scope]");
   if (s) { view.scope = s.dataset.scope; renderControls(); renderList(); return; }
