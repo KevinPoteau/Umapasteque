@@ -6306,8 +6306,14 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1011_101102.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Full recovery, nothing else. Eh growth"
+    ]
+   }
+  }
  },
  {
   "id": 101402,
@@ -6556,8 +6562,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1001_100102.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Okay midgame, nothing crazy.",
+     "Bad growth."
+    ]
+   }
+  }
  },
  {
   "id": 100402,
@@ -7023,9 +7036,9 @@
   "date": "Dec 1",
   "iso": "2025-12-01",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>A Princess Must Seize Victory!</b> – TS +0.35 · 5s<br /><small>Straight · Final corner · Blocked</small>"
@@ -7066,8 +7079,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1039_103901.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "No stopping me is good.",
+     "However, released in Unity where everyone has NSM.",
+     "Bad growth."
+    ]
+   }
+  }
  },
  {
   "id": 102501,
@@ -7116,8 +7137,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1025_102501.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Horrible growth.",
+     "Will be used for a very few Long CM then MANT happens and kills all momentum and then Grand Live arrives and kills Stamina.",
+     "Good luck."
+    ]
+   }
+  }
  },
  {
   "id": 101702,
@@ -7128,9 +7157,9 @@
   "date": "Dec 14",
   "iso": "2025-12-14",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Arrows Whistle, Shadows Disperse</b> – TS +0.35 · 6s<br /><small>Final corner</small>"
@@ -7176,8 +7205,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1017_101702.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Pace chaser variant, not great, nothing exceptional but a very long unique.",
+     "Fall Frenzy gets better as scenarios progresses and stats caps increases."
+    ]
+   }
+  }
  },
  {
   "id": 104002,
@@ -7235,8 +7271,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1040_104002.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Good growth, good unique but battle Formation works as a debuff to help front runners to get the lead.",
+     "Lie in wait isn't great for a Mile runner."
+    ]
+   }
+  }
  },
  {
   "id": 104801,
@@ -7247,9 +7290,9 @@
   "date": "Dec 18",
   "iso": "2025-12-18",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Pop & Polish</b> – TS +0.35 · 5s<br /><small>Straight · Final corner · Top 40% · Overtaking</small>"
@@ -7293,8 +7336,23 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1048_104801.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "They didn't know what to do with her skills, half pace half late.",
+     "She's \"fixed\" with evolved.",
+     "Good growth"
+    ]
+   },
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "They didn't know what to do with her skills, half pace half late.",
+     "She's \"fixed\" with evolved."
+    ]
+   }
+  }
  },
  {
   "id": 105901,
@@ -7305,9 +7363,9 @@
   "date": "Dec 28",
   "iso": "2025-12-28",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 4,
+  "inherit": 5,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>Moving Past, and Beyond</b> – Acc +0.40 · 4s<br /><small>Late-race+ / Mid-race · Corner · Final corner · 50–70% of the pack</small>"
@@ -7348,8 +7406,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1059_105901.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 5,
+    "verdict": [
+     "Fantastique unique, great growth.",
+     "Debuff later on evolve into current speed.",
+     "Yodo invicta gives a crazy amount of stats but limited to Kyoto races."
+    ]
+   }
+  }
  },
  {
   "id": 100602,
@@ -7404,8 +7470,17 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1006_100602.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 5,
+    "verdict": [
+     "Good growth.",
+     "Unique is strong enough to maul every opposition, having the ability to control the timing of the trigger is very strong.",
+     "Get good midgame, 3-4 recoveries.",
+     "Umamusume Dictator"
+    ]
+   }
+  }
  },
  {
   "id": 102302,
@@ -7462,8 +7537,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1023_102302.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Okay growth, VIP Pass is a bad skill.",
+     "Nothing exceptional."
+    ]
+   }
+  }
  },
  {
   "id": 102201,
@@ -7474,9 +7556,9 @@
   "date": "Jan 15",
   "iso": "2026-01-15",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Fairy Tale</b> – TS +0.35 · 5s<br /><small>After 50% · Pos 2+ / Top 40% · Blocked</small>"
@@ -7518,8 +7600,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1022_102201.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Not bad but track dependent.",
+     "Can't use her own card, putting her at a massive disadvantage.",
+     "Very good growth."
+    ]
+   }
+  }
  },
  {
   "id": 102101,
@@ -7573,8 +7663,23 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1021_102101.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Strong Later surger with very good skills, just need good midgame and luck you, she has it.",
+     "Bad growth."
+    ]
+   },
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "A weird one, has Spurt but F&F is Late.",
+     "Despite that, has Spurt and a good unique.",
+     "Bad growth."
+    ]
+   }
+  }
  },
  {
   "id": 101502,
@@ -7585,9 +7690,9 @@
   "date": "Jan 29",
   "iso": "2026-01-29",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 4,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Barcarole of Blessings</b> – TS +0.45 · 5s<br /><small>≤401 m left / 399+ m left · Top 40%</small>"
@@ -7632,8 +7737,14 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1015_101502.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Nothing exceptional, good growth, mostly used as a parent."
+    ]
+   }
+  }
  },
  {
   "id": 105202,
@@ -7644,9 +7755,9 @@
   "date": "Jan 29",
   "iso": "2026-01-29",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 1,
+  "inherit": 1,
+  "evolved": 5,
   "keyskills": [
    {
     "html": "<b>114th Time's the Charm</b> – TS +0.25 · 5s<br /><small>Corner · Final corner</small>"
@@ -7686,8 +7797,28 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1052_105202.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Poor Haru",
+     "Unique has potential has Endcloser.",
+     "Center Stage is bad but saved by evolved.",
+     "Hard worker is garbage.",
+     "Good growth thought."
+    ]
+   },
+   "end": {
+    "rank": 2,
+    "verdict": [
+     "Poor Haru",
+     "Unique has potential has Endcloser.",
+     "Center Stage is bad but saved by evolved.",
+     "Hard worker is garbage.",
+     "Good growth thought."
+    ]
+   }
+  }
  },
  {
   "id": 106901,
@@ -7698,9 +7829,9 @@
   "date": "Feb 11",
   "iso": "2026-02-11",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>Ambition to Surpass the Sakura</b> – TS +0.35 · 5s<br /><small>≤300 m left · Top 40%</small>"
@@ -7744,8 +7875,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1069_106901.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good growth.",
+     "Evolved sounds good."
+    ]
+   }
+  }
  },
  {
   "id": 102602,
@@ -7756,9 +7894,9 @@
   "date": "Feb 18",
   "iso": "2026-02-18",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 5,
+  "inherit": 2,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>Operation Cacao</b> – TS +0.35 · Rec +1.5% · 5s<br /><small>Mid-race · Corner · Top 4</small>"
@@ -7803,8 +7941,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1026_102602.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 5,
+    "verdict": [
+     "Good growth, good unique, very good skills including groundwork.",
+     "Dictator."
+    ]
+   }
+  }
  },
  {
   "id": 103702,
@@ -7815,9 +7960,9 @@
   "date": "Feb 18",
   "iso": "2026-02-18",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>Guten Appetit ♪</b> – TS +0.35 · 6s<br /><small>Straight · Final corner</small>"
@@ -7862,8 +8007,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1037_103702.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Dominathorse.",
+     "Dominator later replaced by non-debuff variants."
+    ]
+   }
+  }
  },
  {
   "id": 107101,
@@ -7874,9 +8026,9 @@
   "date": "Feb 25",
   "iso": "2026-02-25",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>A Lifelong Dream, A Moment's Flight</b> – TS +0.45 · Rec −1.0% · 4s<br /><small>Straight · Final corner</small>"
@@ -7917,8 +8069,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1071_107101.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Can be a surprising good horse.",
+     "Has a recovery in case you're low on stam.",
+     "Very good growth."
+    ]
+   }
+  }
  },
  {
   "id": 103301,
@@ -7929,9 +8089,9 @@
   "date": "Mar 5",
   "iso": "2026-03-05",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Shooting Star of Dioskouroi</b> – TS +0.35 · 5s<br /><small>Straight · Final corner · Top 80%</small>"
@@ -7971,8 +8131,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1033_103301.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Good horse.",
+     "Unique is race Dependent, Serenity is good."
+    ]
+   }
+  }
  },
  {
   "id": 106801,
@@ -7983,9 +8150,9 @@
   "date": "Mar 12",
   "iso": "2026-03-12",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 5,
+  "inherit": 2,
+  "evolved": 5,
   "keyskills": [
    {
     "html": "<b>Victory Cheer!</b> – TS +0.25 · Acc +0.30 · 5s<br /><small>Late-race · Top 2</small>"
@@ -8027,8 +8194,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1068_106801.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Another dictator.",
+     "Good growth, no bad skills and great evolve."
+    ]
+   }
+  }
  },
  {
   "id": 106701,
@@ -8083,8 +8257,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1067_106701.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Bad bad growth.",
+     "Recovery can whiff, not a dictator."
+    ]
+   }
+  }
  },
  {
   "id": 107401,
@@ -8095,9 +8276,9 @@
   "date": "Mar 26",
   "iso": "2026-03-26",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 1,
+  "inherit": 1,
+  "evolved": 1,
   "keyskills": [
    {
     "html": "<b>Lovely Spring Breeze</b> – TS +0.15 · 5s<br /><small>After 50% · 40–80% of the pack</small>"
@@ -8142,8 +8323,22 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1074_107401.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "I have recovery, recovery, recovery horses.",
+     "Bad growth."
+    ]
+   },
+   "end": {
+    "rank": 1,
+    "verdict": [
+     "I have recovery, recovery, recovery horses.",
+     "Bad growth."
+    ]
+   }
+  }
  },
  {
   "id": 100502,
@@ -8154,9 +8349,9 @@
   "date": "Apr 5",
   "iso": "2026-04-05",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Ravissant</b> – TS +0.45 · 4s<br /><small>Final corner · Top 40%</small>"
@@ -8202,8 +8397,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1005_100502.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Head-on in kit, Speed Star in kit, good skills, good evolved.",
+     "Fantastic growth."
+    ]
+   }
+  }
  },
  {
   "id": 102002,
@@ -8214,9 +8416,9 @@
   "date": "Apr 5",
   "iso": "2026-04-05",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Break It Down!</b> – TS +0.35 · Acc +0.20 · 5s<br /><small>Late-race+ · Straight · Top 2</small>"
@@ -8262,8 +8464,16 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1020_102002.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "PotiChaton Seiun sky for long, can't inherit Rod through parents.",
+     "Good skills but difficult accel.",
+     "Good growth."
+    ]
+   }
+  }
  },
  {
   "id": 105101,
@@ -8274,9 +8484,9 @@
   "date": "Apr 12",
   "iso": "2026-04-12",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 5,
+  "inherit": 5,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Budding Blossom</b> – Acc +0.40 · 4s<br /><small>Late-race+ · Straight · Final corner · Pos 3+ / Top 40%</small>"
@@ -8316,8 +8526,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1051_105101.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 5,
+    "verdict": [
+     "Fantastic growth.",
+     "Budding Blossom is fantastic, Beeling Burst is very good, Descent is track dependent.",
+     "Terrorist."
+    ]
+   }
+  }
  },
  {
   "id": 107201,
@@ -8328,9 +8546,9 @@
   "date": "Apr 20",
   "iso": "2026-04-20",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>Peerless Dance of Flowering Flames</b> – TS +0.35 · 5s<br /><small>≤300 m left · Top 40%</small>"
@@ -8370,8 +8588,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1072_107201.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good growth, good unique.",
+     "It's on isn't exactly bad but short.",
+     "Unyielding bad, fixed later by 2nd evolve."
+    ]
+   }
+  }
  },
  {
   "id": 106002,
@@ -8382,9 +8608,9 @@
   "date": "Apr 26",
   "iso": "2026-04-26",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>Go☆Go☆Goal!</b> – TS +0.35 · 6s<br /><small>Straight · Final corner · 40–70% of the pack</small>"
@@ -8429,8 +8655,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1060_106002.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Good growth.",
+     "Good runner, great evolved, weakness: Can't use her own card for On Your Left!"
+    ]
+   }
+  }
  },
  {
   "id": 106102,
@@ -8441,9 +8674,9 @@
   "date": "Apr 26",
   "iso": "2026-04-26",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 4,
+  "inherit": 5,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Louder! Tracen Cheer!</b> – Acc +0.40 · 4s<br /><small>Straight · Final corner</small>"
@@ -8489,8 +8722,22 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1061_106102.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 5,
+    "verdict": [
+     "Good growth.",
+     "Very good accel for backliners, Spring Spectacle is moar stats."
+    ]
+   },
+   "end": {
+    "rank": 5,
+    "verdict": [
+     "Good growth.",
+     "Very good accel for backliners, Spring Spectacle is moar stats."
+    ]
+   }
+  }
  },
  {
   "id": 103101,
@@ -8501,9 +8748,9 @@
   "date": "Apr 30",
   "iso": "2026-04-30",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 1,
   "keyskills": [
    {
     "html": "<b>All Charged! It's Go Time!</b> – TS +0.45 · 5s<br /><small>≤299 m left / 295+ m left · Downhill · Top 2</small>"
@@ -8543,8 +8790,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1031_103101.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Tought competition.",
+     "Okay growth.",
+     "And just TS, no accel, no groundwork."
+    ]
+   }
+  }
  },
  {
   "id": 106401,
@@ -8555,9 +8810,9 @@
   "date": "May 10",
   "iso": "2026-05-10",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Keep Pushing Ahead</b> – Rec +5.5% · TS +0.25 · 6s<br /><small>After 50%</small>"
@@ -8600,8 +8855,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1064_106401.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Second Runaway, not as good as Suzuka, questionnable growth.",
+     "Keep pushing."
+    ]
+   }
+  }
  },
  {
   "id": 102202,
@@ -8612,8 +8874,8 @@
   "date": "May 18",
   "iso": "2026-05-18",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
+  "runner": 4,
+  "inherit": 1,
   "evolved": 0,
   "keyskills": [
    {
@@ -8656,8 +8918,16 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1022_102202.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good growth.",
+     "Neck and Neck in kit.",
+     "Still can't use her own card."
+    ]
+   }
+  }
  },
  {
   "id": 103802,
@@ -8668,9 +8938,9 @@
   "date": "May 18",
   "iso": "2026-05-18",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>One True Color</b> – TS +0.25 · Acc +0.30 · 5s<br /><small>≤350 m left · 20–40% of the pack</small>"
@@ -8714,8 +8984,16 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1038_103802.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Great growth, debuff, lots of accels.",
+     "Another sprint Terrorist.",
+     "Turbo Sprint Evolved -> Pepega"
+    ]
+   }
+  }
  },
  {
   "id": 103401,
@@ -8726,9 +9004,9 @@
   "date": "May 28",
   "iso": "2026-05-28",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Now We're Cruisin'!</b> – TS +0.45 · 5s"
@@ -8771,8 +9049,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1034_103401.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Good growth.",
+     "Dirt skills, tail nine is good.",
+     "Has spurt, nothing too crazy."
+    ]
+   }
+  }
  },
  {
   "id": 104401,
@@ -8783,9 +9069,9 @@
   "date": "Jun 4",
   "iso": "2026-06-04",
   "scenario": "Trackblazer",
-  "runner": 0,
+  "runner": 3,
   "inherit": 0,
-  "evolved": 0,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Victory belongs to me—Strelitzia! ☆</b> – TS +0.35 · 6s<br /><small>≤300 m left</small>"
@@ -8826,8 +9112,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1044_104401.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Fantastic growth.",
+     "Great recovery, very good evolved.",
+     "Spurt in kit."
+    ]
+   }
+  }
  },
  {
   "id": 105902,
@@ -8838,9 +9132,9 @@
   "date": "Jun 11",
   "iso": "2026-06-11",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 4,
+  "inherit": 2,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>Wherever This Wonder Leads</b> – TS +0.35 · 5s<br /><small>Mid-race · After 60% / 500+ m left · Downhill · 40–80% of the pack</small>"
@@ -8881,8 +9175,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1059_105902.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Very good growth.",
+     "Track dependent but when it hits, it hits."
+    ]
+   }
+  }
  },
  {
   "id": 103601,
@@ -8893,9 +9194,9 @@
   "date": "Jun 18",
   "iso": "2026-06-18",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>trigger:BEAT</b> – TS +0.35 · Lane +0.04 · 5s<br /><small>Straight · Final corner</small>"
@@ -8931,8 +9232,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1036_103601.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "No more meme, insane growth that allows Monowit deck.",
+     "Okay skills, nothing exceptional."
+    ]
+   }
+  }
  },
  {
   "id": 100103,
@@ -8943,9 +9251,9 @@
   "date": "Jun 25",
   "iso": "2026-06-25",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Dreams Donned with Pride!</b> – TS +0.45 · 5s<br /><small>Late-race+ · Corner · Final corner</small>"
@@ -8990,8 +9298,16 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1001_100103.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Good growth.",
+     "FREE.",
+     "Works for one track thought."
+    ]
+   }
+  }
  },
  {
   "id": 101303,
@@ -9048,8 +9364,14 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1013_101303.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good growth, nothing crazy."
+    ]
+   }
+  }
  },
  {
   "id": 105301,
@@ -9060,9 +9382,9 @@
   "date": "Jul 7",
   "iso": "2026-07-07",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Red-Hot Discipline!</b> – Acc +0.10 · Acc +0.10 · 2s<br /><small>Late-race+ · Final corner · Back 50%</small>"
@@ -9108,8 +9430,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1053_105301.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Mile specialist.",
+     "Good growth, track depndent.",
+     "Sounds to blow its load on final corner."
+    ]
+   }
+  }
  },
  {
   "id": 109801,
@@ -9120,9 +9450,9 @@
   "date": "Jul 16",
   "iso": "2026-07-16",
   "scenario": "Trackblazer",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 5,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Luck Runs My Way</b> – TS +0.25 · TS +0.05 · Acc +0.05 · 5s<br /><small>Late mid-race</small>"
@@ -9163,8 +9493,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1098_109801.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 5,
+    "verdict": [
+     "Dirt terrorist.",
+     "Requires a CRAZY investment.",
+     "Very good growth."
+    ]
+   }
+  }
  },
  {
   "id": 104602,
@@ -9218,8 +9556,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1046_104602.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Worse than OG.",
+     "Good growth."
+    ]
+   }
+  }
  },
  {
   "id": 105002,
@@ -9276,8 +9621,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1050_105002.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Weird growth, compete with OG's and her Encroashing Shadow.",
+     "Okay but not crazy compared to OG"
+    ]
+   }
+  }
  },
  {
   "id": 102901,
@@ -9288,9 +9640,9 @@
   "date": "Aug 5",
   "iso": "2026-08-05",
   "scenario": "Grand Live",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Snow Bright, Snow Flight</b> – TS +0.35 · 5s<br /><small>≤300 m left · Top 40%</small>"
@@ -9332,8 +9684,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1029_102901.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Lots of accel, race dependent.",
+     "Not great growth."
+    ]
+   }
+  }
  },
  {
   "id": 104201,
@@ -9344,9 +9703,9 @@
   "date": "Aug 12",
   "iso": "2026-08-12",
   "scenario": "Grand Live",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>I'm Possible!</b> – TS +0.45 · 5s<br /><small>≤201 m left / 199+ m left · Pos 2+</small>"
@@ -9387,8 +9746,32 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1042_104201.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Weird kit, great growth.",
+     "Head-on in kit.",
+     "later on fixed to work on both mile and sprint."
+    ]
+   },
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Weird kit, great growth.",
+     "Head-on in kit.",
+     "later on fixed to work on both mile and sprint."
+    ]
+   },
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Weird kit, great growth.",
+     "Head-on in kit.",
+     "later on fixed to work on both mile and sprint."
+    ]
+   }
+  }
  },
  {
   "id": 101902,
@@ -9451,8 +9834,14 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1019_101902.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "all": {
+    "rank": 1,
+    "verdict": [
+     "No"
+    ]
+   }
+  }
  },
  {
   "id": 105802,
@@ -9463,9 +9852,9 @@
   "date": "Aug 18",
   "iso": "2026-08-18",
   "scenario": "Grand Live",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Spooky, Scary, Happy</b> – TS +0.35 · Opp. speed −0.05 · Opp. speed −0.05 · 5s<br /><small>Final straight · Top 40%</small>"
@@ -9505,8 +9894,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1058_105802.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Very, very good growth.",
+     "Best recovery and best Pace Accel in kit."
+    ]
+   }
+  }
  },
  {
   "id": 108701,
@@ -9558,8 +9954,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1087_108701.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Good for sprint, good growth.",
+     "Taking the lead and Silent Letter are good."
+    ]
+   }
+  }
  },
  {
   "id": 107801,
@@ -9570,9 +9973,9 @@
   "date": "Sep 1",
   "iso": "2026-09-01",
   "scenario": "Grand Live",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Sunny Breeze</b> – Acc +0.20 · 8s<br /><small>Final corner · Pos 2</small>"
@@ -9618,8 +10021,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1078_107801.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good mile skills",
+     "Good growth. Looooooooooong acceleration."
+    ]
+   }
+  }
  },
  {
   "id": 102102,
@@ -9630,9 +10040,9 @@
   "date": "Sep 7",
   "iso": "2026-09-07",
   "scenario": "Grand Live",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Lightning Flare</b> – TS +0.25 · TS +0.03 · 6s"
@@ -9677,8 +10087,27 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1021_102102.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Correct growth, good skills."
+    ]
+   },
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Correct growth, good skills."
+    ]
+   },
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "Correct growth, good skills.",
+     "Killer tune annoying, evolve doesn't help."
+    ]
+   }
+  }
  },
  {
   "id": 103402,
@@ -9689,9 +10118,9 @@
   "date": "Sep 7",
   "iso": "2026-09-07",
   "scenario": "Grand Live",
-  "runner": 0,
+  "runner": 4,
   "inherit": 0,
-  "evolved": 0,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Firelight</b> – TS +0.35 · 5s<br /><small>Final straight</small>"
@@ -9738,8 +10167,16 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1034_103402.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "Encroaching Shadow in kit, very good growth.",
+     "Unique can be weird.",
+     "First evolved pepelaugh."
+    ]
+   }
+  }
  },
  {
   "id": 104901,
@@ -9803,8 +10240,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1049_104901.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 1,
+    "verdict": [
+     "Massive gambling horse."
+    ]
+   }
+  }
  },
  {
   "id": 110001,
@@ -9815,9 +10258,9 @@
   "date": "Sep 24",
   "iso": "2026-09-24",
   "scenario": "Grand Live",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Never Say Never</b> – TS +0.25 · CS +0.25 · 5s<br /><small>Dirt · 299+ m left / ≤301 m left · 20–40% of the pack</small>"
@@ -9859,8 +10302,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1100_110001.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Okay growth.",
+     "Okay skills.",
+     "Nothing to note."
+    ]
+   }
+  }
  },
  {
   "id": 100802,
@@ -9871,9 +10322,9 @@
   "date": "Sep 28",
   "iso": "2026-09-28",
   "scenario": "Grand Live",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Into High Gear!</b> – TS +0.35 · Acc +0.10 · 5s<br /><small>Uphill</small>"
@@ -9913,8 +10364,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1008_100802.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Track dependent but no Stopping Me in kit.",
+     "Good growth, other skills are good."
+    ]
+   }
+  }
  },
  {
   "id": 100902,
@@ -9925,9 +10383,9 @@
   "date": "Sep 28",
   "iso": "2026-09-28",
   "scenario": "Grand Live",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Queen's Lumination</b> – TS +0.35 · 6s<br /><small>After 50% · Straight · 1st</small>"
@@ -9968,8 +10426,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1009_100902.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Very good growth.",
+     "Nothing crazy, no groundwork."
+    ]
+   }
+  }
  },
  {
   "id": 104701,
@@ -9980,9 +10445,9 @@
   "date": "Oct 7",
   "iso": "2026-10-07",
   "scenario": "Grand Live",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Raise My Soul's Blade!</b> – TS +0.45 · 5s<br /><small>Late-race+ · ≤401 m left / 399+ m left · Top 40%</small>"
@@ -10022,8 +10487,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1047_104701.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good growth, nothing to note"
+    ]
+   }
+  }
  },
  {
   "id": 101602,
@@ -10081,8 +10552,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1016_101602.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Low growth",
+     "Great accels, long skill duration."
+    ]
+   }
+  }
  },
  {
   "id": 112101,
