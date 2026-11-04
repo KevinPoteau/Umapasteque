@@ -34,6 +34,7 @@
       <button data-scope="todo" aria-pressed="true">To rate</button>
       <button data-scope="all" aria-pressed="false">All</button>
       <button data-scope="changed" aria-pressed="false">Changed</button>
+      <button data-scope="overview" aria-pressed="false" title="Every entry with its ratings, coloured by the gap with the rating grid">Overview</button>
     </div>
     <input class="search" id="a-q" type="search" placeholder="Search…" aria-label="Search">
     <span class="count" id="a-count"></span>
@@ -45,6 +46,7 @@
   <section class="editor" id="editor" aria-label="Rating">
     <p class="empty">Pick an entry on the left to rate it.</p>
   </section>
+  <section class="overview" id="overview" aria-label="Overview" hidden></section>
 </main>
 
 <dialog id="token-dlg">

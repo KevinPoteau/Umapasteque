@@ -823,3 +823,142 @@ dialog::backdrop {
   border-radius: 50%;
   background: var(--gold);
 }
+
+/* ---------- Overview: every entry and its ratings ---------- */
+.admin-main.ov {
+  display: block;
+  overflow: auto;
+}
+
+.admin-main.ov .list,
+.admin-main.ov .editor {
+  display: none;
+}
+
+.overview {
+  padding: 12px var(--gut) 24px;
+}
+
+.ov-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 20px;
+  margin-bottom: 12px;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.ov-bar > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.legend i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  margin-right: 2px;
+}
+
+.ov-table {
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 100%;
+}
+
+.ov-table th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: var(--bg);
+  padding: 6px 8px;
+  font-size: 11.5px;
+  color: var(--muted);
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.ov-table th img {
+  width: 22px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+.ov-table th.nm {
+  text-align: left;
+}
+
+.ov-table td {
+  padding: 4px 8px;
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+}
+
+.ov-table tbody tr {
+  cursor: pointer;
+}
+
+.ov-table tbody tr:hover {
+  background: var(--inset);
+}
+
+.ov-table td.nm {
+  text-align: left;
+}
+
+.ov-table td.nm > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 220px;
+}
+
+.ov-table td.nm .thumb {
+  width: 32px;
+  height: 32px;
+  flex: none;
+}
+
+.ov-table td.nm b,
+.ov-table td.nm small {
+  display: block;
+  white-space: nowrap;
+}
+
+.ov-table td.nm small,
+.ov-table td.dt {
+  color: var(--muted);
+  font-size: 11.5px;
+  white-space: nowrap;
+}
+
+.ov-table .vt {
+  display: inline-grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--vc);
+  font-weight: 800;
+  font-size: 12px;
+}
+
+.ov-table .vt.none {
+  border-style: dashed;
+  border-color: var(--v0);
+  color: var(--faint);
+}
+
+.ov-table td.gc {
+  opacity: .7;
+}
+
+/* Gap with the grid: blue when you rate higher, red when lower, stronger with the gap */
+[data-gap][data-dir="up"] { background: rgb(106 167 240 / var(--a)); }
+[data-gap][data-dir="down"] { background: rgb(229 103 79 / var(--a)); }
+[data-gap="1"] { --a: .14; }
+[data-gap="2"] { --a: .34; }
+[data-gap="3"] { --a: .6; }
