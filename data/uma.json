@@ -4900,8 +4900,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1001_100101.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Strong runner, has access to good skills, good unique,"
+    ]
+   }
+  }
  },
  {
   "id": 100201,
@@ -4960,8 +4966,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1002_100201.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Strong frontrunner, access to Runaway"
+    ]
+   }
+  }
  },
  {
   "id": 100301,
@@ -4972,9 +4984,9 @@
   "date": "Jun 26",
   "iso": "2025-06-26",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 5,
   "keyskills": [
    {
     "html": "<b>Sky-High Teio Step</b> – TS +0.45 · 5s<br /><small>Straight · Final corner</small>"
@@ -5020,8 +5032,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1003_100301.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Technician is bad but evolved basically saves her.",
+     "Good growth"
+    ]
+   }
+  }
  },
  {
   "id": 100401,
@@ -5032,9 +5051,9 @@
   "date": "Jun 26",
   "iso": "2025-06-26",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 2,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Red Shift/LP1211-M</b> – Acc +0.40 · 4s<br /><small>Final corner · Top 5 / Top 50%</small>"
@@ -5076,8 +5095,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1004_100401.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Strong runner but Red shift has so few tracks.",
+     "Evolved kind of save her, but not for signature."
+    ]
+   }
+  }
  },
  {
   "id": 100601,
@@ -5088,9 +5114,9 @@
   "date": "Jun 26",
   "iso": "2025-06-26",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 5,
+  "inherit": 5,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Triumphant Pulse</b> – TS +0.45 · 5s<br /><small>≤201 m left / 199+ m left · Pos 2+ / Top 5 / Top 50%</small>"
@@ -5133,8 +5159,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1006_100601.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 5,
+    "verdict": [
+     "Very strong runner, fantastic growth, good skills.",
+     "Corner Connoisseur is bad most of the tracks."
+    ]
+   }
+  }
  },
  {
   "id": 101001,
@@ -5145,9 +5178,9 @@
   "date": "Jun 26",
   "iso": "2025-06-26",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Shooting for Victory!</b> – Acc +0.40 · 4s<br /><small>Corner · Final corner · Pos 3+ / Top 40%</small>"
@@ -5187,8 +5220,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1010_101001.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 5,
+    "verdict": [
+     "Mile terrorist, strong midgame and Unique is good.",
+     "Fantastic growth"
+    ]
+   }
+  }
  },
  {
   "id": 101301,
@@ -5247,8 +5287,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1013_101301.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Long Uma with okay recovery and Beast mode"
+    ]
+   }
+  }
  },
  {
   "id": 101501,
@@ -5259,9 +5305,9 @@
   "date": "Jun 26",
   "iso": "2025-06-26",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>This Dance Is for Vittoria!</b> – TS +0.35 · 5s<br /><small>Final corner · Top 4</small>"
@@ -5301,8 +5347,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1015_101501.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Difficult growth, only TS in kit"
+    ]
+   }
+  }
  },
  {
   "id": 101701,
@@ -5313,9 +5365,9 @@
   "date": "Jun 26",
   "iso": "2025-06-26",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 4,
+  "inherit": 3,
+  "evolved": 5,
   "keyskills": [
    {
     "html": "<b>Behold Thine Emperor's Divine Might</b> – TS +0.45 · 5s<br /><small>Straight · Final corner</small>"
@@ -5358,8 +5410,30 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1017_101701.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 5,
+    "verdict": [
+     "Strong runner, Inherit is fine.",
+     "Very good Evolved.",
+     "Bad growth."
+    ]
+   },
+   "late": {
+    "rank": 5,
+    "verdict": [
+     "Strong runner, Inherit is fine.",
+     "Very good Evolved."
+    ]
+   },
+   "end": {
+    "rank": 5,
+    "verdict": [
+     "Strong runner, Inherit is fine.",
+     "Very good Evolved."
+    ]
+   }
+  }
  },
  {
   "id": 103001,
@@ -5413,8 +5487,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1030_103001.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Okay long Uma.",
+     "Determined Descent heavily track dependent."
+    ]
+   }
+  }
  },
  {
   "id": 102601,
@@ -5425,9 +5506,9 @@
   "date": "Jul 2",
   "iso": "2025-07-02",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>G00 1st. F∞;</b> – TS +0.45 · 5s<br /><small>Straight · Final corner · Top 3</small>"
@@ -5467,8 +5548,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1026_102601.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 3,
+    "verdict": [
+     "Okay runner, not exceptional, bad growth"
+    ]
+   }
+  }
  },
  {
   "id": 102301,
@@ -5479,9 +5566,9 @@
   "date": "Jul 10",
   "iso": "2025-07-10",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 1,
+  "inherit": 1,
+  "evolved": 1,
   "keyskills": [
    {
     "html": "<b>∴win Q.E.D.</b> – TS +0.45 · 5s<br /><small>Late-race+ · Final corner · Top 4</small>"
@@ -5521,8 +5608,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1023_102301.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Recovery heavy with okay growth"
+    ]
+   }
+  }
  },
  {
   "id": 100302,
@@ -5533,9 +5626,9 @@
   "date": "Jul 16",
   "iso": "2025-07-16",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 1,
   "keyskills": [
    {
     "html": "<b>Certain Victory</b> – TS +0.45 · 5s<br /><small>Straight · Final corner</small>"
@@ -5579,8 +5672,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1003_100302.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Recovery heavy, low growth."
+    ]
+   }
+  }
  },
  {
   "id": 101302,
@@ -5591,9 +5690,9 @@
   "date": "Jul 16",
   "iso": "2025-07-16",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 1,
   "keyskills": [
    {
     "html": "<b>Legacy of the Strong</b> – TS +0.35 · 6s<br /><small>Late-race+ · Final corner · Top 4 · Overtaking</small>"
@@ -5637,8 +5736,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1013_101302.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Not fantastic, okay growth."
+    ]
+   }
+  }
  },
  {
   "id": 103801,
@@ -5649,9 +5754,9 @@
   "date": "Jul 27",
   "iso": "2025-07-27",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 5,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>#LookatCurren</b> – TS +0.25 · Acc +0.30 · 5s<br /><small>After 50% / Before 65% · Pos 2+ / Top 40%</small>"
@@ -5690,8 +5795,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1038_103801.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 4,
+    "verdict": [
+     "Sprint terrorist, perfect growth"
+    ]
+   }
+  }
  },
  {
   "id": 105001,
@@ -5702,9 +5813,9 @@
   "date": "Aug 3",
   "iso": "2025-08-03",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 5,
+  "inherit": 2,
+  "evolved": 1,
   "keyskills": [
    {
     "html": "<b>Nemesis</b> – TS +0.35 · 5s<br /><small>Final corner · 40–75% of the pack · Overtaking</small>"
@@ -5744,8 +5855,19 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1050_105001.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 5,
+    "verdict": [
+     "Potential man.",
+     "Sleeping Lion is a gambling skill that can be destroyed by tactical Haru Urara.",
+     "Encroaching Shadow is among the best accels for Endclosers.",
+     "Give her midgame everything and she'll shine.",
+     "Sadly, her evolves are absolutely garbage and basically ends her.",
+     "Bad growth."
+    ]
+   }
+  }
  },
  {
   "id": 104601,
@@ -5756,9 +5878,9 @@
   "date": "Aug 11",
   "iso": "2025-08-11",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>SPARKLY☆STARDOM</b> – TS +0.25 · Acc +0.30 · 5s<br /><small>Mid-race · Straight · Top 2</small>"
@@ -5799,8 +5921,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1046_104601.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 5,
+    "verdict": [
+     "Very good growth, unique helps her getting 1st place to grab the rod.",
+     "Evolved sounds great and gives her a whole new skill."
+    ]
+   }
+  }
  },
  {
   "id": 101601,
@@ -5811,9 +5940,9 @@
   "date": "Aug 20",
   "iso": "2025-08-20",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Shadow Break</b> – TS +0.45 · 5s<br /><small>Final corner · Pos 2+ / Top 75%</small>"
@@ -5854,8 +5983,14 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1016_101601.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good, not game breaking"
+    ]
+   }
+  }
  },
  {
   "id": 101802,
@@ -5866,9 +6001,9 @@
   "date": "Aug 28",
   "iso": "2025-08-28",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>Eternal Moments</b> – TS +0.35 · 5s<br /><small>Mid-race · Pos 3+ / Top 50% · Overtaking</small>"
@@ -5914,8 +6049,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1018_101802.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Good growth.",
+     "Corner Connoisseur is garbage, but saved by second evolved."
+    ]
+   }
+  }
  },
  {
   "id": 102402,
@@ -5926,9 +6068,9 @@
   "date": "Aug 28",
   "iso": "2025-08-28",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Flowery☆Maneuver</b> – TS +0.35 · 5s<br /><small>Final corner · Top 40%</small>"
@@ -5975,8 +6117,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1024_102402.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Debuffer I guess.",
+     "Can be played as a runner."
+    ]
+   }
+  }
  },
  {
   "id": 102001,
@@ -5987,9 +6136,9 @@
   "date": "Sep 7",
   "iso": "2025-09-07",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 5,
+  "inherit": 5,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Angling and Scheming</b> – Acc +0.40 · 4s<br /><small>Late-race+ · Corner · 1st</small>"
@@ -6031,8 +6180,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1020_102001.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 5,
+    "verdict": [
+     "Very good overall, weaker growth.",
+     "Forever parent but can get stopped by Runaway."
+    ]
+   }
+  }
  },
  {
   "id": 101201,
@@ -6043,9 +6199,9 @@
   "date": "Sep 17",
   "iso": "2025-09-17",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>You and Me! One-on-One!</b> – TS +0.35 · 5s<br /><small>Straight · Final corner</small>"
@@ -6088,8 +6244,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1012_101201.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "end": {
+    "rank": 3,
+    "verdict": [
+     "TS Everywhere, good runner with strong midgame.",
+     "Unyielding is bad, if you're last and can't get out, you're donezo.",
+     "Good growth."
+    ]
+   }
+  }
  },
  {
   "id": 101102,
@@ -6100,9 +6264,9 @@
   "date": "Sep 21",
   "iso": "2025-09-21",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 1,
+  "inherit": 1,
+  "evolved": 1,
   "keyskills": [
    {
     "html": "<b>Superior Heal</b> – Rec +7.5%<br /><small>Mid-race · Back 60%</small>"
@@ -6154,9 +6318,9 @@
   "date": "Sep 21",
   "iso": "2025-09-21",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Condor's Fury</b> – Acc +0.40 · 4s<br /><small>Corner · Final corner · Pos 4+ / Top 75% · Overtaking</small>"
@@ -6199,8 +6363,14 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1014_101402.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Good late surger but heavily dependent on track."
+    ]
+   }
+  }
  },
  {
   "id": 100501,
@@ -6211,9 +6381,9 @@
   "date": "Oct 2",
   "iso": "2025-10-02",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 3,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Lights of Vaudeville</b> – TS +0.45 · 5s<br /><small>≤300 m left</small>"
@@ -6255,8 +6425,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1005_100501.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Unique is good, growth is very good.",
+     "Race Planner is weird but helped by evolved.",
+     "TS everywhere."
+    ]
+   }
+  }
  },
  {
   "id": 104001,
@@ -6267,9 +6445,9 @@
   "date": "Oct 7",
   "iso": "2025-10-07",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>KEEP IT REAL.</b> – Acc +0.30 · 6s<br /><small>After 50% · 40–70% of the pack · Overtaking</small>"
@@ -6311,8 +6489,16 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1040_104001.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Bad growth.",
+     "Not excessively good but lots of accels, so good potential.",
+     "Unique seems to have a lot of chances to whiff."
+    ]
+   }
+  }
  },
  {
   "id": 100102,
@@ -6323,9 +6509,9 @@
   "date": "Oct 14",
   "iso": "2025-10-14",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 1,
   "keyskills": [
    {
     "html": "<b>Dazzl'n ♪ Diver</b> – Rec +5.5%<br /><small>Mid-race · Pos 2+ / Top 70%</small>"
@@ -6382,9 +6568,9 @@
   "date": "Oct 14",
   "iso": "2025-10-14",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 4,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>A Kiss for Courage</b> – TS +0.35 · 5s<br /><small>After 50% · Top 3</small>"
@@ -6426,8 +6612,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1004_100402.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "front": {
+    "rank": 4,
+    "verdict": [
+     "Strong during her time, should've dominated but CyGames released the other runner buffs.",
+     "Very good growth."
+    ]
+   }
+  }
  },
  {
   "id": 105801,
@@ -6438,9 +6631,9 @@
   "date": "Oct 21",
   "iso": "2025-10-21",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 4,
+  "evolved": 1,
   "keyskills": [
    {
     "html": "<b>I Never Goof Up!</b> – TS +0.25 · Acc +0.30 · 5s<br /><small>Late-race+</small>"
@@ -6479,8 +6672,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1058_105801.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Gambling runner.",
+     "Okay overrall, but growth pulls her down, recovery is bad."
+    ]
+   }
+  }
  },
  {
   "id": 103701,
@@ -6491,9 +6691,9 @@
   "date": "Oct 30",
   "iso": "2025-10-30",
   "scenario": "Ura Finale",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 2,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Schwarzes Schwert</b> – TS +0.45 · 5s<br /><small>Straight · Final corner · Pos 3+</small>"
@@ -6533,8 +6733,17 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1037_103701.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 3,
+    "verdict": [
+     "Good growth.",
+     "Lane Legerdemain is an absolutely dogshit skill.",
+     "Very dependent on \"Rushed\".",
+     "Very gamba."
+    ]
+   }
+  }
  },
  {
   "id": 105602,
@@ -6545,9 +6754,9 @@
   "date": "Nov 6",
   "iso": "2025-11-06",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 1,
+  "inherit": 1,
+  "evolved": 3,
   "keyskills": [
    {
     "html": "<b>Bountiful Harvest</b> – TS +0.35 · 5s<br /><small>After 50% · Back 60% · Overtaking</small>"
@@ -6592,8 +6801,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1056_105602.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 2,
+    "verdict": [
+     "Questionnable growth.",
+     "TS Everywhere, second evolved is questionnable."
+    ]
+   }
+  }
  },
  {
   "id": 102801,
@@ -6604,9 +6820,9 @@
   "date": "Nov 11",
   "iso": "2025-11-11",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 1,
+  "inherit": 1,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>YUMMY☆SPEED!</b> – TS +0.25 · Acc +0.30 · 5s<br /><small>After 45% / Before 60% · Pos 3+ / Top 50% · HP ≤70%</small>"
@@ -6647,8 +6863,15 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1028_102801.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 2,
+    "verdict": [
+     "Good growth, kit is bad.",
+     "Heavily reliant on evolved who turns gourmand on its head."
+    ]
+   }
+  }
  },
  {
   "id": 101901,
@@ -6659,9 +6882,9 @@
   "date": "Nov 19",
   "iso": "2025-11-19",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 2,
+  "evolved": 4,
   "keyskills": [
    {
     "html": "<b>OMG! (ﾟ∀ﾟ)  The Final Sprint! ☆</b> – TS +0.35 · Lane +0.04 · 5s"
@@ -6711,8 +6934,20 @@
    ]
   ],
   "imgSource": "https://uma.guide/img/uma/chara_stand_1019_101901.webp",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "late": {
+    "rank": 4,
+    "verdict": [
+     "Very questionnable Uma but she's good althought a bit gambly."
+    ]
+   },
+   "end": {
+    "rank": 4,
+    "verdict": [
+     "Very questionnable Uma but she's good althought a bit gambly."
+    ]
+   }
+  }
  },
  {
   "id": 104502,
@@ -6723,9 +6958,9 @@
   "date": "Nov 24",
   "iso": "2025-11-24",
   "scenario": "Unity Cup",
-  "runner": 0,
-  "inherit": 0,
-  "evolved": 0,
+  "runner": 3,
+  "inherit": 5,
+  "evolved": 2,
   "keyskills": [
    {
     "html": "<b>Give Mummy a Hug ♡</b> – TS +0.25 · Acc +0.30 · 5s<br /><small>Straight · Final corner · Top 4</small>"
@@ -6769,8 +7004,15 @@
    ]
   ],
   "imgSource": "https://gametora.com/images/umamusume/characters/chara_stand_1045_104502.png",
-  "roles": {},
-  "todo": true
+  "roles": {
+   "pace": {
+    "rank": 3,
+    "verdict": [
+     "Okay Uma, good inherit.",
+     "Evolved don't do a lot."
+    ]
+   }
+  }
  },
  {
   "id": 103901,
